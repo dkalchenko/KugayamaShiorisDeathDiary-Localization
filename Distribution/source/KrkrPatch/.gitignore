@@ -1,7 +1,0 @@
-.vs/
-vcpkg_installed/
-packages/
-Build/
-*.aps
-*.user
-*.log

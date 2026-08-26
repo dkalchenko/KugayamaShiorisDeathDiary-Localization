@@ -1,7 +1,10 @@
 /analysis/
+/tools/
+/.deps/
 
 /Distribution/source/generated/
 /Distribution/LocalizationSetup.exe
+/Distribution/SHA256SUMS.txt
 /Distribution/payload/KrkrPatchLoader.exe
 /Distribution/payload/KrkrPatch.dll
 /Distribution/unins*.exe
@@ -20,8 +23,12 @@
 **/packages/
 **/vcpkg_installed/
 **/target/
+**/[Bb]uild/
 **/bin/
 **/obj/
+**/out/
+**/CMakeFiles/
+**/CMakeCache.txt
 **/Debug/
 **/Release/
 **/RelWithDebInfo/
@@ -29,15 +36,6 @@
 **/Win32/
 **/x64/
 **/x86/
-
-/tools/msg-tool-src/.git/
-!/tools/msg-tool-src/msg_tool_xp3data/bin/
-!/tools/msg-tool-src/msg_tool_xp3data/bin/*.bin
-
-/Distribution/source/KrkrPatch/Build/
-/Distribution/source/KrkrPatch/out/
-/Distribution/source/KrkrPatch/CMakeFiles/
-/Distribution/source/KrkrPatch/CMakeCache.txt
 
 *.user
 *.suo

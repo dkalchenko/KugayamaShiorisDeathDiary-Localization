@@ -12,7 +12,7 @@ Installation with LocalizationSetup.exe
 5. Optionally enable the desktop-shortcut task, then select Install.
 6. Launch through the installed Russian Localization shortcut or KrkrPatchLoader.exe in the game folder. Launching KugayamaShiorisDeathDiary.exe directly bypasses the localization.
 
-The installer adds only these files:
+The installed game folder receives exactly these four files:
 KrkrPatchLoader.exe
 KrkrPatch.dll
 KrkrPatch.json
@@ -27,9 +27,15 @@ Troubleshooting
 - Verify that KugayamaShiorisDeathDiary.exe exists in the selected directory.
 - Launch KrkrPatchLoader.exe, not KugayamaShiorisDeathDiary.exe.
 - Antivirus software may inspect the runtime patch DLL because it hooks the game's file-loading functions.
+- Unsigned releases can show Windows Unknown publisher or SmartScreen warnings. Verify LocalizationSetup.exe using the matching SHA256SUMS.txt; removing the publisher warning requires a publicly trusted Authenticode signature.
 - Restore the original game state by uninstalling or deleting the four files listed above.
 
-The Russian text was translated manually.
+The Russian text was translated manually. English localization JSON is not distributed; development scripts extract it from the user's installed game into ignored generated output.
 
-Corresponding sources and licence texts are included in Distribution/source, tools/msg-tool-src, and Distribution/LICENSES.
-The GitHub source archive for the same release tag must remain available beside the release installer. Anyone redistributing the GPL-covered KrkrPatch or msg-tool binaries must preserve their notices and licence texts and provide the complete corresponding source. Modified versions must identify the changes and remain under the applicable GPL terms.
+KrkrPatchLoader.exe and KrkrPatch.dll are GPL-3.0-covered KrkrPatch binaries built from upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31. The matching release provides KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31.zip beside LocalizationSetup.exe. The build recipe and licence notices are in the repository source archive for the same release tag.
+
+The matching release also provides ThirdPartyLicenses.zip and SHA256SUMS.txt. Verify LocalizationSetup.exe against SHA256SUMS.txt before running it.
+
+msg-tool is used only during development. Scripts download the pinned upstream release on demand and verify it using third-party.lock.json. It is not included in this repository, installer, installed game folder, or release assets.
+
+See Distribution/LICENSES in the repository source archive and ThirdPartyLicenses.zip in the matching release for third-party notices and dependency licence material.

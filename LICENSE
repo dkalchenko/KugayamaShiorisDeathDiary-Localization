@@ -2,14 +2,16 @@ Repository licensing
 
 Except for the exclusions below, all original material in this repository for which the repository contributors hold copyright is licensed under the Zero-Clause BSD licence (SPDX: 0BSD).
 
-To the extent repository contributors own copyright in the original Russian translation wording, that contribution is also licensed under 0BSD. This does not grant any rights in the underlying game, its English or Japanese text, characters, names, artwork, audio, trademarks, or other third-party material.
+To the extent repository contributors own copyright in the original Russian translation wording, that contribution is also licensed under 0BSD. This does not grant rights in the underlying game, its English or Japanese text, characters, names, artwork, audio, trademarks, or other third-party material.
 
 Excluded material
 
-- Distribution/source/KrkrPatch and the KrkrPatch binaries are licensed under GPL-3.0 according to their included licence and notices.
-- tools/msg-tool-src and tools/msg-tool/msg_tool.exe are licensed under GPL-3.0-or-later according to their included licence and notices.
+- KrkrPatch source and binaries are licensed under GNU GPL version 3 according to their included licence and notices. Release builds use upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 and publish its corresponding source beside the installer.
+- Components incorporated by Inno Setup and by KrkrPatch dependencies remain under their respective licences.
 - Third-party and game-owned material remains under its respective owner's terms.
 - A file-specific licence or notice overrides this repository licence for that file.
+
+msg-tool is not part of this repository or its release artifacts. Development scripts download the pinned upstream program on demand according to third-party.lock.json. Copies obtained from upstream are governed by msg-tool's GNU GPL-3.0-or-later licence.
 
 Zero-Clause BSD
 

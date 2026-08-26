@@ -14,53 +14,110 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
-      - name: Validate vendored msg-tool
+      - name: Read dependency lock
         shell: pwsh
         run: |
-          $tool = 'tools/msg-tool/msg_tool.exe'
-          $expectedHash = '62fe396780468200cb50f287fe213e697a903f0a85a91153fa3692598ae8ab5d'
-          if (-not (Test-Path -LiteralPath $tool -PathType Leaf)) {
-            throw "Missing vendored tool: $tool"
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $lock = Get-Content -LiteralPath 'third-party.lock.json' -Raw | ConvertFrom-Json
+          $values = [ordered]@{
+            KRKRPATCH_COMMIT = [string]$lock.krkrPatch.commit
+            VCPKG_TRIPLET = [string]$lock.vcpkg.triplet
+            NUGET_CLIENT_VERSION = [string]$lock.nuget.clientVersion
+            NUGET_CLIENT_URL = [string]$lock.nuget.clientUrl
+            NUGET_CLIENT_SHA256 = [string]$lock.nuget.clientSha256
+            NUGET_SOURCE = [string]$lock.nuget.source
+            INNO_VERSION = [string]$lock.innoSetup.version
+            INNO_RELEASE_REPOSITORY = [string]$lock.innoSetup.releaseRepository
+            INNO_RELEASE_TAG = [string]$lock.innoSetup.releaseTag
+            INNO_ASSET = [string]$lock.innoSetup.asset
+            INNO_SHA256 = [string]$lock.innoSetup.sha256
           }
-          $actualHash = (Get-FileHash -LiteralPath $tool -Algorithm SHA256).Hash.ToLowerInvariant()
-          if ($actualHash -cne $expectedHash) {
-            throw "msg-tool checksum mismatch: $actualHash"
-          }
-          $version = (& $tool --version | Out-String).Trim()
-          if ($version -cne 'msg_tool 0.4.0-alpha.3') {
-            throw "msg-tool version mismatch: $version"
-          }
-          $sourceFiles = @(
-            'tools/msg-tool-src/Cargo.toml',
-            'tools/msg-tool-src/Cargo.lock',
-            'tools/msg-tool-src/LICENSE',
-            'tools/msg-tool-src/msg_tool_xp3data/bin/altered_pink.bin'
-          )
-          foreach ($file in $sourceFiles) {
-            if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
-              throw "Missing msg-tool corresponding source file: $file"
+          foreach ($entry in $values.GetEnumerator()) {
+            if ([string]::IsNullOrWhiteSpace($entry.Value)) {
+              throw "Missing dependency lock value: $($entry.Key)"
             }
+            Add-Content -LiteralPath $env:GITHUB_ENV -Value "$($entry.Key)=$($entry.Value)" -Encoding utf8
           }
+          Add-Content -LiteralPath $env:GITHUB_ENV -Value "KRKRPATCH_SOURCE_ARCHIVE=KrkrPatch-source-$($values.KRKRPATCH_COMMIT).zip" -Encoding utf8
+          Add-Content -LiteralPath $env:GITHUB_ENV -Value 'THIRD_PARTY_LICENSE_ARCHIVE=ThirdPartyLicenses.zip' -Encoding utf8
 
       - name: Set up MSBuild
-        uses: microsoft/setup-msbuild@v2
+        uses: microsoft/setup-msbuild@6fb02220983dee41ce7ae257b6f4d8f9bf5ed4ce
+        with:
+          vs-version: '[17.0,18.0)'
 
-      - name: Set up NuGet
-        uses: NuGet/setup-nuget@v2
+      - name: Install verified NuGet
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $nuget = Join-Path $env:RUNNER_TEMP "nuget-$env:NUGET_CLIENT_VERSION.exe"
+          Invoke-WebRequest -Uri $env:NUGET_CLIENT_URL -OutFile $nuget
+          $actualHash = (Get-FileHash -LiteralPath $nuget -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actualHash -cne $env:NUGET_CLIENT_SHA256) {
+            throw "NuGet checksum mismatch: $actualHash"
+          }
+          $signature = Get-AuthenticodeSignature -LiteralPath $nuget
+          if ($signature.Status -ne 'Valid') {
+            throw "NuGet Authenticode signature is $($signature.Status)."
+          }
+          Add-Content -LiteralPath $env:GITHUB_ENV -Value "NUGET_EXE=$nuget" -Encoding utf8
+
+      - name: Fetch verified third-party dependencies
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $destination = Join-Path $env:RUNNER_TEMP 'dependencies'
+          & 'Distribution/source/scripts/Get-Dependencies.ps1' -Components KrkrPatch,Vcpkg -DestinationPath $destination -GitHubEnvironmentPath $env:GITHUB_ENV
 
       - name: Restore KrkrPatch dependencies
         shell: pwsh
         run: |
-          nuget restore Distribution/source/KrkrPatch/KrkrPatch.sln -PackagesDirectory Distribution/source/KrkrPatch/packages
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $manifestRoot = (Resolve-Path -LiteralPath $env:KRKRPATCH_ROOT).Path
+          $vcpkgRoot = (Resolve-Path -LiteralPath $env:VCPKG_ROOT).Path
+          $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
+          $solution = Join-Path $manifestRoot 'KrkrPatch.sln'
+          $packagesRoot = Join-Path $manifestRoot 'packages'
+
+          & $env:NUGET_EXE restore $solution -PackagesDirectory $packagesRoot -Source $env:NUGET_SOURCE -NonInteractive
           if ($LASTEXITCODE -ne 0) {
             throw "NuGet restore failed with exit code $LASTEXITCODE."
           }
-          $manifestRoot = (Resolve-Path 'Distribution/source/KrkrPatch').Path
-          $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
-          $vcpkg = Join-Path $env:VCPKG_INSTALLATION_ROOT 'vcpkg.exe'
-          & $vcpkg install --triplet x86-windows-static "--x-manifest-root=$manifestRoot" "--x-install-root=$installedRoot"
+
+          $lock = Get-Content -LiteralPath 'third-party.lock.json' -Raw | ConvertFrom-Json
+          foreach ($package in $lock.nuget.packages.PSObject.Properties) {
+            $identity = $package.Name -split '/', 2
+            if ($identity.Count -ne 2) {
+              throw "Invalid NuGet package lock key: $($package.Name)"
+            }
+            $packageName = "$($identity[0]).$($identity[1])"
+            $packagePath = Join-Path $packagesRoot "$packageName/$packageName.nupkg"
+            if (-not (Test-Path -LiteralPath $packagePath -PathType Leaf)) {
+              throw "Missing restored NuGet package: $packagePath"
+            }
+            $expected = [string]$package.Value
+            if (-not $expected.StartsWith('sha512-', [StringComparison]::Ordinal)) {
+              throw "Unsupported NuGet hash format for $($package.Name)."
+            }
+            $bytes = [IO.File]::ReadAllBytes($packagePath)
+            $actual = [Convert]::ToBase64String([Security.Cryptography.SHA512]::HashData($bytes))
+            if ($actual -cne $expected.Substring(7)) {
+              throw "NuGet package checksum mismatch: $($package.Name)"
+            }
+          }
+
+          $vcpkg = Join-Path $vcpkgRoot 'vcpkg.exe'
+          & $vcpkg install --triplet $env:VCPKG_TRIPLET "--x-manifest-root=$manifestRoot" "--x-install-root=$installedRoot"
           if ($LASTEXITCODE -ne 0) {
             throw "vcpkg restore failed with exit code $LASTEXITCODE."
           }
@@ -69,21 +126,114 @@ jobs:
             throw "vcpkg integration failed with exit code $LASTEXITCODE."
           }
 
+      - name: Collect source and dependency licenses
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $manifestRoot = (Resolve-Path -LiteralPath $env:KRKRPATCH_ROOT).Path
+          $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
+          $licenseRoot = Join-Path $env:RUNNER_TEMP 'release-licenses'
+          $sourceArchive = Join-Path $env:GITHUB_WORKSPACE "Distribution/$env:KRKRPATCH_SOURCE_ARCHIVE"
+          $licenseArchive = Join-Path $env:GITHUB_WORKSPACE "Distribution/$env:THIRD_PARTY_LICENSE_ARCHIVE"
+
+          $actualCommit = (& git -C $manifestRoot rev-parse HEAD | Out-String).Trim()
+          if ($LASTEXITCODE -ne 0 -or $actualCommit -cne $env:KRKRPATCH_COMMIT) {
+            throw "Unexpected KrkrPatch revision: $actualCommit"
+          }
+          & git -C $manifestRoot archive --format=zip "--prefix=KrkrPatch-$env:KRKRPATCH_COMMIT/" "--output=$sourceArchive" $env:KRKRPATCH_COMMIT
+          if ($LASTEXITCODE -ne 0) {
+            throw "KrkrPatch source archive failed with exit code $LASTEXITCODE."
+          }
+
+          [IO.Directory]::CreateDirectory($licenseRoot) | Out-Null
+          Copy-Item -LiteralPath 'Distribution/LICENSES' -Destination (Join-Path $licenseRoot 'repository') -Recurse
+
+          $krkrLicenseRoot = Join-Path $licenseRoot 'KrkrPatch'
+          [IO.Directory]::CreateDirectory($krkrLicenseRoot) | Out-Null
+          Copy-Item -LiteralPath (Join-Path $manifestRoot 'LICENSE.txt') -Destination (Join-Path $krkrLicenseRoot 'LICENSE.txt')
+
+          $vcpkgLicenseRoot = Join-Path $licenseRoot 'vcpkg'
+          [IO.Directory]::CreateDirectory($vcpkgLicenseRoot) | Out-Null
+          Copy-Item -LiteralPath (Join-Path $env:VCPKG_ROOT 'LICENSE.txt') -Destination (Join-Path $vcpkgLicenseRoot 'vcpkg.txt')
+          $vcpkgShareRoot = Join-Path $installedRoot "$env:VCPKG_TRIPLET/share"
+          $vcpkgLicenses = @(Get-ChildItem -LiteralPath $vcpkgShareRoot -Filter copyright -File -Recurse)
+          if ($vcpkgLicenses.Count -eq 0) {
+            throw 'No vcpkg dependency licenses were found.'
+          }
+          foreach ($file in $vcpkgLicenses) {
+            Copy-Item -LiteralPath $file.FullName -Destination (Join-Path $vcpkgLicenseRoot "$($file.Directory.Name).txt")
+          }
+
+          $packagesRoot = Join-Path $manifestRoot 'packages'
+          $nugetLicenseRoot = Join-Path $licenseRoot 'nuget'
+          [IO.Directory]::CreateDirectory($nugetLicenseRoot) | Out-Null
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          $metadataCount = 0
+          foreach ($package in Get-ChildItem -LiteralPath $packagesRoot -Filter '*.nupkg' -File -Recurse) {
+            $targetRoot = Join-Path $nugetLicenseRoot $package.BaseName
+            [IO.Directory]::CreateDirectory($targetRoot) | Out-Null
+            $archive = [IO.Compression.ZipFile]::OpenRead($package.FullName)
+            try {
+              foreach ($entry in $archive.Entries) {
+                if ($entry.FullName -notmatch '(?i)(\.nuspec$|(^|/)(license|copying|notice|copyright)(\.|$))') {
+                  continue
+                }
+                $targetName = [IO.Path]::GetFileName($entry.FullName)
+                if ([string]::IsNullOrWhiteSpace($targetName)) {
+                  continue
+                }
+                [IO.Compression.ZipFileExtensions]::ExtractToFile($entry, (Join-Path $targetRoot $targetName), $true)
+                $metadataCount++
+              }
+            } finally {
+              $archive.Dispose()
+            }
+          }
+          if ($metadataCount -eq 0) {
+            throw 'No NuGet dependency license metadata was found.'
+          }
+
+          Compress-Archive -Path (Join-Path $licenseRoot '*') -DestinationPath $licenseArchive -CompressionLevel Optimal
+          foreach ($file in @($sourceArchive, $licenseArchive)) {
+            if (-not (Test-Path -LiteralPath $file -PathType Leaf) -or (Get-Item -LiteralPath $file).Length -eq 0) {
+              throw "Missing release archive: $file"
+            }
+          }
+
       - name: Build KrkrPatch Win32
         shell: pwsh
         run: |
-          $manifestRoot = (Resolve-Path 'Distribution/source/KrkrPatch').Path
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $manifestRoot = (Resolve-Path -LiteralPath $env:KRKRPATCH_ROOT).Path
           $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
-          msbuild Distribution/source/KrkrPatch/KrkrPatch.sln /m /p:Configuration=Release /p:Platform=x86 /p:VcpkgTriplet=x86-windows-static /p:VcpkgManifestInstall=false "/p:VcpkgInstalledDir=$installedRoot" "/p:VcpkgRoot=$env:VCPKG_INSTALLATION_ROOT"
+          $solution = Join-Path $manifestRoot 'KrkrPatch.sln'
+          $arguments = @(
+            $solution,
+            '/m',
+            '/p:Configuration=Release',
+            '/p:Platform=x86',
+            "/p:VcpkgTriplet=$env:VCPKG_TRIPLET",
+            '/p:VcpkgManifestInstall=false',
+            "/p:VcpkgInstalledDir=$installedRoot",
+            "/p:VcpkgRoot=$env:VCPKG_ROOT"
+          )
+          & msbuild @arguments
           if ($LASTEXITCODE -ne 0) {
             throw "KrkrPatch build failed with exit code $LASTEXITCODE."
           }
-          Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatchLoader/Win32/Release/KrkrPatchLoader.exe Distribution/payload/KrkrPatchLoader.exe -Force
-          Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatch/Win32/Release/KrkrPatch.dll Distribution/payload/KrkrPatch.dll -Force
+          Copy-Item -LiteralPath (Join-Path $manifestRoot 'Build/KrkrPatchLoader/Win32/Release/KrkrPatchLoader.exe') -Destination 'Distribution/payload/KrkrPatchLoader.exe' -Force
+          Copy-Item -LiteralPath (Join-Path $manifestRoot 'Build/KrkrPatch/Win32/Release/KrkrPatch.dll') -Destination 'Distribution/payload/KrkrPatch.dll' -Force
 
       - name: Validate release payload
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
           $files = @(
             'Distribution/payload/KrkrPatchLoader.exe',
             'Distribution/payload/KrkrPatch.dll',
@@ -115,34 +265,88 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download is-7_1_0 --repo jrsoftware/issrc --pattern innosetup-7.1.0-x64.exe --dir $env:RUNNER_TEMP
-          $installer = Join-Path $env:RUNNER_TEMP 'innosetup-7.1.0-x64.exe'
-          $expected = '0362a383ed217d4c4239b5933866dd96d3eb2102737da92f80f6057a4b40df2f'
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          gh release download $env:INNO_RELEASE_TAG --repo $env:INNO_RELEASE_REPOSITORY --pattern $env:INNO_ASSET --dir $env:RUNNER_TEMP
+          if ($LASTEXITCODE -ne 0) {
+            throw "Inno Setup download failed with exit code $LASTEXITCODE."
+          }
+          $installer = Join-Path $env:RUNNER_TEMP $env:INNO_ASSET
           $actual = (Get-FileHash -LiteralPath $installer -Algorithm SHA256).Hash.ToLowerInvariant()
-          if ($actual -cne $expected) {
+          if ($actual -cne $env:INNO_SHA256) {
             throw "Inno Setup checksum mismatch: $actual"
           }
-          Start-Process -FilePath $installer -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -Wait
+          $process = Start-Process -FilePath $installer -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -PassThru -Wait
+          if ($process.ExitCode -ne 0) {
+            throw "Inno Setup installation failed with exit code $($process.ExitCode)."
+          }
 
       - name: Build LocalizationSetup.exe
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
           $version = if ('${{ github.event.release.tag_name }}') { '${{ github.event.release.tag_name }}'.TrimStart('v') } else { '0.0.0-dev' }
-          & 'C:\Program Files\Inno Setup 7\ISCC.exe' "/DMyAppVersion=$version" '/ODistribution' '/FLocalizationSetup' 'Distribution/source/installer/LocalizationSetup.iss'
+          $innoMajorVersion = ([Version]$env:INNO_VERSION).Major
+          $compiler = Join-Path $env:ProgramFiles "Inno Setup $innoMajorVersion/ISCC.exe"
+          & $compiler "/DMyAppVersion=$version" '/ODistribution' '/FLocalizationSetup' 'Distribution/source/installer/LocalizationSetup.iss'
           if ($LASTEXITCODE -ne 0) {
             throw "Inno Setup failed with exit code $LASTEXITCODE."
           }
 
+      - name: Create release checksums
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $assets = @(
+            'Distribution/LocalizationSetup.exe',
+            (Join-Path 'Distribution' $env:KRKRPATCH_SOURCE_ARCHIVE),
+            (Join-Path 'Distribution' $env:THIRD_PARTY_LICENSE_ARCHIVE)
+          )
+          $lines = foreach ($asset in $assets) {
+            if (-not (Test-Path -LiteralPath $asset -PathType Leaf)) {
+              throw "Missing release asset: $asset"
+            }
+            $hash = (Get-FileHash -LiteralPath $asset -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash  $([IO.Path]::GetFileName($asset))"
+          }
+          [IO.File]::WriteAllLines(
+            (Join-Path $env:GITHUB_WORKSPACE 'Distribution/SHA256SUMS.txt'),
+            $lines,
+            [Text.UTF8Encoding]::new($false)
+          )
+
       - name: Upload workflow artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: LocalizationSetup
-          path: Distribution/LocalizationSetup.exe
+          name: release-assets
+          path: |
+            Distribution/LocalizationSetup.exe
+            Distribution/KrkrPatch-source-*.zip
+            Distribution/ThirdPartyLicenses.zip
+            Distribution/SHA256SUMS.txt
           if-no-files-found: error
 
-      - name: Attach installer to release
+      - name: Attach assets to release
         if: github.event_name == 'release'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload '${{ github.event.release.tag_name }}' Distribution/LocalizationSetup.exe --clobber
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $assets = @(
+            'Distribution/LocalizationSetup.exe',
+            (Join-Path 'Distribution' $env:KRKRPATCH_SOURCE_ARCHIVE),
+            (Join-Path 'Distribution' $env:THIRD_PARTY_LICENSE_ARCHIVE),
+            'Distribution/SHA256SUMS.txt'
+          )
+          & gh release upload '${{ github.event.release.tag_name }}' @assets --clobber
+          if ($LASTEXITCODE -ne 0) {
+            throw "Release upload failed with exit code $LASTEXITCODE."
+          }

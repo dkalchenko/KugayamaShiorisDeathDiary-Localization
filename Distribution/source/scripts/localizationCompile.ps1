@@ -18,7 +18,6 @@ $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 
 $sourceRoot = Split-Path $PSScriptRoot -Parent
-$repoRoot = Split-Path (Split-Path $sourceRoot -Parent) -Parent
 
 if ([string]::IsNullOrWhiteSpace($InputPath)) {
     $InputPath = Join-Path $sourceRoot 'localization\ru'
@@ -33,8 +32,6 @@ function Resolve-MsgTool {
     $candidates = @(
         $RequestedPath,
         $env:MSG_TOOL_PATH,
-        (Join-Path $repoRoot 'tools\msg-tool\msg_tool.exe'),
-        (Join-Path $sourceRoot 'tools\msg_tool.exe'),
         'msg_tool.exe'
     ) | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
 
@@ -48,7 +45,11 @@ function Resolve-MsgTool {
         }
     }
 
-    throw 'msg_tool.exe was not found. Pass -MsgToolPath or set MSG_TOOL_PATH.'
+    $dependency = & (Join-Path $PSScriptRoot 'Get-Dependencies.ps1') -Components MsgTool
+    if ($null -eq $dependency -or [string]::IsNullOrWhiteSpace([string]$dependency.MsgToolPath)) {
+        throw 'msg_tool.exe could not be acquired. Pass -MsgToolPath or set MSG_TOOL_PATH.'
+    }
+    return [string]$dependency.MsgToolPath
 }
 
 function Invoke-MsgTool {
@@ -123,8 +124,8 @@ if ($manifest.sourceArchiveSha256) {
         throw "Unsupported game archive: expected SHA-256 $($manifest.sourceArchiveSha256), found $actualArchiveHash."
     }
 }
-$englishDirectory = Join-Path $sourceRoot 'localization\en'
 $generatedRoot = Join-Path $sourceRoot 'generated'
+$englishDirectory = Join-Path $generatedRoot 'english'
 $originalDirectory = Join-Path $generatedRoot 'original'
 $patchedDirectory = Join-Path $generatedRoot 'patched'
 [IO.Directory]::CreateDirectory($originalDirectory) | Out-Null

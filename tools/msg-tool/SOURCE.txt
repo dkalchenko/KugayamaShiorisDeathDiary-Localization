@@ -1,9 +1,0 @@
-Name: msg-tool
-Version: 0.4.0-alpha.3
-Executable: msg_tool.exe
-Executable SHA-256: 62FE396780468200CB50F287FE213E697A903F0A85A91153FA3692598AE8AB5D
-Upstream: https://github.com/lifegpc/msg-tool
-Source tag: v0.4.0-alpha.3
-Source revision: dcc8a29512a7025577f395d93b89e6666b23f8e6
-Corresponding source: ../msg-tool-src
-License: ../../Distribution/LICENSES/msg-tool-GPL-3.0-or-later.txt
