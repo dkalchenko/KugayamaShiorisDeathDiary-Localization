@@ -1,0 +1,1216 @@
+[
+  {
+    "name": "Ms. Librarian",
+    "message": "\"How nostalgic... This place has been here since I was still alive.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's changed quite a bit, though. That area over there still has traces of the past, but this part is nothing like it was.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It wasn't kept this neatly back then, and the flower displays were much more modest too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's nice walking around with someone who knows what this place used to be like.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'd love to take my time and reminisce about those days, but...\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I take it that's her? The ghost who does not respond?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll speak to her. It wouldn't hurt to try.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hello.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Quite a lovely day today, isn't it? It must feel wonderful to be surrounded by flowers and bathed in sunlight.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"People tend to picture ghosts as creatures of the night, but I actually prefer the daytime. Do you feel the same?\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Hmm, I see.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She still won't respond... just like back then.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Indeed... she's in the final stages. She's lost her ego, and her very existence is starting to fade.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've met a ghost with similar symptoms before.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did you know each other?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It was one-sided on my part. She couldn't even recognize me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She was an elderly woman. She would sit there all alone, crouched down, staring blankly at the ground.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I couldn't bring myself to leave her alone, so I made it a daily habit to sit beside her as I read books...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Until one day, she suddenly vanished like smoke right before my eyes.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"All sorts of people really do gather at the library, don't they? I never realized.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've been around a long time, so I've experienced quite a lot.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"At this rate, she'll end up the same way. It wouldn't be surprising if she vanished any second now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I don't know if she can still recover from that state, but...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"This encounter, too, must have some meaning to it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And you may already be holding the key to her recovery.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In any case, let us try everything we can.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Everything we can... then how about we try calling out to her?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That sounds good. Now, let us have our buddy call out a name. Anyone will do.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It might be her name, or it might be someone who can awaken her sense of self.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "message": "\"Kirishiki, Nagisa.\""
+  },
+  {
+    "message": "\"Aoi, Lumina.\""
+  },
+  {
+    "message": "\"Uribayashi, Rina.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No reaction.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That startled me. You suddenly called out my name.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"With your memories still missing, I can't say for sure that you two weren't acquainted.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"But even if you were, your relationship wasn't strong enough to make her remember who she was.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now, onto the next. Let us try every name we know.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like she doesn't have a deep tie with Gyaruko-san either.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I was hoping she'd be connected somehow, but I suppose it won't be that simple.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now, onto the next attempt.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like a bust...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I was hoping for an unexpected connection, but I suppose things won't be that easy.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let us try a different name.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Oh?\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"...Lu...mi.........na...............?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We've got a reaction. However...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Is... she okay...?\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Lumina... Lu, mi, na......\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Lumina, Lumina, Lumina, Lumina...\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Luminaluminaluminaluminaluminaluminaluminaluminaluminaluminaluminaluminaluminaluminaluminalumina!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It would seem... we've set off her trigger.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's likely not her own name, but someone else's—someone she hates.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Still, it's progress. Now that her attention is on us, we should be able to probe for a response.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Try calling out a name again. She might remember her own this time.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"But do be careful. If we set off another trigger... she'll probably attack.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "message": "\"Kirishiki, Nagisa.\""
+  },
+  {
+    "message": "\"Aoi, Lumina.\""
+  },
+  {
+    "message": "\"Uribayashi, Rina.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Lumina... Lu, mi, na......\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "message": "\"Kirishiki, Nagisa.\""
+  },
+  {
+    "message": "\"Aoi, Lumina.\""
+  },
+  {
+    "message": "\"Uribayashi, Rina.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Luminaluminaluminalumina!\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "message": "\"Kirishiki, Nagisa.\""
+  },
+  {
+    "message": "\"Aoi, Lumina.\""
+  },
+  {
+    "message": "\"Uribayashi, Rina.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Lu, mi, na...\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"LUMINAAA!!!\""
+  },
+  {
+    "message": "(Try again)"
+  },
+  {
+    "message": "(Return to Title Screen)"
+  },
+  {
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "message": "\"Kirishiki, Nagisa.\""
+  },
+  {
+    "message": "\"Aoi, Lumina.\""
+  },
+  {
+    "message": "\"Uribayashi, Rina.\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Lu, mi......\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"...nagi, sa...?\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"...nagisa......... nagisa............ Nagisa.........\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"...Me......?"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well done. You've hit the mark.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But what does this mean...? I mean...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Isn't Kirishiki Nagisa... Gyaruko-san?\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"Ugh.........\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"...\""
+  },
+  {
+    "name": "Fleeting Woman",
+    "message": "\"My head... feels fuzzy... Like I'm gonna puke...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Would you be Kirishiki Nagisa, perhaps?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\".......Yeah... Who're you?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A ghost, just like you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, I'm a ghost too.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Ghost......?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"......\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Oh... right... I died... I've been dead for a while......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm sorry, but just to be certain...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Your name is Kirishiki Nagisa. Is that correct?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...I told you, that's right.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...This is getting strange. There are a few possibilities to consider, however...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...What's going on? Why do you know my name?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...We will need to proceed carefully. May I handle this?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay. We'll just watch from here.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Could you stop talking as if I'm not around?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"My apologies. I heard about you from an acquaintance.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Who?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Aoi Lumina-san.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It doesn't seem like you two were friends.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Of course not. She killed me!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"What, did you think she was a nice girl? Or maybe you just didn't notice she's been pulling wool over your eyes.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"That broad pushed me off my apartment building. She *killed* me.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"So, you heard about me from Lumina, right? What did she say? And why the heck would she even talk about me?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...You were in a rather precarious state until now. She was worried.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"What? Me? You mean I'm in danger?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. You had lost your ego and were on the verge of disappearing.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"My ego...?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...So that's why my head feels all fuzzy... Ugh, this sucks.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you remember what you were doing here?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...I dunno. But now I'm convinced that I really was about to disappear.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"It felt like I'd been inside a dream the whole time. Like my existence itself was blurry...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Where... the flower garden?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Maybe I was trying to fade away... in my favorite place... I dunno...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Wait, *her?* Worried about *me*?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"No way. That's impossible. I'm sure she just sent you here to check if I've disappeared already.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"That selfish bitch would never worry about other people, much less someone she herself killed.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Were you close in life?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Childhood friends. I thought we were besties. Until she killed me, at least.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"And you? What's your relationship with her?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hmm... you could say Lumina-san is my research subject.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...What?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I study ghosts. By speaking with all kinds of ghosts, I deepen my understanding of them, and of myself as well.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've heard a great deal from Lumina-san. Approaching you was part of my research.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Wait, don't tell me...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hmm?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"She's dead too?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Indeed she is.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Pfft.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Ahaha! Imagine killing someone, and then winding up dead yourself! What a loser! Pfft! Ahahahahaha!\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Phew... Ehehe, thanks. This might be the best I've felt since I died.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Although... It would've been better if I killed her myself. A lot more satisfying, definitely.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Why did she have to go and die on her own like that? If she was going to die anyway, she should've at least let me kill her...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Damn it, damn it damn it... damn it...!\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"So, where's that broad now?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I'd like to confirm something, just in case.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"What? Whaddya want?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If you had to describe Aoi Lumina-san in one word—would that be 'gyaru'?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Maybe. I don't know what she thinks of herself, though.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Does she tie her hair into two bunches on either side? Like this?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"When she was in her uniform, I think so...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Any other distinctive features?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Um... she always left her uniform unbuttoned at the top, like she was trying to lure guys in. She was practically showing off how lax her school's rules were. I hated walking around with her...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So you went to different schools, then?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Of course we did. She's an idiot, and our grades were miles apart.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see. Thank you.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"So, where is she now?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We don't know.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Hah?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She's always wandering around town. I usually just run into her by chance, so I don't know where she is right now.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\".........\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"I'd love to go look for her, but I don't have the energy yet.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"If you find her... could you bring her here? I'll make it worth your while.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"You can even make me your research subject.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No, that won't be necessary. You've already let me closely observe someone recovering after losing themselves.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...You're weird.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If you do reunite with Lumina-san, what do you plan to do?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"I won't say. You'd probably try to stop me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I see.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Very well, we'll be off then.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Make sure you bring her here, alright? Promise.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What was that about just now?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Didn't Gyaruko-san say *she* was Kirishiki Nagisa?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She did introduce herself as such.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Things are indeed getting strange...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's possible her memories were muddled from having just recovered her sense of self, leading her to believe she is Kirishiki Nagisa.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"However... her description of Aoi Lumina matched Gyaruko-san perfectly.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In other words, that woman back there was the real Kirishiki Nagisa, and Gyaruko-san's real name isn't Kirishiki Nagisa, but Aoi Lumina.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That would be the most reasonable conclusion. However...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why would Gyaruko-san...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Possibility one: Gyaruko-san's memories are muddled.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In short, she didn't lie, but simply came to believe she was Kirishiki Nagisa.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If that's the case, hearing the name Aoi Lumina might cause her memories to fully return.\""
+  },
+  {
+    "message": "\"We've already told her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Pardon?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, we should've told her that name already.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But Gyaruko-san said she didn't know it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So before you even mentioned the name Kirishiki Nagisa, you had already talked to her about Aoi Lumina...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...If that's the case, then...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We still cannot rule out possibility one. Hearing a name doesn't necessarily restore a ghost's memories.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's still possible that in Gyaruko-san's case, hearing her own name didn't restore her memories.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Instead, she needed to hear the name of her best friend, Kirishiki Nagisa... and mistakenly came to believe she herself was Kirishiki Nagisa.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It is well within the realm of possibility. However, if that wasn't the case...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If her memories had actually returned the moment she heard the name Aoi Lumina...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then that leads us to possibility two: Gyaruko-san lied. She deliberately gave a false name.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We don't know why. However... if what Kirishiki-san said was true, then Gyaruko-san would be a murderer.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She may have lied to hide her crime. The logic would make sense.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Also...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm simply imagining the worst-case scenario right now. I'd rather keep these deductions to myself until I've gathered enough evidence.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Besides, at this stage, Kirishiki Nagisa-san's testimony can't be trusted either. She was on the verge of losing her sense of self just moments ago.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So you mean it might've just been an accident, but she convinced herself it was Aoi Lumina-san's fault?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Exactly.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In fact, it's entirely possible that the fading woman herself is Aoi Lumina, and that Gyaruko-san truly is Kirishiki Nagisa, just as she claimed.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Which is precisely why we need to proceed carefully... We first need to properly confirm both of their identities.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If Gyaruko-san is lying, then it's only reasonable to expect that she won't tell us the truth. Kirishiki-san's testimony is unreliable as well...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We'll need someone else to verify who they are. But the question now... is how.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It would've been easiest if the fading woman could come with us, but she didn't seem able to move yet... If only we could take her photo... but that doesn't work with ghosts.\""
+  },
+  {
+    "message": "(Take a photo of Ms. Librarian)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...? Did you just take a photo of me?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm sorry to say that ghosts don't appear in photographs...\""
+  },
+  {
+    "message": "(Show her the photo)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's me!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Our buddy always takes a picture of me every time I die, too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I figured it was only natural that we'd show up in them.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"But how...? Could your phone have some special power hidden within...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...No, come to think of it, I never actually tried it. The idea that ghosts don't appear was nothing more than my own biased assumption...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So ghosts can appear in photos... Incredible, a whole new discovery!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Apologies. I got a little too excited there. Since we can take photos, confirming identities should be easy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's go back to Kirishiki-san and ask to take her picture.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sorry, could we talk again for a moment?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Whoa, you spooked me there... What, did you find her already?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Not yet, but there's something we'd like your help with.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We'd like to take your photo.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"What? Why?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well, um...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"For documentation. I keep photos of those I speak with as research material.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Hmm... I guess that's fine. Do ghosts even show up in photos?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. Our buddy here can take them.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It'll be quicker to show you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now then. Buddy, if you'd do the honors.\""
+  },
+  {
+    "message": "(Take a photo)"
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Okay, that came out of nowhere. At least give me a heads-up or something... So, did it turn out good? Show me.\""
+  },
+  {
+    "message": "(Show her the photo)"
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Wow, you weren't kidding. It really worked... And it looks totally normal, not like some creepy ghost pic.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Thank you for your cooperation.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Hold up a sec.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Ugh, I look awful... My hair's a mess too... This pic sucks...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I totally get wanting to take another photo until you're satisfied with it.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Can I fix my bangs first? It's what's bothering me the most.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Go ahead.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"You got a mirror?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I don't, but maybe...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Me neither.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Just use your phone and switch it to selfie mode.\""
+  },
+  {
+    "message": "(Do as she says)"
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Whoa, crazy. I'm showing up like normal... Aren't ghosts supposed to be like, invisible?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Perhaps they do show up on machines, but people who can't 'see' them simply can't perceive them.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Huh... So maybe ghosts show up on security cameras too, and people just can't 'see' them...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Hmm. Still not perfect, but whatever. Thanks.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"You can take it now.\""
+  },
+  {
+    "message": "(Take a photo)"
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"...Done? Show me.\""
+  },
+  {
+    "message": "(Show her the photo)"
+  },
+  {
+    "name": "Nagisa",
+    "message": "\".........\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Still not satisfied, but it's better than before, I guess...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Is everything alright now?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Not really, but it's fine.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then thank you for your cooperation. We'll be going now.\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Hey.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes?\""
+  },
+  {
+    "name": "Nagisa",
+    "message": "\"Don't forget... about her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Yes.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Phew... good work, both of you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Next, we should show this photo to different people, right?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. Someone unexpected might recognize her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Should we ask Gyaruko-san to let us take her photo too?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...This is only a hypothesis, but if she were lying with something malicious in mind...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then acting carelessly could put her on alert, and if that happens, the truth may slip even further away.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"More importantly, if my suspicions are unfounded... we could risk damaging Gyaruko-san's trust. I'd rather avoid that.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We should first confirm Kirishiki-san's identity. We can deal with Gyaruko-san after that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes... you're right. I want to believe Gyaruko-san. But for now, I think that's the best approach too.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well then, shall we continue our investigation?\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  }
+]

@@ -1,0 +1,747 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"Gyaruko-san... isn't here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We missed her yesterday too. I guess our schedules don't match.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Maybe we should try calling her. What do you think?\""
+  },
+  {
+    "message": "(Call her)"
+  },
+  {
+    "message": "(Don't call her)"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Heeey, what's up~?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, she picked up. Hello. Is now a good time? We wanted to ask you something.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, can we save that for later~? Talking on the phone drains me out. I'll swing by the convenience store once I'm done, 'kay~?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sure. How long do you think you'll take?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, dunno. Might take a while. I'll call you when I get there~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay. We'll just wander around until then.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yup yup, catch ya later~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sounds like she's busy. She'll call us when she gets back, so let's head somewhere else for now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, you're right. She might be busy, and it's not like we need her right away either.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's come back later. Now, shall we go?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Still no sign of Gyaruko-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No point waiting here. Let's get moving.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, there you are. Yo~!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hello. Sorry for calling you out here. Were you busy?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Nah, not really? I was just doing the same stuff as you, Shiorin, wandering around hoping something would jog my memory.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did you remember anything?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Nope, not a thing~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So? Whaddya wanna ask?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, right. Um... it's about a certain incident...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, there she is.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hello.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Heeeey~. What's up? Something wrong?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We were looking for you. We have something to ask.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Me? Okay, shoot.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We're investigating a certain incident right now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Have you heard of the Preschool Girl Serial Kidnapping and Murder Case?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Pre... huh? That's a mouthful... cereal what now?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Preschool girl, serial, kidnapping, and murder case.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Preschool girl, as in, little girls?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yup, that's right. Five little girls were kidnapped and killed.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Whoa, scary. The heck? Did that happen around here?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm not sure if it was *right* around here, but it definitely happened in this town.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hmm...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, crap, that came out wrong. I must've sounded like some heartless jerk who doesn't care.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So you haven't heard of it.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Nope, not at all. Kinda asking the wrong person, don'tcha think? I don't even have any memories.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Then... have you seen a little girl around here? A ghost, of course.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, that I *might* know about... I think? Hmmmm... A little girl...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, and is she one of the victims?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We don't know. Maybe she is, maybe she isn't.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We only saw her once, but ever since then she's been stuck in my mind. That's why we've been looking for her.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hmm... a little girl... a little ghost girl...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hmm~... Nah, I don't think so... I don't really see ghost kids that much...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I see... Thanks anyway.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'll call ya if I spot one somewhere~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, please. Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"As thanks, we'll share what we found from our investigation. It's not much, though.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anything's cool with me. More info's always welcome~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We found the name of the high school girl who jumped from the apartment building.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Her name was Kirishiki Nagisa.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...? That's... a different reaction than usual. Did you know her?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Gyaruko-san?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"............\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You okay?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...............\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I remember now...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"My memories just went whoooooosh! And BAM—they're back! Whoa, this feels crazy! I, like, remembered a ton just now!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"She's me!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"*I'm* Kirishima Nagisa!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No way... what a coincidence... I was hoping you might know her, but I never imagined you were *actually* her.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yup, she's me alright! Riiiight! I fell and died!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ugh, this sucks. I can't believe I died like that. What was I even doing, sitting there?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"From the way you worded it... it wasn't suicide, right?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Nah, it wasn't.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Well~, I'm already dead... so it's not like anyone's gonna arrest me, yeah? So I'll just come clean...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I was, uh, having a just teeeeny bit of alcohol.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You got drunk and fell...?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, that. So, like, I'd sit on the railing, legs swinging, chugging my drink. That was kinda my thing.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And you lost your balance and fell...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Pretty sure I died from that. Probably instantly. I don't remember the moment I hit the ground, like, at all.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I never thought the first death we looked into would end up being yours.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I tried jumping off the roof myself... and it was terrifying. The ground just rushes up at you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah... No clue. I only remember the 'oh, I'm falling' part.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Want to see?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? See what?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The photo of when I fell to my death.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well? Are you curious? My buddy took it for me.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What? No! What is wrong with you?! Why would you show me something so gross? Heck, why would you even take a photo of that?!\""
+  },
+  {
+    "message": "(Take out your smartphone)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, I said no! Get that thing outta my face! It's already giving me the creeps!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Eheh, sorry. We got carried away.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm glad you got your memory back. Congratulations.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep, thanks, thanks.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, and something else came back too. That, uh, whatchamacallit-case you mentioned.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wait, really?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You remembered that much all at once?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Like I said, my memories just went whoooooosh!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I mean, if you think about it, forgetting your own name's kinda bad, right?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"How do I put it? It was like, my missing name was holding my memories back, and when I broke through that—BAM! Everything came flooding out.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Something like that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I see, so you were like, 'whoooooosh,' then 'BAM!'\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep yep, more or less.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, back to the topic.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I think I might know who the culprit is.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe, yeah. I always saw this sketchy old guy at the park, grinning at the kids.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Even when I was alive, people were like, 'Hey, that creep's probably the culprit, right?'\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Is he still in this town?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, but no.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"He's dead, like us.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So he's a ghost now... I wonder what happened?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Dunno. But the fact he's doing the same thing even after dying is kinda hilarious. Still staring at kids and grinning. Gross.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...So the suspect died, and the case just stayed unsolved? Is that why there were no reports about how it ended?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So, which park is he at?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? Are you gonna go see him?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes... If possible, I'd like to talk to him.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yikes. I mean, I won't stop you, though.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"He kinda pops up at random parks, but the one he's at most is over... hmm...\""
+  },
+  {
+    "message": "(Launch the Maps app)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, nice, good thinking.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Let's see~... hm? Where was it again? We're here now, so...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, here. This park, the one with the swings. This is where I see him a lot.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"This place...? He wasn't there yesterday.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Well, he is kinda random. Try going there at night. You'll have a better chance of running into him.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Night? Got it... Thank you.\""
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're welcome~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, uh... you're actually going out of your way to meet a serial killer? You're kinda nuts, y'know that?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It seems I'm not just fixated on dying, but also on the cases themselves.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We don't know if he's really the culprit, and if we can speak with him, we might learn something.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, right. What does he look like? Any distinguishing features?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Features? Uh... I've never really looked that closely, but...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"How should I put it... some old guy? Yeah, some old dude with sharp eyes.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"A sharp-gazed older man... Got it. Thank you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Did you really get it? Whatever, I guess.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There's still some time before evening.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, right. I should put together my Death Diary entry while I can.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Death... Diary? Actually, never mind. I think I get it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Want to see?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I said no. Keep it to yourself!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, okay~. Anyway, it's time to print the photo. If you would.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, there it is.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Why are you even doing all that?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So I can stay as I am... I guess.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've already lost the 'me' I used to be. But if I keep writing down what I remember, I can at least preserve who I am right now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You could call it a measure to keep my memory loss in check.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ms. Librarian gave us the hint, and my buddy gave it to me as a present.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hmm... Hope you remember everything soon, Shiorin.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, I hope so too... Ah.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? What?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Should I start calling you Nagisa-san now?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, huh... Nah, just Gyaruko like always. I've gotten used to it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, I understand. Well then, Gyaruko-san, it's about time we left. Thank you for everything.\""
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep yep, see ya~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then... We still have some time before evening.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Shall we kill some time somewhere, or just wait at the park?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If there's still anything you need to do, we should handle it before heading to the park.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? You're back. What is it?\""
+  },
+  {
+    "message": "(Ask about Gyaruko-san)"
+  },
+  {
+    "message": "(Ask about the incident)"
+  },
+  {
+    "message": "(Ask about the culprit)"
+  },
+  {
+    "message": "(Thank her and leave)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Believe it or not, I'm actually from a good family.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Don'tcha think Nagisa sounds all elegant and stuff? No? ...Yeah, guess not.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But I kinda snapped and bounced to the opposite extreme.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But really though, why bother asking about me? I got nothing. I'm just your everyday gal.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Uh, you're asking the wrong gal... I mean, must've been rough, I guess?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I mean, yeah, I kinda wonder about myself as a person sometimes. But if I'm not into something, I just can't bring myself to care.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Dunno, ask that weird dude. If he really is the culprit, you'll probably get way more out of him than me.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe? Yeah, maybe. He's just, like, the likeliest suspect, that's all.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But you'll get it when you see him. He seriously looks like he'd do something like that.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"How do I put it... his smile? His eyes? The way he stares at kids, it's bad, man. Gives you chills.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So yeah, of course people were like, 'Yeah, he's gotta be the culprit.'\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Just go and see for yourself. You'll get what I mean, seriously.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you, Gyaruko-san. See you again.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep yep, g'luck~\""
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Apartment Building)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "message": "(Payphone)"
+  },
+  {
+    "message": "(Housing Complex)"
+  }
+]

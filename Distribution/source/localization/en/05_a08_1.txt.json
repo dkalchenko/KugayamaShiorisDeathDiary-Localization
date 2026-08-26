@@ -1,0 +1,464 @@
+[
+  {
+    "message": "\"Hello.\""
+  },
+  {
+    "message": "\"I'm back.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yo~, we're back~\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...You're back. If you're here for her, then you've wasted your trip. She hasn't been here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, figured. But we're here to ask about something else.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Something else?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"We kiiinda picked up something weird. Figured you'd know about it.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...A resonance?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? What?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Let me see it.\""
+  },
+  {
+    "message": "(Show her the mysterious object)"
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...As I thought. An OOPArt...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, looks like you do. So, d'you know what this is or something?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"It's said to be a tool used to carry out a certain ritual.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Did you just say 'ritual'...? Yikes, scary.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"If you're interested... there are five... no, four out there.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Gather them all, and come back here.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I'll teach you how to use the OOPArts, and about the ritual itself.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, I don't really care that much...\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Okay, someone's got stars in their eyes.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What about Shiorin, though...? But eh, if you wanna do it, it's fine, I guess...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...I'll wait here, though I won't get my hopes up. These aren't things you can easily find.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"But if you really were chosen by the will of the firmament, you might find them without much trouble.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Now go. There's nothing more for you here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Aye aye, see ya~\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "message": "\"We'll come again.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...May fortune be with you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"OOPArts, huh... Sounds kinda sketchy, but hey, if you wanna collect them, then go ahead.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, let's go.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You've even gathered all four... Incredible...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're getting, like, way too hyped about this... What are these, even?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Look.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I found this here, in the parking lot.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Now... would you lend me the four you found?\""
+  },
+  {
+    "message": "(Hand over the mysterious objects)"
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Thank you. Now that the five OOPArts have been brought together...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Behold, its true form.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"......\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Uh, what're you clamming up for? You're losing me here. Go on, we're waiting.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"This is said to be a tool used for a certain ritual.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"A ritual...? Yikes, scary.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Yes, to summon a higher being.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"What exactly is this higher being, or whether it truly appears at all, I don't know. I couldn't find any definitive information.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"However... *these* do exist. Objects that exude an aura unlike any ghost or aberration... anomalous presences known as OOPArts.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You found four, and I only one. The right to possess this... belongs to you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"If you intend to perform the ritual, I'll teach you how.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Otherwise, I'd like you to hand it over. I'll add it to my collection.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"That's it? You're not gonna do it yourself?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I am bound to this place, and the ritual cannot be done here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah... sure, okay.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"So what will you do? Perform the ritual, or hand the OOPArts over to me.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? What're you looking at me for? You decide, 'cause I don't care either way.\""
+  },
+  {
+    "message": "(Hand over the OOPArts)"
+  },
+  {
+    "message": "(Perform the ritual)"
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Thank you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Ehehehe... So the day has come when all five are gathered. I'd already given up on that ever happening...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"It's a shame I can't verify its authenticity, but I suppose leaving a mystery as a mystery isn't so bad.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Ehehehehehehehehe.........\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"That's... a unique laugh...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I thank you for handing over the OOPArts. I'll keep an eye out for your ghost.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Now go. This is no place to linger for long.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"'Kay, thanks~. Bye~\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "message": "\"See you again.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Goodbye.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Gehehehehehehehehe.........\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"She seemed really happy about it. Is it just me, or did we give up something really valuable?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Well... we still gotta find Shiorin, so whatever.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, time for our next stop.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Very well. Then it's yours now.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "You received the OOPArt."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I kinda wanna ask what we're doing about Shiorin, but eh, whatever.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So? How do we do this ritual?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Go somewhere with a clear view of the sky, a place as wide and open as possible. The time doesn't matter.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Place the OOPArt on the ground, spread your arms toward the sky, and recite the incantation.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Fear and revere the firmament.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"The stars turn, an endless cycle.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Submit to the cosmic order.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"The cosmos abides within the firmament.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...That is all.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Did you memorize all that? 'Cause I didn't.\""
+  },
+  {
+    "message": "\"Yup.\""
+  },
+  {
+    "message": "\"Again.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Fear and revere the firmament.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"The stars turn, an endless cycle.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Submit to the cosmic order.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"The cosmos abides within the firmament.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...How many times do I have to say it? You remember it already, don't you?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're totally the type who keeps picking the wrong answer on purpose in video games, aren't you?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Just know that even I don't know what will happen. You have been warned. Be very careful.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"And one more thing. I'd like you to report back once you've finished the ritual. Any time is fine.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, roger~\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...That is all, truly this time. Now go, the darkness is already upon you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"The... darkness? Mm'kay, bye~\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "message": "\"See you again.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...May fortune shine upon your journey.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"A ritual, huh... Sounds sketchy as hell, if you ask me, but...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, if you wanna do it, why not? What was it for again? To make something show up? Kinda got me curious.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What was it again, a wide place where you can see the sky? The park might work. Y'know, the one near our usual convenience store.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But eh, it's up to you if we'll do it or not.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, let's hit our next stop.\""
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Crosswalk)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "message": "(Payphone)"
+  }
+]

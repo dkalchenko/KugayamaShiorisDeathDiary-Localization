@@ -1,0 +1,1254 @@
+//! Kirikiri Script File (.ks)
+use crate::ext::fancy_regex::*;
+use crate::scripts::base::*;
+use crate::types::*;
+use crate::utils::encoding::*;
+use crate::utils::escape::*;
+use anyhow::Result;
+use fancy_regex::Regex;
+use std::collections::BTreeSet;
+use std::collections::HashSet;
+use std::io::Write;
+use std::ops::{Deref, DerefMut, Index, IndexMut};
+use std::sync::Arc;
+
+#[derive(Debug)]
+/// Kirikiri Script Builder
+pub struct KsBuilder {}
+
+impl KsBuilder {
+    /// Creates a new instance of `KsBuilder`
+    pub fn new() -> Self {
+        Self {}
+    }
+}
+
+impl ScriptBuilder for KsBuilder {
+    fn default_encoding(&self) -> Encoding {
+        Encoding::Cp932
+    }
+
+    fn build_script(
+        &self,
+        buf: Vec<u8>,
+        _filename: &str,
+        encoding: Encoding,
+        _archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync>> {
+        Ok(Box::new(KsScript::new(buf, encoding, config)?))
+    }
+
+    fn extensions(&self) -> &'static [&'static str] {
+        &["ks", "soc"]
+    }
+
+    fn script_type(&self) -> &'static ScriptType {
+        &ScriptType::Kirikiri
+    }
+}
+
+/// Kirikiri Script Node Trait
+pub trait Node {
+    /// Serializes the node to ks format
+    fn serialize(&self) -> String;
+}
+
+#[derive(Clone, Debug)]
+/// Comment Node
+pub struct CommentNode(pub String);
+
+impl Node for CommentNode {
+    fn serialize(&self) -> String {
+        format!("; {}", self.0)
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Label Node
+pub struct LabelNode {
+    /// The name of the label
+    pub name: String,
+    /// The page of the label
+    pub page: Option<String>,
+}
+
+impl Node for LabelNode {
+    fn serialize(&self) -> String {
+        if let Some(page) = &self.page {
+            format!("*{}|{}", self.name, page)
+        } else {
+            format!("*{}", self.name)
+        }
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Text Node
+pub struct TextNode(pub String);
+
+impl Node for TextNode {
+    fn serialize(&self) -> String {
+        // In KAG, [ is escaped as [[
+        self.0.replace("[", "[[")
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Empty Line Node
+pub struct EmptyLineNode;
+
+impl Node for EmptyLineNode {
+    fn serialize(&self) -> String {
+        String::new()
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Represents a tag attribute's value
+pub enum TagAttr {
+    /// true if no value is specified
+    True,
+    /// String value of the attribute
+    Str(String),
+}
+
+#[derive(Clone, Debug)]
+/// Tag Node
+pub struct TagNode {
+    /// The name of the tag
+    pub name: String,
+    /// The attributes of the tag
+    pub attributes: Vec<(String, TagAttr)>,
+}
+
+impl TagNode {
+    fn serialize_attributes(&self) -> String {
+        let mut parts = Vec::new();
+        for (key, value) in self.attributes.iter() {
+            match value {
+                TagAttr::True => {
+                    parts.push(key.clone());
+                }
+                TagAttr::Str(val) => {
+                    if val.contains(" ") || val.contains("=") {
+                        parts.push(format!("{}=\"{}\"", key, val));
+                    } else {
+                        parts.push(format!("{}={}", key, val));
+                    }
+                }
+            }
+        }
+        parts.join(" ")
+    }
+
+    fn ser_attributes_xml(&self) -> String {
+        let mut parts = Vec::new();
+        for (key, value) in self.attributes.iter() {
+            match value {
+                TagAttr::True => {
+                    parts.push(key.clone());
+                }
+                TagAttr::Str(val) => {
+                    parts.push(format!("{}=\"{}\"", key, escape_xml_attr_value(val)));
+                }
+            }
+        }
+        parts.join(" ")
+    }
+
+    /// Sets an attribute for the tag, replacing it if it already exists.
+    pub fn set_attr(&mut self, key: &str, value: String) {
+        if let Some(attr) = self.attributes.iter_mut().find(|(k, _)| k == key) {
+            attr.1 = TagAttr::Str(value);
+        } else {
+            self.attributes.push((key.to_string(), TagAttr::Str(value)));
+        }
+    }
+
+    /// Get an attribute for the tag
+    pub fn get_attr(&self, key: &str) -> Option<&TagAttr> {
+        self.attributes
+            .iter()
+            .find(|(k, _)| k == key)
+            .map(|(_, v)| v)
+    }
+
+    fn to_xml_tag(&self) -> String {
+        let attr_str = self.ser_attributes_xml();
+        if attr_str.is_empty() {
+            format!("<{}>", self.name)
+        } else {
+            format!("<{} {}>", self.name, attr_str)
+        }
+    }
+}
+
+impl Node for TagNode {
+    fn serialize(&self) -> String {
+        let attr_str = self.serialize_attributes();
+        if attr_str.is_empty() {
+            format!("[{}]", self.name)
+        } else {
+            format!("[{} {}]", self.name, attr_str)
+        }
+    }
+}
+
+#[derive(Clone)]
+/// Command Node
+pub struct CommandNode {
+    /// Same as TagNode, but used for commands
+    pub inner: TagNode,
+}
+
+impl Deref for CommandNode {
+    type Target = TagNode;
+
+    fn deref(&self) -> &Self::Target {
+        &self.inner
+    }
+}
+
+impl DerefMut for CommandNode {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.inner
+    }
+}
+
+impl std::fmt::Debug for CommandNode {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("CommandNode")
+            .field("name", &self.inner.name)
+            .field("attributes", &self.inner.attributes)
+            .finish()
+    }
+}
+
+impl Node for CommandNode {
+    fn serialize(&self) -> String {
+        let attr_str = self.inner.serialize_attributes();
+        if attr_str.is_empty() {
+            format!("@{}", self.inner.name)
+        } else {
+            format!("@{} {}", self.inner.name, attr_str)
+        }
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Script Block Node
+pub struct ScriptBlockNode(pub String);
+
+impl Node for ScriptBlockNode {
+    fn serialize(&self) -> String {
+        format!("[iscript]\n{}\n[endscript]", self.0)
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Parsed Line Node
+pub enum ParsedLineNode {
+    /// Text node containing plain text
+    Text(TextNode),
+    /// Tag node
+    Tag(TagNode),
+}
+
+impl ParsedLineNode {
+    fn to_xml(&self) -> String {
+        match self {
+            ParsedLineNode::Text(text_node) => escape_xml_text_value(&text_node.0),
+            ParsedLineNode::Tag(tag_node) => {
+                if tag_node.name == "r" && tag_node.attributes.is_empty() {
+                    "\n".to_string()
+                } else {
+                    tag_node.to_xml_tag()
+                }
+            }
+        }
+    }
+
+    fn is_np(&self) -> bool {
+        matches!(self, ParsedLineNode::Tag(tag) if tag.name == "np")
+    }
+
+    fn is_tag(&self, name: &str) -> bool {
+        matches!(self, ParsedLineNode::Tag(tag) if tag.name == name)
+    }
+
+    fn set_attr(&mut self, key: &str, value: String) {
+        if let ParsedLineNode::Tag(tag) = self {
+            tag.set_attr(key, value);
+        }
+    }
+}
+
+impl Node for ParsedLineNode {
+    fn serialize(&self) -> String {
+        match self {
+            ParsedLineNode::Text(text_node) => text_node.serialize(),
+            ParsedLineNode::Tag(tag_node) => tag_node.serialize(),
+        }
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Parsed Line
+pub struct ParsedLine(pub Vec<ParsedLineNode>);
+
+impl ParsedLine {
+    fn to_xml(&self) -> String {
+        let mut s = String::new();
+        for node in &self.0 {
+            s.push_str(&node.to_xml());
+        }
+        s
+    }
+}
+
+impl Deref for ParsedLine {
+    type Target = Vec<ParsedLineNode>;
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+
+impl DerefMut for ParsedLine {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+
+impl Node for ParsedLine {
+    fn serialize(&self) -> String {
+        self.0
+            .iter()
+            .map(|node| node.serialize())
+            .collect::<Vec<_>>()
+            .join("")
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Parsed Script Node
+pub enum ParsedScriptNode {
+    /// Comment node
+    Comment(CommentNode),
+    /// Label node
+    Label(LabelNode),
+    /// Command node
+    Command(CommandNode),
+    /// Script block node
+    ScriptBlock(ScriptBlockNode),
+    /// Line
+    Line(ParsedLine),
+    /// Empty line node
+    EmptyLine(EmptyLineNode),
+}
+
+impl ParsedScriptNode {
+    /// Returns true if the node is empty line node
+    pub fn is_empty(&self) -> bool {
+        matches!(self, ParsedScriptNode::EmptyLine(_))
+    }
+
+    /// Sets an attribute for the command node, replacing it if it already exists.
+    pub fn set_attr(&mut self, key: &str, value: String) {
+        if let ParsedScriptNode::Command(command) = self {
+            command.set_attr(key, value);
+        }
+    }
+}
+
+impl Node for ParsedScriptNode {
+    fn serialize(&self) -> String {
+        match self {
+            ParsedScriptNode::Comment(comment) => comment.serialize(),
+            ParsedScriptNode::Label(label) => label.serialize(),
+            ParsedScriptNode::Command(command) => command.serialize(),
+            ParsedScriptNode::ScriptBlock(script_block) => script_block.serialize(),
+            ParsedScriptNode::Line(line) => line.serialize(),
+            ParsedScriptNode::EmptyLine(empty_line) => empty_line.serialize(),
+        }
+    }
+}
+
+#[derive(Clone, Debug)]
+/// Parsed ks script
+pub struct ParsedScript(pub Vec<ParsedScriptNode>);
+
+impl Deref for ParsedScript {
+    type Target = Vec<ParsedScriptNode>;
+
+    fn deref(&self) -> &Self::Target {
+        &self.0
+    }
+}
+
+impl DerefMut for ParsedScript {
+    fn deref_mut(&mut self) -> &mut Self::Target {
+        &mut self.0
+    }
+}
+
+impl Index<usize> for ParsedScript {
+    type Output = ParsedScriptNode;
+
+    fn index(&self, index: usize) -> &Self::Output {
+        &self.0[index]
+    }
+}
+
+impl IndexMut<usize> for ParsedScript {
+    fn index_mut(&mut self, index: usize) -> &mut Self::Output {
+        if index < self.0.len() {
+            &mut self.0[index]
+        } else {
+            self.0.push(ParsedScriptNode::EmptyLine(EmptyLineNode));
+            self.0.last_mut().unwrap()
+        }
+    }
+}
+
+impl Node for ParsedScript {
+    fn serialize(&self) -> String {
+        self.0
+            .iter()
+            .map(|node| node.serialize())
+            .collect::<Vec<_>>()
+            .join("\n")
+    }
+}
+
+lazy_static::lazy_static! {
+    static ref LINE_SPLIT_RE: Regex = Regex::new(r"(\[.*?\])").unwrap();
+    static ref ATTR_RE: Regex = Regex::new("([a-zA-Z0-9_]+)(?:=(\"[^\"]*\"|'[^']*'|[^\\s\\]]+))?").unwrap();
+}
+
+/// Parser for Kirikiri Script (.ks)
+pub struct Parser {
+    lines: Vec<String>,
+}
+
+impl Parser {
+    /// Creates a new parser for the given script
+    ///
+    /// * `script` - The script to parse
+    pub fn new(script: &str) -> Self {
+        let lines = script.lines().map(|s| s.to_string()).collect();
+        Self { lines }
+    }
+
+    fn parse_attributes(attr_str: &str) -> Result<Vec<(String, TagAttr)>> {
+        let mut attributes = Vec::new();
+        for cap in ATTR_RE.captures_iter(attr_str) {
+            let cap = cap?;
+            let key = cap
+                .get(1)
+                .ok_or(anyhow::anyhow!("Invalid attribute key"))?
+                .as_str()
+                .to_string();
+            let value = cap
+                .get(2)
+                .map(|v| {
+                    let mut s = v.as_str().trim().to_string();
+                    if s.starts_with("\"") && s.ends_with("\"") {
+                        s = s[1..s.len() - 1].to_string();
+                    } else if s.starts_with("'") && s.ends_with("'") {
+                        s = s[1..s.len() - 1].to_string();
+                    }
+                    s = s.replace("`", "");
+                    TagAttr::Str(s)
+                })
+                .unwrap_or(TagAttr::True);
+            attributes.push((key, value));
+        }
+        Ok(attributes)
+    }
+
+    fn parse_tag_or_command(content: &str) -> Result<TagNode> {
+        let parts = content.trim().split_ascii_whitespace().collect::<Vec<_>>();
+        let tag_name = parts[0].to_string();
+        let attr_string = parts[1..].join(" ");
+        let attrs = Self::parse_attributes(&attr_string)?;
+        Ok(TagNode {
+            name: tag_name,
+            attributes: attrs,
+        })
+    }
+
+    /// Parses the script and returns a `ParsedScript`
+    ///
+    /// * `preserve_empty_lines` - If true, empty lines will be preserved in the parsed script
+    pub fn parse(&self, preserve_empty_lines: bool) -> Result<ParsedScript> {
+        let mut parsed_scripts = Vec::new();
+        let mut in_script_block = false;
+        let mut script_buffer = Vec::new();
+        let mut i = 0;
+        let line_count = self.lines.len();
+        while i < line_count {
+            let line = self.lines[i].trim();
+            i += 1;
+            if line.is_empty() {
+                if preserve_empty_lines {
+                    parsed_scripts.push(ParsedScriptNode::EmptyLine(EmptyLineNode));
+                } else {
+                    continue;
+                }
+            }
+            if in_script_block {
+                if line == "[endscript]" {
+                    in_script_block = false;
+                    parsed_scripts.push(ParsedScriptNode::ScriptBlock(ScriptBlockNode(
+                        script_buffer.join("\n"),
+                    )));
+                    script_buffer.clear();
+                } else {
+                    script_buffer.push(line.to_string());
+                }
+                continue;
+            }
+            if line == "[iscript]" {
+                in_script_block = true;
+                continue;
+            }
+            if line.starts_with(";") {
+                parsed_scripts.push(ParsedScriptNode::Comment(CommentNode(
+                    line[1..].trim().to_string(),
+                )));
+                continue;
+            }
+            if line.starts_with("*") {
+                let parts: Vec<&str> = line.split('|').collect();
+                let label_name = parts[0][1..].trim().to_string();
+                let page = if parts.len() > 1 {
+                    Some(parts[1..].join("|"))
+                } else {
+                    None
+                };
+                parsed_scripts.push(ParsedScriptNode::Label(LabelNode {
+                    name: label_name,
+                    page,
+                }));
+                continue;
+            }
+            if line.starts_with("@") {
+                let content = &line[1..];
+                let tag_node = Self::parse_tag_or_command(content)?;
+                parsed_scripts.push(ParsedScriptNode::Command(CommandNode { inner: tag_node }));
+                continue;
+            }
+            let mut full_line = line.to_string();
+            while full_line.ends_with("\\") {
+                full_line.pop(); // Remove the trailing backslash
+                full_line = full_line.trim_end().to_string();
+                if i < line_count {
+                    full_line.push(' ');
+                    full_line.push_str(&self.lines[i].trim());
+                    i += 1;
+                } else {
+                    break; // No more lines to append
+                }
+            }
+            let mut parsed_line_nodes = Vec::new();
+            for part in LINE_SPLIT_RE.py_split(&full_line)? {
+                let part = part.trim();
+                if part.is_empty() {
+                    continue;
+                }
+                if part.starts_with("[") && part.ends_with("]") {
+                    if part == "[[r]]" {
+                        parsed_line_nodes.push(ParsedLineNode::Text(TextNode("[r]".to_string())));
+                    } else if part == "[[[[" {
+                        parsed_line_nodes.push(ParsedLineNode::Text(TextNode("[[".to_string())));
+                    } else if part.starts_with("[[") {
+                        parsed_line_nodes
+                            .push(ParsedLineNode::Text(TextNode(part[1..].to_string())))
+                    } else {
+                        parsed_line_nodes.push(ParsedLineNode::Tag(Self::parse_tag_or_command(
+                            &part[1..part.len() - 1],
+                        )?));
+                    }
+                } else {
+                    parsed_line_nodes.push(ParsedLineNode::Text(TextNode(part.to_string())));
+                }
+            }
+            if !parsed_line_nodes.is_empty() {
+                parsed_scripts.push(ParsedScriptNode::Line(ParsedLine(parsed_line_nodes)));
+            }
+        }
+        Ok(ParsedScript(parsed_scripts))
+    }
+}
+
+struct XMLTextParser {
+    str: String,
+    pos: usize,
+    lf: String,
+    no_np: bool,
+}
+
+impl XMLTextParser {
+    pub fn new(text: &str, lf: Option<String>) -> Self {
+        let lf = lf.unwrap_or_else(|| String::from("<r>"));
+        Self {
+            str: text.replace("\n", &lf),
+            pos: 0,
+            lf,
+            no_np: false,
+        }
+    }
+
+    fn no_np(mut self) -> Self {
+        self.no_np = true;
+        self
+    }
+
+    fn parse_tag(&mut self) -> Result<TagNode> {
+        let mut name = String::new();
+        let mut attributes = Vec::new();
+        let mut is_name = true;
+        let mut is_key = false;
+        let mut is_value = false;
+        let mut is_in_quote = false;
+        let mut key = String::new();
+        let mut value = String::new();
+        while let Some(c) = self.next() {
+            match c {
+                '>' => {
+                    if !name.is_empty() {
+                        return Ok(TagNode { name, attributes });
+                    } else {
+                        return Err(anyhow::anyhow!("Empty tag name"));
+                    }
+                }
+                ' ' | '\t' => {
+                    if is_name {
+                        is_name = false;
+                        is_key = true;
+                    } else if is_key {
+                        if !key.is_empty() {
+                            attributes.push((key.clone(), TagAttr::True));
+                            key.clear();
+                        }
+                    } else if is_value {
+                        if is_in_quote {
+                            value.push(c);
+                        } else {
+                            if !value.is_empty() {
+                                attributes.push((key.clone(), TagAttr::Str(unescape_xml(&value))));
+                                key.clear();
+                                value.clear();
+                            }
+                            is_key = true;
+                            is_value = false;
+                        }
+                    }
+                }
+                '"' => {
+                    if is_in_quote {
+                        is_in_quote = false;
+                        if !value.is_empty() {
+                            attributes.push((key.clone(), TagAttr::Str(unescape_xml(&value))));
+                            key.clear();
+                            value.clear();
+                        }
+                        is_key = true;
+                    } else {
+                        is_in_quote = true;
+                    }
+                }
+                '=' => {
+                    if is_key {
+                        is_key = false;
+                        is_value = true;
+                    }
+                }
+                _ => {
+                    if is_name {
+                        name.push(c);
+                    } else if is_key {
+                        key.push(c);
+                    } else if is_value {
+                        value.push(c);
+                    } else {
+                        return Err(anyhow::anyhow!("Unexpected character in tag: {}", c));
+                    }
+                }
+            }
+        }
+        Err(anyhow::anyhow!("Unexpected end of input while parsing tag"))
+    }
+
+    pub fn parse(mut self) -> Result<Vec<ParsedLine>> {
+        let mut lines = Vec::new();
+        let mut current_line = Vec::new();
+        let mut text = String::new();
+        while let Some(c) = self.next() {
+            match c {
+                '<' => {
+                    if !text.is_empty() {
+                        current_line.push(ParsedLineNode::Text(TextNode(unescape_xml(&text))));
+                        text.clear();
+                    }
+                    let tag = self.parse_tag()?;
+                    let is_r = tag.name == "r";
+                    current_line.push(ParsedLineNode::Tag(tag));
+                    if is_r {
+                        lines.push(ParsedLine(current_line));
+                        current_line = Vec::new();
+                    }
+                }
+                _ => {
+                    text.push(c);
+                    if text.ends_with(&self.lf) {
+                        if !text.is_empty() {
+                            current_line.push(ParsedLineNode::Text(TextNode(unescape_xml(&text))));
+                            text.clear();
+                        }
+                        lines.push(ParsedLine(current_line));
+                        current_line = Vec::new();
+                    }
+                }
+            }
+        }
+        if !text.is_empty() {
+            current_line.push(ParsedLineNode::Text(TextNode(unescape_xml(&text))));
+        }
+        if !self.no_np {
+            current_line.push(ParsedLineNode::Tag(TagNode {
+                name: "np".to_string(),
+                attributes: Vec::new(),
+            }));
+        }
+        lines.push(ParsedLine(current_line));
+        Ok(lines)
+    }
+
+    fn next(&mut self) -> Option<char> {
+        if self.pos < self.str.len() {
+            let c = self.str[self.pos..].chars().next()?;
+            self.pos += c.len_utf8();
+            Some(c)
+        } else {
+            None
+        }
+    }
+}
+
+#[derive(Debug)]
+/// Kirikiri Script
+pub struct KsScript {
+    bom: BomType,
+    tree: ParsedScript,
+    name_commands: Arc<HashSet<String>>,
+    message_commands: Arc<HashSet<String>>,
+    remove_empty_lines: bool,
+    hitret: bool,
+    lf: Option<String>,
+    message_tags: Arc<HashSet<String>>,
+}
+
+impl KsScript {
+    /// Creates a new `KsScript` from the given reader and encoding
+    ///
+    /// * `reader` - The reader containing the script data
+    /// * `encoding` - The encoding of the script
+    /// * `config` - Extra configuration options
+    pub fn new(reader: Vec<u8>, encoding: Encoding, config: &ExtraConfig) -> Result<Self> {
+        let (text, bom) = decode_with_bom_detect(encoding, &reader, true)?;
+        let parser = Parser::new(&text);
+        let tree = parser.parse(!config.kirikiri_remove_empty_lines)?;
+        let hitret = if let Some(hitret) = config.kirikiri_ks_hitret {
+            hitret
+        } else {
+            let mut talk_count = 0u64;
+            let mut hitret_count = 0u64;
+            for node in tree.iter() {
+                match node {
+                    ParsedScriptNode::Line(line) => {
+                        for node in line.iter() {
+                            if let ParsedLineNode::Tag(node) = node {
+                                if node.name == "Talk" {
+                                    talk_count += 1;
+                                } else if node.name == "Hitret" {
+                                    hitret_count += 1;
+                                }
+                            }
+                        }
+                    }
+                    _ => {}
+                }
+            }
+            talk_count == hitret_count && talk_count > 3
+        };
+        Ok(Self {
+            bom: config.kirikiri_ks_bom.unwrap_or(bom),
+            tree,
+            name_commands: config.kirikiri_name_commands.clone(),
+            message_commands: config.kirikiri_message_commands.clone(),
+            remove_empty_lines: config.kirikiri_remove_empty_lines,
+            hitret,
+            lf: config.kirikiri_ks_lf.clone(),
+            message_tags: config.kirikiri_message_tags.clone(),
+        })
+    }
+}
+
+impl Script for KsScript {
+    fn default_output_script_type(&self) -> OutputScriptType {
+        OutputScriptType::Json
+    }
+
+    fn default_format_type(&self) -> FormatOptions {
+        FormatOptions::None
+    }
+
+    fn extract_messages(&self) -> Result<Vec<Message>> {
+        let mut messages = Vec::new();
+        let mut name = None;
+        let mut message = String::new();
+        if self.hitret {
+            for obj in self.tree.iter() {
+                match obj {
+                    ParsedScriptNode::Line(line) => {
+                        for node in line.iter() {
+                            if node.is_tag("Talk") {
+                                if let ParsedLineNode::Tag(tag) = &node {
+                                    if let Some(attr) = tag.get_attr("name") {
+                                        if let TagAttr::Str(s) = attr {
+                                            name = Some(s.to_string());
+                                        }
+                                    }
+                                    if name.is_none() {
+                                        for attr in &tag.attributes {
+                                            if let TagAttr::Str(value) = &attr.1 {
+                                                if !value.is_empty() && !value.is_ascii() {
+                                                    name = Some(value.clone());
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    if name.is_none() {
+                                        anyhow::bail!("name not found for Talk command");
+                                    }
+                                    continue;
+                                }
+                            } else if node.is_tag("Hitret") {
+                                if let Some(lf) = self.lf.as_ref() {
+                                    message = message.replace(lf, "\n");
+                                }
+                                messages.push(Message {
+                                    name: if name.as_ref().is_some_and(|name| name == "心の声") {
+                                        None
+                                    } else {
+                                        name.clone()
+                                    },
+                                    message: message.trim_end_matches("<np>").to_owned(),
+                                });
+                                message.clear();
+                                name = None;
+                                continue;
+                            } else if let ParsedLineNode::Tag(tag) = &node {
+                                if self.message_tags.contains(&tag.name) {
+                                    for attr in &tag.attributes {
+                                        if let TagAttr::Str(value) = &attr.1 {
+                                            if !value.is_empty() && !value.is_ascii() {
+                                                messages.push(Message {
+                                                    name: None,
+                                                    message: value.clone(),
+                                                });
+                                                break;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            if name.is_some() {
+                                message.push_str(&node.to_xml());
+                            }
+                        }
+                    }
+                    _ => {}
+                }
+            }
+            return Ok(messages);
+        }
+        for obj in self.tree.iter() {
+            match obj {
+                ParsedScriptNode::Label(_) => {
+                    if !message.is_empty() {
+                        if let Some(lf) = self.lf.as_ref() {
+                            message = message.replace(lf, "\n");
+                        }
+                        messages.push(Message {
+                            name: name.clone(),
+                            message: message.trim_end_matches("<np>").to_owned(),
+                        });
+                        message.clear();
+                        name = None;
+                    }
+                }
+                ParsedScriptNode::Line(line) => {
+                    if !message.ends_with("<np>") {
+                        message.push_str(&line.to_xml())
+                    }
+                }
+                ParsedScriptNode::Command(cmd) => {
+                    if self.name_commands.contains(&cmd.name) {
+                        for attr in &cmd.attributes {
+                            if let TagAttr::Str(value) = &attr.1 {
+                                if !value.is_empty() && !value.is_ascii() {
+                                    name = Some(value.clone());
+                                    break; // Only take the first name found
+                                }
+                            }
+                        }
+                    } else if self.message_commands.contains(&cmd.name) {
+                        for attr in &cmd.attributes {
+                            if let TagAttr::Str(value) = &attr.1 {
+                                if !value.is_empty() && !value.is_ascii() {
+                                    messages.push(Message {
+                                        name: None,
+                                        message: value.clone(),
+                                    });
+                                    break; // Only take the first message found
+                                }
+                            }
+                        }
+                    }
+                }
+                _ => {}
+            }
+        }
+        if !message.is_empty() {
+            if let Some(lf) = self.lf.as_ref() {
+                message = message.replace(lf, "\n");
+            }
+            messages.push(Message {
+                name,
+                message: message.trim_end_matches("<np>").to_owned(),
+            });
+        }
+        Ok(messages)
+    }
+
+    fn import_messages<'a>(
+        &'a self,
+        messages: Vec<Message>,
+        mut file: Box<dyn WriteSeek + 'a>,
+        _filename: &str,
+        encoding: Encoding,
+        replacement: Option<&'a ReplacementTable>,
+    ) -> Result<()> {
+        let mut mes = messages.iter();
+        let mut cur_mes = None;
+        let mut tree = self.tree.clone();
+        let mut i = 0;
+        if self.hitret {
+            let mut name_tag_loc = None;
+            let mut message_blocks = Vec::new();
+            let mut in_block = false;
+            cur_mes = mes.next();
+            while i < tree.len() {
+                match tree[i].clone() {
+                    ParsedScriptNode::Line(line) => {
+                        let mut j = 0;
+                        while j < line.len() {
+                            let node = line[j].clone();
+                            if node.is_tag("Talk") {
+                                if let ParsedLineNode::Tag(tag) = &node {
+                                    if let Some(attr) = tag.get_attr("name") {
+                                        if let TagAttr::Str(_) = attr {
+                                            name_tag_loc = Some((i, j, "name".to_string()));
+                                        }
+                                    }
+                                    if name_tag_loc.is_none() {
+                                        for attr in &tag.attributes {
+                                            if let TagAttr::Str(value) = &attr.1 {
+                                                if !value.is_empty() && !value.is_ascii() {
+                                                    name_tag_loc = Some((i, j, attr.0.clone()));
+                                                    break;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                in_block = true;
+                                j += 1;
+                                continue;
+                            } else if node.is_tag("Hitret") {
+                                in_block = false;
+                                let m = cur_mes
+                                    .take()
+                                    .ok_or(anyhow::anyhow!("Not enough messages"))?;
+                                let (x, y, key) = name_tag_loc.take().ok_or(anyhow::anyhow!(
+                                    "Name tag not found for Talk command"
+                                ))?;
+                                let mut name =
+                                    m.name.clone().unwrap_or_else(|| "心の声".to_string());
+                                if let Some(replacement) = replacement {
+                                    for (key, value) in replacement.map.iter() {
+                                        name = name.replace(key, value);
+                                    }
+                                }
+                                let mut li = &mut tree[x];
+                                if let ParsedScriptNode::Line(line) = &mut li {
+                                    line[y].set_attr(&key, name);
+                                }
+                                let mut text = m.message.clone();
+                                if let Some(replacement) = replacement {
+                                    for (key, value) in replacement.map.iter() {
+                                        text = text.replace(key, value);
+                                    }
+                                }
+                                cur_mes = mes.next();
+                                let mut mess =
+                                    XMLTextParser::new(&text, self.lf.clone()).no_np().parse()?;
+                                let first_line_len = mess[0].len();
+                                let line_indexs =
+                                    BTreeSet::from_iter(message_blocks.iter().map(|(i, _)| *i));
+                                let (start_x, start_y) =
+                                    message_blocks.first().cloned().unwrap_or((i, j));
+                                let (end_x, end_y) =
+                                    message_blocks.last().cloned().unwrap_or((x, y));
+                                {
+                                    let li = &mut mess[0];
+                                    let source_line = &tree[start_x];
+                                    let source_line = match source_line {
+                                        ParsedScriptNode::Line(line) => line,
+                                        _ => return Err(anyhow::anyhow!("Expected line node")),
+                                    };
+                                    for z in 0..start_y {
+                                        li.insert(z, source_line[z].clone());
+                                    }
+                                }
+                                {
+                                    let loc = mess.len() - 1;
+                                    let li = &mut mess[loc];
+                                    let source_line = &tree[end_x];
+                                    let source_line = match source_line {
+                                        ParsedScriptNode::Line(line) => line,
+                                        _ => return Err(anyhow::anyhow!("Expected line node")),
+                                    };
+                                    for z in end_y + 1..source_line.len() {
+                                        li.push(source_line[z].clone());
+                                    }
+                                }
+                                let diff = mess.len() as isize - line_indexs.len() as isize;
+                                let common_lines = line_indexs.len().min(mess.len());
+                                let mut last_index = end_x;
+                                let message_lines = Vec::from_iter(line_indexs.iter().cloned());
+                                for z in 0..common_lines {
+                                    tree[message_lines[z]] =
+                                        ParsedScriptNode::Line(mess[z].clone());
+                                }
+                                for z in common_lines..message_lines.len() {
+                                    tree.remove(message_lines[z] - (z - common_lines));
+                                }
+                                for z in common_lines..mess.len() {
+                                    let new_line = ParsedScriptNode::Line(mess[z].clone());
+                                    if last_index < tree.len() {
+                                        tree.insert(last_index + 1, new_line);
+                                        last_index += 1;
+                                    } else {
+                                        tree.push(new_line);
+                                    }
+                                }
+                                i = (i as isize + diff) as usize;
+                                j = start_y + first_line_len + 2;
+                                message_blocks.clear();
+                                continue;
+                            } else if let ParsedLineNode::Tag(tag) = &node {
+                                if self.message_tags.contains(&tag.name) {
+                                    for attr in &tag.attributes {
+                                        if let TagAttr::Str(value) = &attr.1 {
+                                            if !value.is_empty() && !value.is_ascii() {
+                                                let m = cur_mes.take().ok_or(anyhow::anyhow!(
+                                                    "No enough messages."
+                                                ))?;
+                                                cur_mes = mes.next();
+                                                let mut text = m.message.clone();
+                                                if let Some(replacement) = replacement {
+                                                    for (key, value) in replacement.map.iter() {
+                                                        text = text.replace(key, value);
+                                                    }
+                                                }
+                                                let li = &mut tree[i];
+                                                if let ParsedScriptNode::Line(line) = li {
+                                                    line[j].set_attr(&attr.0, text);
+                                                }
+                                                j += 1;
+                                                continue;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            if in_block {
+                                message_blocks.push((i, j));
+                            }
+                            j += 1;
+                        }
+                    }
+                    _ => {}
+                }
+                i += 1;
+            }
+        } else {
+            let mut is_end = false;
+            let mut name_command_block_line: Option<(usize, String)> = None;
+            let mut message_lines = Vec::new();
+            while i < tree.len() {
+                match tree[i].clone() {
+                    ParsedScriptNode::Label(_) => {
+                        if !message_lines.is_empty() {
+                            let m: &Message = cur_mes
+                                .take()
+                                .ok_or(anyhow::anyhow!("Not enough messages"))?;
+                            if let Some((line, key)) = name_command_block_line.take() {
+                                let name = m
+                                    .name
+                                    .as_ref()
+                                    .ok_or(anyhow::anyhow!("Name not found in message"))?;
+                                let mut name = name.clone();
+                                if let Some(replacement) = replacement {
+                                    for (key, value) in replacement.map.iter() {
+                                        name = name.replace(key, value);
+                                    }
+                                }
+                                tree[line].set_attr(&key, name);
+                            }
+                            let mut text = m.message.to_owned();
+                            if let Some(replacement) = replacement {
+                                for (key, value) in replacement.map.iter() {
+                                    text = text.replace(key, value);
+                                }
+                            }
+                            let mess = XMLTextParser::new(&text, self.lf.clone()).parse()?;
+                            let diff = mess.len() as isize - message_lines.len() as isize;
+                            let common_lines = message_lines.len().min(mess.len());
+                            let mut last_index = message_lines.last().cloned().unwrap_or(0);
+                            for j in 0..common_lines {
+                                tree[message_lines[j]] = ParsedScriptNode::Line(mess[j].clone());
+                            }
+                            for j in common_lines..message_lines.len() {
+                                tree.remove(message_lines[j] - (j - common_lines));
+                            }
+                            for i in common_lines..mess.len() {
+                                let new_line = ParsedScriptNode::Line(mess[i].clone());
+                                if last_index < tree.len() {
+                                    tree.insert(last_index + 1, new_line);
+                                    last_index += 1;
+                                } else {
+                                    tree.push(new_line);
+                                }
+                            }
+                            i = (i as isize + diff) as usize;
+                        }
+                        message_lines.clear();
+                        is_end = false;
+                        if cur_mes.is_none() {
+                            cur_mes = mes.next();
+                        }
+                    }
+                    ParsedScriptNode::Line(line) => {
+                        if !is_end {
+                            message_lines.push(i);
+                            is_end = line.last().map(|e| e.is_np()).unwrap_or(false);
+                        }
+                    }
+                    ParsedScriptNode::Command(cmd) => {
+                        if self.name_commands.contains(&cmd.name) {
+                            for attr in &cmd.attributes {
+                                if let TagAttr::Str(value) = &attr.1 {
+                                    if !value.is_empty() && !value.is_ascii() {
+                                        name_command_block_line = Some((i, attr.0.clone()));
+                                        break; // Only update the first name found
+                                    }
+                                }
+                            }
+                        } else if self.message_commands.contains(&cmd.name) {
+                            for attr in &cmd.attributes {
+                                if let TagAttr::Str(value) = &attr.1 {
+                                    if !value.is_empty() && !value.is_ascii() {
+                                        let m = cur_mes
+                                            .take()
+                                            .ok_or(anyhow::anyhow!("Not enough messages"))?;
+                                        let mut text = m.message.clone();
+                                        if let Some(replacement) = replacement {
+                                            for (key, value) in replacement.map.iter() {
+                                                text = text.replace(key, value);
+                                            }
+                                        }
+                                        tree[i].set_attr(&attr.0, text);
+                                        cur_mes = mes.next();
+                                        break; // Only update the first message found
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    _ => {}
+                }
+                i += 1;
+            }
+            if !message_lines.is_empty() {
+                let m: &Message = cur_mes
+                    .take()
+                    .ok_or(anyhow::anyhow!("Not enough messages"))?;
+                if let Some((line, key)) = name_command_block_line.take() {
+                    let name = m
+                        .name
+                        .as_ref()
+                        .ok_or(anyhow::anyhow!("Name not found in message"))?;
+                    let mut name = name.clone();
+                    if let Some(replacement) = replacement {
+                        for (key, value) in replacement.map.iter() {
+                            name = name.replace(key, value);
+                        }
+                    }
+                    tree[line].set_attr(&key, name);
+                }
+                let mut text = m.message.to_owned();
+                if let Some(replacement) = replacement {
+                    for (key, value) in replacement.map.iter() {
+                        text = text.replace(key, value);
+                    }
+                }
+                let mess = XMLTextParser::new(&text, self.lf.clone()).parse()?;
+                let common_lines = message_lines.len().min(mess.len());
+                let mut last_index = message_lines.last().cloned().unwrap_or(0);
+                for j in 0..common_lines {
+                    tree[message_lines[j]] = ParsedScriptNode::Line(mess[j].clone());
+                }
+                for j in common_lines..message_lines.len() {
+                    tree.remove(message_lines[j] - (j - common_lines));
+                }
+                for i in common_lines..mess.len() {
+                    let new_line = ParsedScriptNode::Line(mess[i].clone());
+                    if last_index < tree.len() {
+                        tree.insert(last_index + 1, new_line);
+                        last_index += 1;
+                    } else {
+                        tree.push(new_line);
+                    }
+                }
+            }
+        }
+        if cur_mes.is_some() || mes.next().is_some() {
+            return Err(anyhow::anyhow!("Some messages were not processed."));
+        }
+        if self.remove_empty_lines {
+            tree.retain(|node| !node.is_empty());
+        }
+        let s = tree.serialize() + "\n";
+        let data = encode_string_with_bom(encoding, &s, false, self.bom)?;
+        file.write_all(&data)?;
+        Ok(())
+    }
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So this is where you were heading... I should've realized it sooner.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You needn't worry about me. I believe I mentioned it already, but I've informed Tetsuya-san that I'd be accompanying you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We have more important matters at hand. Celebrating my reunion with Tetsuya-san can wait. I can see him anytime, after all.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So please, don't worry about us. We're both grown adults.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We can handle it properly this time... I'm sure of it.\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  }
+]

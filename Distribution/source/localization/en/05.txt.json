@@ -1,0 +1,1820 @@
+[
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "Shiori-san isn't here."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Answer the phone)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yooo~ it's me. Where are you right now? You nearby?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'm at the convenience store~. Y'know, the usual spot~. Can you come over real quick?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I've got something from Shiorin, a letter. She said it's for you~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, are you nearby? You comin'?\""
+  },
+  {
+    "message": "\"I'll go right away.\""
+  },
+  {
+    "message": "\"I'm at the park.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Roger~. See ya soon.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Which park are we talking about? Anyway, you can come right away, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'll be waiting, 'kay~? See ya soon.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  },
+  {
+    "message": "(Convenience store)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? Yooo.\""
+  },
+  {
+    "message": "\"Hello.\""
+  },
+  {
+    "message": "\"Yooo.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey hey, hello~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Whoa, changed your vibe or something? Yo yo~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Here ya go, a letter from Shiorin~!\""
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Let's see what it says."
+  },
+  {
+    "message": "<To you, who's always so kind to me:>"
+  },
+  {
+    "message": "<Thanks to you, I was able to gradually recover my memories. But after what happened yesterday, even I don't get myself anymore.>"
+  },
+  {
+    "message": "<If what he said was true, if I really were a murderer, if I really did kill my own sister...>"
+  },
+  {
+    "message": "<I can't say for sure that I wouldn't harm you if my memories were to return.>"
+  },
+  {
+    "message": "<So from here on, I'll try to manage on my own.>"
+  },
+  {
+    "message": "<I'm sorry it had to end like this. \nThank you for everything, truly. \nGoodbye.>"
+  },
+  {
+    "message": "<-Kugayama Shiori>"
+  },
+  {
+    "message": "......"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'm guessing... that letter wasn't the happy sort.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Shiorin was acting pretty weird, y'know~. She was pretty down. Like, really down.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Something happen? You two had a fight or something?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Tell her what happened)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ooooh... So that's what happened.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So Shiorin killed that old dude, huh? That's... kinda shocking. If it's actually true, I mean.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So? She's like, 'I might be a serial killer, so let's stop hanging out?' Is that it?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, crap. The guilt just hit me hard. Maybe I shouldn't have told her about that old dude.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"No, but, uh... At least she learned something about herself, I guess? Wait, maybe she was better off not knowing? That she might've been a serial killer and all.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hah? What's with that face?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah... Okay, okay. We're still not sure yet. Yeah, I know.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But like, hear me out, alright? Let me make things clear.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Even I can't believe it, y'know? Shiorin's super nice, and she's a good person.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But you still gotta be prepared for the worst, yeah? Shiorin went off on her own because she had a bad feeling too, didn't she?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"She wanted to know who she really was, yeah? Then it turns out the, uh... right, the truth. Then it turns out the truth was pretty messed up.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You can't just say, 'nah, that can't be it,' just because you didn't like it. That'd be rude to Shiorin, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're her friend, right? Doesn't that mean you've gotta accept her, no matter what she's like?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Whoa, hey, hey, hey! Where you going?\""
+  },
+  {
+    "message": "\"To prove Shiori-san's innocence.\""
+  },
+  {
+    "message": "\"To find out the truth.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Innocence... innocence, eh?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"The truth... Hmm, the truth, eh?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Well, I reaaaally get where you're coming from, but...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Can you even do that on your own? Like, do you even know what to do?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What, you don't even have a plan? You suuure you're gonna be okay? You're being kinda unreliable right now.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"How about I tag along? Not like I have anything better to do, anyway.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Accept)"
+  },
+  {
+    "message": "(Decline)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, got it. You're being stubborn. Well, maybe I shouldn't have said it that way.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Come back if you change your mind, yeah? I'll hang around for a bit longer. You can call, too.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, don't do anything reckless, 'kay~?\""
+  },
+  {
+    "message": "\"Thanks for everything.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're welcome~. Good luck out there~\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Apologies, I was absorbed in my reading.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...? You're alone today.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah, you needn't answer that. Please, have a seat.\""
+  },
+  {
+    "message": "(Take a seat)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Since Kugayama-san isn't here, we'll have to communicate in writing—Ah, right. You have your smartphone.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I can't say I care much for people fiddling with their phones right in front of me, but I suppose there's no avoiding it for now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So, what brings you here today?\""
+  },
+  {
+    "message": "(Tell her what happened)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\nI see...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yesterday, you met a man who was likely the culprit behind the Preschool Girl Serial Kidnapping and Murder Case. Then, he claimed that Kugayama-san killed him—\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"—along with her own sister.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"However, all of this is based solely on the man's testimony. There is no evidence, and Kugayama-san has not even recovered her memories yet.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even so, Kugayama-san could not completely rule out the possibility that she is a murderer. Therefore, she chose to act separately so that she would not, even by chance, end up harming you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Is my understanding correct?\""
+  },
+  {
+    "message": "(Nod)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You seem quite troubled.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san has not come here.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If she is still pursuing the case, she may stop by eventually. However...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If she said her goodbyes to you, then she may not turn to me either.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Your goal is to find Kugayama-san, and to prove her innocence. Is that correct?\""
+  },
+  {
+    "message": "(Nod)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see. I'd go with you if I could, but as I mentioned before, I cannot leave this place.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That's why, I'd like you to keep these two points in mind as you proceed.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"First. Ghosts can have very vague memories.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"The testimony of the man thought to be the culprit is not necessarily the truth. It is entirely possible that he is confusing it with another memory and simply believes it to be so.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Second. Ghosts can lie.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Malevolent ghosts will, naturally, lie with malicious intent.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In other words, even if a ghost's memories are intact, what they say is not necessarily the truth.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It is no different from the living.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In any case...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"His claim that she is a murderer is something I find highly doubtful as well.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"While this is only my impression, and no more reliable than anyone else's, Kugayama-san appeared to be a genuinely good person.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"This has to be some sort of misunderstanding. I'm sure the day will come when you and Kugayama-san can laugh together once more.\""
+  },
+  {
+    "message": "(Express your thanks)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"At present, I have no new information to share. All I can offer are words of comfort, which makes me all the more sorry.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I will continue the investigation. There may still be something important we have overlooked.\""
+  },
+  {
+    "message": "(Express your thanks again)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No need to thank me. \n...We're friends, after all.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Still... it would be worrying to let you go alone. If only there was someone else you could rely on...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ain't that me~?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Found ya~!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Long time no see. It's rare for you to come to the library.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, I kinda felt like reading a book or something, but nah, it didn't work. I like moving my body more.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Wait—'found you'? Do you have business with Shiori-san's buddy?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep yep. I was getting worried, so I went looking.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Let's look for Shiorin together, yeah? It'd be rough going at it alone.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah, you don't need to say anything. This lady totally loses it if you do.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyways, it's final. I'm not letting you say no~\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...That was rather forceful.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, 'cause our pal here's always holding back.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well, her network does make her a reliable ally. Going with her may be the wiser choice.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Whaddya mean, 'may'? It's a sure thing.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"C'mon, get up. Let's go already~!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, we're off~. We'll come back and let you know if we find Shiorin~\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes, I'll be waiting.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, let's go~!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Y'know... I'm kinda worried Shiorin's gonna end up like how she was before.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So stop holding back, alright? We're in this together~\""
+  },
+  {
+    "message": "\"How she was?\""
+  },
+  {
+    "message": "\"Like before?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? You didn't know? When I first met Shiorin, things were really bad.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'd try to talk to her and she'd barely react at all. Kinda like, she was about to go poof any second.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But after she met you, she suddenly started talking like normal, so yeah, that kinda freaked me out.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe she's the type who gets worse when she's alone. So if you let her be, she might start fading again, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"And if that happens... ah, well, never mind.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, like, I know we're already going but the question is where, exactly?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, all we've gotta do is prove Shiorin's innocent, right? Uh... what was it called again?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"The Serial... something incident? That old dude was pretty much just framing her, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Which means, if we figure out who was behind that whatchamacallit incident, everything'll work itself out. Man, I'm a genius.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, the next question is, who would actually know about the case? That old dude's out, since he's denying it like crazy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, it's gotta be that old lady.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Y'know, that hag who's basically running a gossip factory at the supermarket? ...Ah, was that a bit too rude?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Okay, how about Madam Hag? I'm sure the Madam would... Nah, too much effort. Let's just stick with hag.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"She knows a ton of gossip, so she probably knows about the case too.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Other than that, we can just hit places Shiorin would probably go to. I wouldn't know, so I'll leave it to you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, no time like the present. C'mon, let's gooo!\""
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Crosswalk)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "message": "(Payphone)"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Excuse me, do you have a moment?\""
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I'm glad I caught up with you. I'm sorry about yesterday, for leaving so suddenly.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It's about Tomoko-san... There's something I want you to hear. Could you spare me a bit of your time?\""
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"No.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...I see. I suppose you've got a lot on your plate.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Then can you at least do me a favor?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I wrote a letter. I want you to give it to Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Please... I'm counting on you. Bye.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Tetsuya-san left."
+  },
+  {
+    "message": "A letter..."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I should give it to Ms. Librarian."
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Thank you. Shall we sit down and talk?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I must've startled you when we first met. I'm sorry. I used to be better at talking to people.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Striking up conversations and listening to others was my job, after all.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I'd like to explain our circumstances... both Tomoko-san's and mine.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It's been... I wonder how long now. It was before this library was rebuilt, so it was quite a while ago.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Back then, I was a green, idealistic journalist, chasing down a certain case.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It was nothing unusual, a corruption scandal involving the local government.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But to me back then, it was a huge scoop—one I was willing to stake my career on.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That was also why I came to this library, to do some research.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"There used to be a lot more people back then. The seats were always full.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Except this one corner. A young woman would always be sitting there by herself.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Nobody ever tried to sit near her. I didn't think much of it and took one of the empty seats.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And that's how I met Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"We never exchanged words. We were in a library, after all.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"She always sat in the same spot, and for some reason, I always ended up in an empty seat nearby.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"We'd sit at the same table. She'd read her books, and I'd do my research. That was it.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It was only after some time that I realized she wasn't ordinary.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I had a colleague who would sometimes come with me to the library.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"He said that seat gave people the chills, which was why no one ever went near it. I was the only exception.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"When I told him a woman sat there, his face immediately went pale. He said I might be haunted. It clearly unsettled him.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That's right. I was the only one who could see her.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"She was a ghost.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And so the rumor spread about a ghost being there, and even fewer people went near.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Yet still, I kept sitting at my usual seat.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I became curious. Why was I the only one who could see her? Why was she always there?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I wanted to know more about her. So I passed her a note.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I wrote my name on it, along with the question: 'What's your name?'\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"She was a little surprised, but she wrote back. Beneath my clumsy handwriting, in neat letters... 'Tomoko.'\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"After that, we started talking often. By writing, of course.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I naturally began telling her about my work.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"At the time, I was trying to expose the malicious actions of an active councilman, how he pretended to stand for the voters while fraudulently collecting his secretary's salary.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I think Tomoko-san understood the social significance of my article—\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"—and started doing research for me while I wasn't at the library.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I was shocked. I never imagined the day would come when I'd be getting help from a ghost librarian.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"She was genuinely patient in helping me out with my work.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That said, she was very strict about library manners, especially about talking out loud.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But she was incredibly capable.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"On the day we finished the article, I told her about my dream for the first time.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"'Right now, all I write are dry, factual articles, but someday...'\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"'Once I've fulfilled my duty as a journalist, I want to write novels that entertain and let people dream.'\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I told her I wanted to ease the burdens of troubled people, even if only a little.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I'd even started thinking about the story a bit.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"A fairy tale set in a library at a small town, where a wise librarian helps resolve the townspeople's troubles.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It's a bit on the nose, I know. Maybe I just didn't have the talent to be a novelist.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But even so, Tomoko-san said she wanted to read it.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"With the freshly finished article in hand, I told her, 'See you tomorrow.'\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It was the deadline—the day I submitted it.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But you see...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Our article never saw the light of day.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"It was shot down. In publishing, that isn't especially rare.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"No matter how much a rookie reporter protests, it doesn't change a thing.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Looking back, there were other ways to get that article out.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But at the time, I didn't know how.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"On the day our article was shot down, I couldn't bring myself to face Tomoko-san again, so I stopped coming.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And so I quit journalism. I lost the will to read, couldn't write anything, and spent my days in empty idleness.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"One day, I found out the library was going to get renovated.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And once it was rebuilt, I might never be able to see Tomoko-san again.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I steeled my resolve, and finally went to see her again.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But when I arrived, Tomoko-san was no longer there.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I thought she had grown tired of me. The sense of loss I felt then is still vivid even now.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Pathetic as I was, I kept coming back for a few days, but Tomoko-san was nowhere to be found.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And then... I just stopped going.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I no longer had the energy to write novels, or even to make the trip.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And so, I decided to leave town.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But before that, I thought I should at least come one last time. And so I came back to this rebuilt library, driven by regret.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And as expected, she was nowhere to be found.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But then...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That seat was empty...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"The building was new and crowded, yet that one seat stayed empty.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That was when I finally realized...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"She didn't disappear.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I simply stopped being able to see her.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Tomoko-san had been there... all this time.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Once I started wondering what kind of look she might be giving me, I got scared.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And so I ran.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I didn't want to accept the fact that I had disappointed Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"After that, I moved to another town, changed jobs, and then...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...decades had passed. Even my memory of her had begun to fade.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I only came back to this town recently. I got curious, and found myself coming here, to this library.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"That seat was still empty, just like before. But unlike then, there were fewer people now.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I couldn't tell whether Tomoko-san was there, or if it was simply empty by chance.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But then... you appeared.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"You sat at that table, gazing at the empty seat and nodding, as though you were talking to someone.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I couldn't believe it... but I couldn't just sit still, so I called out to you.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Sorry about that. I wasn't exactly thinking straight.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And about yesterday, too.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Too much time had passed for me to put my thoughts into words right then.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"And that's my story. Thank you for indulging an old man's ramblings.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I'm sorry, but can I ask you one last favor?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I wrote my answer in this letter.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I want you to give it to Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Please.\""
+  },
+  {
+    "message": "(Take the letter)"
+  },
+  {
+    "message": "(Refuse)"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I feel like a weight has finally been lifted.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Someone who can no longer see her... can't stay by her side anymore.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I think I can finally move on now.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Well then, goodbye.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Tetsuya-san left."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I should give this to Ms. Librarian."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah, hello. This is unusual. Are you here on your own today?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please take a seat.\""
+  },
+  {
+    "message": "(Take a seat)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It'll be difficult to communicate without Kugayama-san here. We'll have to write down—Ah, right. You have your smartphone.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I can't say I care much for people fiddling with their phones right in front of me, but I suppose there's no avoiding it today. Please type out your message and show it to me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Will that be acceptable for you?\""
+  },
+  {
+    "message": "(Hand over the letter)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...? A letter? For... me?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"From...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Tetsuya...san?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A letter... for me... from Tetsuya-san...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...A letter?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"He kept me waiting all these years... and all he has for me is a letter...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see... so he ran away again.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......ngh\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"............\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Apologies. I'm fine now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I will read this letter... later. It is likely not what I'm hoping for.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's a shame... It truly is.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now then, I take it that is all—\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I suppose not. You look rather troubled.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I assume it's related to Kugayama-san's absence?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Could you please tell me more, then? About why you came here alone.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Let's gooo.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Y'know... I'm kinda worried Shiorin's gonna end up like how she was before.\""
+  },
+  {
+    "message": "\"How she was?\""
+  },
+  {
+    "message": "\"Like before?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hm? You didn't know? When I first met Shiorin, things were really bad.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I'd try to talk to her and she'd barely react at all. Kinda like, she was about to go poof any second.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"But after she met you, she suddenly started talking like normal, so yeah, that kinda freaked me out.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe she's the type who gets worse when she's alone. So if you let her be, she might start fading again, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"And if that happens... ah, well, never mind.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, like, I know we're already going, but the question is where, exactly?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, all we've gotta do is prove Shiorin's innocent, right? Uh... what was it called again?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"The Serial... something case? That old dude was pretty much just framing her, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Which means, if we figure out who was behind that whatchamacallit incident, everything'll work itself out. Man, I'm a genius.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, the next question is, who would actually know about the case? That old dude's out, since he's denying it like crazy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, it's gotta be that old lady.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Y'know, that hag who's basically running a gossip factory at the supermarket? ...Ah, was that a bit too rude?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Okay, how about Madam Hag? I'm sure the Madam would... Nah, too much effort. Let's just stick with hag.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"She knows a ton of gossip, so she probably knows about the case too.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Other than that, we can just hit places Shiorin would probably go to. I wouldn't know, so I'll leave it to you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, no time like the present. C'mon, let's gooo!\""
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Crosswalk)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "message": "(Payphone)"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Ah...?\""
+  },
+  {
+    "message": "\"You should hand it over yourself.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Oh...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I... yes... you're completely right...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Could you come with me?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"All I'd like you to do is tell me if Tomoko-san is there.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Could I ask you to do that?\""
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"No.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I know I'm asking for a lot. I really do. But please... You're the only one I know who can see Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"You're the only one I can count on.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I'm sorry for taking up your time, but... please, please...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Thank you... I really appreciate it.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Okay, let's go see Tomoko-san.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Is she there? On that seat?\""
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"No.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Wha... sh-she's not there...? Really...?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But... the seat's empty as always... She's there, isn't she? On that seat?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I mean... Look, I really do feel bad dragging you into this. I really do.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"But could you please stop teasing me? She's there, right? On that seat.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"So she really is there...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Were you trying to ease my nerves? Thank you.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"I see... So she really is there, on that seat...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Okay... I'll go talk to her, then... to Tomoko-san.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Huh?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Those features...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Tetsuya...san...?\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...So you won't look me in the eye, just like back then.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...No, rather... you can't see me...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You are alive, and I am dead. It is only natural.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please tell him to sit down. Just this once, I will tolerate you speaking out loud.\""
+  },
+  {
+    "message": "(Tell him what she said)"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Huh? Ah... Of course.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Another thing.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please tell him to take out a pen and some paper, if he has them.\""
+  },
+  {
+    "message": "(Tell him what she said)"
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"A pen and paper...? Ah, yes, I do. I'll take them out.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's strange. Sitting in front of you like this brings me back to how I felt back then.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"The time I spent with you was a happy one.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There is so much we have to talk about.\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"Ah...\""
+  },
+  {
+    "message": "<The article was never published. I've wanted to apologize for a long time.>"
+  },
+  {
+    "message": "<That was your article. You have no reason to apologize.>"
+  },
+  {
+    "message": "<To me, it was our article.>"
+  },
+  {
+    "message": "<I feel terrible, especially after everything you've done for me.>"
+  },
+  {
+    "message": "<I was just doing my job as a librarian.>"
+  },
+  {
+    "message": "<Besides, I enjoyed it.>"
+  },
+  {
+    "message": "<Thank you.>"
+  },
+  {
+    "message": "<Did you ever write your novel?>"
+  },
+  {
+    "message": "<No, not yet.>"
+  },
+  {
+    "message": "<We need to stop letting the past bind us. It ends today.>"
+  },
+  {
+    "message": "<For both our sakes.>"
+  },
+  {
+    "message": "<Are you going to disappear, Tomoko-san?>"
+  },
+  {
+    "message": "<No, I won't.>"
+  },
+  {
+    "message": "<Not until I've finished reading every book in this world.>"
+  },
+  {
+    "message": "<Until I read the novel you'll write someday, the one that gives people hope—>"
+  },
+  {
+    "message": "<—I won't disappear.>"
+  },
+  {
+    "message": "<When I finish it, I'll bring it here.>"
+  },
+  {
+    "message": "<I promise. This time, for sure.>"
+  },
+  {
+    "message": "<I'll be waiting.>"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"......\""
+  },
+  {
+    "name": "Tetsuya",
+    "message": "\"......\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I should give them some time alone."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Now, where should I go next?"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please wait.\""
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Thank goodness you were still nearby.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah, you may speak out loud. We're outside the library, after all.\""
+  },
+  {
+    "message": "\"Why are you here?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I am now free from the regrets that bound me to that place.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Along with my fear of not being there when he comes to see me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Besides... resolving this case is important to me too.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And I'm sure the same is true for Tetsuya-san.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let's discuss the details once we've regrouped with Kugayama-san.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Why are you alone? What happened to Kugayama-san?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please tell me more. I should be able to help.\""
+  },
+  {
+    "message": "(Explain the situation)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see... it seems we are in quite a complicated situation, then.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let us talk while walking. Time is of the essence.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Once Kugayama-san disappears, it will already be far too late.\""
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You needn't thank me. Let us go.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You usually meet with Kugayama-san at the park, didn't you?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And after hearing what that man said yesterday, Kugayama-san started acting strange and on edge?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In that case, the place she's most likely to be is...\""
+  },
+  {
+    "message": "(Playground)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. Let's go there and check.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems the man isn't here.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"As for Kugayama-san...\""
+  },
+  {
+    "message": "\"She's floating at the edge of the swing.\""
+  },
+  {
+    "message": "\"She's hiding in the restroom.\""
+  },
+  {
+    "message": "\"She's buried in the sandbox.\""
+  },
+  {
+    "message": "\"You're in the way, Ms. Librarian.\""
+  },
+  {
+    "message": "\"She's floating at the edge of the swing.\""
+  },
+  {
+    "message": "\"She's hiding in the restroom.\""
+  },
+  {
+    "message": "\"She's buried in the sandbox.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Apologies. I'll step aside.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...She doesn't seem to be anywhere around there.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You're right. Is that supposed to be her attempt at hiding?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let's bring her over.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Long time no see...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...What on earth are you doing?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you have any idea how worried your buddy has been?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I'm sorry.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm sure I'm not the one you should be apologizing to.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. I'm truly sorry.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Your buddy has already told me the details.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We can also guess as to why you're here.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Which is partly why we were able to locate you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Were you lying in wait for that man, planning to hear his story on your own?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I couldn't believe in myself anymore, so I figured I'd try hearing him out one more time.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Because I really want to know the truth.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then all the more reason for you to hear me out first.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I don't want you carelessly coming into contact with him right now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let's move somewhere else.\""
+  },
+  {
+    "message": "(Grand Park)"
+  }
+]

@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"So this is the place Kashima Reiko-san told us about...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There it is, the red envelope.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wow... it's just lying there. It's so conspicuous, it feels almost contrived.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But look... that person just walked past it without batting an eye.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My guess is that it's only visible to people who can see these things, like you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Traditionally, only a man can pick up the ghost marriage invitation, but nyaow—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Nyaow—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Nyaaow itsh—GAH! Geez, I'll just start over.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But now that it's taken the form of an urban legend, age and gender might not matter anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I have a bad feeling about this. If you pick it up, something unpleasant is definitely going to happen.\""
+  },
+  {
+    "message": "(Leave)"
+  },
+  {
+    "message": "(Draw closer)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right. Let's just report to Kashima Reiko-san that we found the envelope.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No... someone else who can see it might pick it up.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wait here for a moment.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There, I picked it up. This is way too dangerous to leave lying around like that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If a dead person picks it up, then nothing should hap—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Okay, that made me jump. I think... that's the ghost's family.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"They're angry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Really angry. We must've ruined their daughter's ghost marriage.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But that's it, I guess. They don't seem like they're going to attack.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's go deliver this to Kashima Reiko-san. Who knows what they'll do if I keep holding onto it? They'll probably curse me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Um, well then... If you'll excuse us...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Come on, hurry. They might start coming after us any second now... Hurry, come on!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? You want a closer look? Nothing ever fazes you, doesn't it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Whatever you do, don't pick it up, okay? Be sure to keep your curiosity in check, alright?\""
+  },
+  {
+    "message": "......?"
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "My head feels heavy."
+  },
+  {
+    "message": "Something's... pushing its way in..."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "The envelope........."
+  },
+  {
+    "message": "..............."
+  },
+  {
+    "message": "I need that envelope.................."
+  },
+  {
+    "message": "(Pick up the red envelope)"
+  },
+  {
+    "message": "(Wait for 3 seconds)"
+  },
+  {
+    "message": "(Pick up the red envelope)"
+  },
+  {
+    "message": "(Resist)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? Wait! Don't—\""
+  },
+  {
+    "message": "(Try again)"
+  },
+  {
+    "message": "(Return to Title Screen)"
+  },
+  {
+    "message": ".................."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hey... are you okay? You're acting strange.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did... something get to you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Step back for now. Leave the rest to me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There, it's fine now. I picked up the envelope.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... it must've been them. They didn't even appear until I picked up the envelope.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sorry, but my buddy isn't joining your family. I'll be taking this envelope now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like they're angry at us for ruining their daughter's ghost marriage, but they don't look like they're going to attack.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Anyway, mission complete. We shouldn't stay here long... Let's take this to Kashima Reiko-san.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Is this...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, the red envelope.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I never thought you'd actually bring it back.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It would've been dangerous if we just left it there, so I picked it up.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The family was reaaaally angry with me, though. They were staring a hole right through me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I think this envelope can hypnotize anyone who can see it. It did some weird stuff to my buddy here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If we'd left it there, someone else might've gotten hurt, so I picked it up.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thanks to that, the family was absolutely furious. Like, super, super angry.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"The family?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"They felt... different from normal ghosts. They were more like urban-legend aberrations, neither human nor ghost.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"A woman who looked like a bride, and her family. They just glared at us. That was all—just glaring.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"So it wasn't just the envelope. Even the ghost bride and her family had manifested as aberrations.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"It seems the urban legend has taken on a very distorted form... Interesting.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Can I have that envelope?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Of course. Here.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\".........\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"My thanks. Another addition to my collection.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Also, if you verify anything about Mary-san, be sure to report back.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You're not obligated to, of course.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, I understand. Although, it does sound dangerous, so I'm a little hesitant...\""
+  },
+  {
+    "message": "\"Probably.\""
+  },
+  {
+    "message": "\"Still thinking.\""
+  },
+  {
+    "message": "\"Probably not.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Do as you wish. How you use the information I've provided is up to you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...You're quite proactive in your urban-legend investigations.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Part of it is because my buddy here isn't afraid of anything. Though I guess it's also because I like the occult.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Half of me doesn't want to put my buddy in danger, but the other half really wants to know what happens next...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I understand. I'm the same.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"However...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I guess I'm hardly in a position to lecture you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I'll have a new urban legend ready next time.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, please.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Now go. With this cursed red envelope in my hands, the blight on this place has only grown stronger.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Leave before the beasts of the everdark tear you two apart.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, see you again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, Kashima Reiko-san looked really pleased.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now that we've finished reporting in, we should get back to our investigation.\""
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Apartment Building)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Payphone)"
+  }
+]

@@ -1,0 +1,592 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"I know of one more payphone, but this should be the only one you can reach within five minutes from the parking lot.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We should be able to call Mary-san from here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It'd be nice if we could play with her, but she might also attack us.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And if that happens, I won't know what to do. You might end up getting killed before we can do anything.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So if you ask me, I'd rather you didn't do it...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What do you think? Do you want to call Mary-san?\""
+  },
+  {
+    "message": "(Call Mary-san)"
+  },
+  {
+    "message": "(Reconsider)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Here we are again...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So, what now? Do you want to call Mary-san?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, it's too dangerous. I'm curious too, but there's no point if you wind up dead.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well then, shall we head somewhere else?\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Apartment Building)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I knew you'd say that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If things get dangerous... I'll handle it somehow.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I have no idea how I'm going to do it, but I'll figure something out!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've got your back. Now, let's try calling Mary-san.\""
+  },
+  {
+    "message": "(Pick up the receiver)"
+  },
+  {
+    "message": "............"
+  },
+  {
+    "message": "\"Mary-san, Mary-san!\""
+  },
+  {
+    "message": "\"Let's play.\""
+  },
+  {
+    "message": "\"Come at me!\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Alright, that completes the ritual to summon Mary-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"All that's left is to wait for Mary-san to call—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......It really rang back.\""
+  },
+  {
+    "message": "(Pick up the receiver)"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Hello. It's Mary-san. I'll be there right away.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Mary-san actually called us back...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Next... was your smartphone, right? Let's wait for her to call again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did you just... provoke her? Why...? Are you stressed or something?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Was that really okay? Maybe she won't show up because we didn't say the magic words. That or... she's furious, and is already standing behind us...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... it rang back... I guess that still counted.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll answer. If she's angry, I might be able to redirect her hostility onto me...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Yes?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Hello, this is Mary-san. I'll be right there.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...If I wasn't imagining it, she sounded pretty ticked.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So aberrations have emotions too... interesting.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She's going to call your smartphone next, right? I'll wait outside.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"An aberration just called us... It rang like it was the most natural thing in the world...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wonder if it's like this everywhere. Or... is it just this city that's strange?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There are so many ghosts here... and so many urban legends, too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"When I was alive, I only enjoyed them as fiction. But now I've become one of those fictional beings myself...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's kind of strange and unsettling at the same time.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... just talked about how I was when I was alive, didn't I? It's always like this. My memories come back at the most unexpected moments—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, here it comes!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What do you want to do? Should I answer for you? I'll be fine even if she attacks.\""
+  },
+  {
+    "message": "(Answer)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, you're answering it? Okay, I've got your back.\""
+  },
+  {
+    "message": "............"
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Hello, this is Mary-san.\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"And now...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I'm right behind you.\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Huh...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Um, so...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...What were you about to do?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Wh-Wha?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What. Were. You. About. To. Do?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Th-This is... Mary-san...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"TO. MY. BUDDY?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I was going to play...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Excuse me?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I was... going to play...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"HAAH?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I was... going to use these scissors... to... stab... uh...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I mean...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Uh, um, ah... your buddy called me, so...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You attack people just because they call you?\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"Huh? Um... that's... how it works, so...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I-I mean, didn't your buddy say... 'come at me'?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Try it again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And I'll kill you.\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"............\""
+  },
+  {
+    "name": "Mary-san",
+    "message": "\"I understand............\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I might have... gotten a little too angry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"When I saw Mary-san trying to stab you, I kind of just snapped...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Before I knew it, I was swinging an axe at her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That was... a first for me. I'm honestly scared of how quickly I turned to violence.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh well. You're safe, and we've verified that Mary-san is real.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I think I get it now. How to deal with urban legends—with apparitions.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"In the end... it's all about power. Power solves everything.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Whether it's an aberration or a haunting, power talks.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Remember, if anything dangerous comes up:\n C H I K A R A   I S   P O W E R!\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You... drove Mary-san off?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Let me... go over this again.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You followed the steps and summoned Mary-san... all the way to her signature line, 'I'm right behind you.'\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Right after that, Mary-san tries to bring her scissors down, but...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You turned the tables on her?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. I used my axe.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Holy crap.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You kind of broke character just now... but I'll take that as a compliment.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I'm impressed by your strength, but what's interesting here is Mary-san's behavior.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"She held a conversation, and when you threatened her with an axe, she agreed to negotiate. In other words, an intelligent aberration...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"And... she really has weakened. In recent years, she hasn't been a symbol of fear so much as a beloved character...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You have my thanks. My knowledge of urban legends has deepened yet again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You're welcome.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I hope you'll look into the ghost marriage as well. I won't force you, of course.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sure, we'll check it out if we have the time.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"You've grown into full-fledged urban legend hunters.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I'll pick out a new urban legend for next time. Give me a little while.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, please.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, we should get going.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Stay safe, and remember: Gaze into the abyss, and the abyss gazes back at you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay. Hm? Ah, yes, okay. See you again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, I'm sorry. I was just lost in thought for a moment.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Kashima Reiko-san was shocked, and even I was surprised at myself... That wasn't like me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Or maybe, that was how I really...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now's not the time to dwell on that. Shall we go?\""
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Apartment Building)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Alleyway)"
+  }
+]

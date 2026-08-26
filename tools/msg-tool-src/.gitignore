@@ -1,0 +1,8 @@
+/target
+/testscripts
+/output
+/patched
+*.log
+.vscode/
+/vendor
+/tmp

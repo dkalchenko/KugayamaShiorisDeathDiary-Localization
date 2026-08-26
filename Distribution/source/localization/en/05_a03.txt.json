@@ -1,0 +1,5044 @@
+[
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "Shiori-san's not coming."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "She's nowhere to be found."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "(Answer the phone)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"It's me. I've found our guy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're quiet even on the phone. Scary...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I mean, when we're talking face to face, you nod and react and all that, so it doesn't bother me much. But on the phone, none of that comes across, y'know? So c'mon, say something.\""
+  },
+  {
+    "message": "\"Where are you?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"He's at the park I told you about yesterday, wandering around like a total creep.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"C'mon, get over here already, before he wanders off.\""
+  },
+  {
+    "message": "\"I'll be there right away.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Aye aye. You can take it easy, but hurry up, yeah?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  },
+  {
+    "message": "(Playground)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ooh. There you are~\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"He's still here. Look, over there.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"He just keeps wandering around. And whenever a little kid shows up, he just stares at them. What a creep.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe the reason nobody comes here anymore is because of him. Like, maybe people can sense it, y'know. His creepy ghost vibes.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Kids tend to be more sensitive to that stuff than adults, yeah? But I dunno.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, whatever. Let's gooo!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Leave it to me. I'll ask him about Shiorin.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You're not exactly calm right now, so just sit tight and watch, 'kay~\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"......\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"'Scuse me~, got a minute~?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Oh... it's you bunch again.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"What happened to that other woman. Is she not here?\" "
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hah? What? You wanna see her or something?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Of course not.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...No. Well, in a way, maybe I do. There's still something I want to say to her.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"She needs to atone for the crime of setting me up. No amount of groveling would be enough. That wouldn't even come close to satisfying my anger and hatred.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So like, did you actually know Shiorin?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Shiorin? You mean Kugayama Shiori?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You know damn well who I mean, dumbass.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Are you trying to pick a fight? You don't know what happens when you cross me.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What're you gonna do? Kill me? Like all those kids you kidnapped?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Kill you? Me? Like... those kids?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Stop screwing around. It was you, wasn't it? The guy behind the serial... kidnappings? Yeah, the killings.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...Tch. I still remember those reporters crawling all over the place for their newspapers and magazines.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Ridiculous. I've never kidnapped or killed anyone.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I was just having some fun.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I was just having fun, playing with pitiful kids who were being neglected by their parents. I should be thanked, not criticized.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You were just playing with them? You sure?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"That's right, we were only playing. It's a shame they were all just one-off trysts.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...What's that supposed to mean?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I always went all out when playing with them. They'd get so tired, they'd just stop moving.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hah?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Sadly, they're no longer of use once it gets to that point. I did make sure to send them home properly, though.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Is this guy for real? Who talks like that? He's completely delusional.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Children are beautiful, yet frail. Or perhaps my love was just too much for them to bear.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Quit playing dumb, you know what you did. You kidnapped those kids and killed them.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"How many times do I have to tell you? I haven't kidnapped or killed anyone.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"They were simply put in my care, that's all. I was just playing with them.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Put in your care? By who, exactly?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Kugayama Shiori.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Are you seriously saying that?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"What's that face for? You got—\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Pick your words carefully. I've got a short fuse.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Shiorin. Left. Those. Children. With you?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"And then what? Shiorin started kidnapping little girls?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I don't know where she brought them from. I was just looking after them.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Normally, I'd just admire them from a distance, but thanks to her, I got to have my share of fun. That is a fact I cannot change.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"However, there is one thing I absolutely cannot forgive.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"She ignored my request.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Request?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Her younger sister.\""
+  },
+  {
+    "name": "???",
+    "message": "\"My sister...?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Shiorin?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Ha... hahaha! I knew it. I knew you were skulking around nearby!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Why else would I have bothered humoring these idiots' pointless chatter for so long?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"It was so you'd overhear me! So I could teach you the TRUTH!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I said you killed your sister, right? Fine, I'll admit it. I lied. I figured it would drive you into despair.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"But then I realized something. For someone like you, who truly cares about her sister, the truth would be far more devastating!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...and what's the truth...?"
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Heh... haha... hahaha!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"This is what you get, your punishment for tarnishing my honor and driving me to my death. Now suffer as much as you can, Kugayama Shiori!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And what exactly is the truth?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You see, your precious, precious sister...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I made sure...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...to have *lots* of fun with her.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You... killed... my sister...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You... KILLED HER?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"W-Wait!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Gyagh!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"S-Stop...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hihh!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"H-Help... m-me...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Gihh...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Ah....\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Seriously...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm... sorry...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... couldn't... protect...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm... so...rry...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............so.........rr...y...............\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Wha... crap, that thing's bad news. Let's bail, or we're next.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, did you hear me? That thing's not Shiorin anymore. There's no fixing it.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Her innocence is beside the point now. Just look at her. It's already too late.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Give it up, we're leaving. You don't wanna die, right?\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\".........\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Do what you want. I'm getting outta here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Later.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm... sor...ry......\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......sorr...y........\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............ I'm... so...rry...... I'm... sorry......... I'm... so...rry......\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": ".................."
+  },
+  {
+    "message": "..........................."
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "(Go somewhere else)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"C'mon, we're leaving!\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Didn't see that coming... Man, that was insane. She's basically a monster, or yokai, or whatever now.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, uh, did you notice Shiorin was there earlier? Was she nearby the whole time?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What, you're ignoring me now? Well, I guess that was pretty shocking. Can't blame you for being stunned.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You think that *thing* will ever go back to normal? I don't think so. *Its* mind's completely broken.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, where're you going? You look like you've got somewhere in mind.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Why the shrine? What're you gonna do here?\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Put in an offering)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Praying to the local deity? I think it's a waste of time, but... hey, if it helps you feel better, go ahead. I might as well join you.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "???",
+    "message": "\"Greetings.\""
+  },
+  {
+    "name": "???",
+    "message": "\"I was thinking of asking you to indulge me in some idle chatter, but it appears now is not the time.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Now, how can this deity help you?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"I want to help Shiori-san pass on.\""
+  },
+  {
+    "name": "???",
+    "message": "\"I'd like to say that were easy, but...\""
+  },
+  {
+    "name": "???",
+    "message": "\"It's too much for a fading deity like me, one who has lost too many believers.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Even so, I can't just turn you away.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Lend me just an ounce of your strength, and I will grant your wish.\""
+  },
+  {
+    "name": "???",
+    "message": "\"No, I suppose I should be clearer about this. 'Lend' isn't the right word, since you won't be getting it back.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Are you prepared to pay the price for your wish?\""
+  },
+  {
+    "name": "???",
+    "message": "\"I can't tell you what the price is. Those are the rules.\""
+  },
+  {
+    "name": "???",
+    "message": "\"It could be something trivial, or it could be something very important.\""
+  },
+  {
+    "name": "???",
+    "message": "\"You won't ever recover it, and nothing will ever take its place.\""
+  },
+  {
+    "name": "???",
+    "message": "\"It will be gone, for eternity.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Even so, do you still want your wish granted?\""
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"No.\""
+  },
+  {
+    "name": "???",
+    "message": "\"I see. Very well.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Now then...\""
+  },
+  {
+    "name": "???",
+    "message": "\"Let us bind the pact.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"That woman's suspicious, I tell you. Where did she get all that money from? There's no way her husband's earning that much.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"But I know what's really going on. That woman, she's doing *that* kind of work! It wouldn't make sense otherwise!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So that's her. It helps that she's very easy to spot.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, that's right. It's true she knows a lot, but...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"And those flashy clothes too. You can tell at a glance, she's definitely doing night work.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Indeed. She's rather vulgar. What's more...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"You'd normally need a prettier face for that line of work. Something's fishy.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She's been talking nonstop, alone, even though no one is responding.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I might be wrong, but... despite how she looks, she might be barely holding it together. Her cognition is a bit... no, more than a bit off...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Her sense of time seems warped too, and she behaves as though she's still alive.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But then, just when you think she's just rambling, she suddenly starts making sense. I really don't know what to make of it...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Her trigger was getting interrupted, was it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, I think so. She gets really angry if you interrupt her, but when you keep quiet, she calms down right away.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see, and the conversation itself is erratic and hard to control.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. She usually just talks about whatever she wants, but she latches on if it's a topic she's interested in... I think? Probably?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But then she gets sidetracked almost immediately...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Would you mind leaving this to me for the moment? I had a similar relative, so I know how to deal with their type.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, please do.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll ask her directly about the Preschool Girl Serial Kidnapping and Murder Case. For now, let's draw out as much information as we can, and then sort through it later.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well then, shall we try it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Even if she does have a sponsor, it still makes you wonder. Who would choose someone like *her*? Well, they do say tastes differ, so I guess some people just have weird preferences—\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah, why hello there, Ma'am.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Oh my, hello there. Out shopping with the family? Did you hear? Scallions are cheap today, especially the long ones.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see. By the way, did you hear? You know, about *that*.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Oh what's this, which one are we talking about? Tell me more.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Amazing. She won her over in an instant...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you remember that abduction case from a little while back? I have some shocking news.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Just between us, but apparently there was another culprit. A high school girl, from what I heard.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Oh dear. And that's *all* you've heard?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Oh? Could you perhaps know more about it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Know more? *I* was the one they interviewed! I was their source! I can't remember if it was for TV or a newspaper, though.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh, she seems to know even more than we expected... What a pleasant surprise...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Impressive, but I guess it's no surprise. What did you tell them? Ah... is this something you're not supposed to say?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Oh it's not a problem at all. My testimony's already been out nationwide. On TV, or maybe in a magazine?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"You see, I know exactly who that high school girl was. After all, I saw it with my own two eyes!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Oh my, but is it really okay for you to tell us something like that?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Oh, it's fine, don't worry about it. You're about the only one who doesn't know. Everyone's up to speed already.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"You see, I saw her myself, with the culprit, no less!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are you saying the culprit is still at large?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Of course he is! And what's worse, everyone already knows who he is. It's none other than Yasuda-san's son!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Takeyuki-san, was it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Yes, that's right. That's his name, alright! He's always at the park, staring at kids, you see. With that sleazy grin on his face. He's got to be the culprit!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And so who was the girl? The high school accomplice?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"It was Kugayama-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"It was that Kugayama girl! She was the one helping the culprit! I saw it myself!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Shiori-san, was it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Yes, yes, that's right! Shiori-chan! To think a girl like that would kidnap children. Goes to show you really can't judge people by how they look...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"You really didn't know? It's common knowledge, you know. Everyone knows Shiori-chan was the accomplice.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Naturally, I told the interviewers that too, that Shiori-chan was the one doing the kidnapping.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I'm good at this sort of thing, you see. When I saw the case on the news, it just clicked.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"The thing is, even little kids wouldn't go along with a guy as shady Yasuda-san, so there had to be someone else doing the kidnapping.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"And Shiori-chan was a high schooler too. Kids let their guard down around teenage girls.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Shiori-chan would kidnap the kids and take them to Yasuda-san. That was how they did it.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I bet it was blackmail. She probably had some nasty little secret tucked away. Well, look at her now. Got what she deserved.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "message": "..............."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please hold back, you two. I can only imagine how you two are feeling right now, but there is something that concerns me. Let's keep her talking for now.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"There are even eyewitnesses, you know? They all saw Shiori-chan walking around with the children. And more than once, too! To the point that EVERYONE here has seen it!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I saw her together with Yasuda-san myself, you know. Right at the decisive moment, the decisive moment, I tell you!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"There's no doubt about it. The two of them were accomplices. They kidnapped children together and killed them. Terrifying, isn't it?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"By the way, what kind of person was Shiori-san? Does she resemble anyone here?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"No, not at all. That girl was far more distinctive.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wha...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"What about her uniform? Was she from the same school as this girl, for example?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"No, her uniform was different too. It wasn't a sailor uniform, I think. No, I'm sure of it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"....I see.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I made sure to tell them every detail in that interview, you know. Honestly, what in the world are the police doing?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Shiori-chan ended up dying before they could catch her. An accident... or was it suicide? What was it again?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"She probably couldn't take it anymore. Used by a man and... no, I think she was tossed aside?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"She went so far as to commit crimes for him, only to be thrown away, so she killed herself. Isn't that the most likely explanation? Yes, that's got to be it. I'm sure of it!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"And once Shiori-chan died, kids stopped getting kidnapped, right? The case ended right there and then.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Which means that's exactly what it was, right? Shiori-chan was the one doing the kidnapping, so of course the case would end.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Foolish girl. It just goes to show that kids these days don't know how to think anymore.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"If only she'd just behaved herself, her family wouldn't have ended up so miserable.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Her family ended up miserable?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I mean, their daughter turned into a criminal, and everyone around here knew. It was common knowledge, that Shiori-chan was the accomplice.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"They're the family of a criminal, you know? Of course people would look at them differently. There's no avoiding it. That's just how society is.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I was even kind enough to show my concern for them, you know? I'd always ask them how they were doing.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"And then they stopped coming here altogether. Everyone was wondering if they'd switched to a different supermarket or something.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"But no, that wasn't it. They moved away somewhere. Well, of course they did. They couldn't exactly live here anymore, could they?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Everyone was talking about Shiori-chan. I suppose it didn't help that my little deductions were spot on.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I even told the interviewers the truth of the incident, you see. I was the first to notice it. That's right, it was me. Me!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"If I hadn't gone and exposed the whole incident, I wonder if things might've turned out differently.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"But it's Shiori-chan's fault, really. If only she'd behaved herself, her family wouldn't have had to suffer all that shame.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Honestly, what a foolish girl. Stupid kids do stupid things, I guess.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ma'am, you saw the culprit together with Kugayama Shiori, correct?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Yes, that's right! I saw it with my own eyes, the decisive moment! I was even interviewed about it!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you recognize this woman in the uniform here?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......Do you know who I am?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"What are you talking about? Of course I don't. Who're you, her little sister or something?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Kugayama, Shiori.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm Kugayama Shiori.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That's strange. You said you saw the culprit together with Kugayama-san, didn't you?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I-I did see her! Stop spouting nonsense! The one I saw wasn't you!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Shiori-chan is dead, you know?! She killed herself out of guilt! How shameless, pretending to be someone who's already dead!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"It's because of girls like you that these weird crimes keep happening! Ugh, how unpleasant!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...So this is what it all comes down to, isn't it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Wh-What? What is it now?!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You didn't even know who I was, and yet you spread all those rumors that I was an accomplice.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I said, it wasn't you! It was Shiori-chan! Shiori-chan!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You didn't even see anything, yet you went around spreading things that never happened as if they were facts...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Because of that... my whole family... my father, my mother, my little sister, all of them were branded as a criminal's family...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You kept spreading the rumors, then more and more people pointed fingers at us... until we were finally driven out of this town...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...That's what it all comes down to, isn't it?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Could you stop painting me as the villain here? Everything I said was true, all of it. I'm the type who hates lies, you know.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...You can say whatever you want about me. I'm already dead. It doesn't matter what anyone says anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But you... you dragged my family's name through the mud. You cornered and hurt the people I love most...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I said, stop making me look like the bad guy here! Everything I said was true!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Besides, it's their own fault they ran away! They raised their daughter wrong! Raising a criminal like that, what a bunch of failures as parents!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You'll pay for that...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Kugayama-san?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You'll pay for that... You'll pay for that...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...This is bad. Ma'am, please get away, quick. You've set off Kugayama-san's trigger.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Wh-What? What is wrong with you?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Never mind that for now. Please, you need to leave.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You'll pay for that!\""
+  },
+  {
+    "message": "\"Shiori-san.\""
+  },
+  {
+    "message": "\"Calm down.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Wha—wait! What is wrong with you people?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Get away! Now!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Because of you, my family...!\""
+  },
+  {
+    "message": "\"Shiori-san.\""
+  },
+  {
+    "message": "\"Calm down.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"As I said, stop blaming others! This is all their fault, not mine! But you just love pointing fingers, don't you?! I see your parents were trash too!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"What are you doing?! You're pouring oil into the fire!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Again...! You've insulted my family again!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"I'm not! I'm just stating facts! I swear, you and your parents are both idiots. Idiots!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You'll pay, you'll pay, YOU'LL PAY!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll kill you.\""
+  },
+  {
+    "message": "\"Shiori-san!\""
+  },
+  {
+    "message": "\"No!\""
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "message": "The charm..."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......ugh......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wha...... what just......?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Thank goodness. Have you calmed down?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I-I'm so sorry, I...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"What is your problem already?! You think sorry's gonna cut it?! After you went and treated me like the villain?!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"ME, of all people! Pinning the blame on a model citizen like ME! All you do is point fingers!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Honestly, what were your parents thinking?! How bad do you have to be to raise a child this rude?! Ugh, how awful!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You two, please step back. I can't be sure what will happen from this point on.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san, the reason I tried to stop you was that I didn't want you to dirty your hands.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"But I actually feel the same way. This vulgar being deserves to be punished.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"V-Vulgar... A-Are you talking about me?! How rude! How dare you speak to your elders like that!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm the elder here.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"What did you say?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san. There is no need for you to stain your hands. In my experience, this type suffers on their own, simply by learning the truth.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Would you stop blabbing already?! What is wrong with you people?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Very well. I'll explain it in a way that even someone like you can understand.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A 'model citizen' like you might have just stayed silent, but I'm not that kind of person.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Your vulgar curiosity sullied the honor of Kugayama-san and her cherished family. And naturally, you deserve punishment befitting that.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Punishment? What punishment? I didn't do anything wrong!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see you haven't even realized that you're dead.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Hah?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Remember when I said I was your elder? The truth is, I have been dead for several decades now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You are the same. You've become a ghost, aimlessly wandering this world.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"What, are you trying to invite me into some kind of cult?! Stop talking nonsense—no one's gonna fall for that stupid story!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Has anyone responded to you aside from us?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Hah?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No matter how much you called out, you were ignored.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Wh-What are you talking about?! How incredibly rude! Of course that's not true!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Try it, then.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Just what in the world is wrong with you?! I'm losing my patience here!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Go on. Call out to your friends, like you always do.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Who do you think you are?! Fine, just watch!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...Ah! Saito-san! Saito-saaaan! Get over here for a bit! I'm being harassed by some strange kids!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Saito-san! Hey, Saito-san! I'm talking to you! Stop ignoring me! Hey!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It appears this 'Saito-san' didn't even look at you.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Tch! Ah! Hayashi-san! Hey, Hayashi-san!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Hey! You! Ah, it's been so long, hasn't it? Did you know? The scallions are so cheap today!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Hey, you! I said hey! Hey!\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"......\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Why? Why is everyone ignoring me...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So, do you understand now?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"B-But I... I always chat here, and...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"With whom?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Who are you always chatting with?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Wh-Who? Well, everyone, and...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And who exactly is this 'everyone'?\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"That should be obvious...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...should be obvious...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems you finally understand. You've been talking to yourself, all this time.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There is no 'everyone.' You were alone. You have always been alone.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"............\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No one can hear you. No one will ever hear you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No one can see you either. And no one ever will.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Because you are already dead.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...............\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Shall I say it once more?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You. Are. Already. Dead.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...No... no... it's a lie... you're lying...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now remember. Why you died, and how you died.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...h...ow...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Go on. Remember.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...ah......ah...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Oh dear, are you alright? You're bleeding.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Aaah............ ah... ah...!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Dear, oh dear... it seems you met quite a gruesome end.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Ah... ah... ngh... ah...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...kh.........\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Her body begins to bend and twist in on itself..."
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...kh... s-someone... p-please... someone... h-he...lp...\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...help...someone...he...lp...me...!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Buddy, Kugayama-san, shall we go?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...? A-Are you sure?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Would you like to make her suffer more?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"N-No, that's not what I...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm joking. There is no need for you to feel guilty. This was something I did of my own accord.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Come, let's go. We've obtained the information we needed. There's no reason to stay here any longer.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Okay.\""
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"...s-some...one...\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Gossiping Woman",
+    "message": "\"Help... meeeeee........!!!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Apologies. That may have gotten a bit too intense. I didn't expect it to become that grotesque.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Yes... I do feel *some* guilt... but...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It seems... I'm not a very good person either.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Because I feel... oddly satisfied.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I'm sorry. I made you play the villain.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"As I said before, I acted of my own accord.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...What do you think will happen to her?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If her will is strong enough, she'll recover. If not, I assume she'll simply fade away.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Fade away...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Back then... if I'd let my anger get the better of me, and brought my axe down on her...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Would I have... killed her?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That would depend on her, but the chances are high.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So even ghosts die if they are killed...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ghosts don't age, but they are not immortal.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I have seen several cases where a ghost suffered an injury that would have been fatal to the living. They weakened and vanished as a result.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"An injury that would be fatal to the living...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Best not dwell on it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? Y-Yes... Back then, I was genuinely planning to...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And that is only natural. You are a ghost, and she set off your trigger.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My trigger... Ah, I see... so that was my...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems your trigger is your family, Kugayama-san. When your parents were insulted, you lost control of your emotions.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, I couldn't hold my anger back... or rather, I wasn't even trying to hold it back...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Driven purely by rage, I was about to... summon my axe, and...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even I would react the same if someone were to set me off.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But then, all of a sudden, the anger drained away, and before I knew it, I was calm again, like all that rage had been a lie...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It was your voice, echoing directly into my head as my emotions boiled over.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If it weren't for you, I would've done something I can't ever take back. Thank you, truly.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Perhaps we were even fortunate to find out what your trigger is.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Meaning...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Someone who cherishes their family to that extent would never harm their own sister.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... y-yes, I guess that's true. But still... she could've died because of my carelessness, and...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I suppose I can't rule that possibility out. However, I don't believe you're the kind of person who would hand her over to a kidnapper, even if by accident.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Thank you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san is not Girl A. To be certain of that, let us sort through the testimony of that woman.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, let's.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She claims to have seen Kugayama-san together with the culprit. However, she did not know Kugayama-san directly.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"What she most likely witnessed was, 'a high school girl together with the culprit.'\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She knew that I died. And also... that the incident ended after my death.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In her mind, a 'truth' had already taken shape—that Kugayama-san was the accomplice.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That delusion likely led her to the hasty conclusion that the high school girl she witnessed was you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But she wasn't wearing a sailor uniform like me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Someone does come to mind, but... let's set that aside for now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... probably have the same person in mind.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We don't have definitive proof, and that woman just now seemed to have an unreliable memory. We shouldn't take her account at face value.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She also claimed that Kugayama-san was walking together with a child, but even if that were true, we can safely disregard it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Because you often spent time out and about with your sister, correct?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. I took her to the park, and probably... went on walks with her too.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If that's the case, then there's nothing unnatural about her statement. You were simply with your sister, that's all.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"However, she did witness the culprit together with a high school girl. That in itself was likely true, though twisted by malice.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There is no evidence that allows us to conclude that Kugayama-san is Girl A. If anything, I believe we have already gathered enough evidence to safely rule it out.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"All that remains is to find the high school girl who was with the culprit. No, simply finding her will not be enough.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If it turns out that this high school girl was involved in the incident...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then we can prove Kugayama-san's innocence.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So far, all we have is vague information, like the uniform not being a sailor outfit...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I cannot state it with certainty, but if I were to name one suspicious individual, it would be...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Aoi Lumina.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"The fact that you and our buddy became aware of Aoi Lumina's existence.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And that Aoi Lumina's name came up through Kirishiki Nagisa-san's testimony in a way no one could have expected.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If these were not mere coincidences, but matters of inevitability...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then I cannot help but believe that Aoi Lumina is also involved in the Preschool Girl Serial Kidnapping and Murder Case.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Uribayashi Rina, who attempted to abduct a child in the past, was unrelated to the kidnappings.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"The most suspicious individual has now been cleared, which makes Aoi Lumina all the more suspicious.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Though I'm well aware that a theory based on 'ties' may sound like nothing more than occult nonsense.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"True... but then again, our very existence is occult.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I think following an occult theory is the right thing to do, for ghosts like us.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Still... how are we going to track down Aoi Lumina?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No... rather than tracking her down...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Right. Now that I think about it, that may not be the important part.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even if we were to find her, would she even admit her involvement?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... right... We only have the supermarket lady's testimony, which is unreliable. We've got no evidence at all...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even if we were to confirm it with Kirishiki-san, all we would learn is whether or not she was the one who killed Kirishiki-san, nothing more.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"As you said, we have no evidence. In short, we have no way to link Aoi Lumina to the Preschool Girl Serial Kidnapping and Murder Case.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If every encounter has meaning, then it stands to reason that you and our buddy may have already met Girl A.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If we already know her, then...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There are multiple suspects. We cannot yet narrow them down to one.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even if we were to question each of them directly, it's hard to believe they'd confess so readily.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's true, I guess...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"To begin with, our reasoning rests entirely on occult theory, which is no different from a hunch.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Rather than searching for random individuals, it is simply more efficient to start with those close at hand. That's all there is to it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even if that hunch were correct and allowed us to narrow down our suspect, we would still lack information.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We do not yet have sufficient grounds. If we were to act without solid evidence, we would not be able to corner the culprit—even if we found them.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Right. Hmm... sufficient grounds... and more information...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Wouldn't it be best to ask the person who knows this case better than anyone else?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yasuda Takeyuki, then?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. Even if I wasn't Girl A... the fact that he knew me means I must have been involved in the case in some way.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And he is unquestionably at the center of it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But why did he say I was the culprit? Why does he hate me so much?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I think I can ask him calmly now. Thanks to both of you, my heart feels lighter.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I cannot say if he will speak honestly, but if that is what you wish to do, then there is no reason for me to stop you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. But, yes, you're right. Whether or not he'll answer honestly is... questionable at best.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I just thought of something... that child...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That child? Ah...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That thought-form, you mean.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right. She seems to be afraid of high school girls... or at least women who look like high school girls.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Most likely, assuming our hypothesis is correct—that she is a conglomeration of the victims' and bereaved families' regrets.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What do you think would happen if she saw an adult man?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've been keeping an eye on her, but... she doesn't seem to react to people who are just passing by, male or female.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If she only reacts to ghosts, then that means she can tell the difference, right?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Given her interest in our buddy, it seems she can identify individuals to some extent as well.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Then how would she react to that man—Yasuda-san?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Would she reject him the same way she does us? Or would she recognize him as the one who killed her, and show some kind of special reaction?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I cannot say. But if she does react differently...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Setting aside the dead children... there is only one thing the bereaved families would want to do to the culprit.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Revenge?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Most likely.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It'd be fine if her vengeance were directed only at the culprit... but judging by how she reacts to us, it'd probably be indiscriminate...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Her perception of age is rather broad too. She mistook me for a high schooler, after all.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Maybe it wasn't that. Maybe she just genuinely thought you looked young.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If that's the case, then she is a very good child indeed. It makes me want to pat her on the head.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe~... Hey, would you mind telling me more about Yasuda-san?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I know we looked him up online earlier, but we didn't really go into the details.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Before we speak to him, we should make sure we understand what kind of person he is.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Understood. Once I tell you what I know, we will go meet Yasuda.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, please.\""
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, your phone is ringing... The caller is... I guess I don't even need to ask.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"To think she'd call at a time like this... Could I be reading too much into it?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've been making excuses to delay our answer, but perhaps it is time to steel ourselves.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Answer the phone)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yo~. Took ya long enough.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, how's it going? Things working out?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Who are you, exactly?\""
+  },
+  {
+    "message": "\"Aoi Lumina-san?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Who? I mean...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ah... guess the cat's outta the bag.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Aoi Lumina-san.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Ahh, yeah. Figures.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Nagisa suddenly getting her act together was, like... totally unexpected, I guess?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? What? Who?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Okay, maybe that was a bit too obvious.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So you really are...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yep, you got me. But damn, can't believe I got found out 'cause of Nagisa of all people... This sucks.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I see. It seems a certain someone was following us as well.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Pretty good, aren't I? Oh, and I don't do that anymore. I've actually been laying low. But yeah, I'd probably just make things worse if I kept lying.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why... why didn't you just tell us?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"C'mon, try putting yourselves in my shoes for a sec.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"My bestie thinks I killed her, and you guys think I'm a kidnapper.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"How was I supposed to tell you the truth? 'Course I'd lie.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Well... I mean, the kidnapper part ain't wrong, though.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You admitted it rather easily.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I mean, it's not like I did it 'cause I wanted to. Like, who the heck would even do something like that willingly?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Was he threatening you?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Well... yeah, something like that... but I had my own reasons too.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Even if I told you the truth, there's no way you'd let me go, yeah? So 'course I'd lie.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Especially to you, Shiorin.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Me?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I kinda thought I could lighten my sins a bit by telling you about him, but, uh...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What do you mean? Tell me...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Lumina-san?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"......\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I'm... sorry about your lil' sis.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......huh?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...It was all my fault. I'm really sorry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"W-Wait... my sister? What do you...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...I'm sorry. Bye-bye.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I said wait! Hey!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Wait... please...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Kugayama-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...It's okay. Yeah... I'm okay.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No, not yet. Until we have definite proof, I won't believe it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll confront the culprit directly. I'll make him talk. About everything... every last thing.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So please, tell me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Everything you know about Yasuda Takeyuki.\""
+  },
+  {
+    "message": "(Playground)"
+  },
+  {
+    "name": "Suspicious Man",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...That must be him, I take it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are you okay? If you're scared, I can speak to him instead.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. But I have to do this myself. It's not something I should leave to someone else.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've already seen you make people talk plenty of times. I want to see this through myself.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...That girl might be helpful as well.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She's hiding over there. Look, can you see her?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Um...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She's pissed as hell right now...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Her reaction is clearly different from when we approached her. I sense intense hatred—murderous intent, even.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If merely seeing him provokes such a reaction, then approaching him could lead her to truly carry out her revenge.\""
+  },
+  {
+    "name": "Shiori",
+    "message": " \"But we can't really test that... can we?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"True, but if we play our cards right, we may be able to use her to draw out a confession.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If he really is the culprit, then nothing would scare him more than his victims taking revenge.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Use her...? Yes, I understand. Okay, let's...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, right. Hey, can I borrow your charm?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If he starts talking about my sister, depending on what he says... I think I might lose myself again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So... would it be alright if I relied on that charm's divine power, and on your kindness as well?\""
+  },
+  {
+    "message": "(Hand over the charm)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, I've got this. I'll do my best.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll refrain from interfering, but I will step in if things go out of control.\""
+  },
+  {
+    "message": "\"Do your best.\""
+  },
+  {
+    "message": "\"Don't push yourself.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. Well then, shall we go?\""
+  },
+  {
+    "name": "Suspicious Man",
+    "message": "\"...\""
+  },
+  {
+    "name": "Suspicious Man",
+    "message": "\"You've got some nerve showing your face to me. What's with the crowd, Kugayama Shiori?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There's something I want to ask you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Yasuda Takeyuki-san.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Why do you know my name?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So you finally remembered—is what I'd like to say, but we never actually knew each other, did we?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...And what of it? Answer my question.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I had someone look you up online. Looks like you're quite famous.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I hear you were your father's secretary. Though it seems you weren't particularly diligent about your work.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You dare... Did you come here looking for a fight?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I told you, didn't I? I'm here because there's something I want to ask.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why did you lie?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Excuse me?!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You said I killed you. But that was a lie, wasn't it? Your obituary never said you were murdered.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It clearly stated it was a suicide.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So why did you lie that I killed you?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You said I killed my sister, but that was a lie too, wasn't it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why do you hate me so much that you'd tell something so cruel?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We didn't even know each other. I probably didn't even know your name when I was still alive.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And yet you came to hate me, all on your own.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Why?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...On my own, you say? The nerve!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I didn't kill you. I didn't even do anything to you. Isn't that right?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Cut the crap!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"It was because of you! YOU got in my way! Everything went wrong because of you!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... got in your way?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"That's right! It was YOUR fault! YOU'RE the reason why I had to die!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"If you hadn't been there, your sister... I... I would have...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My sister...? What did you do to my sister?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"If you hadn't gotten in my way, I would've...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\".........\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"No, no, no. Phew, that was close. I lost my temper there. It's always been a bad habit of mine.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I just realized. Why do I have to carefully explain everything to the likes of you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What... did you do to my sister?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I'm right, aren't I? Why should *I* answer your questions?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What did you do to my sister?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"What do you think? Curious? Of course you are!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"But no, I'm not telling. Why? Because I hate you, that's why.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You'll never know. And you'll suffer in that ignorance, for eternity. That will be my revenge.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Look behind you.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That little ghost girl has been watching you this entire time.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...What on earth are you talking about?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You want revenge. So does she.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That girl wants revenge on you as well.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...What was that?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You killed her. It's only her right to exact revenge.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's why I brought her with me. I never expected you to answer anything to begin with.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"What could a child possibly do?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"A child's *ghost*, you mean. No, I suppose it'd be more accurate to call her a wraith.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Your age or sex doesn't matter when you're a ghost. You'll understand soon enough.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Physical strength is irrelevant. She hates you. She curses you. And just like that, you will die.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah. I'm already dead, you know?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And you'll still die. Even *if* you're a ghost.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Turn around and see for yourself. Look at her face.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She's glaring at you. She's about to curse you.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I had her wait, though. I still have to hear the truth from you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But one word from me, and she'll leap at you right away...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...and curse you to death.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"......gh......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Quivering in fear just from that? Is this why you go after kids instead?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You... Watch your tongue, or I'll kill you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Answer me. What did you do to my sister?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I don't care what happened between us anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So answer me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What did you do... to my sister?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"ANSWER ME!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\".........\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Oh, I know. I know how to make you suffer more.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I did not kill any children. I absolutely refuse to admit that.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I was simply playing with them, like any good friend would. Until they were completely exhausted, of course.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"It's true. My claim that you killed your sister was a lie. I said it in anger, and that was my mistake.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I shouldn't have lied. Because telling you the truth would've driven you even deeper into despair.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What did you do... to my sister?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Do I really have to spell it out for you?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I made sure to have plenty of 'fun' with her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...! Y-You...!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Kugayama-san, please calm down.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Phew......... Hahhh~........., .........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Enough... Please leave.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Go!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Get lost. Don't ever show your face in front of me again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If you do, that girl cursing you is going to be the least of your worries.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Because I'll kill you myself!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Pfft. Hahaha! What a shame you'll never get to see your sister again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Get lost already!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Oh, I will. Gladly.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"This feels great. Haha... HAHAHAHAHA!!!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Kugayama-san.\""
+  },
+  {
+    "message": "\"You okay?\""
+  },
+  {
+    "message": "\"Don't overdo it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes... thank you, I'm fine, really.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I lost my composure a bit, but I managed to speak to him properly, all the way through, without losing myself. Your charm really saved me back there.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I think you were right to use that child to corner him.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...No, that was a strange way to put it. I'm sorry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, it's okay. Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I didn't take everything he said at face value. He was so full of hatred toward me, that all he did was lie.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I just thought talking any further would be pointless.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Still... I wonder if it was wrong of me to let him go.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I really do think it would have been fine to set that child on him.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right... maybe I should've had.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But it doesn't look like she chased him, and forcing her to exact revenge would be... too cruel.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's getting dark. Shall we... call it a day?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are you sure?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. There's nothing more we can do...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, I suppose so. I've done everything I could.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you, both of you. And I'm sorry for causing you so much trouble.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Shall we part ways here?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I'm sorry. I just... want to be alone for a bit.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Very well. Then our buddy and I will take our leave.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"See you.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, be careful on your way back.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well, that wasn't the outcome we'd hoped for. Unfortunately, we had no way to verify the truth of that man's words.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You can still 'see' Kugayama-san and me. As long as that bond remains unbroken, there may yet be something we can do. However...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"For now, perhaps we should simply leave her alone.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll take my leave here and return to the library. Good work back there.\""
+  },
+  {
+    "message": "\"You too.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If you decide to resume the investigation, let me know. Goodbye for now.\""
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "Time to head home."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "Shiori-san isn't here."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Boo!\""
+  },
+  {
+    "message": "?!"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, surprised?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"Not at all.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Really? Playing dead never seems to surprise you, so that was kind of a last resort. Ehehe, I guess it's worth trying things out.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like I finally managed to surprise you. I'm so proud of myself right now...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh... is that so? I guess that was a bit too forced. My fake deaths don't really surprise you, and I was out of ideas...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay... I basically just admitted it, didn't I? That my fake deaths were just a running gag, and weren't actually about getting my memories back...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Good job on digging your own grave, Kugayama Shiori.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I guess jumping from the shadows... wasn't the most appropriate way to scare someone, considering I'm a ghost...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry. I really do regret it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... right. I should apologize about yesterday too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Shall we sit over there?\""
+  },
+  {
+    "message": "(Sit under the tree shade)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There we go.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry about yesterday. I... needed to sort things out in my head.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I had a lot on my mind, but it was mostly... about what comes next.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If... if what that man said is true, and my sister really is dead...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She might have become a ghost like me, aimlessly wandering this world. And if that's the case, I want to find her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But I don't have my memories, and she might not remember me either.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She's my precious sister, and yet... I can't remember her face or her name. I just can't. So I have no way to look for her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Even if I tried to find my family, I wouldn't know their faces, or even where they moved.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If only I got my memories back, everything might've been solved, but I've already done everything I can...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"In other words, I'm stuck.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So... I thought about it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm not going to give up on my sister or my parents, but I think I'll try taking a step back for now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So I was thinking, maybe I'd try enjoying my life as a ghost, just like Ms. Librarian. Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I think my lingering attachment is my family. It's no longer my death I'm fixated on, but my family, especially my sister.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And as long as that fixation remains, I don't think I'll ever lose my sense of self.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, right. The Death Diary. There are still plenty of pages left.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's a gift from you, after all, and I don't want to leave it half finished... so, yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll fill it with memories all the way to the last page... and then complete the 'me' I am now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What do you think? Ehehe, I think I've found a pretty good goal.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"As long as I'm careful with my triggers, I should be able to live peacefully as a ghost—Ah, that reminds me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Your charm. Here, thank you.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I got my charm back."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I really want to give you a proper thank you for all your help... but unfortunately, I'm completely broke...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"All I can really offer is words of gratitude. I'm really sorry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. For everything.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Ehehe, that almost sounded like a farewell, didn't it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You know, this place takes me back. This is where it all started, where I asked you to help me get my memories back.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But that request ends here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I don't even know when I'll remember, and I'd feel bad about causing you any more trouble than I already have.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"From here on, I'm going to take things easy. No more rushing. I'll take it slow, at my own pace.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Even I don't understand what I really am. And yet, you still listened to my request. Thank you, truly.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You don't have to come here anymore.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...That said, saying goodbye still feels lonely, doesn't it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So, this is just me being selfish, and you don't really have to think of it as a request... but could we continue being friends?\""
+  },
+  {
+    "message": "\"Yes.\""
+  },
+  {
+    "message": "\"No.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, thanks.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It'd really make me happy if you'd come see me once in a while. It doesn't have to be every day.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, since we're already here, shall we go somewhere?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Geez, how mean~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well, I guess this is just the right distance between us. I *am* a ghost, after all. Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I know you can be a bit dry sometimes, but that's just one of the many things I love about you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Anyway, since we're already here, I'm not letting you go home just yet. You'll keep me company, right?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, right. We should report to everyone who's helped us so far.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well then, shall we go?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Hm?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hello.\""
+  },
+  {
+    "message": "\"Hello.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey hey. What, did you two make up already?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We weren't really fighting, but... sorry for all the trouble I caused.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We're here to thank you for everything you've done for us. Thank you, truly.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Did you get your memories back?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No, not yet. But I've decided not to force it anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I don't want to trouble my buddy any further too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"From now on, I think I'll try doing things at my own pace.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hmm... Eh, why not? Sounds fine to me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Oh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, Ms. Librarian.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? What're you doing here? Weren't you stuck in the library?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I can go out now, thanks to our buddy here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh yeah? Good for you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Indeed, thank you very much.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'm just wandering around without any goal in particular. But I'm glad I bumped into you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yooo~. What's up?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hello. Just out for a walk. It seems I'm lucky, I didn't expect to run into you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Nice timing. We were just thinking of coming to see you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I wanted to speak with you as well. I was wondering what you were planning to do next.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"About that... I'm sorry, but I've decided to stop investigating the incident.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I see. I understand.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry. You helped us so much, and yet I'm leaving things half-finished like this.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please don't worry about it. We didn't even have any concrete leads to begin with.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"For an amateur investigation, I'd say you did quite well.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No, please don't worry about it. There are still a few things that don't sit well with me, but...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Hm? Like what?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's nothing. For an amateur investigation, you did quite well.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm truly sorry. And thank you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You needn't thank me. Over the course of this investigation, you two have done me a favor I can never truly repay.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"How are your memories? Have you remembered anything at all?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No... nothing important, at least.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But I'm okay now. I might remember someday, or maybe I won't. Whatever happens, happens.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've decided to slow down and take things easy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Also... I want to look for my sister too. I want to see her... whether she's alive or dead.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll help.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Is this the part where I'm supposed to say something too? Well, I've got nothing better to do, so I guess I'll help.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So then... may I ask for your help right away?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Of course.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Bring it!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Will you keep being my friends?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"C'mon, stop it. You're cracking me up. You don't need to ask.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Of course, Kugayama-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And... you too. Thank you. For staying by my side, buddy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You might not want to hear this from a ghost, but...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's keep hanging out, okay?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Count me in as well. Since you can still see me, it means our tie is still intact.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I don't really get it, but hey, same here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe... yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My memories may not be back yet, but I've found something irreplaceable.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like I won't be passing on just yet.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Here's to many more days together.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, and I heard everything. From Aoi Lumina-san.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...! That damned woman...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So you really were the culprit behind the serial kidnapping murders.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You threatened Aoi Lumina-san and made her kidnap children.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Excuse me? Shut up, stop messing with me, damn it!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I never threatened her. She did it on her own.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"She was infatuated with me, and tried to seduce me. Naturally, I turned her down, as I had no interest in her.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"She brought them to me herself, just to get my attention. I never threatened her.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"And yet you'd call me a murderer? Shut up, don't be absurd. I was simply playing with them, as any good friend would.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"As any good friend would? Nobody trusted you. What parent would ever let their child play with someone like you?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Y-You... bitch!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now that I think back on it, I didn't even need to look you up. Everyone knew who you were.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"As the sleazy man who was always ogling children at the park.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Wha... you...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You... you never fail to infuriate me, do you?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You never change! All you do is get on my nerves!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"If only you didn't exist, everything would've gone well!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"If only you didn't get in my way, that girl would've been...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That girl...?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Your sister! Who else?!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...If I didn't... get in your way?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh... so that's what it was. Until now, I've never really understood why you hated me so much.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I saved my sister. I got in your way. And that's why you hate me...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You ruined my life! Of course I'd hate you!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"If only you hadn't gotten in my way back then... If only you hadn't made a scene...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Because of you, the police set their sights on me! I was chased by reporters! All the hard work I put into my career, ruined!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Because of you, I... I had no choice but to choose death! It's all your fault!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You were just running away from your crimes. You didn't want to atone, so you chose to hate me instead.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You mean to say my hate is unwarranted...? You bitch... Shut up, shut up, shut up, SHUT UP!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"How can it be unwarranted when it's your fault?! Stop messing with me, shut up shut up shut up shut up shut up!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Enough.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"What if I take away someone precious to you? Will you finally understand my despair then?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "He's... looking this way!"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Watch out!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Can a ghost kill a human? Let's find out right now!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Buddy, run!\""
+  },
+  {
+    "message": "...!"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "message": "\"Shiori-san!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm okay... I'm fine... really, I'm okay...!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Buddy, this way! You need to leave at once!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah... hahaha! Just like back then, Kugayama Shiori!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... killed you...? Lies...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You... when I was trying to save my sister...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You stabbed me... with a knife... over and over...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Yes, that's right. But you see, you brought it upon yourself, didn't you?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I'll ask you the same thing again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You want to save your sister, do you? Then could you die in her place?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You hesitated for a moment. That's when I stabbed you.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"You talk like you're so righteous, but in the end, all you care about is yourself!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"It's because you survived. Yes, all because you lived!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Because you lived, your precious sister died instead!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Ahh, I remember now. That voice, those words, I definitely heard them.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I should've died instead? If I'd died, could I have protected my sister?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"In that case, I'll die as many times as it takes. I'll offer up my life, again, and again, and again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I remember. I remember everything now.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Let go of me! Or I'll stab you just like I did back then! Nice and slow—one stab at a time.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Do what you want...! I won't... die from this...! I'm not... dying anymore!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It doesn't hurt like it did back then...! It doesn't hurt at all...! You can't kill me anymore...!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Just shut up and die already! Don't show your face in front of me ever again! It's high time I had my revenge!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Revenge...? That's right, me too... I want revenge...! I want to kill you...!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But it won't be me. There's someone far more deserving...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The embodiment of everyone who's been wishing for your ruin for a long, long time!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Buddy, please call the 'children.' They might respond to your call.\""
+  },
+  {
+    "message": "\"Come!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah! What's this? Trying to get on my good side? A little too late, don't you think?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You still don't get it? All this rage is directed at *you*!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Huh?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You don't even remember the children you killed?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Wha...? Ah...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You will end here, crushed by the weight of your sins!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Hah. What could one child possibly do?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Once I kill you, then I'll kill them too. And I'll be sure to have plenty of 'fun' with her.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"I suppose I have to thank you. I didn't think I'd get to enjoy myself even in death! HAHAHA!\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"The one who killed 'you'...\""
+  },
+  {
+    "message": "\"Was this guy.\""
+  },
+  {
+    "message": "\"You don't have to hold back anymore.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"HAHAHA...\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"...ha?\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"H-Hey, what... wh-what is this...?!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Stop, stop! What are you doing?! Wh-What do you think... you're doing?!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"What goes around comes around. As they say, you reap what you sow.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Shut up! I reaped what I sowed?! I never sowed anything! I've never done anything wrong!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right, you were just having 'fun.' It'd be nice if Enma-sama understood your selfish, one-sided love.\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"Shut up, shut up! No one messes with me! Let me go! I said let me go!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"No, no, no no no no no no!\""
+  },
+  {
+    "name": "Yasuda",
+    "message": "\"NOOOOOOOOOOOOOO!\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Not a single trace of Yasuda remained."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hahhhh.........\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are you okay?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes... I'm fine, I'm okay.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The charm protected me from the knife.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Or so I'd like to say, but the truth is, it wasn't like in the movies. I just endured it through sheer willpower.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like all those suicides finally paid off. I was fine even when my head got smashed open. A knife like that isn't enough to kill me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"See? Not a scratch. Being a ghost sure is convenient. I heal right away.\""
+  },
+  {
+    "message": "\"I'm so relieved...\""
+  },
+  {
+    "message": "\"Thanks for protecting me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry for worrying you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No, I was the one who provoked him... If anything, I should be apologizing to you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"By that logic, this would be my fault, then. I was the one who told you to provoke him.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"No, really, I appreciate your guidance.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I should apologize to her too...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If she hadn't wanted to, I would've done it myself.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Even so, I still feel bad about pushing her into taking revenge.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If she truly didn't want to, she wouldn't have responded to our buddy's call.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"With her revenge fulfilled, she should be able to pass on now, satisfied.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Or so I thought.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She's just running around like usual...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What about you? Are you okay? Things didn't exactly end on a pleasant note...\""
+  },
+  {
+    "message": "\"I'm okay.\""
+  },
+  {
+    "message": "\"I feel refreshed.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I see, I'm glad to hear it. Maybe there was another way to handle it, but...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems our buddy couldn't become a completely good person either.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, that makes three of us, then.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Still... maybe there was another way to handle that...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"He was going to harm our buddy. I believe we chose the best possible course in that situation.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I guess... It's just...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are his last words bothering you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. Being stabbed in the stomach, hearing those same words again, it made me remember the moment I died.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did I really hesitate? Why didn't my body move right away?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Was I not brave enough to face the knife?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Was I supposed to willingly choose death?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Was that why you kept killing yourself? Because you regretted it deeply?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Maybe.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then your regret should be resolved now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Huh?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Just now, you protected our buddy without a second thought.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You've proven that you have the courage to sacrifice yourself to protect someone important to you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You needn't concern yourself with that madman's ramblings.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. I'll think of it that way.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I feel... surprisingly empty.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That's just how it is. Even if he were a criminal, you erased a person's soul. I'd be more worried if you felt satisfied without thinking it through.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, you're right. Ehehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Yeah, things got a little messy, but I did get the answers I wanted.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's getting dark, so I guess we should call it a—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"An incoming call.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...It must be her.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Answer the phone)"
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yooo, how'd it go?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I thought you'd never call us again.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Well, that was the plan, at least. But then you guys started celebrating your happy ending.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And it was kinda pissing me off.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'know, I hate that stuff.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Sooo I had a change of heart. Figured I'd talk to you one last time.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"So you've been following us, then. Where are you now?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Oh c'mon, you should've noticed by now. Look behind you.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Hey there~\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Whoa, hold up. Don't move. Just stay there, alright? Right there.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I don't wanna get chomped like that guy just now.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Let's just talk like this, yeah? A gal's gotta have her personal space.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hey, Lumina-san.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I hate that name. Gyaruko's fine.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"It's not sparkly enough, and it's not really normal either. Just a lame in-between.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Gyaruko-san.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What is your goal?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Tell me, have you ever killed someone since becoming a ghost?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh...?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I already knew you could curse someone to death, at least in theory. Someone told me about it.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But I've always wondered, how do you actually do it? Like, what even is a curse anyway?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Turns out, it was actually pretty easy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It was... easy?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...That accident from five years ago... You were the victim, weren't you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Wait. The driver who died under suspicious circumstances the other day...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Don't tell me... it was the same person from that accident?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Accident? No, no, no. That was murder. Straight-up murder.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Dumbass wouldn't stop bugging me about marrying him. Like, what the hell, old man? Did he seriously think I'd say yes?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Anyway, I just strung him along. Then one day, bam. Hit me from behind.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Once he ran me over, he backed up, and did it again. Like, he really wanted to be sure I was dead. Nasty, ain't it?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"He killed me, so it's only right I kill him back, yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Well... it's not like I was actively hunting him down or anything. I thought he was in jail.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But I guess he got out. Probation, maybe? Or maybe he never went to jail at all, I dunno.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Anyway, I happened to spot him, and I figured I'd try cursing him to see what'd happen.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"It was actually pretty easy, y'know. I just dumped all my anger and frustration at him, and boom.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"He started twitching all over, bleeding from all his holes. It was hilarious.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Anyway, here's what I'm getting at.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"If I felt like it, I could kill your buddy any time I want, just like that geezer.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...!\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yeah, figured you'd be scared.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"That old dude Yasuda started behaving after he heard it too.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Guess he really was a wimp deep down. Just a spoiled rich boy riding on his father's coattails.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"You can feel my malice oozing out, can't you? Maybe it's 'cause we're both ghosts.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I said, what is your goal?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I already told you, didn't I? I just came to talk.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I'm pretty sure you've got plenty to ask. C'mon, shoot.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Just be careful I don't snap. 'Cause even I don't know when I'll blow up.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "The air feels heavy."
+  },
+  {
+    "message": "Gyaruko-san's curse... I feel tense, even at this distance."
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Alright, first question! Feel free to ask anything.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Is it true that you helped with the kidnappings?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yep, it's true.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Oh, right. I've gotta set something straight.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"The whole thing about me being in love with him was total BS.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I did hit on him, sure.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But the guy flat-out turned me down. Pissed me off so bad.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And that's why you helped with the kidnappings...?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'see, I hate it when people look down on me. And I hate people who're probably happier than me.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"So I figured I'd wreck his... what was it again? Right, his social standing. Yeah, I'd take it and smash it to pieces.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You... used a child? Did you even stop to think about what kind of harm that could cause?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Hey, even I didn't think he'd actually kill the kid. That one's on him, not me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...But you kept going even after the first death. Your excuse holds no water.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yeah, figures. Like I said, I hate people who're probably happier than me.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'know those kids who look like they're totally loved by their parents? Like they grew up without a single worry? Don't they just piss you off?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I get to blow off some steam, and I even get to ruin that geezer's life.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Two birds with one stone, yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...You said your best friend misunderstood you...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Was it... really a misunderstanding?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Oh, you mean Nagisa?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'know how she always talks like she's better than you? She's so full of it.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'see, my place was kind of a wreck. My parents didn't get along, and we didn't have any cash. It was a dead end.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And she'd always make fun of me for it. That bitch was always looking down on me.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I'm sure you'd wonder why I'd even hang out with someone like that... but we were childhood friends. Guess you could call it a toxic tie.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"We'd always hang out in her apartment hallway, just talking there while looking at the view.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Whenever Nagisa called for me, I'd come running. In a way, I guess I was her bitch.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But then she started lecturing me. You can't live like that, you'll never be like me, blah blah. So damn annoying.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And something just snapped. I dunno, guess I just hit my limit.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"So I shoved her from behind.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'know how they scream while falling in dramas? But Nagisa, she just fell without a word. Really cracked me up.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Oh, but I did call an ambulance, okay? Told 'em my bestie fell. Pretty good of me, yeah?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'see, she'd always sit on the railing... or wait, was it a wall? Anyways, she'd sit there, legs dangling.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Our neighbors had seen us there plenty of times, and I'd been drinking too.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"So when I said she suddenly jumped mid-convo, everyone bought it. They called it a suicide, and nobody questioned it at all.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"In a way, I guess you could call it one of my few success stories?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Made me realize how surprisingly easy it is to kill someone.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's it...? You helped kidnap and kill children just for that...?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"That was more than enough for me.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Alright, last one's yours, buddy. Ask whatever you want. Call it an apology for threatening you.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Why did you lie to Shiori-san?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Ah... why did I lie? Not sure which one you're talking about, but...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"It's not like I hate Shiorin, alright? Actually, I like her. She's nice.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But y'see, I hate happy people. I can't stand it when someone's happier than me.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Watching her get her memories back, get her happy ending, have her regrets cleared up...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I mean, really? Where's the fun in that?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"So I figured I'd mess with her just a teeeensy bit.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Listening to me talk just kills the vibe, yeah?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Like I've totally soured the mood? Well, that's what I'm going for.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"See? I'm a petty gal.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Was telling me about the culprit part of it?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yeah. That damn asshole just loves blaming other people. Figured the two of you would make a nice mess together.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I was hoping he'd dump all the blame on you and screw with your head. Y'see, he was already furious at you even before he died.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"At me...? Why?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Get this, that guy was actually your stalker.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wha...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"He was really into your lil' sis. He wouldn't shut up about her when he was with me, saying she'd be next and all that.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'see, there are plenty of chances to snatch up little kids.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Like kindergarten buses, for example. Sometimes their folks don't show up, and the kid just ends up walking home alone.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Or when the parent's too busy glued to their phone, and the kid just wanders off on their own.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But you were different, Shiorin. You never left your lil' sis alone. So I kept telling him nope, not happening.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Then he started digging into you like crazy. Your name, your address, everything.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So that's why he knew about me... without me ever telling him...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yep yep. He was always watching, waiting for the perfect time to snatch up your lil' sis.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But his chance just never came. He kept bitching about how you were in the way. Hilarious, ain't it?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I actually told him to just drop it, y'know. But he just couldn't hold back and went through with it anyway. Idiot.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And sure enough, you caught him. He panicked, stabbed you, and everything blew up.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And just like that, his life was over. There wasn't any point in going further, so I just bailed.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...So, he ended up killing himself, huh. I didn't know, 'cause I died before him.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"The guy was a wimp. He probably got lonely after I died, then figured he'd rather just die than get arrested. I dunno.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But eh, who cares about his story? He's gone.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Anything else?\""
+  },
+  {
+    "message": "\"...\""
+  },
+  {
+    "message": "\"Are you satisfied now?\""
+  },
+  {
+    "message": "\"So, what do you want?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"'Satisfied,' eh...? I wonder. I don't even know what that would take.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I'd love to try it sometime, though. Being satisfied.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Once I take care of some stuff... maybe I'll feel just a bit better.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Stuff...?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Yep. Y'see, Shiorin, I was thinking of putting a curse on you.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I wonder. Even I don't really get it myself.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"But yeah, it's not so much what I want to do, it's what I'm about to do.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Y'see, Shiorin, I'm here to put a curse on you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Ah, no no no. I'm not out to kill you or anything.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I'm talking about a curse that doesn't end with death, something that goes on for eternity.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"You died after the geezer stabbed you, remember? You don't actually know what happened to your lil' sis after, yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"He stabbed you, freaked out, and bailed. Do you really think it could end like that?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Think about it. He was so obsessed with your lil' sis that he stalked you, remember?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"He stabbed you, took your lil' sis, and ran.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"That's why I apologized on the phone earlier, said it was my fault what happened to your sis.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Sorry, but yeah. You've probably guessed it already.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Your lil' sis didn't make it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"............\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"And that's it. Q\\&A's officially over.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"I've told you eeeverything I know. Honestly.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Even the stuff that didn't really matter. Every last bit.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Every dumb question you asked, I answered straight. No lies, nothing left out.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"You don't have to believe me, y'know? But it sticks, yeah? What if it's true? What if you really did die for nothing?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Well? Can't pass on now, can you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's okay.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Nothing you say will ever make me waver.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Oh yeah?\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Eh, whatever.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Guess that's that, then.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Hope you get to see your lil' sis.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wait.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"Hm? Yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You threatened my buddy earlier.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"So?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I think I finally understand something too, how ghosts vent their grudges and resentment.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I now know how to curse someone.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's why, Gyaruko-san...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If you ever lay a hand on my buddy...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll kill you.\""
+  },
+  {
+    "name": "Lumina",
+    "message": "\"...Hah, bring it on.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Phew...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Are you sure you should let her go just like that?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If what she said was true, then she deserves to be punished.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And you have the right to exact it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hmmm...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I don't really care.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Like I said, words like that won't shake me anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So I think that's enough. I'm done. The case, the culprit, even Gyaruko-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And besides... if I really did kill her, I don't think I'd be able to face my sister.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Call me naive, but I want to live with my head held high.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Of course, it'd be a different story if she laid a hand on either of you, ehehe.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Very well. Then I'll say nothing more.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Mm-hm, thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's getting dark. Shall we call it a day?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you both, truly. Having you by my side was very reassuring.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No, I've done nothing to deserve your thanks.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's not true. Your presence really was reassuring, Ms. Librarian.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If anything, I'm the one who should be thanking you. Yasuda was someone I shared a bitter tie with.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You truly did a great job, Kugayama-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, you too.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Shall we part ways here? I'd like to take a little walk around the area and sort out my thoughts.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I see. Very well.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well then—Ah, right.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hey, if you're up for it tomorrow, or well, it doesn't have to be tomorrow. Any day that works for you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Could you come here instead of the usual park?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The reason is... ehehe, it's a secret. I just thought of something nice, that's all.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay then, get home safe, okay? See you again.\""
+  },
+  {
+    "message": "\"See you.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Then I'll be taking my leave as well.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay. Thank you too, Ms. Librarian.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You could say things have reached a conclusion for now. But that last part really was unnecessary, wasn't it?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That said, it seemed like Kugayama-san's mind was already made up, so there's probably nothing to worry about.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Still... I can't help but wonder whether it was actually right to just leave her be...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Perhaps the one we should be worrying about isn't you, buddy, but Kugayama-san. As you heard earlier, Aoi Lumina's strange fixation on Kugayama-san likely comes from their ties in life...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And with that final provocation, she only deepened the hostility between them... Perhaps we shouldn't have left her alone after all...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I should take a few precautions, just to be safe. Please leave the troublesome parts to me.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I'll be on my way now. Good work today.\""
+  },
+  {
+    "message": "\"You too.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Take care on your way home. Goodbye.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I should record what happened today on my phone."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to head home."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "message": "......"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......wha... huh? .... What?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That lady... huh... d-did I......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I... wh-what have I......\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's okay, please calm down. What happened just now was beyond our control.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Beyond... our control...? How was any of that... I mean... I... just... killed someone...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"As we've talked about before, ghosts have trouble regulating their—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I just resorted to violence... over something like that... In the end, I'm just...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please calm down. There was nothing we could—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So it was all true...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I really am... a murderer!\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san!\""
+  },
+  {
+    "message": "(Chase after her)"
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "\"I lost sight of her...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...We've lost her. This isn't good.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's not just anger that ghosts struggle to control. Anxiety too. Even the smallest things can send their emotions to extremes.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kugayama-san is highly unstable right now. She shouldn't be left alone.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you have any idea where she might have gone?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "(Grand park)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah.........\""
+  },
+  {
+    "message": "......"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems her mind is crumbling... her soul is starting to fade...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please, call out her name. We may still be able to reach her.\""
+  },
+  {
+    "message": "\"Shiori-san.\""
+  },
+  {
+    "message": "\"Shiori-san.\""
+  },
+  {
+    "message": "\"Shiori-san...\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": ".................."
+  },
+  {
+    "message": "..........................."
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "(Go somewhere else)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hm? Buddy?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Why here...? Where on earth are we going?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...No, I understand. Don't worry, I won't leave you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A shrine, is it? If a deity does indeed reside here, then perhaps there's still hope...\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Put in an offering)"
+  }
+]

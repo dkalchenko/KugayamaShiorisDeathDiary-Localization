@@ -1,0 +1,919 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"I think we've gone everywhere I wanted to, except for *that place*. It's gotten a little awkward to go there now, hasn't it?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We could just go somewhere else instead, but it would definitely weigh on me...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, time to work up the courage and go.\""
+  },
+  {
+    "message": "(Convenience store)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...She doesn't seem to be here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm half relieved, and half disappointed.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wasn't exactly calm yesterday... If possible, I wanted to talk to her again with a clearer head.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's not like I expect us to understand each other or anything, but she did help us, right?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"At the very least, I wanted to thank her for that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But if she's not here, there's nothing I can do... As Ms. Librarian would put it, perhaps our ties have already been severed.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, I need to move on. Not everything ends in a satisfying way.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, could you print the photo?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to head inside."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Welcome back.\""
+  },
+  {
+    "message": "(Hand over the photo)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you. Looks like this is my last death photo.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've made you take so many of these, and even print them out, but just when I was about to apologize...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I realized, this was your idea, wasn't it? Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It might be a little twisted, but it's still a precious memory between you and me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Shall we head to our usual park? I still have to write the final entry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, time to start writing.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's take a seat.\""
+  },
+  {
+    "message": "(Sit down)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There we go... Hmm~, let's see... how should I start...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, this might take a while, so let's just talk while I write, okay?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I used to come here with my sister every now and then.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I always thought this park was a bit too far for my sister, so we'd usually end up going to the one closer to home. But I think she actually liked this one better.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's not like she ever said so outright... but whenever there were playground sets, she'd feel obligated to play with them.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Here, all you have to do is sit down and take it easy, so maybe she felt more at ease.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We'd secretly bring Mom's picture books and read them together, or just sit there doing nothing, talking about whatever came to mind...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, I keep talking about my sister, don't I? I was a lot older than she was, so I couldn't help doting on her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'd go on and on about her at school, and my friends would just roll their eyes.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Back then, I never even imagined that I'd end up dying.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Five long years, eh? Somehow, it just doesn't sink in.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Man, her elementary school entrance ceremony must've been ages ago, and in just a few more years... she'll be in middle school? Wow, guess it's really been that long.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........Hmm, let's see... what else...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Ah, I got so focused on writing that I forgot to stay in character.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I was trying my best so you wouldn't be surprised if my tone suddenly changed... but eh, whatever. I'm tired. Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's kind of amazing that I managed to keep that up even after losing my memories... that elegant, theatrical version of Kugayama Shiori I used to play with my sister.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I couldn't even remember my sister's face or name, and yet I remembered something like that. In a way, that's very me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, just a little bit longer. I'm almost done.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right, lastly...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah... that should do it. I think I've written everything I wanted to.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But before you read it...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hey, can you come here for a sec?\""
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "message": "(Stand up)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yup, this way.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Uh... just a sec, my memory's kinda hazy. The first time we met was...\""
+  },
+  {
+    "message": "\"Here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh, right. It was over here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's this tree. The tree I hanged myself from.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I must've looked so suspicious, like something straight out of a horror movie... I'm surprised you didn't just run away on the spot.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But if you ignored me, I'd probably be still here, pointlessly killing myself again and again.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You know, I finally figured out why I kept killing myself.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Back then, I said maybe if I died one more time, I'd finally find peace, right?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Before I met you, I was trapped by the words I heard just before I died, so I kept killing myself over and over.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Did I lose something precious because I failed to die?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"To me who was fading away, suicide was the same as questioning myself.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'd keep asking myself whether I should've died.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But you know...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Once I met you, things changed. It wasn't like that anymore.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Once I became myself again, my suicides weren't the same.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Remember what Ms. Librarian said? If I really meant to pass on, I would've disappeared the moment I killed myself.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"In other words, I never really meant to pass on, and I never truly meant to die either.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"All I really wanted to do was show you my fake deaths.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You know, I used to play hide-and-seek with my sister all the time at home.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Our apartment unit wasn't very big, so there weren't many places to hide, so I had to get creative with how I hid.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My sister was a strange kid. She loved seeing people die in horror movies.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I figured maybe she'd like it if I played dead, so I tried collapsing onto the floor on a whim.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But no... she start bawling and yelling, 'Onee-chan, nooo!'\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"She clung to me and sobbed. She was so cute that every time we played hide-and-seek, I'd end up playing dead.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I kept changing it up so it wouldn't get repetitive, and before long my sister didn't even want to play hide-and-seek anymore...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Dad would get mad and tell me to knock it off, and when I splattered ketchup on the floor, Mom scolded me for wasting food...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It was probably a terrible memory for her, and a bittersweet one for me, but it's something I'll always hold dear.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It was the only time I was ever mean to my sister... Even when I forgot everything and nearly lost myself, it was the one memory that stayed with me. I'll always cherish it, now and forever.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The fact that you were the one who found me hanging here...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We must've been tied by fate, as Ms. Librarian would put it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Up until today, I've been playing dead every single day, waiting for you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Waiting for you to find me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Hey...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Could you take off your hat?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... I knew it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The reason you never told me your name... wasn't because you didn't want to get cursed.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I knew who you were.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I've known for a very long time.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You've grown so much, Shiika.\""
+  },
+  {
+    "message": "\"Long time no see.\""
+  },
+  {
+    "message": "\"Onee-chan.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, it's been so long.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm so sorry... for forgetting you, Shiika...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you so much for staying by my side, waiting so patiently until my memories came back.\""
+  },
+  {
+    "message": "\"I just wanted to stay with you...\""
+  },
+  {
+    "message": "\"For as long as I could...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah.\""
+  },
+  {
+    "message": "\"And...\""
+  },
+  {
+    "message": "\"I was afraid you'd ask...\""
+  },
+  {
+    "message": "\"'Who are you?'\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, that makes sense... I didn't remember you, after all... I'm sorry.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"All this time, I thought you were a boy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"At your age, it's hard to tell just from your voice, and you dressed like one too...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I guess I'm just making excuses. I'm sorry I didn't realize sooner.\""
+  },
+  {
+    "message": "\"Mom wanted me to...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... did she tell you to pretend to be a boy when you're out?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah, that makes sense. You almost got kidnapped, after all. Mom must be worried.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's okay. Once you're a little older, I'm sure she'll let you wear cute clothes.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But your outfit right now already suits you. It really does.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...How are Mom and Dad? Are they doing okay?\""
+  },
+  {
+    "message": "\"They're doing okay, but...\""
+  },
+  {
+    "message": "\"They seem lonely.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh... So they still haven't forgotten about me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Where did you move to? I always kept you out pretty late. Did that cause you any trouble?\""
+  },
+  {
+    "message": "\"It's not that far.\""
+  },
+  {
+    "message": "\"So it's okay.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's good. But you should still be careful, okay? Make sure you stick to well-lit streets on your way home—\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Never mind. I'm sure Mom's told you a thousand times by now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's kind of surreal... talking to you like this, now that you're older.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That day... five years ago, when you were almost kidnapped...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That man stabbed me, and I died.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But I never knew if I managed to save you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's why... I'm so glad...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You've grown up so much.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So I really did save you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Looks like I don't have any regrets left.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...I wish I could act like a cool big sister and leave it at that, but...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wish I could've stayed with you longer.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wish I could've watched you grow up.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wish I could've cried at your wedding. I wish I could've held your children in my arms.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I wish... I could've lived longer.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm just overflowing with regrets. Lame, aren't I?\""
+  },
+  {
+    "message": "\"That's not true.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Really? Ehehe, thanks.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I have so many regrets, too many to count.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But... maybe God granted me a small mercy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"A short detour before I make my way to heaven.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I got to see you all grown up, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I got to talk with you so much, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I got to take walks with you again, just like we used to, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We got to investigate that case, talk to all the other ghosts, and even try out urban legends together...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It was fun. It was really, really fun.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"God gave me a final chance to make even more memories with you, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But honestly, I still want to stay by your side and make countless more memories, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"......\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I guess your big sis' little detour ends here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Here, it's yours.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Our memories, along with my feelings.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Be sure to read it later, okay? It's a promise.\""
+  },
+  {
+    "message": "\"...\""
+  },
+  {
+    "message": "(Accept the Death Diary)"
+  },
+  {
+    "message": "(Don't Accept the Death Diary)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Take good care of it, okay?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Also, there's actually one more favor I want to ask you...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Please, Shiika.\""
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "(Accept the Death Diary)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Also, there's just one last thing I'd like to ask of you...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Can we take a picture together?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Come to think of it, we never took one. What do you think?\""
+  },
+  {
+    "message": "\"Let's.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yay, let's do it, then!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Come on, closer. Stop being shy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, perfect. Whenever you're ready.\""
+  },
+  {
+    "message": "(Take a photo)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wow, it came out so nice. A commemorative photo with a ghost, now that's priceless. Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'd love it if you printed that one too and added it to the diary.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And I'd really love it if it reminded you of me every once in a while.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Alright. Now I really don't have any regrets left!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Actually... I guess I still do. I wish I could've stayed with you longer...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If I really wanted to... I probably could, like Ms. Librarian.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But... I don't think it's right for someone who's dead to linger at your side.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"One day, my love for you could turn into fixation, which would eventually become a curse.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ghosts don't have much self control. I learned that the hard way.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"So before that happens... before I start going crazy...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I want to say goodbye while I'm still myself, the big sister you know.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You're kind of a goofball like dad and me, so I do worry...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But I know you'll do just fine without me now. You're already growing into a wonderful young woman.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That said, if something ever happens, don't be afraid to lean on someone, okay?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You're responsible, just like Mom, so I know you'll be alright.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Yeah, you'll be okay. Even without me, you'll be just fine.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That said, if you ever run into trouble, don't be afraid to lean on someone, okay?\""
+  },
+  {
+    "message": "\"Yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Take care of yourself, okay?\""
+  },
+  {
+    "message": "\"Yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Stay away from dangerous places.\""
+  },
+  {
+    "message": "\"Yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And don't go trying out urban legends on a whim.\""
+  },
+  {
+    "message": "\"Yeah.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And also...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's time for your big sis...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...to go.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you for finding me, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Because of you, I was able to make one last batch of happy memories. It's now the greatest treasure of my life.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you, Shiika.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Take care.\""
+  },
+  {
+    "message": ".........!"
+  },
+  {
+    "message": "\"Onee-chan.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah?\""
+  },
+  {
+    "message": "\"Thank you for saving me.\""
+  },
+  {
+    "message": "\"See you again!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\".........\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yeah. I'll be waiting in heaven!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Goodbye for now, Shiika!\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "Onee-chan's gone."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "She's gone from this world."
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "...I don't want to go home yet."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I should go and tell everyone who helped us what happened..."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Want to come with me?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "She nodded... I think?"
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Ms. Librarian isn't here."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "I'll leave a note."
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "That should do it."
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Oh..."
+  },
+  {
+    "message": "I can't see her anymore..."
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "(Bow in gratitude)"
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "Time to go."
+  }
+]

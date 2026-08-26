@@ -1,0 +1,353 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"She's usually around here, but...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She doesn't seem to be here. I suppose things won't be that easy.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And we don't even know whether she's connected to the incident. We should go to another location first.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I agree. Let's go.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A woman who was involved in an abduction case in the past... Given that she's a candidate for Girl A, I'd very much like to speak with her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Shall we leave for now? We can come back once we've taken care of our other tasks.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Looks like she's not here.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It seems we've no choice but to come back later.\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"There she is. That's her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see... From a distance, she looks like an ordinary mother you would find anywhere. But on closer inspection, the stroller is actually carrying a doll...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Part of me wants to ask her about the serial kidnapping murders, since we might obtain unexpected information, but...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Since it involves children, it wouldn't be right to ask her... considering what she's been through.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Agreed. Let us only ask her about Kirishiki Nagisa-san, and show her the photo.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That should be... Uribayashi Rina-san, right?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A woman pushing a stroller with a baby doll in it... She can see ghosts, but she can't hear them...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There are two points we want to clarify: when the abduction incident occurred, and whether it's connected to the serial kidnapping murders. However...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's not something we should be asking her directly, especially considering the scars she's carrying.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. Let's just ask her about Kirishiki-san.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"While the chances are slim, if she does know something, it could be our lucky break. We have to do what we can.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"It's true she can't hear us, but we'll back you up all the way.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Now then, let us try talking to her.\""
+  },
+  {
+    "message": "\"Hello.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Oh, hello. Look Micchan, your friends came to visit you again~\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Come now, Micchan, say hello. Hello~\""
+  },
+  {
+    "message": "\"Hello, Micchan.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Eheh~, look at that smile. Thank you again, for always coming to see Micchan.\""
+  },
+  {
+    "message": "\"...\""
+  },
+  {
+    "message": "\"There's something I want to ask...\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Hm? What is it?\""
+  },
+  {
+    "message": "(Show her the photo)"
+  },
+  {
+    "name": "Rina",
+    "message": "\"A photo? On your phone? You want me to look at it?\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"...ah.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"How nostalgic... That's Kirishiki-senpai, isn't it?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I'm surprised. It was a long shot, but I suppose it was worth trying.\""
+  },
+  {
+    "message": "\"Do you know her?\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Yes. She was my senior in high school. We were in the brass band together.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"I've always admired her, though it was just from the sidelines. I don't think she even knew who I was, eheh~\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"So why show me this photo? Is there something you want to ask about her?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"We're looking for her...\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"Ahh...\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"...\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"I don't really know the details, but, um, you see, quite a while ago, Kirishiki-senpai committ—\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"......\nShe died in an accident.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"That's why, err... she's no longer with us...\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"I'm sorry I couldn't be of more help. If you don't mind, I'd love it if you'd come see Micchan again sometime.\""
+  },
+  {
+    "name": "Rina",
+    "message": "\"See you again~\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Good job back there. It really was worth asking her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"With that, we now know that the woman in the flower garden was indeed Kirishiki Nagisa-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Which also means Gyaruko-san isn't Kirishiki Nagisa...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"But we still don't know whether she was simply mistaken, or deliberately lying.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If she was Kirishiki-san's junior... then age-wise, wouldn't she be a candidate for Girl A...?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. And if we assume she was coerced into the kidnappings, which led to her mental breakdown...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No, pardon me. Please forget what I said. That was an utterly vulgar suspicion.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Even if she was involved, it's not like we have any way to confirm it.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Let us simply keep that possibility in mind, then.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It is still too early to narrow down the suspects. But even so, confirming Kirishiki-san's identity is a significant breakthrough.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. Shall we go and continue our investigation?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"The fact that she is the most likely candidate for Girl A, the accomplice who carried out the kidnapping, has not changed.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even I recoiled when I saw the doll laid down in the stroller. There is no doubt that she is deeply unwell.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...But aside from that, she's just a kind mother—an ordinary woman you could find anywhere.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She was about to say suicide, but then softened her words. It shows she has a degree of thoughtfulness.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Would someone like that really help someone harm children?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Indeed, it doesn't sit right.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Even so, we cannot afford to judge based on impressions alone.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Shall we look into her a little more closely?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A mother pushing a stroller with a doll inside. Cruel as it is, it would certainly draw attention.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"In that case, there's no way a journalist investigating this area would have overlooked it.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"By journalist... do you mean Tetsuya-san?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. It isn't wise to rule out possibilities before even asking. I understand that quite well now.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"He may know something about the abduction case.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I hope he's still at the library. Though chances are he might have already gone home...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Let's go and see. I'm sure your ties will guide us.\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Shrine)"
+  }
+]

@@ -1,0 +1,308 @@
+{
+  "game": "Kugayama Shiori no Shinizama Techou",
+  "steamAppId": "4141950",
+  "sourceArchive": "patch.xp3",
+  "sourceVersion": "1.05",
+  "sourceArchiveSha256": "fc489edde26256c5505b9e8d9777ddb070330bfabf16e47d3184cdf11c128035",
+  "msgToolGameTitle": "Kugayama Shiori no Shinizama Techou",
+  "archivePathHash": "94d4a97c61498621",
+  "sourceLanguageIndex": 1,
+  "targetLanguageIndex": 1,
+  "scenarios": [
+    {
+      "hash": "0badf222c872b53efdfbead6e71c15e0768440ccbe518825ab47aee99ac382cf",
+      "fileName": "04_12.txt.scn",
+      "jsonFile": "04_12.txt.json"
+    },
+    {
+      "hash": "712ad45407abfc8c4f9507ef5c64111154b85c4ee3f8047aab8ff51ac178d53b",
+      "fileName": "06_14.txt.scn",
+      "jsonFile": "06_14.txt.json"
+    },
+    {
+      "hash": "8636a3092ce1b1310a0bd533872b37f93fe6d64ce06ac986df4837fe118ca221",
+      "fileName": "05_a11.txt.scn",
+      "jsonFile": "05_a11.txt.json"
+    },
+    {
+      "hash": "87bfbb57b5ac9345eb013db1dff1f5d31f6292ea4143c85dc3a396db1b412a49",
+      "fileName": "05_b06.txt.scn",
+      "jsonFile": "05_b06.txt.json"
+    },
+    {
+      "hash": "923fc2790f4a7980ef2758bc511e788f8fa47c7cd667a9798d0bc4e8f0de09a6",
+      "fileName": "05_b09.txt.scn",
+      "jsonFile": "05_b09.txt.json"
+    },
+    {
+      "hash": "9376f20dae4acf75815d28ef1b79f0363415c254e98e1da2af0edc6b9a57e84e",
+      "fileName": "05.txt.scn",
+      "jsonFile": "05.txt.json"
+    },
+    {
+      "hash": "96a6c42f99ae0dbc3737d8f636fd0c6aade4913f1df36dc337b7db9648de1098",
+      "fileName": "04_1.txt.scn",
+      "jsonFile": "04_1.txt.json"
+    },
+    {
+      "hash": "af9ba44fdd2a67f1b09f9c925ec7f52a94be838a444c1e14302387a8ff774de2",
+      "fileName": "04_5.txt.scn",
+      "jsonFile": "04_5.txt.json"
+    },
+    {
+      "hash": "b5e3aad214ca38ac9348542b44e813ae7615a639fa8a0917584bd0d78c4d7e43",
+      "fileName": "05_a07.txt.scn",
+      "jsonFile": "05_a07.txt.json"
+    },
+    {
+      "hash": "b6fa38e3f2aa8dcfc5342734265a3949b3327fa9fe52e8e1a9ebf736c404ddb9",
+      "fileName": "day3.txt.scn",
+      "jsonFile": "day3.txt.json"
+    },
+    {
+      "hash": "c188fe2c060b737732183796ef5bb2fcfd0596d2e53840dd5fd1862ed514eed1",
+      "fileName": "05_a08_2.txt.scn",
+      "jsonFile": "05_a08_2.txt.json"
+    },
+    {
+      "hash": "c326db704a5e43b617b59642310f0197e413c7b1ebb9f99795e524b2596e1400",
+      "fileName": "04_11.txt.scn",
+      "jsonFile": "04_11.txt.json"
+    },
+    {
+      "hash": "c69f4e9ab07923b84afec219c08b377beb817269e4611f7ee7e713f9c0b4d6b2",
+      "fileName": "04_9.txt.scn",
+      "jsonFile": "04_9.txt.json"
+    },
+    {
+      "hash": "6f5e62fada2af6d28c156968c37471b023fb7ac8f423f8c717170b3b08dba76b",
+      "fileName": "05_b02.txt.scn",
+      "jsonFile": "05_b02.txt.json"
+    },
+    {
+      "hash": "c7a86ccb515fb7d2a6907700171a117768ec0dd8a0cb2b5a0c6dbcbbb6bf9e1d",
+      "fileName": "05_b03.txt.scn",
+      "jsonFile": "05_b03.txt.json"
+    },
+    {
+      "hash": "c956add63de85788019a242f4fa59d2e135be4711eb82252f4fea2139e75066a",
+      "fileName": "05_a12.txt.scn",
+      "jsonFile": "05_a12.txt.json"
+    },
+    {
+      "hash": "d49164517bd4d33915cdd04086d76fdc35fcf47ea2c68074c0685f259e9e88f7",
+      "fileName": "05_a16.txt.scn",
+      "jsonFile": "05_a16.txt.json"
+    },
+    {
+      "hash": "dcd8d0c6e14f9691af079d3aba6048b74dea1ccc1666e6b4d409d20bc63693a4",
+      "fileName": "06_12.txt.scn",
+      "jsonFile": "06_12.txt.json"
+    },
+    {
+      "hash": "e3cdf7d0c87dfebca74ef783b56d9addc6e426a88a73c6a7df9ce69bc393375c",
+      "fileName": "05_a05.txt.scn",
+      "jsonFile": "05_a05.txt.json"
+    },
+    {
+      "hash": "e7a5cc01dddb2a606066c68b2bbeaf1b5e7cdaac293e88db1352c37a44d99f4b",
+      "fileName": "05_a06.txt.scn",
+      "jsonFile": "05_a06.txt.json"
+    },
+    {
+      "hash": "e7dbff9297e50906901409edb63dd627690d10543409e2f2cdfa888793587842",
+      "fileName": "05_a09.txt.scn",
+      "jsonFile": "05_a09.txt.json"
+    },
+    {
+      "hash": "e9a0ce7d2f3b2d4142617ce3ca819453cf52af8d7970e6690df4d1a6b052c637",
+      "fileName": "day1.txt.scn",
+      "jsonFile": "day1.txt.json"
+    },
+    {
+      "hash": "ea71d1de99fc94d2ac45c1500f6e51528407cc844c6f1177fc4780ea1dcd498d",
+      "fileName": "05_a08_1.txt.scn",
+      "jsonFile": "05_a08_1.txt.json"
+    },
+    {
+      "hash": "ebc2d9a12b057104d85fded65ce341545979b7990fd2cc6b750f0106a5a3e993",
+      "fileName": "06_5.txt.scn",
+      "jsonFile": "06_5.txt.json"
+    },
+    {
+      "hash": "f0bd3775ad35b54d4264e93d37b34be231401f1967143474a60cf759b8d80814",
+      "fileName": "06.txt.scn",
+      "jsonFile": "06.txt.json"
+    },
+    {
+      "hash": "fa6d81d7a61c32e5073a32f511d1a0dc96231dd99a65e1b6816241d5b116b11c",
+      "fileName": "06_6.txt.scn",
+      "jsonFile": "06_6.txt.json"
+    },
+    {
+      "hash": "fb240cb0850ae6bc6d4262affb92bf4565e15705806cd5f03375d6128e2457d5",
+      "fileName": "04_4.txt.scn",
+      "jsonFile": "04_4.txt.json"
+    },
+    {
+      "hash": "c8fbaa7152aad67d97df43d70723c2742c3be1ab10c8827e058034a3e5700ade",
+      "fileName": "06_10.txt.scn",
+      "jsonFile": "06_10.txt.json"
+    },
+    {
+      "hash": "fbaa3fcf394652d23ede045f786869a9392aceb84c4ac769362e6d41c42e397a",
+      "fileName": "06_4.txt.scn",
+      "jsonFile": "06_4.txt.json"
+    },
+    {
+      "hash": "6bc1023cdc52b539728fafa6de6302cff7f1c09da560478230073344b254381d",
+      "fileName": "06_2.txt.scn",
+      "jsonFile": "06_2.txt.json"
+    },
+    {
+      "hash": "678a429f029dabea112e9b317c3663210caca527c633fba402d63b9e8ee62dbf",
+      "fileName": "04_2.txt.scn",
+      "jsonFile": "04_2.txt.json"
+    },
+    {
+      "hash": "0f55a61532dabf5178ddda21369835ca07b799f22c38099aff2ecae788acc40e",
+      "fileName": "05_b07.txt.scn",
+      "jsonFile": "05_b07.txt.json"
+    },
+    {
+      "hash": "13078987212e7213d4bf46c2c0afa962282f09501f0419e4e9dc1b65203b826a",
+      "fileName": "06_8.txt.scn",
+      "jsonFile": "06_8.txt.json"
+    },
+    {
+      "hash": "13acf24439b8976a91a40a79353fab3090d592536e7057901cb0c6fa59d8e96d",
+      "fileName": "04_6.txt.scn",
+      "jsonFile": "04_6.txt.json"
+    },
+    {
+      "hash": "145a854b53e02743202e8c9bd0b5720911a3125c1cc1f927abfb4c1c67dc37a8",
+      "fileName": "06_7.txt.scn",
+      "jsonFile": "06_7.txt.json"
+    },
+    {
+      "hash": "1a069489aa0a97951200f7ef02c22335826f16521967fc49f56686458a1539e6",
+      "fileName": "06_13_1.txt.scn",
+      "jsonFile": "06_13_1.txt.json"
+    },
+    {
+      "hash": "1af4f2583aa53e0054d49fb1f020e5afff73f4ba864343ae098a5143e2b966db",
+      "fileName": "05_b08.txt.scn",
+      "jsonFile": "05_b08.txt.json"
+    },
+    {
+      "hash": "1fd900e592ac82bac8e2c1ff6a9dce1a4eaba1e1e1fb07f82b8bf14c7ea75488",
+      "fileName": "06_13_2.txt.scn",
+      "jsonFile": "06_13_2.txt.json"
+    },
+    {
+      "hash": "2ed0446e3249d64f1bfa34806a67df804306934a55e25dd76a298481ea576344",
+      "fileName": "05_a08.txt.scn",
+      "jsonFile": "05_a08.txt.json"
+    },
+    {
+      "hash": "2f09f998afb5971036302a3a005cce8c2a3a69366a82ed419837da7b683d36bb",
+      "fileName": "05_b04.txt.scn",
+      "jsonFile": "05_b04.txt.json"
+    },
+    {
+      "hash": "30fd0e90911bc4ee339849896f1ea48accec1604af4e201e8464e28cba836ddb",
+      "fileName": "04_3.txt.scn",
+      "jsonFile": "04_3.txt.json"
+    },
+    {
+      "hash": "35c79e56b7b84e090d631a4f6dfbbc9b8ee842b33c0ed20acb3367dfa0538b02",
+      "fileName": "06_11.txt.scn",
+      "jsonFile": "06_11.txt.json"
+    },
+    {
+      "hash": "36bd9f3c1fd366117a9bb7d7384ef83bcb9c3775a8663fb712c533b371da3563",
+      "fileName": "05_a10.txt.scn",
+      "jsonFile": "05_a10.txt.json"
+    },
+    {
+      "hash": "6860c81a4e24537b74667c16b54e85aebf77c28f58fe7de3d0e18621c4953b81",
+      "fileName": "06_1.txt.scn",
+      "jsonFile": "06_1.txt.json"
+    },
+    {
+      "hash": "3aa3a00eecbe21f4b55b9edd44f862d5299a5ad9ef3e0404d28b2f4e6b8696fc",
+      "fileName": "05_b05_1.txt.scn",
+      "jsonFile": "05_b05_1.txt.json"
+    },
+    {
+      "hash": "3ba7c25f9cb2ce9d6ea24b4cace4e7a268eb8df4efb3919178d38720c008ebc6",
+      "fileName": "05_a13.txt.scn",
+      "jsonFile": "05_a13.txt.json"
+    },
+    {
+      "hash": "3dba2572f8cb491a52b754eb1871387e3d5f2a633f538594d1e91da12544a043",
+      "fileName": "05_a02.txt.scn",
+      "jsonFile": "05_a02.txt.json"
+    },
+    {
+      "hash": "434a83134c3c7d73c83d791c4d7b8781ecf5d0eaf9aaf365825d97350b365e41",
+      "fileName": "06_13.txt.scn",
+      "jsonFile": "06_13.txt.json"
+    },
+    {
+      "hash": "470b2b9b3ab45e943b8ad6c79143ce258dba95081d13bce7d147f49a9e94351f",
+      "fileName": "06_9.txt.scn",
+      "jsonFile": "06_9.txt.json"
+    },
+    {
+      "hash": "48a81027871c691c1aec6975f4633d278cff0227dca34d641f556818d0571c71",
+      "fileName": "05_a15.txt.scn",
+      "jsonFile": "05_a15.txt.json"
+    },
+    {
+      "hash": "4a71a82f1b23efbf0f0b6ea27e9bd32040347c08c6e1113c63b127ead75bec0d",
+      "fileName": "06_3.txt.scn",
+      "jsonFile": "06_3.txt.json"
+    },
+    {
+      "hash": "5344af8bd5e21a39bd69e840f16efab6d444b21aa971da6677a57b4989c78510",
+      "fileName": "04_7.txt.scn",
+      "jsonFile": "04_7.txt.json"
+    },
+    {
+      "hash": "5a1ed2d462f06fc33cfd599459c6e71d4b6f9b34c48b37feaa5930d9d275017e",
+      "fileName": "04.txt.scn",
+      "jsonFile": "04.txt.json"
+    },
+    {
+      "hash": "5e75ae9dec5fbf26d47b1b0cbecda56e285a473f385ab94f5818adf0c6b4043a",
+      "fileName": "05_a03.txt.scn",
+      "jsonFile": "05_a03.txt.json"
+    },
+    {
+      "hash": "5e7ed528a9eec53108ce5e4250434007bbd7f0198b0791a97f766159b507d14a",
+      "fileName": "04_8.txt.scn",
+      "jsonFile": "04_8.txt.json"
+    },
+    {
+      "hash": "637061a84517b313ceaad3a27c5201a0868f4975b31d19ddfd4b65eebba4a230",
+      "fileName": "04_10.txt.scn",
+      "jsonFile": "04_10.txt.json"
+    },
+    {
+      "hash": "64bd41e9d32503527b94b3c1c98a6d598806cc910ff14961800afdf0c70ccea4",
+      "fileName": "05_b04_1.txt.scn",
+      "jsonFile": "05_b04_1.txt.json"
+    },
+    {
+      "hash": "3b221ae34ed4a557f8245bb52753108a95211d4fedff3821a5aab435338d7d54",
+      "fileName": "day2.txt.scn",
+      "jsonFile": "day2.txt.json"
+    },
+    {
+      "hash": "ffad6546f5060609922b21248774bf8031afa82919195caf6a56e6f535cb51e1",
+      "fileName": "05_a14.txt.scn",
+      "jsonFile": "05_a14.txt.json"
+    }
+  ]
+}

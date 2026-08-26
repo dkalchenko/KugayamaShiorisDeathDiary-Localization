@@ -1,0 +1,309 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"Kashima Reiko-san should be around here.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Kashima Reiko... if I recall correctly, that was the real name or alias, of the Kuchisake-onna. In short, a nickname only someone well-versed in urban legends would use.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Shall we go, then?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Please talk to her as you normally would. I'll handle the doubting.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, got it.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "message": "\"Hello.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...You've brought another woman with you today.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well, that's something that could lead to misunderstandings... Pleased to meet you, Kashima Reiko-san. You may simply refer to me as Librarian.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Libra?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ms. Librarian is a ghost who was bound to the library.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Ahh... You meant 'librarian.'\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes, that's me.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...So what do you want today? Are you here for more urban legends?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry, but we're after something different this time.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"They're helping me with my research right now.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Your research?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes. We'd like to ask you a few simple questions. You're free to decline, of course.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...That depends on what you ask, but I'll hear you out.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Thank you. My research concerns the deterioration of the soul.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've been wandering this world as a ghost for several decades now. I've managed to retain my personality and memories to some extent... but my sense of time has broken down.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I've seen many different symptoms in other ghosts, like their personalities collapsing, their memories fading, and more.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And I believe these symptoms manifest as a result of the soul's degradation.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"There are many possible factors behind this deterioration... but I suppose time is likely the biggest one.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"How much time must pass before a soul begins to deteriorate? And if there are individual differences, what kinds of patterns can we observe?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That's the kind of data I'm collecting.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You seem to have retained a firm sense of self, Kashima Reiko-san. Do you still retain your memories as well?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Yes. I remember almost everything from when I was alive. Including the sins I committed.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Sins?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I have no intention of answering that, and you're better off not knowing.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Apologies. Aside from your sense of self and your memories, have you noticed any other changes?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...My sense of time might be starting to break down. I don't really pay attention to the flow of time anymore.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I see. Do you have an accurate sense of how many years have passed since your death?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"I can't say how many exactly... but it'll soon be three years. I think.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If you don't mind, may I also ask your age at death?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Twenty-one.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I died at around that age as well. I wonder how one's age at death correlates to the rate at which the soul deteriorates...\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Ah, I almost forgot. We should show her the photo.\""
+  },
+  {
+    "message": "(Show her the photo of Nagisa)"
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...And this is?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Do you recognize her?\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...No. I don't know her.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She's a ghost whose soul has deteriorated quite severely.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We're looking for people who knew her when she was alive.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She doesn't respond at all when we speak with her. But maybe if it were an acquaintance...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...So she's one of your research subjects.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Well, yes, that's right.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Sorry, but I can't help you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"That concludes my questions. Thank you for the valuable data.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...The deterioration of the soul... It was an interesting topic.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"While this is only based on my experience, I've noticed that ghosts with strong fixations are less prone to deterioration. I myself am like that.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Fixations, you say... Then deterioration is the least of my worries. The countless grudges that bind my soul will never allow me the peace of oblivion.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...I see.\""
+  },
+  {
+    "message": "\"Thank you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...Are we done?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes, that will be all. Thank you for your time.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Then go. One should not linger long in an accursed place such as this.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"...Understood. Thank you again for your cooperation.\""
+  },
+  {
+    "message": "\"Goodbye.\""
+  },
+  {
+    "message": "\"See you.\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"...\""
+  },
+  {
+    "name": "Kashima, Reiko",
+    "message": "\"Come back here when things settle down. I'll have a special urban legend ready for you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, we will. Thank you.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She died around three years ago, at the age of twenty-one.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Which means... she was nineteen at the time of the incident?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Yes, and Girl A was a high school student. I think we can safely rule her out as a suspect.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Assuming she hadn't repeated a year, of course... Still, I can't quite explain why, but I have a feeling it's not her.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Me too. I don't think Kashima Reiko-san is involved either.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"She's an unusual one. Despite several suggestive, suspicious remarks, I didn't sense any malice.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It's a shame we didn't get any new information on Kirishiki-san.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I still think that was a step forward, though. Now, let's continue our investigation.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"At any rate, it's a step forward. Shall we continue asking around?\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  }
+]

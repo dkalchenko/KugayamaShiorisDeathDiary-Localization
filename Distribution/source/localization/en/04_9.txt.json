@@ -1,0 +1,624 @@
+[
+  {
+    "name": "Shiori",
+    "message": "\"It's strange how it's always nice and quiet here, even though it's right next to a fairly busy road.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"We're still in the middle of the city, yet it feels cut off from the hustle and bustle of everyday life... It really makes you think that a deity actually resides here.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Since we're here, we might as well offer a prayer.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "How much should I put in?"
+  },
+  {
+    "message": "(5 yen)"
+  },
+  {
+    "message": "(115 yen)"
+  },
+  {
+    "message": "(1,182 yen)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"May this bring us good ties and fortune. Now, let's make a wish.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"One hundred fifteen... 'ii goen'... oh, as in good ties, good fortune. Is there someone you're hoping to bond with? Ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"One thousand one hundred eighty-two... 'ii, hani, hafu'... Huh? I don't get it...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Huh? 'Ii yatsu'? Huh? As in, good guy?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You just addressed a deity so casually... You really aren't afraid of anything, are you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, shall we get going?\""
+  },
+  {
+    "message": "......?"
+  },
+  {
+    "message": "Shiori-san's gone."
+  },
+  {
+    "message": "Where am I?"
+  },
+  {
+    "name": "???",
+    "message": "\"Oh?\""
+  },
+  {
+    "name": "???",
+    "message": "\"A visitor. How unusual.\""
+  },
+  {
+    "name": "???",
+    "message": "\"...\""
+  },
+  {
+    "name": "???",
+    "message": "\"You seem to have ties with the dead. And quite a lot of them at that.\""
+  },
+  {
+    "name": "???",
+    "message": "\"You shouldn't get too attached to them. They'll end up pulling you along.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Now then, you should head back. You mustn't make your ghost friend worry.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Come again if you feel like it. Let's have a nice, long chat next time.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "What just..."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, thank goodness! You're back!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You vanished so suddenly, I panicked... I thought you'd been spirited away again...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Are you okay? How are you feeling? What in the world happened?\""
+  },
+  {
+    "message": "\"I met the deity.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"The deity? You mean... the deity summoned you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You were literally spirited away just now... But since you got back immediately, the deity must've meant no harm, right?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...No, that's not good. I shouldn't be getting suspicious of a deity, even if it was the same deity that made you vanish out of thin air.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If anything, I should be grateful. The one who saved you when you were spirited away was probably this shrine's deity, after all.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank you so much. I don't have a single yen to offer, but please accept my heartfelt gratitude.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, that should do it. I hope my gratitude reaches them.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But still... Ehehe, you're amazing, meeting a deity just like that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You can even see ghosts. You could say you're a natural at the supernatural.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, shall we get going? With a deity watching over you, I'm sure everything will go well today.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ehehe, you really like this place, don't you? Why don't we rest a little?\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Leave)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, are you done already? Not tired?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You're good? Okay, in that case, shall we get going?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? Again?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You're really devout, aren't you? That's nice. I'm sure the deity is happy too.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "How much should I put in?"
+  },
+  {
+    "message": "(5 yen)"
+  },
+  {
+    "message": "(415 yen)"
+  },
+  {
+    "message": "(1,646 yen)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Four hundred fifteen... ah, 'yoi goen,' as in better ties, better fortune. An upgraded version of 'ii goen,' I see.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, let's make a proper, heartfelt wish so it'll reach the deity.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"At first I figured it was a year or something, but...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, 'irojiro' as in fair-skinned?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...Huh? I got it right? ...Is the deity fair-skinned, though? ...Okay, you're just playing around now, aren't you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Got your prayer in? In that case, shall we get going?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Here we are again. Don't tell me, you're...\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Leave)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, right, of course. That would've been too much.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay then, let's rest a bit and get going.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, I knew it...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now I'm starting to worry about your mental state...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What's making you cling to the deity so much? I don't understand...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Is it my fault?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Am I... unconsciously draining your life force or something?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"That's not it? Really? I'm kind of getting nervous... What if I get exorcised or something?\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "How much should I put in?"
+  },
+  {
+    "message": "(5 yen)"
+  },
+  {
+    "message": "(500 yen)"
+  },
+  {
+    "message": "(2,951 yen)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"If I remember right, 500 yen... isn't a good offering. As the last coinage denomination, it suggests that tie has run its course.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? Are you trying to cut ties with me? You're not... right? Right...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Fuku, koi... ah, 'fuku koi,' as in may fortune come.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"But knowing you, I bet it means something else. Probably not fuku as in fortune. Maybe meat? Nikukoi...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Huh? Is it really just 'may fortune come'? Looks like I was reading too much into it. You got me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Now then, we've prayed three times already. We should be plenty blessed by now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, let's get going.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm really starting to worry now... You're practically obsessed at this point... with a deity, no less...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I know you want to go and visit again, but... maybe wait for another day.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"At this rate, you're really going to end up broke...\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Leave)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank goodness... Yes, let's do that.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Gratitude is important, but so is money.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I see... right. I figured you'd say that...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, I won't stop you anymore.\""
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "How much should I put in?"
+  },
+  {
+    "message": "(5 yen)"
+  },
+  {
+    "message": "(777 yen)"
+  },
+  {
+    "message": "(10,000 yen)"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Triple seven, the lucky number. I wonder if that means anything to Japanese deities.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Well, if it's a gambling deity, maybe it does. Just kidding, ehehe.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wait, wait, what, you're freaking me out, I'm seriously getting scared now.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Everything about this is terrifying, from the fact that you're carrying that much cash to the way you just ditched the wordplay and just went in swinging with raw money!\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Are you sure you're okay? Is something going on? Money is important, you know?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Even if there's a wish you really want granted... this is, just... um, maybe think about it a little...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah... ahhh... you put it in... oh no... oh nooooo...\""
+  },
+  {
+    "name": "???",
+    "message": "\"Sheesh, good grief... I couldn't bear to watch anymore, so I called you here.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Only humans delight in offerings. If you're just here to pray, there's no need for money. Your faith alone is enough.\""
+  },
+  {
+    "name": "???",
+    "message": "\"I'm sure the shrine's caretakers appreciate it, though, since upkeep costs money.\""
+  },
+  {
+    "name": "???",
+    "message": "\"If you're just here to visit, putting your hands together is enough. As for whether I'll call you here again... we'll see if I'm in the mood.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Don't ever use your money like that again, understood?\""
+  },
+  {
+    "name": "???",
+    "message": "\"Now go on home. Come back if you feel like it.\""
+  },
+  {
+    "name": "???",
+    "message": "\"But not today. You've done more than enough already. Understood?\""
+  },
+  {
+    "message": "......"
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Ah, you're back.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I knew what was happening, but I still can't help panicking when you suddenly disappear like that. So, how was it? Did you meet the deity?\""
+  },
+  {
+    "message": "\"I got chased away...\""
+  },
+  {
+    "message": "\"I got scolded...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I mean, of course... To be blunt, you were being really clingy.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You shouldn't go bothering the deity, so let's just go, okay?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm not sure what to do. Maybe I should be a bit stricter from now on...\""
+  },
+  {
+    "message": "(Pray)"
+  },
+  {
+    "message": "(Leave)"
+  },
+  {
+    "message": "........."
+  },
+  {
+    "message": "I should probably stop now..."
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Thank goodness. You made the right call.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Okay, let's go. Before you take out your wallet again.\""
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Apartment Building)"
+  },
+  {
+    "message": "(Alleyway)"
+  },
+  {
+    "message": "(Payphone)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "name": "???",
+    "message": "\"...\""
+  },
+  {
+    "name": "???",
+    "message": "\"After all's said and done, you did throw quite a large sum into the offering box. I suppose I should reward you somehow.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Is there a wish you absolutely must have granted?\""
+  },
+  {
+    "name": "???",
+    "message": "\"My power as a deity is fading. I can't say how much I can do, but... it's worth a try. Go on, tell me.\""
+  },
+  {
+    "message": "\"World domination.\""
+  },
+  {
+    "message": "\"I want to win the lottery.\""
+  },
+  {
+    "message": "\"I want to live an easy life forever.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Nope, that's far beyond me.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Anything else?\""
+  },
+  {
+    "name": "???",
+    "message": "\"I can't grant a wish that big. Setting that aside, take your time.\""
+  },
+  {
+    "name": "???",
+    "message": "\"The lottery, eh? Hrm, I'm afraid I can't grant that.\""
+  },
+  {
+    "name": "???",
+    "message": "\"But here's a word of advice...\""
+  },
+  {
+    "name": "???",
+    "message": "\"Would it not have been better to spend all that money you offered on lottery tickets instead?\""
+  },
+  {
+    "name": "???",
+    "message": "\"Think carefully about how you use your money. Your dreams might be easier to reach than you think.\""
+  },
+  {
+    "name": "???",
+    "message": "\"Forever, is it? I'm sorry to say that—\""
+  },
+  {
+    "name": "???",
+    "message": "\"...\""
+  },
+  {
+    "name": "???",
+    "message": "\"No, there may be a way. Yes, of course...\""
+  },
+  {
+    "name": "???",
+    "message": "\"Close your eyes. Let go of all tension.\""
+  },
+  {
+    "name": "???",
+    "message": "\"To live the easy life forever... Very well. I shall grant that wish.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What's taking you so long...?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"You returned once already, so you can come back again, right?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Maybe all those prayers upset the deity... This is worrying...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Oh? Hello, doggie.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"My, oh my... looks like you can see me.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Will you let me pet you? Ehehe, you're so friendly. Such a nice coat too... Are you lost? Where's your home?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'll help you find your way later. I'm waiting for someone right now. Will you wait with me?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I see. Thank you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"What's taking you so long...?\""
+  }
+]

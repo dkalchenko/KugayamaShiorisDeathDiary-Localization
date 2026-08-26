@@ -1,0 +1,804 @@
+//! Buriko General Interpreter/Ethornell Archive File Version 2 (.arc)
+use super::bse::*;
+use super::dsc::*;
+use crate::ext::io::*;
+use crate::ext::mutex::*;
+use crate::scripts::base::*;
+use crate::types::*;
+use crate::utils::encoding::encode_string;
+use crate::utils::struct_pack::*;
+use crate::utils::threadpool::*;
+use anyhow::Result;
+use msg_tool_macro::*;
+use std::collections::HashMap;
+use std::io::{Read, Seek, SeekFrom, Write};
+use std::ops::DerefMut;
+use std::sync::{Arc, Mutex};
+
+#[derive(Debug)]
+/// Builder for BGI Archive Version 2
+pub struct BgiArchiveBuilder {}
+
+impl BgiArchiveBuilder {
+    /// Creates a new instance of `BgiArchiveBuilder`.
+    pub const fn new() -> Self {
+        BgiArchiveBuilder {}
+    }
+}
+
+impl ScriptBuilder for BgiArchiveBuilder {
+    fn default_encoding(&self) -> Encoding {
+        Encoding::Cp932
+    }
+
+    fn default_archive_encoding(&self) -> Option<Encoding> {
+        Some(Encoding::Cp932)
+    }
+
+    fn build_script(
+        &self,
+        data: Vec<u8>,
+        filename: &str,
+        _encoding: Encoding,
+        archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync>> {
+        Ok(Box::new(BgiArchive::new(
+            MemReader::new(data),
+            archive_encoding,
+            config,
+            filename,
+        )?))
+    }
+
+    fn build_script_from_file(
+        &self,
+        filename: &str,
+        _encoding: Encoding,
+        archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync>> {
+        if filename == "-" {
+            let data = crate::utils::files::read_file(filename)?;
+            Ok(Box::new(BgiArchive::new(
+                MemReader::new(data),
+                archive_encoding,
+                config,
+                filename,
+            )?))
+        } else {
+            let f = std::fs::File::open(filename)?;
+            let reader = std::io::BufReader::new(f);
+            Ok(Box::new(BgiArchive::new(
+                reader,
+                archive_encoding,
+                config,
+                filename,
+            )?))
+        }
+    }
+
+    fn build_script_from_reader<'a>(
+        &self,
+        reader: Box<dyn ReadSeek + Send + Sync + 'a>,
+        filename: &str,
+        _encoding: Encoding,
+        archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync + 'a>> {
+        Ok(Box::new(BgiArchive::new(
+            reader,
+            archive_encoding,
+            config,
+            filename,
+        )?))
+    }
+
+    fn extensions(&self) -> &'static [&'static str] {
+        &["arc"]
+    }
+
+    fn script_type(&self) -> &'static ScriptType {
+        &ScriptType::BGIArcV2
+    }
+
+    fn is_this_format(&self, _filename: &str, buf: &[u8], buf_len: usize) -> Option<u8> {
+        if buf_len >= 12 && buf.starts_with(b"BURIKO ARC20") {
+            return Some(255);
+        }
+        None
+    }
+
+    fn is_archive(&self) -> bool {
+        true
+    }
+
+    fn create_archive(
+        &self,
+        filename: &str,
+        files: &[&str],
+        encoding: Encoding,
+        config: &ExtraConfig,
+    ) -> Result<Box<dyn Archive>> {
+        let f = std::fs::File::create(filename)?;
+        let writer = std::io::BufWriter::new(f);
+        Ok(Box::new(BgiArchiveWriter::new(
+            writer, files, encoding, config,
+        )?))
+    }
+}
+
+#[derive(Clone, Debug, StructPack, StructUnpack)]
+struct BgiFileHeader {
+    #[fstring = 0x60]
+    filename: String,
+    offset: u32,
+    size: u32,
+    #[fvec = 8]
+    _unk: Vec<u8>,
+    #[fvec = 16]
+    _padding: Vec<u8>,
+}
+
+#[derive(Debug)]
+struct Entry<T: Read + Seek + std::fmt::Debug> {
+    header: BgiFileHeader,
+    reader: Arc<Mutex<T>>,
+    pos: usize,
+    base_offset: u64,
+    script_type: Option<ScriptType>,
+}
+
+impl<T: Read + Seek + std::fmt::Debug + Send + Sync> ArchiveContent for Entry<T> {
+    fn name(&self) -> &str {
+        &self.header.filename
+    }
+
+    fn size(&self) -> Option<u64> {
+        Some(self.header.size as u64)
+    }
+
+    fn script_type(&self) -> Option<&ScriptType> {
+        self.script_type.as_ref()
+    }
+
+    fn to_data<'a>(&'a mut self) -> Result<Box<dyn ReadSeek + Send + Sync + 'a>> {
+        Ok(Box::new(self))
+    }
+}
+
+impl<T: Read + Seek + std::fmt::Debug> Read for Entry<T> {
+    fn read(&mut self, buf: &mut [u8]) -> std::io::Result<usize> {
+        let mut reader = self.reader.lock().map_err(|e| {
+            std::io::Error::new(
+                std::io::ErrorKind::Other,
+                format!("Failed to lock mutex: {}", e),
+            )
+        })?;
+        reader.seek(SeekFrom::Start(
+            self.base_offset + self.header.offset as u64 + self.pos as u64,
+        ))?;
+        let bytes_read = buf.len().min(self.header.size as usize - self.pos);
+        if bytes_read == 0 {
+            return Ok(0);
+        }
+        let bytes_read = reader.read(&mut buf[..bytes_read])?;
+        self.pos += bytes_read;
+        Ok(bytes_read)
+    }
+}
+
+impl<T: Read + Seek + std::fmt::Debug> Seek for Entry<T> {
+    fn seek(&mut self, pos: SeekFrom) -> std::io::Result<u64> {
+        let new_pos = match pos {
+            SeekFrom::Start(offset) => offset as usize,
+            SeekFrom::End(offset) => {
+                if offset < 0 {
+                    if (-offset) as usize > self.header.size as usize {
+                        return Err(std::io::Error::new(
+                            std::io::ErrorKind::InvalidInput,
+                            "Seek from end exceeds file length",
+                        ));
+                    }
+                    self.header.size as usize - (-offset) as usize
+                } else {
+                    self.header.size as usize + offset as usize
+                }
+            }
+            SeekFrom::Current(offset) => {
+                if offset < 0 {
+                    if (-offset) as usize > self.pos {
+                        return Err(std::io::Error::new(
+                            std::io::ErrorKind::InvalidInput,
+                            "Seek from current exceeds current position",
+                        ));
+                    }
+                    self.pos.saturating_sub((-offset) as usize)
+                } else {
+                    self.pos + offset as usize
+                }
+            }
+        };
+        self.pos = new_pos;
+        Ok(self.pos as u64)
+    }
+
+    fn stream_position(&mut self) -> std::io::Result<u64> {
+        Ok(self.pos as u64)
+    }
+}
+
+struct MemEntry<F: Fn(&[u8], usize, &str) -> Option<&'static ScriptType>> {
+    name: String,
+    data: MemReader,
+    detect: F,
+}
+
+impl<F: Fn(&[u8], usize, &str) -> Option<&'static ScriptType>> Read for MemEntry<F> {
+    fn read(&mut self, buf: &mut [u8]) -> std::io::Result<usize> {
+        self.data.read(buf)
+    }
+}
+
+impl<F: Fn(&[u8], usize, &str) -> Option<&'static ScriptType>> ArchiveContent for MemEntry<F> {
+    fn name(&self) -> &str {
+        &self.name
+    }
+
+    fn size(&self) -> Option<u64> {
+        Some(self.data.data.len() as u64)
+    }
+
+    fn script_type(&self) -> Option<&ScriptType> {
+        (self.detect)(&self.data.data, self.data.data.len(), &self.name)
+    }
+
+    fn data(&mut self) -> Result<Vec<u8>> {
+        Ok(self.data.data.clone())
+    }
+
+    fn to_data<'a>(&'a mut self) -> Result<Box<dyn ReadSeek + 'a + Send + Sync>> {
+        Ok(Box::new(&mut self.data))
+    }
+}
+
+#[derive(Debug)]
+/// BGI Archive Version 2
+pub struct BgiArchive<'b, T: Read + Seek + std::fmt::Debug + 'b> {
+    reader: Arc<Mutex<T>>,
+    entries: Vec<BgiFileHeader>,
+    base_offset: u64,
+    #[cfg(feature = "bgi-img")]
+    is_sysgrp_arc: bool,
+    _mark: std::marker::PhantomData<&'b ()>,
+}
+
+impl<'b, T: Read + Seek + std::fmt::Debug + 'b> BgiArchive<'b, T> {
+    /// Creates a new BGI Archive from a reader.
+    ///
+    /// * `reader` - The reader to read the archive from.
+    /// * `archive_encoding` - The encoding used for the archive.
+    /// * `config` - Extra configuration options.
+    /// * `filename` - The name of the archive file (used for detecting sysgrp.arc).
+    pub fn new(
+        mut reader: T,
+        archive_encoding: Encoding,
+        _config: &ExtraConfig,
+        _filename: &str,
+    ) -> Result<Self> {
+        let mut header = [0u8; 12];
+        reader.read_exact(&mut header)?;
+        if !header.starts_with(b"BURIKO ARC20") {
+            return Err(anyhow::anyhow!("Invalid BGI archive header"));
+        }
+
+        let file_count = reader.read_u32()?;
+        let mut entries = Vec::with_capacity(file_count as usize);
+        for _ in 0..file_count {
+            let entry = BgiFileHeader::unpack(&mut reader, false, archive_encoding, &None)?;
+            entries.push(entry);
+        }
+
+        #[cfg(feature = "bgi-img")]
+        let is_sysgrp_arc = _config.bgi_is_sysgrp_arc.unwrap_or_else(|| {
+            std::path::Path::new(&_filename.to_lowercase())
+                .file_name()
+                .map(|f| f == "sysgrp.arc")
+                .unwrap_or(false)
+        });
+
+        Ok(BgiArchive {
+            reader: Arc::new(Mutex::new(reader)),
+            entries,
+            base_offset: 16 + (file_count as u64 * 0x80),
+            #[cfg(feature = "bgi-img")]
+            is_sysgrp_arc,
+            _mark: std::marker::PhantomData,
+        })
+    }
+}
+
+impl<'b, T: Read + Seek + std::fmt::Debug + Send + Sync + 'b> Script for BgiArchive<'b, T> {
+    fn default_output_script_type(&self) -> OutputScriptType {
+        OutputScriptType::Json
+    }
+
+    fn default_format_type(&self) -> FormatOptions {
+        FormatOptions::None
+    }
+
+    fn is_archive(&self) -> bool {
+        true
+    }
+
+    fn iter_archive_filename<'a>(
+        &'a self,
+    ) -> Result<Box<dyn Iterator<Item = Result<String>> + 'a>> {
+        Ok(Box::new(
+            self.entries.iter().map(|e| Ok(e.filename.clone())),
+        ))
+    }
+
+    fn iter_archive_offset<'a>(&'a self) -> Result<Box<dyn Iterator<Item = Result<u64>> + 'a>> {
+        Ok(Box::new(self.entries.iter().map(|e| Ok(e.offset as u64))))
+    }
+
+    fn open_file<'a>(&'a self, index: usize) -> Result<Box<dyn ArchiveContent + Send + Sync + 'a>> {
+        if index >= self.entries.len() {
+            return Err(anyhow::anyhow!(
+                "Index out of bounds: {} (max: {})",
+                index,
+                self.entries.len()
+            ));
+        }
+        let entry = &self.entries[index];
+        let mut entry = Entry {
+            header: entry.clone(),
+            reader: self.reader.clone(),
+            pos: 0,
+            base_offset: self.base_offset,
+            script_type: None,
+        };
+        let mut buf = [0u8; 32];
+        match entry.read(&mut buf) {
+            Ok(_) => {}
+            Err(e) => {
+                return Err(anyhow::anyhow!(
+                    "Failed to read entry '{}': {}",
+                    entry.header.filename,
+                    e
+                ));
+            }
+        }
+        entry.pos = 0;
+        if buf.starts_with(b"DSC FORMAT 1.00") {
+            let data = match entry.data() {
+                Ok(data) => data,
+                Err(e) => {
+                    return Err(anyhow::anyhow!(
+                        "Failed to read DSC data for '{}': {}",
+                        entry.header.filename,
+                        e
+                    ));
+                }
+            };
+            entry.pos = 0;
+            let dsc = match DscDecoder::new(&data) {
+                Ok(dsc) => dsc,
+                Err(e) => {
+                    return Err(anyhow::anyhow!(
+                        "Failed to create DSC decoder for '{}': {}",
+                        entry.header.filename,
+                        e
+                    ));
+                }
+            };
+            let decoded = match dsc.unpack() {
+                Ok(decoded) => decoded,
+                Err(e) => {
+                    return Err(anyhow::anyhow!(
+                        "Failed to unpack DSC data for '{}': {}",
+                        entry.header.filename,
+                        e
+                    ));
+                }
+            };
+            let reader = MemReader::new(decoded);
+            if reader.data.starts_with(b"BSE 1.") {
+                match BseReader::new(reader, detect_script_type, &entry.header.filename) {
+                    Ok(bse_reader) => {
+                        return Ok(Box::new(bse_reader));
+                    }
+                    Err(e) => {
+                        return Err(anyhow::anyhow!(
+                            "Failed to create BSE reader for '{}': {}",
+                            entry.header.filename,
+                            e
+                        ));
+                    }
+                };
+            }
+            return Ok(Box::new(MemEntry {
+                name: entry.header.filename.clone(),
+                data: reader,
+                #[cfg(feature = "bgi-img")]
+                detect: if self.is_sysgrp_arc {
+                    detect_script_type_sysgrp
+                } else {
+                    detect_script_type
+                },
+                #[cfg(not(feature = "bgi-img"))]
+                detect: detect_script_type,
+            }));
+        }
+        if buf.starts_with(b"BSE 1.") {
+            let filename = entry.header.filename.clone();
+            #[cfg(feature = "bgi-img")]
+            let detect = if self.is_sysgrp_arc {
+                detect_script_type_sysgrp
+            } else {
+                detect_script_type
+            };
+            #[cfg(not(feature = "bgi-img"))]
+            let detect = detect_script_type;
+            match BseReader::new(entry, detect, &filename) {
+                Ok(mut bse_reader) => {
+                    if bse_reader.is_dsc() {
+                        let data = match bse_reader.data() {
+                            Ok(data) => data,
+                            Err(e) => {
+                                return Err(anyhow::anyhow!(
+                                    "Failed to read BSE data for '{}': {}",
+                                    &filename,
+                                    e
+                                ));
+                            }
+                        };
+                        let dsc = match DscDecoder::new(&data) {
+                            Ok(dsc) => dsc,
+                            Err(e) => {
+                                return Err(anyhow::anyhow!(
+                                    "Failed to create DSC decoder for '{}': {}",
+                                    &filename,
+                                    e
+                                ));
+                            }
+                        };
+                        let decoded = match dsc.unpack() {
+                            Ok(decoded) => decoded,
+                            Err(e) => {
+                                return Err(anyhow::anyhow!(
+                                    "Failed to unpack DSC data for '{}': {}",
+                                    &filename,
+                                    e
+                                ));
+                            }
+                        };
+                        let reader = MemReader::new(decoded);
+                        return Ok(Box::new(MemEntry {
+                            name: filename,
+                            data: reader,
+                            detect,
+                        }));
+                    }
+                    return Ok(Box::new(bse_reader));
+                }
+                Err(e) => {
+                    return Err(anyhow::anyhow!(
+                        "Failed to create BSE reader for '{}': {}",
+                        &filename,
+                        e
+                    ));
+                }
+            };
+        }
+        #[cfg(feature = "bgi-img")]
+        if self.is_sysgrp_arc {
+            entry.script_type = Some(ScriptType::BGIImg);
+        } else {
+            entry.script_type =
+                detect_script_type(&buf, buf.len(), &entry.header.filename).cloned();
+        }
+        #[cfg(not(feature = "bgi-img"))]
+        {
+            entry.script_type =
+                detect_script_type(&buf, buf.len(), &entry.header.filename).cloned();
+        }
+        Ok(Box::new(entry))
+    }
+}
+
+fn detect_script_type(buf: &[u8], buf_len: usize, filename: &str) -> Option<&'static ScriptType> {
+    if buf_len >= 28 && buf.starts_with(b"BurikoCompiledScriptVer1.00\0") {
+        return Some(&ScriptType::BGI);
+    }
+    #[cfg(feature = "bgi-img")]
+    if buf_len >= 16 && buf.starts_with(b"CompressedBG___") {
+        return Some(&ScriptType::BGICbg);
+    }
+    #[cfg(feature = "bgi-audio")]
+    if buf_len >= 8 && buf[4..].starts_with(b"bw  ") {
+        return Some(&ScriptType::BGIAudio);
+    }
+    let filename = filename.to_lowercase();
+    if filename.ends_with("._bp") {
+        return Some(&ScriptType::BGIBp);
+    } else if filename.ends_with("._bsi") {
+        return Some(&ScriptType::BGIBsi);
+    }
+    None
+}
+
+#[cfg(feature = "bgi-img")]
+fn detect_script_type_sysgrp(
+    _buf: &[u8],
+    _buf_len: usize,
+    _filename: &str,
+) -> Option<&'static ScriptType> {
+    Some(&ScriptType::BGIImg)
+}
+
+/// BGI Archive Writer for Version 2
+pub struct BgiArchiveWriter<T: Write + Seek> {
+    writer: Arc<Mutex<T>>,
+    headers: Arc<Mutex<HashMap<String, BgiFileHeader>>>,
+    compress_file: bool,
+    encoding: Encoding,
+    compress_level: u8,
+    runner: ThreadPool<Result<()>>,
+}
+
+impl<T: Write + Seek> BgiArchiveWriter<T> {
+    /// Creates a new BGI Archive Writer.
+    ///
+    /// * `writer` - The writer to write the archive to.
+    /// * `files` - The list of files to include in the archive.
+    /// * `encoding` - The encoding used for the archive.
+    /// * `config` - Extra configuration options.
+    pub fn new(
+        mut writer: T,
+        files: &[&str],
+        encoding: Encoding,
+        config: &ExtraConfig,
+    ) -> Result<Self> {
+        writer.write_all(b"BURIKO ARC20")?;
+        let file_count = files.len();
+        writer.write_u32(file_count as u32)?;
+        let mut headers = HashMap::new();
+        for file in files {
+            let header = BgiFileHeader {
+                filename: file.to_string(),
+                offset: 0,
+                size: 0,
+                _unk: vec![0; 8],
+                _padding: vec![0; 16],
+            };
+            header.pack(&mut writer, false, encoding, &None)?;
+            headers.insert(file.to_string(), header);
+        }
+        Ok(BgiArchiveWriter {
+            writer: Arc::new(Mutex::new(writer)),
+            headers: Arc::new(Mutex::new(headers)),
+            compress_file: config.bgi_compress_file,
+            encoding,
+            compress_level: config.bgi_compress_level,
+            runner: ThreadPool::new(
+                if config.bgi_compress_file {
+                    config.bgi_arc_workers
+                } else {
+                    1
+                },
+                Some("bgi-arc-writer"),
+                false,
+            )?,
+        })
+    }
+}
+
+impl<T: Write + Seek + Send + Sync + 'static> Archive for BgiArchiveWriter<T> {
+    fn new_file<'a>(
+        &'a mut self,
+        name: &str,
+        size: Option<u64>,
+    ) -> Result<Box<dyn WriteSeek + 'a>> {
+        let mut entry = self
+            .headers
+            .lock_blocking()
+            .get(name)
+            .ok_or_else(|| anyhow::anyhow!("File '{}' not found in archive", name))?
+            .clone();
+        if self.compress_file {
+            let inner = self.new_file_non_seek(name, size)?;
+            Ok(Box::new(Writer {
+                inner,
+                mem: MemWriter::new(),
+            }))
+        } else {
+            let mut writer = self.writer.lock_blocking();
+            let offset = writer.seek(SeekFrom::End(0))?;
+            entry.offset = offset as u32;
+            Ok(Box::new(BgiArchiveFile {
+                header: entry,
+                writer: self.writer.clone(),
+                pos: 0,
+                headers: self.headers.clone(),
+                name: name.to_owned(),
+            }))
+        }
+    }
+
+    fn new_file_non_seek<'a>(
+        &'a mut self,
+        name: &str,
+        size: Option<u64>,
+    ) -> Result<Box<dyn Write + 'a>> {
+        if !self.compress_file {
+            return Ok(Box::new(self.new_file(name, size)?));
+        }
+        for err in self.runner.take_results() {
+            err?;
+        }
+        let mut entry = self
+            .headers
+            .lock_blocking()
+            .get(name)
+            .ok_or_else(|| anyhow::anyhow!("File '{}' not found in archive", name))?
+            .clone();
+        let (reader, writer) = std::io::pipe()?;
+        let file = self.writer.clone();
+        let headers = self.headers.clone();
+        let compress_level = self.compress_level;
+        let name = name.to_owned();
+        self.runner.execute(
+            move |_| {
+                let mut reader = reader;
+                let mut data = Vec::new();
+                reader.read_to_end(&mut data)?;
+                let mut buf = MemWriter::new();
+                {
+                    let mut b = std::io::BufWriter::new(&mut buf);
+                    DscEncoder::new(&mut b, compress_level).pack(&data)?;
+                }
+                let mut writer = file.lock_blocking();
+                let offset = writer.seek(SeekFrom::End(0))?;
+                entry.offset = offset as u32;
+                writer.write_all(&buf.data)?;
+                entry.size = buf.data.len() as u32;
+                headers.lock_blocking().insert(name, entry);
+                Ok(())
+            },
+            true,
+        )?;
+        Ok(Box::new(writer))
+    }
+
+    fn write_header(&mut self) -> Result<()> {
+        self.runner.join();
+        for err in self.runner.take_results() {
+            err?;
+        }
+        let mut writer = self.writer.lock_blocking();
+        let mut headers = self.headers.lock_blocking();
+        writer.seek(SeekFrom::Start(0x10))?;
+        let base_offset = headers.len() as u32 * 0x80 + 16;
+        let mut files = headers.iter_mut().map(|(_, d)| d).collect::<Vec<_>>();
+        files.sort_by_key(|f| f.offset);
+        for file in files {
+            file.offset -= base_offset;
+            file.pack(writer.deref_mut(), false, self.encoding, &None)?;
+        }
+        Ok(())
+    }
+}
+
+/// BGI Archive File Writer (Not compressed)
+pub struct BgiArchiveFile<T: Write + Seek> {
+    header: BgiFileHeader,
+    writer: Arc<Mutex<T>>,
+    pos: usize,
+    headers: Arc<Mutex<HashMap<String, BgiFileHeader>>>,
+    name: String,
+}
+
+impl<T: Write + Seek> Write for BgiArchiveFile<T> {
+    fn write(&mut self, buf: &[u8]) -> std::io::Result<usize> {
+        let mut writer = self.writer.lock_blocking();
+        writer.seek(SeekFrom::Start(self.header.offset as u64 + self.pos as u64))?;
+        let bytes_written = writer.write(buf)?;
+        self.pos += bytes_written;
+        self.header.size = self.header.size.max(self.pos as u32);
+        Ok(bytes_written)
+    }
+
+    fn flush(&mut self) -> std::io::Result<()> {
+        self.writer.lock_blocking().flush()
+    }
+}
+
+impl<T: Write + Seek> Seek for BgiArchiveFile<T> {
+    fn seek(&mut self, pos: SeekFrom) -> std::io::Result<u64> {
+        let new_pos = match pos {
+            SeekFrom::Start(offset) => offset as usize,
+            SeekFrom::End(offset) => {
+                if offset < 0 {
+                    if (-offset) as usize > self.header.size as usize {
+                        return Err(std::io::Error::new(
+                            std::io::ErrorKind::InvalidInput,
+                            "Seek from end exceeds file length",
+                        ));
+                    }
+                    self.header.size as usize - (-offset) as usize
+                } else {
+                    self.header.size as usize + offset as usize
+                }
+            }
+            SeekFrom::Current(offset) => {
+                if offset < 0 {
+                    if (-offset) as usize > self.pos {
+                        return Err(std::io::Error::new(
+                            std::io::ErrorKind::InvalidInput,
+                            "Seek from current exceeds current position",
+                        ));
+                    }
+                    self.pos.saturating_sub((-offset) as usize)
+                } else {
+                    self.pos + offset as usize
+                }
+            }
+        };
+        self.pos = new_pos;
+        Ok(self.pos as u64)
+    }
+}
+
+impl<T: Write + Seek> Drop for BgiArchiveFile<T> {
+    fn drop(&mut self) {
+        self.headers
+            .lock_blocking()
+            .insert(self.name.clone(), self.header.clone());
+    }
+}
+struct Writer<'a> {
+    inner: Box<dyn Write + 'a>,
+    mem: MemWriter,
+}
+
+impl std::fmt::Debug for Writer<'_> {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("Writer").field("mem", &self.mem).finish()
+    }
+}
+
+impl<'a> Write for Writer<'a> {
+    fn write(&mut self, buf: &[u8]) -> std::io::Result<usize> {
+        self.mem.write(buf)
+    }
+
+    fn flush(&mut self) -> std::io::Result<()> {
+        self.mem.flush()
+    }
+}
+
+impl<'a> Seek for Writer<'a> {
+    fn seek(&mut self, pos: std::io::SeekFrom) -> std::io::Result<u64> {
+        self.mem.seek(pos)
+    }
+
+    fn stream_position(&mut self) -> std::io::Result<u64> {
+        self.mem.stream_position()
+    }
+
+    fn rewind(&mut self) -> std::io::Result<()> {
+        self.mem.rewind()
+    }
+}
+
+impl<'a> Drop for Writer<'a> {
+    fn drop(&mut self) {
+        let _ = self.inner.write_all(&self.mem.data);
+        let _ = self.inner.flush();
+    }
+}

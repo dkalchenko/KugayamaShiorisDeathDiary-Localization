@@ -1,0 +1,3634 @@
+{
+    "'&' -Sora no Mukou de Sakimasu you ni-": {
+        "$type": "CxEncryption",
+        "Mask": 715,
+        "Offset": 1745,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AQIEAwUA",
+        "EvenBranchOrder": "BwQCBgUAAwE=",
+        "TpmFileName": "plugin/and_sora.tpm",
+        "Title": "‘＆’ - 空の向こうで咲きますように - | ‘＆’-愿绽放在天空彼岸-"
+    },
+    "11eyes": {
+        "$type": "CxEncryption",
+        "Mask": 491,
+        "Offset": 495,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AAECBQME",
+        "EvenBranchOrder": "AQYDBAcFAgA=",
+        "TpmFileName": "plugin/11eyes.tpm"
+    },
+    "11eyes -Resona Forma-": {
+        "$type": "CxEncryption",
+        "Mask": 404,
+        "Offset": 872,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AwIABQQB",
+        "EvenBranchOrder": "BQQHAAYCAwE=",
+        "ControlBlockName": "11eyes.bin",
+        "Title": "11eyes-交错的视线"
+    },
+    "25c -Sono Hako wa Shoujo no Himei o Morasanai-": {
+        "$type": "HashCrypt",
+        "Title": "25c -その箱は少女の悲鳴を漏らさない-"
+    },
+    "9-nine- Deluxe Edition": {
+        "$type": "CxEncryption",
+        "Mask": 532,
+        "Offset": 934,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AwIEAQAF",
+        "EvenBranchOrder": "AQMHBAIGAAU=",
+        "ControlBlockName": "9nine_deluxe.bin",
+        "Title": "9-nine- 豪華版 | 9-nine- 豪华版"
+    },
+    "9 -Nine- Kokonotsu Kokonoka Kokonoiro": {
+        "$type": "CxEncryption",
+        "Mask": 518,
+        "Offset": 77,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIDBAAF",
+        "EvenBranchOrder": "BQMEBgAHAgE=",
+        "ControlBlockName": "9nine_ep1.bin",
+        "Title": "9-nine-ここのつここのかここのいろ | 9-nine-九次九日九重色 | 9-nine-九次九日九色"
+    },
+    "9 -Nine-:Episode 1": {
+        "$type": "CxEncryption",
+        "Mask": 299,
+        "Offset": 1963,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "BAUAAgED",
+        "EvenBranchOrder": "BQcBBgMCAAQ=",
+        "ControlBlockName": "9nine_ep1_sekai.bin"
+    },
+    "Aa Mama ni Naru!": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3598228156,
+        "Title": "ああっママになるっ！ ～アナタを想って溢れるおっぱい～ | 母爱如山 胸中无法压抑对你的爱 | 向妈妈撒娇吧"
+    },
+    "Aete Mushi Suru Kimi to no Mirai ~Relay Broadcast~": {
+        "$type": "CxEncryption",
+        "Mask": 443,
+        "Offset": 1197,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AwUCAQQA",
+        "EvenBranchOrder": "BwEABgMCBAU=",
+        "ControlBlockName": "aete_mushi.bin",
+        "Title": "あえて無視するキミとの未来 ～Relay broadcast～ | 硬要无视与你的未来 ~Relay broadcast~"
+    },
+    "Ah, Ojou-sama": {
+        "$type": "CxEncryption",
+        "Mask": 353,
+        "Offset": 1481,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AQMCAAQF",
+        "EvenBranchOrder": "AQYEAAMHBQI=",
+        "TpmFileName": "plugin/cxdec.tpm",
+        "Title": "ああっお嬢様っ"
+    },
+    "AI Love": {
+        "$type": "AkabeiCrypt",
+        "Seed": 734916043,
+        "Title": "Ai 爱"
+    },
+    "Aibo Nyuujoku": {
+        "$type": "FlyingShineCrypt",
+        "Title": "愛母乳辱～妄執の巨乳責めザンマイ～"
+    },
+    "Aisai Injoku Settai": {
+        "$type": "HashCrypt",
+        "Title": "愛妻淫辱接待～借金のかたに妻の調教を命じられた夫～"
+    },
+    "Akatsuki no Goei": {
+        "$type": "AppliqueCrypt",
+        "Title": "暁の護衛 | 晓之护卫"
+    },
+    "Akazukin to Mayoi no Mori": {
+        "$type": "CxEncryption",
+        "Mask": 369,
+        "Offset": 1723,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgAFAQME",
+        "EvenBranchOrder": "AQQCAwAHBgU=",
+        "TpmFileName": "plugin/akazukin.tpm",
+        "Title": "赤ずきんと迷いの森"
+    },
+    "Akuratsu ~Chijoku no Yuri Shimai~": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "akuratsu.bin",
+        "Title": "あくらつ～恥辱の百合姉妹～"
+    },
+    "ALIA's CARNIVAL Flowering Sky [Offical Chinese Ver]": {
+        "$type": "HxCryptLite",
+        "Mask": 430,
+        "Offset": 306,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AQAEAgMF",
+        "EvenBranchOrder": "BwUBBAADAgY=",
+        "ControlBlockName": "alia_ch.bin",
+        "Title": "爱丽娅的明日盛典！Flowering Sky"
+    },
+    "Altered Pink": {
+        "$type": "AlteredPinkCrypt",
+        "Title": "アルタードピンク～特務戦隊デュエルレンジャー～"
+    },
+    "Ama Koi Syrups": {
+        "$type": "HashCrypt",
+        "Title": "あま恋シロップス ～恥じらう恋心でシたくなる甘神様の恋祭り～ | 甘神大人的糖浆恋祭"
+    },
+    "Amairo＊Islenauts": {
+        "$type": "CxEncryption",
+        "Mask": 548,
+        "Offset": 1442,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "BQMEAAEC",
+        "EvenBranchOrder": "BAIDBQcGAQA=",
+        "TpmFileName": "plugin/AmairoIsleNauts.tpm",
+        "Title": "天色＊アイルノーツ | 天色幻想岛"
+    },
+    "AMBITIOUS MISSION": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{Kaguya|Yae|Nijimu|Atena|Charl|Kallis}",
+                    "bootStrap": "AMBITIOUS_MISSION/Copyright_(C)SAGA_PLANETS./All_Rights_Reserved.",
+                    "params": "000103050706020402030100050400010280c6019002",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "AMBITIOUS MISSION After Episode 1 | AMBITIOUS MISSION アフターエピソード1 かぐや＆あてな | Ambitious Mission FD1 | AMBITIOUS MISSION After Episode 2 | AMBITIOUS MISSION アフターエピソード2 弥栄＆虹夢＆シャル | Ambitious Mission FD2"
+    },
+    "Anata no Milk Kudasai na": {
+        "$type": "HashCrypt",
+        "Title": "あなたの精液くださいな ～私とボクとどっちがお好み？～"
+    },
+    "Anedori": {
+        "$type": "HashCrypt",
+        "Title": "姉撮 ～堕ちていくお姉ちゃんを助けられない僕～"
+    },
+    "Aniki No Yome-san nara": {
+        "$type": "PoringSoftCrypt",
+        "Title": "兄貴の嫁さんなら、俺にハメられてヒイヒイ言ってるところだよ"
+    },
+    "Aqua": {
+        "$type": "CxEncryption",
+        "Mask": 424,
+        "Offset": 1910,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AgAFAwEE",
+        "EvenBranchOrder": "AAEDBwQFBgI=",
+        "TpmFileName": "plugin/AQUA.tpm",
+        "Title": "AQUA"
+    },
+    "ATRI -My Dear Moments-": {
+        "$type": "CxEncryption",
+        "Mask": 423,
+        "Offset": 873,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AAQDAQIF",
+        "EvenBranchOrder": "AgcEAAMFAQY=",
+        "ControlBlockName": "atri.bin",
+        "Title": "亚托莉 -我挚爱的时光-"
+    },
+    "Baaba to Mama to no Choujuku Oyakodon": {
+        "$type": "HashCrypt",
+        "Title": "ばぁばとママとの超熟母娘丼 ～３世代での家庭内エッチ～ | 爱你深至夏海蔚蓝"
+    },
+    "Bakumatsu Jinchuu Houkoku Resshiden Miburo": {
+        "$type": "MiburoCrypt",
+        "Title": "幕末尽忠報国烈士伝　MIBURO"
+    },
+    "Bakunyuu Oyakodon": {
+        "$type": "DieselmineCrypt",
+        "Title": "爆乳母娘丼 ～仕事先の親子が寝取りやすそうな件～"
+    },
+    "Bakuretsu Otome Sexy Mary": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "bakuretsu.bin",
+        "Title": "爆裂乙女SEXYマリィ"
+    },
+    "Bakusou Josou Keikaku": {
+        "$type": "HashCrypt",
+        "Title": "爆走女装計画～もしも俺が女装させられてレディースに入隊させられたら～"
+    },
+    "Berry's": {
+        "$type": "SourireCrypt"
+    },
+    "Bi'an Huazang": {
+        "$type": "NatsupochiCrypt",
+        "Title": "彼岸花葬"
+    },
+    "Bishuu ~Chigyaku no Mesu Dorei~": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "bishuu.bin",
+        "Title": "美醜 ～恥虐の牝奴隷～"
+    },
+    "Bitch Gal no Gachi Iki Acme": {
+        "$type": "HashCrypt",
+        "Title": "ビッチギャルのガチイキアクメ ～家庭教師の童貞巨根にハマり堕ち～ | Bitch Gyaru no Gachi Iki Acme"
+    },
+    "blue note": {
+        "$type": "PoringSoftCrypt",
+        "Title": "ブルーノート"
+    },
+    "Bodatsu ~Kindan no Shokushu Soukan~": {
+        "$type": "HashCrypt",
+        "Title": "母奪～禁断の触手相姦～"
+    },
+    "Boku no Mirai wa, Koi to Kakin to": {
+        "$type": "XorCrypt",
+        "Key": 227,
+        "Title": "僕の未来は、恋と課金と。～Charge To The Future～ | 我的未来是恋爱与氪金"
+    },
+    "Boku no Mirai wa, Koi to Kakin to [Trial]": {
+        "$type": "XorCrypt",
+        "Key": 49,
+        "Title": "僕の未来は、恋と課金と。～Charge To The Future～ [体験版] | 我的未来是恋爱与氪金 [试用版]"
+    },
+    "Boku to Koi Suru Ponkotsu Akuma.": {
+        "$type": "SmileCrypt",
+        "KeyXor": 3505437307,
+        "FirstXor": 123,
+        "ZeroXor": 94,
+        "Title": "僕と恋するポンコツアクマ。 | 与我恋爱的废柴小恶魔 | The Ditzy Demons Are in Love With Me | 與我戀愛的廢柴小惡魔"
+    },
+    "Boku to Koi Suru Ponkotsu Akuma. Suggoi Ecchi!": {
+        "$type": "SmileCrypt",
+        "KeyXor": 3505437307,
+        "FirstXor": 123,
+        "ZeroXor": 94,
+        "Title": "僕と恋するポンコツアクマ。 すっごいえっち！ | 与我恋爱的废柴恶魔。 ～甜腻后日谈～ | The Ditzy Demons Are in Love With Me - Fandisc"
+    },
+    "Bosei Kanojo -Shikyuu Kikan Hen-": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3598228156,
+        "Title": "母性カノジョ-子宮 帰還編- | 母性女友"
+    },
+    "Bra-ban!": {
+        "$type": "PoringSoftCrypt",
+        "Title": "ぶらばん！ | 管乐恋曲！"
+    },
+    "Bracon! Nazusa Onee-chan no Seikatsu Hogo": {
+        "$type": "PureMoreCrypt",
+        "FileListName": "bracon.lst",
+        "CharMap": "ｋ０ィド６ろ3八づえｙョげ5dナひもフｎレがヌぺｊｍタズtp1ざゥッ９ヶ二ｉヵヒあおヮゎ0億すツ7ｒ九けワか７クエｌマ３ぱガゾデヘ十ゐわごバちだサギjペてボぴｖｗ千リsメiビや零ゴムｔふｚカ七cベさじパヱアみりぶずとな８ェラらハｕまゅシxぜモnたコ9h五ぼぎgこｐブいゑスｄくｘ百ンどセlべぅぷしkfｃうaょ2５ねキぇへソゆｇウき４ロｏユミザ6そy２qオrポぽほ8ゼぬに三ｅゲよんのをャｓはヨァつ四vジbピ１ｈテプネヲノ4ニぁぉヂヅぞwダホめ一万六むゃでヤヰケeｆヴばュmａoチぐびせuォｑるれグzトぢっｂルぃイ",
+        "LayerNameSuffix": "8F$3Gj%iA&4evI+4_#+Fcm77DOV1#u5m",
+        "Title": "ブラコン!なずさおねーちゃんの性活保護"
+    },
+    "Bukkake! Doshikoring MINUKI Max Acme...": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "BUKKAKE！ ドシコリングMINUKIマックスアクメしてもいいですか？ ～ドエロいポーズして貰って見抜きぶっかけしたらお互い興奮がドチャクソヤバイです～"
+    },
+    "Bura Bura": {
+        "$type": "SmxCrypt",
+        "Mask": 3,
+        "KeySeq": "AwUEAwg=",
+        "Title": "ぶら ぶら"
+    },
+    "Cafe Sourire": {
+        "$type": "SourireCrypt"
+    },
+    "Café Stella to Shinigami no Chou": {
+        "$type": "RiddleCxCrypt",
+        "Mask": 622,
+        "Offset": 146,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "NamesSectionId": "yuz:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            2660206490,
+            3437206417,
+            2258490061,
+            2497682059,
+            666440252,
+            2154974748
+        ],
+        "Key1": 1180159099,
+        "Key2": 2773455888,
+        "ControlBlockName": "cafe_stella.bin",
+        "Title": "喫茶ステラと死神の蝶 | 星光咖啡馆与死神之蝶 | 星光咖啡館與死神之蝶"
+    },
+    "Café Stella to Shinigami no Chou [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "Steam",
+                "description": "Steam version",
+                "key": {
+                    "bootStrap": "Cafe Stella and the Reapers Butterflies (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "060301020500070405020400010301020001e6016500",
+                    "archiveUniqueKey": "{Kanna+Natsume+Nozomi+Mei+Suzune}",
+                    "upperKey": "79d53d8b5f13ab6d"
+                }
+            }
+        ],
+        "Title": "喫茶ステラと死神の蝶 [Steam] | 星光咖啡馆与死神之蝶 [Steam] | 星光咖啡館與死神之蝶 [Steam]"
+    },
+    "CharaBration!": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "きゃらぶれーしょん！ ～乙女は恋してキャラぶれる～ | charabration！恋爱少女人格崩坏"
+    },
+    "Chikan Yuugi": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "chikan.bin",
+        "Title": "痴漢遊戯"
+    },
+    "Chouxiaoya de Tian'e Hu": {
+        "$type": "NVLCrypt",
+        "Key": "5eJFeAAoEgA=",
+        "Title": "丑小鸭的天鹅湖"
+    },
+    "Clover Day's": {
+        "$type": "CxEncryption",
+        "Mask": 443,
+        "Offset": 1197,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AwUCAQQA",
+        "EvenBranchOrder": "BwEABgMCBAU=",
+        "TpmFileName": "plugin/cloverdays.tpm",
+        "Title": "幸运草的约定"
+    },
+    "Colorful☆Cure": {
+        "$type": "CxEncryption",
+        "Mask": 739,
+        "Offset": 1816,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgAFAwEE",
+        "EvenBranchOrder": "AQAHBAIDBQY=",
+        "TpmFileName": "カラフル☆きゅあー.tpm",
+        "Title": "カラフル☆きゅあ～ | 缤纷少女 Colorful Cure"
+    },
+    "Concerto Note": {
+        "$type": "CxEncryption",
+        "Mask": 423,
+        "Offset": 1226,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AAIEAwEF",
+        "EvenBranchOrder": "AAYCBAUBAwc=",
+        "ControlBlockName": "concerto.bin",
+        "Title": "コンチェルトノート"
+    },
+    "Corona Blossom vol.1": {
+        "$type": "CxEncryption",
+        "Mask": 586,
+        "Offset": 1374,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AAMBBAIF",
+        "EvenBranchOrder": "BgcCBQMAAQQ=",
+        "ControlBlockName": "corona1.bin",
+        "Title": "コロナ・ブロッサム Vol.1: Gift From the Galaxy | Corona Blossom-日冕之华- vol.1 来自银河的礼物 | 日冕花开 Vol 1"
+    },
+    "Coμ": {
+        "$type": "CxEncryption",
+        "Mask": 419,
+        "Offset": 182,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "BAMCAQUA",
+        "EvenBranchOrder": "AAcFBgMBBAI=",
+        "ControlBlockName": "comyu.bin",
+        "Title": "コミュ - 黒い竜と優しい王国 - | Co:μ-黑龙与温柔的王国"
+    },
+    "Criminal Border": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{Hina-Kotoko-Meryl-Rin}",
+                    "bootStrap": "Criminal_Border/Copyright_Purple_software_All_Rights_Reserved.",
+                    "params": "010203070006050402030004050100010281c5015c02",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "クリミナルボーダー | クリミナルボーダー 1st offence | クリミナルボーダー 2nd"
+    },
+    "Crime Rhyme series": {
+        "$type": "FlyingShineCrypt",
+        "Title": "クライミライ"
+    },
+    "Cross Concerto": {
+        "$type": "CxEncryption",
+        "Mask": 692,
+        "Offset": 318,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "BAMBAgAF",
+        "EvenBranchOrder": "AgUGBAEDBwA=",
+        "ControlBlockName": "cross_concerto.bin",
+        "Title": "クロスコンチェルト | 交汇协奏曲 | 交匯協奏曲"
+    },
+    "Cross Concerto [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "HanaNoNoNiSakuUtakataNo/CopyrightApplique/AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "060703040201050002000103050401000201a301a002",
+                    "archiveUniqueKey": "{Ruri*Kyouka*Mirai*Touko*Aya*Mika}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "クロスコンチェルト [Steam] | 交汇协奏曲 [Steam] | 交匯協奏曲 [Steam]"
+    },
+    "Custom Reido 4/4+/V": {
+        "$type": "HashCrypt",
+        "Title": "カスタム隷奴 4/4+/V"
+    },
+    "Damegane": {
+        "$type": "DameganeCrypt",
+        "Title": "だめがね"
+    },
+    "Daraku Koujo": {
+        "$type": "FlyingShineCrypt",
+        "Title": "堕落皇女～魔術師の罠に嵌った聖女～"
+    },
+    "Dare mo ga Kanojo o Neratteru": {
+        "$type": "HashCrypt",
+        "Title": "誰もが彼女を狙ってる。 | 众人觊觎的女友"
+    },
+    "Daunya-san to Kainushi-kun": {
+        "$type": "XorCrypt",
+        "Key": 118,
+        "Title": "ダウニャーさんと飼い主くん"
+    },
+    "D.C. ~Da Capo~ Re:tune": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "D.C.Re (C)CIRCUS （C）bushiroad",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "04000203060107050405000103020002018173027801",
+                    "archiveUniqueKey": "{nem.skr.ktr.moe.mak}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "D.C. Re:tune ～ダ・カーポ～"
+    },
+    "D.C.5 ~Da Capo 5~": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{mzh.mna.ykn.aik.kak}",
+                    "bootStrap": "D.C.5 (C)CIRCUS All Rights Reserved.",
+                    "params": "000105040607030205040203010000020101e602b700",
+                    "upperKey": "0000000000000000",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "D.C.5 ～ダ・カーポ5～ | 初音岛5 | D.C.5 Plus Happiness ～ダ・カーポ5～プラスハピネス | D.C.5 ~Da Capo 5~ Future Link | D.C.5 Future Link ～ダ・カーポ5～ フューチャーリンク | D.C.5 Sweet Happiness ～ダ・カーポ5～スイートハピネス"
+    },
+    "Deatte 5-fun wa Ore no Mono!": {
+        "$type": "XorCrypt",
+        "Key": 53,
+        "Title": "出会って5分は俺のもの！ 時間停止と不可避な運命 | 5分钟的邂逅！时间停止与不可避免的命运 | 相见5分属于我！时间停止不可避的命运"
+    },
+    "Deep One": {
+        "$type": "CxEncryption",
+        "Mask": 625,
+        "Offset": 1691,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AAIEAQUD",
+        "EvenBranchOrder": "BQYBBwMEAgA=",
+        "ControlBlockName": "deepone.bin",
+        "Title": "Deep One -ディープワン- | 深渊的来访者"
+    },
+    "Dekinai Watashi ga, Kurikaesu.": {
+        "$type": "AppliqueCrypt",
+        "Title": "できない私が、くり返す。 | 若能与你再次相见"
+    },
+    "DISCODE-2 Niritsu Haihan": {
+        "$type": "NatsupochiCrypt",
+        "Title": "DISCODE-2 二律背反"
+    },
+    "Do-M Imouto O-nedari Kojin Lesson": {
+        "$type": "HashCrypt",
+        "Title": "ドM妹おねだり個人レッスン～私のSEX家庭教師お兄ちゃん～ | 义妹私教辅导~哥哥我是家庭教师"
+    },
+    "Dosukebe Bitch na Enkou...": {
+        "$type": "PinPointCrypt",
+        "Title": "ドスケベビッチな援交○学生（高学年）のセックス三昧夏休み ～あかり＆雪乃～"
+    },
+    "Dracu-Riot!": {
+        "$type": "CxEncryption",
+        "Mask": 752,
+        "Offset": 1048,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AAMFBAIB",
+        "EvenBranchOrder": "BQMAAgEEBgc=",
+        "TpmFileName": "plugin/dracuriot.tpm"
+    },
+    "Dracu-Riot! [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "Steam",
+                "key": {
+                    "archiveUniqueKey": "{Miu_Azu_Rio_Eri_Nic}",
+                    "bootStrap": "DRACU-RIOT! (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "params": "0306020407050001010500040203000102008a025500",
+                    "seed": "4c70dd71913c029d",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "STEAM"
+            }
+        ]
+    },
+    "Ecchi de Ichizu na Doinaka Nii-sama to, Koshikiyukashii Byoujaku Imouto": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "DL",
+                "description": "DLsite version",
+                "key": {
+                    "bootStrap": "DoinakaKyoudai|Copyright(C)SisterPosition|AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "070600030104050202030004050100010200f301c700",
+                    "archiveUniqueKey": "{Asumi@Sensei@Oniichan}",
+                    "upperKey": "0000000000000000"
+                }
+            },
+            {
+                "sku": "Steam",
+                "description": "Steam version",
+                "key": {
+                    "bootStrap": "DoinakaKyoudai//Copyright(C)SisterPosition|AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "040607020501000300010504020300020100f202c502",
+                    "archiveUniqueKey": "{Asumi_Sensei_Oniichan}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "ド田舎兄妹 | エッチで一途なド田舎兄さまと、古式ゆかしい病弱妹 | 痴情哥哥与病弱妹妹的乡间生活"
+    },
+    "Ego's Spark": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{HAJIMExEGO@E-5}",
+                    "bootStrap": "KissEgo_CopyRigight_Satsuki_AllRightsReserved.",
+                    "params": "040205000607010305030104000202010081ea02b001",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "キスからはじめるエゴイズム | 从Kiss开始的自我主义～EGOISM～ | 从亲吻开始的「紫梧」主义"
+    },
+    "Ero Mangaka-san to Binbou Shimai": {
+        "$type": "CxEncryption",
+        "Mask": 524,
+        "Offset": 1446,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "BAACAwUB",
+        "EvenBranchOrder": "BQQBAwAHBgI=",
+        "TpmFileName": "plugin/nyan01_erobin.tpm",
+        "Title": "エロ漫画家さんと貧乏姉妹"
+    },
+    "Erohon o Sutete kara Ani no Yousu ga Okashii": {
+        "$type": "CxEncryption",
+        "Mask": 526,
+        "Offset": 1609,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AAEDBQQC",
+        "EvenBranchOrder": "BAMHAAIFBgE=",
+        "ControlBlockName": "erohon.bin",
+        "Title": "エロ本を捨ててから兄の様子がおかしい | 扔掉黄书以后兄长情况有异 | 妹扔书"
+    },
+    "ExE": {
+        "$type": "CxEncryption",
+        "Mask": 353,
+        "Offset": 1481,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgQBAAUD",
+        "EvenBranchOrder": "AQMFBAACBgc=",
+        "TpmFileName": "plugin/cxdec.tpm"
+    },
+    "Fair Child": {
+        "$type": "CxEncryption",
+        "Mask": 561,
+        "Offset": 1326,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgAEBQMB",
+        "EvenBranchOrder": "BgQAAQMCBwU=",
+        "TpmFileName": "plugin/FairChild.tpm",
+        "Title": "FairChild | フェアチャイルド"
+    },
+    "Fantasical": {
+        "$type": "CxEncryption",
+        "Mask": 630,
+        "Offset": 117,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AgUABAMB",
+        "EvenBranchOrder": "AAEGBwMCBQQ=",
+        "TpmFileName": "plugin/ファンタジカル.tpm",
+        "Title": "ファンタジカル"
+    },
+    "Fate/hollow ataraxia": {
+        "$type": "CxEncryption",
+        "Mask": 323,
+        "Offset": 1927,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AAECAwQF",
+        "EvenBranchOrder": "AAECAwQFBgc=",
+        "ControlBlockName": "fate_hollow.bin"
+    },
+    "Fate/Knight Rhapsody ACT 2": {
+        "$type": "RhapsodyCrypt",
+        "FileListName": "rhapsody.lst",
+        "Title": "招蕩的妄想劇場 ACT 2"
+    },
+    "Fate/stay night": {
+        "$type": "FateCrypt",
+        "HashAfterCrypt": true
+    },
+    "Feicui Yue": {
+        "$type": "NatsupochiCrypt",
+        "Title": "翡翠月"
+    },
+    "Fukashi na Aijou": {
+        "$type": "HashCrypt",
+        "Title": "不可視な愛情～透明なボクに感じるママ～"
+    },
+    "Futamata Ren'ai": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "フタマタ恋愛 | 恋爱成双 | 劈腿之恋"
+    },
+    "Futamata Ren'ai - Rui & Miyako Mini After Story": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "フタマタ恋愛 瑠衣＆宮子ミニアフターストーリー | 恋爱成双 瑠衣&宫子 mini小剧场"
+    },
+    "Futamata Ren'ai - Yua & Kirame Mini After Story": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "フタマタ恋愛 結愛＆煌ミニアフターストーリー | 恋爱成双 结爱&煌 mini小剧场"
+    },
+    "Gakkou no Seiiki [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Gakkou no Seiiki/(C)feng All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "060001040203050700030102040500010200f102ac01",
+                    "archiveUniqueKey": "{Tw4enx5lz9k3oXDD}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "学校のセイイキ [Steam] | 学校的圣域 [Steam] | My Academy's Special Place [Steam]"
+    },
+    "Gakuen Butou no Folklore": {
+        "$type": "NephriteCrypt",
+        "Title": "学園舞闘のフォークロア"
+    },
+    "Gakuen Tokkyuu Hotokenser": {
+        "$type": "CxEncryption",
+        "Mask": 330,
+        "Offset": 558,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AgEDBAAF",
+        "EvenBranchOrder": "BgAEBwMBAgU=",
+        "ControlBlockName": "gakuen.bin",
+        "Title": "学園特救ホトケンサー"
+    },
+    "Gaman ga Dekinai Doutei Aniki to, Sunao ni Narenai Hankou Imouto": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{Chie*9typeImouto+Navi}",
+                    "bootStrap": "DouteiKyoudai|Copyright(C)SisterPosition|AllRightsReserved.",
+                    "params": "000104070602030505000103040200010200c1015701",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "ガマンができない童貞兄キと、スナオになれない反抗妹 | 无法忍耐的处男哥哥和不直率的叛逆妹妹"
+    },
+    "Ganki Tengoku": {
+        "$type": "DieselmineCrypt",
+        "Title": "顔騎天国"
+    },
+    "Gaokao Lian'ai Yibai Tian [PKG]": {
+        "$type": "NVLCrypt",
+        "Key": "DPAEYQBKQgA=",
+        "Title": "高考恋爱一百天 [PKG] | 高考戀愛一百天 [PKG]"
+    },
+    "Gaokao Lian'ai Yibai Tian [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "He9bowDKQQA=",
+        "Title": "高考恋爱一百天 [Steam] | 高考戀愛一百天 [Steam]"
+    },
+    "GINKA": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "Steam",
+                "description": "Steam version",
+                "key": {
+                    "bootStrap": "GINKA (C)Frontwing",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "05000307020106040201040003050100028099018601",
+                    "archiveUniqueKey": "{GinkaHimawariRinNazuna}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ]
+    },
+    "Gisobo, Choukyou Chuu": {
+        "$type": "HashCrypt",
+        "Title": "義祖母、調教中。 ～仲良しの秘訣はSMです。～"
+    },
+    "Gokkun! Onii-chan Milk": {
+        "$type": "NephriteCrypt",
+        "Title": "ごっくん！おにーちゃんみるく♪～ぷにぷにおっぱいな妹と～"
+    },
+    "Grisaia: Phantom Trigger [Steam]": {
+        "$type": "CxEncryption",
+        "Mask": 389,
+        "Offset": 332,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgAEAwEF",
+        "EvenBranchOrder": "AQUHAAIEAwY=",
+        "ControlBlockName": "grisaia_steam.bin",
+        "Title": "グリザイア ファントムトリガー [Steam] | 灰色幻影扳机 [Steam]"
+    },
+    "Grisaia: Phantom Trigger Vol.2": {
+        "$type": "CxEncryption",
+        "Mask": 389,
+        "Offset": 332,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgAEAwEF",
+        "EvenBranchOrder": "AQUHAAIEAwY=",
+        "ControlBlockName": "grisaia_vol2.bin",
+        "Title": "グリザイア ファントムトリガー Vol. 2 | 灰色幻影扳机第2卷 | 灰色：幻影扳机 Vol. 2"
+    },
+    "Grisaia: Phantom Trigger Vol.3": {
+        "$type": "NanaCxCrypt",
+        "Mask": 501,
+        "Offset": 174,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "StartupTjsNotEncrypted": true,
+        "NamesSectionId": "dls:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            3868544114,
+            706082328,
+            1479507413,
+            605919492,
+            3150100769,
+            4251163583
+        ],
+        "ControlBlockName": "grisaia_vol3.bin",
+        "Title": "グリザイア ファントムトリガー Vol. 3 | 灰色幻影扳机第3卷 | 灰色：幻影扳机 Vol. 3"
+    },
+    "Grisaia: Phantom Trigger Vol.4": {
+        "$type": "NanaCxCrypt",
+        "Mask": 501,
+        "Offset": 174,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "StartupTjsNotEncrypted": true,
+        "NamesSectionId": "dls:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            3868544114,
+            706082328,
+            1479507413,
+            605919492,
+            3150100769,
+            4251163583
+        ],
+        "ControlBlockName": "grisaia_vol4.bin",
+        "Title": "グリザイア ファントムトリガー Vol. 4 | 灰色幻影扳机第4卷 | 灰色：幻影扳机 Vol. 4"
+    },
+    "Grisaia: Phantom Trigger Vol.5": {
+        "$type": "CxEncryption",
+        "Mask": 389,
+        "Offset": 332,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgAEAwEF",
+        "EvenBranchOrder": "AQUHAAIEAwY=",
+        "ControlBlockName": "grisaia_vol5.bin",
+        "Title": "グリザイア ファントムトリガー Vol. 5 | 灰色幻影扳机第5卷 | 灰色：幻影扳机 Vol. 5"
+    },
+    "Hachukano": {
+        "$type": "HachukanoCrypt",
+        "StartupTjsNotEncrypted": true,
+        "Title": "はちゅかの"
+    },
+    "Hahadori ~Ochiteiku Haha no Eizou Kiroku~": {
+        "$type": "HashCrypt",
+        "Title": "母撮 ～堕ちていく母の映像記録～"
+    },
+    "Hame Pako Ou-sama Game!": {
+        "$type": "HashCrypt",
+        "Title": "ハメパコ王様ゲーム！　～合コン居酒屋編～"
+    },
+    "Hamedol Hakudaku Ochi": {
+        "$type": "HashCrypt",
+        "Title": "ハメドル白濁堕ち ～生中出しで、お仕事を貰っていいですか？～"
+    },
+    "Hame-dori Jikkyou Chuukei!": {
+        "$type": "NatsupochiCrypt",
+        "Title": "ハメ撮り実況中継！兄妹初エッチ12時間"
+    },
+    "Hanagane Kanade * Gram": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "PKG/DL ver.",
+                "key": {
+                    "archiveUniqueKey": "{Yui*Sumire*Kotona*Ayase}",
+                    "bootStrap": "HANAGANE KANADE*GRAM (C)NanaWind All Rights Reserved.",
+                    "params": "0206070300040501020304050100020100001e01f201",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "Universal"
+            }
+        ],
+        "Title": "花鐘カナデ＊グラム | 花钟Kanade＊Gram | 花鐘カナデ＊グラム Chapter:1 小桜結 | 钟Kanade＊Gram 第一章：小樱结 | 花鐘カナデ＊グラム Chapter:2 花ノ香澄玲 | 花钟Kanade＊Gram 第二章：花埜香澄玲 | 花鐘カナデ＊グラム Chapter:3 星泉コトナ | 花钟Kanade＊Gram 第三章：星泉琴凪 | 花鐘カナデ＊グラム Chapter:4 綾世奏 -最終章- | 花钟Kanade＊Gram 第四章： 绫世奏 -最终章-"
+    },
+    "Hanataba o Kimi ni Okurou -Kinsenka-": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{BenioMatsuriHitodenashi}",
+                    "bootStrap": "hanakimi-kinsenka (C)Frontwing",
+                    "params": "010302050604070003010500020402000100c5028e00",
+                    "upperKey": "0000000000000000",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "花束を君に贈ろう-Kinsenka- | 将花朵献与你-Kinsenka-"
+    },
+    "Hana no No ni Saku Utakata no [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "HanaNoNoNiSakuUtakataNo/CopyrightApplique/AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "060703040201050002000103050401000201a301a002",
+                    "archiveUniqueKey": "{Ouka@Shione@Reina@Ryouko@Shizuku}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "花の野に咲くうたかたの [Steam] | 五色浮影绽放于花之海洋 [Steam] | 五色浮影綻放於花之海洋[Steam]"
+    },
+    "Haniwari! Sayaka Ojou-sama": {
+        "$type": "FlyingShineCrypt",
+        "Title": "はにわり!沙耶華お嬢様～感染する股間の大きなモノ～"
+    },
+    "Hardcore Teacher": {
+        "$type": "HashCrypt",
+        "Title": "ハードコア・ティーチャー ～絶対服従へのロジック～"
+    },
+    "Haru to Yuki": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "はるとゆき、"
+    },
+    "Haruiro☆Communication♪": {
+        "$type": "CxEncryption",
+        "Mask": 257,
+        "Offset": 797,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "BQIDAAEE",
+        "EvenBranchOrder": "BQACAQcDBgQ=",
+        "ControlBlockName": "haruiro.bin",
+        "Title": "春色☆こみゅにけ～しょん♪"
+    },
+    "Hatarakanai Honey Life": {
+        "$type": "NephriteCrypt",
+        "Title": "ハタラカナイはにーらいふ"
+    },
+    "Hataraku Otaku no Ren'ai Jijou": {
+        "$type": "CxEncryption",
+        "Mask": 503,
+        "Offset": 832,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AwACBQEE",
+        "EvenBranchOrder": "AwEFBAYABwI=",
+        "ControlBlockName": "hataraku.bin",
+        "Title": "働くオタクの恋愛事情"
+    },
+    "Hataraku Otona no Ren'ai Jijou": {
+        "$type": "SmxCrypt",
+        "Mask": 2,
+        "KeySeq": "AwEAAg==",
+        "Title": "働くオトナの恋愛事情"
+    },
+    "Hatsujou Switch": {
+        "$type": "CxEncryption",
+        "Mask": 281,
+        "Offset": 926,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AwACBQEE",
+        "EvenBranchOrder": "AgcBBQYEAAM=",
+        "TpmFileName": "plugin/hatsujosw.tpm",
+        "Title": "発情スイッチ ～美姉妹が催眠術に堕ちた先～"
+    },
+    "Haruoto Alice＊Gram": {
+        "$type": "NanaCxCrypt",
+        "Mask": 572,
+        "Offset": 109,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "StartupTjsNotEncrypted": true,
+        "NamesSectionId": "dls:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            1406040976,
+            3200797355,
+            1926882100,
+            1303657607,
+            3795909009,
+            676609281
+        ],
+        "ControlBlockName": "haruoto.bin",
+        "Title": "春音アリス＊グラム | 春音Alice＊Gram"
+    },
+    "Haze Man -The Local Hero-": {
+        "$type": "CxEncryption",
+        "Mask": 419,
+        "Offset": 1035,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgQFAAED",
+        "EvenBranchOrder": "AgMGAAEHBAU=",
+        "ControlBlockName": "haze_man.bin",
+        "Title": "ヘイズマン -THE LOCAL HERO- | 大地侠"
+    },
+    "Heliotrope -Sore wa Shi ni Itaru Kami no Ai-": {
+        "$type": "HashCrypt",
+        "Title": "ヘリオトロープ－それは死に至る神の愛－"
+    },
+    "Hello Lady!": {
+        "$type": "CxEncryption",
+        "Mask": 443,
+        "Offset": 1208,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AAUDAgQB",
+        "EvenBranchOrder": "AwYCAAQHAQU=",
+        "TpmFileName": "plugin/ハロー・レディ！.tpm",
+        "Title": "ハロー・レディ！ | 淑女同萌！"
+    },
+    "Hello Lady! [Steam]": {
+        "$type": "CxEncryption",
+        "Mask": 722,
+        "Offset": 435,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AAEFAwQC",
+        "EvenBranchOrder": "AwIGBQEHAAQ=",
+        "ControlBlockName": "hello_lady_steam.bin",
+        "Title": "ハロー・レディ！ [Steam] | 淑女同萌！ [Steam]"
+    },
+    "Hello Lady! -New Division-": {
+        "$type": "CxEncryption",
+        "Mask": 443,
+        "Offset": 1208,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AAUDAgQB",
+        "EvenBranchOrder": "AwYCAAQHAQU=",
+        "ControlBlockName": "hello_lady_new.bin",
+        "Title": "ハロー・レディ！ -New Division- | 淑女同萌！-New Division-"
+    },
+    "Hello Lady! -Superior Entelecheia-": {
+        "$type": "CxEncryption",
+        "Mask": 559,
+        "Offset": 1040,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQACBAMF",
+        "EvenBranchOrder": "BgMABQECBwQ=",
+        "ControlBlockName": "hello_lady_super.bin",
+        "Title": "ハロー・レディ！ -Superior Entelecheia- | 淑女同萌！-Superior Entelecheia-"
+    },
+    "Hentai Keimusho 24-ji": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "変態刑務所２４時～懲役２年　イキ続けた少女～"
+    },
+    "Hentai Kyonyuu Nurse": {
+        "$type": "HashCrypt",
+        "Title": "HENTAI 巨乳ナース ～草食男子、治療計画！？～"
+    },
+    "Hikuu Yousai Mitsutsubo no Himegimi": {
+        "$type": "NatsupochiCrypt",
+        "Title": "妃喰要塞　蜜壺の姫君"
+    },
+    "Hime to Majin to Koi Suru Tamashii": {
+        "$type": "HashCrypt",
+        "Title": "ヒメと魔神と恋するたましぃ"
+    },
+    "Himesho!": {
+        "$type": "XanaduCrypt",
+        "StartupTjsNotEncrypted": true,
+        "Title": "ひめしょ！"
+    },
+    "Hinekuremono no Gakuen Seishun Monogatari": {
+        "$type": "CxEncryption",
+        "Mask": 559,
+        "Offset": 1985,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQQABQMC",
+        "EvenBranchOrder": "AQUDBwQGAgA=",
+        "ControlBlockName": "hinekuremono.bin",
+        "Title": "捻くれモノの学園青春物語 ～俺と彼女の裏表～ | 当孤僻之人遇上青春生活"
+    },
+    "Hito Yado Ippatsu Yarihamezon": {
+        "$type": "HashCrypt",
+        "Title": "一宿一発ヤリハメゾン -おじさんザーメンぜ～んぶちょうだい- | Isshuku Ippatsu Yarihamezon"
+    },
+    "Hitozuma Chijoku Hyakkaten": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "hitozuma.bin",
+        "Title": "人妻恥辱百貨店"
+    },
+    "Hitozuma Tenchou no Chitai Kinmu": {
+        "$type": "HashCrypt",
+        "Title": "人妻店長の痴態勤務 ～夜勤バイトの愉しみ方～"
+    },
+    "Honban Ari! Hitozuma Delivery R": {
+        "$type": "HashCrypt",
+        "Title": "本番有り! 人妻デリバリー ～どこかで見た美人妻たちを一人占め～"
+    },
+    "Hong-se Xuanlü [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "mt43PgAiSAA=",
+        "Title": "虹色旋律 [Steam]"
+    },
+    "Hora, Sonna ni Koe o Morasu...": {
+        "$type": "HashCrypt",
+        "Title": "ほら、そんなに声を漏らすと彼氏にバレちまうぜ？ ～エロゲ世界でモブの少女を寝取ってみた～"
+    },
+    "Hoshi Koi * Twinkle": {
+        "$type": "CabbageCxCrypt",
+        "Mask": 701,
+        "Offset": 172,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "NamesSectionId": "cbg:",
+        "RandomSeed": 2463534242,
+        "ControlBlockName": "hoshikoi.bin",
+        "Title": "星恋＊ティンクル | 星恋*twinkle | 星恋＊闪烁"
+    },
+    "Hoshoku Game 2 ~Sayonara, Marunomi~": {
+        "$type": "DieselmineCrypt",
+        "Title": "捕食ゲーム2～さようなら。丸呑み～"
+    },
+    "Hotel. [Trial]": {
+        "$type": "AppliqueCrypt"
+    },
+    "Hua Luo Dong Yang Snowdreams -lost in winter- [Demo]": {
+        "$type": "NVLCrypt",
+        "Key": "og3ge1+mHzo=",
+        "Title": "花落冬陽 Snowdreams -lost in winter- [Demo] | 花落冬阳 Snowdreams -lost in winter- [Demo]"
+    },
+    "Hua Luo Dong Yang Snowdreams -lost in winter- [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "eCmjFPPfYso=",
+        "Title": "花落冬陽 Snowdreams -lost in winter- [Steam] | 花落冬阳 Snowdreams -lost in winter- [Steam]"
+    },
+    "Huiyi Wangque zhi Xia [PKG]": {
+        "$type": "NVLCrypt",
+        "Key": "az0gbQB0QQA=",
+        "Title": "回忆忘却之匣 [PKG] | 回憶忘卻之匣 [PKG]"
+    },
+    "Huiyi Wangque zhi Xia [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "3ojzLADUQQA=",
+        "Title": "回忆忘却之匣 [Steam] | 回憶忘卻之匣 [Steam]"
+    },
+    "Ichizu ni Zettai Fukujuu na Imouto": {
+        "$type": "HashCrypt",
+        "Title": "一途に絶対服従な妹をめちゃくちゃにしてみた ～愛欲兄妹～"
+    },
+    "Iede Musume Tanetsuke Kanyuu": {
+        "$type": "HashCrypt",
+        "Title": "家出娘種付け姦誘～気弱なあの子を肉便器開発～"
+    },
+    "Iinkai no Antihero": {
+        "$type": "NephriteCrypt",
+        "Title": "委員界の異端者 ～IINCHO-Re.co～"
+    },
+    "Ijou Seiai": {
+        "$type": "HashCrypt",
+        "Title": "異常性愛-妄想ビッチと真正ビッチ-"
+    },
+    "Immoral Joubo Hazard": {
+        "$type": "HashCrypt",
+        "Title": "インモラル・情母・ハザード"
+    },
+    "Immoral Love ~Tsuma no Tsureko ga Ore no Koibito~": {
+        "$type": "HashCrypt",
+        "Title": "インモラル・ラブ ～妻の連れ子が俺の恋人～"
+    },
+    "Imouto Haramasex": {
+        "$type": "NatsupochiCrypt",
+        "Title": "妹孕ませっくす"
+    },
+    "Imouto Kairaku Ochi": {
+        "$type": "PoringSoftCrypt",
+        "Title": "妹快楽堕ち～お兄ちゃんに無理やりハメられてから～ | 沉溺快感中的妹妹～自从被哥哥强行插入后～"
+    },
+    "Imouto no Katachi": {
+        "$type": "SourireCrypt",
+        "Title": "イモウトノカタチ | 妹之形"
+    },
+    "Imouto no Okage de Motesugite Yabai.": {
+        "$type": "SourireCrypt",
+        "Title": "妹のおかげでモテすぎてヤバい。 | 因为妹妹让我太受欢迎了糟糕了"
+    },
+    "Imouto no Seiiki": {
+        "$type": "SmileCrypt",
+        "KeyXor": 552518022,
+        "FirstXor": 134,
+        "ZeroXor": 60,
+        "Title": "妹のセイイキ | 妹的圣域 | My Little Sister's Special Place"
+    },
+    "Imouto no Seiiki [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Imouto no Seiiki/(C)feng All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "01030600020507040004030205010200010116013102",
+                    "archiveUniqueKey": "{uJe3zT1xQv7NnMyD}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "妹のセイイキ [Steam] | 妹的圣域 [Steam] | My Little Sister's Special Place [Steam]"
+    },
+    "Imouto Shokushu Rape": {
+        "$type": "HashCrypt",
+        "Title": "妹触手レイプ ～復讐の処女貫通～"
+    },
+    "Imouto Style": {
+        "$type": "CxEncryption",
+        "Mask": 632,
+        "Offset": 215,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIEAAUD",
+        "EvenBranchOrder": "BwUBAwYEAgA=",
+        "ControlBlockName": "imouto.bin",
+        "Title": "妹スタイル"
+    },
+    "In'en no Yu ~Sandai no Okami-tachi to no Mikkou~": {
+        "$type": "HashCrypt",
+        "Title": "淫艶の湯 ～三代の女将達との密交～"
+    },
+    "In'yaku Izon Gakuen": {
+        "$type": "HashCrypt",
+        "Title": "淫薬依存学園～もっと…もっとちょうだい！～"
+    },
+    "Inaho no Mirai": {
+        "$type": "FlyingShineCrypt",
+        "Title": "イナホノミライ"
+    },
+    "Inaka no Muchi na Muchimuchi Musume": {
+        "$type": "HashCrypt",
+        "Title": "田舎の無知なむちむち娘"
+    },
+    "Inbo Rannyuu Soukan": {
+        "$type": "FlyingShineCrypt",
+        "Title": "淫母乱乳相姦～ボクの精子で、ママを一杯にしてあげる"
+    },
+    "Ingoku no Hako": {
+        "$type": "FlyingShineCrypt",
+        "Title": "淫獄の筺～閉じ込められた美人母娘～"
+    },
+    "In! Joku! Pink Ranger!!": {
+        "$type": "HashCrypt",
+        "Title": "淫！辱！ピンクレンジャー!! ～堕ちた変身ヒロイン～"
+    },
+    "Inochi no Spare": {
+        "$type": "AkabeiCrypt",
+        "Seed": 771534797,
+        "Title": "生命のスペア | 生命的备件"
+    },
+    "Inochi no Spare [Trial]": {
+        "$type": "AkabeiCrypt",
+        "Seed": 716950749,
+        "Title": "生命のスペア [体験版] | 生命的备件 [试玩版]"
+    },
+    "Inraku Counseling": {
+        "$type": "HashCrypt",
+        "Title": "淫落カウンセリング ～夫の目の前で、妻は本性に堕ちてゆく～"
+    },
+    "Inraku no Ketsuzoku": {
+        "$type": "FlyingShineCrypt",
+        "Title": "淫落の血族～禁断の呪縛～"
+    },
+    "Inshi Reizoku": {
+        "$type": "HashCrypt",
+        "Title": "淫姉隷属 ～影に潜んだ愛欲と支配～"
+    },
+    "Island Diary": {
+        "$type": "CxEncryption",
+        "Mask": 488,
+        "Offset": 120,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AwQFAgEA",
+        "EvenBranchOrder": "BQECBwADBgQ=",
+        "ControlBlockName": "island.bin",
+        "Title": "アイランドダイアリー"
+    },
+    "Itsu de mo Onna no Ko ni Seieki...": {
+        "$type": "DieselmineCrypt",
+        "Title": "いつでも女の子に精液大量注入！して褒められる世界"
+    },
+    "Izuna Zanshinken": {
+        "$type": "SmxCrypt",
+        "Mask": 5,
+        "KeySeq": "AwgHBgUEAg==",
+        "Title": "イヅナ斬審剣"
+    },
+    "Japanese School Life": {
+        "$type": "CxEncryption",
+        "Mask": 697,
+        "Offset": 711,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQQDAgUA",
+        "EvenBranchOrder": "BgUHBAADAQI=",
+        "ControlBlockName": "jasch.bin"
+    },
+    "Jimi me na Jijo-san no Oshigoto Sex": {
+        "$type": "HashCrypt",
+        "Title": "地味めな侍女さんのお仕事セックス～お嬢様に代わってお相手します～"
+    },
+    "Jixiang Ling": {
+        "$type": "NatsupochiCrypt",
+        "Title": "吉祥铃"
+    },
+    "JK Trouble Main\"s": {
+        "$type": "CxEncryption",
+        "Mask": 266,
+        "Offset": 1725,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIDBAAF",
+        "EvenBranchOrder": "AwAGAgcBBAU=",
+        "TpmFileName": "plugin/jktrouble.tpm",
+        "Title": "JKトラブめいん\"s"
+    },
+    "Joker -Shisen no Hate no Doukeshi-": {
+        "$type": "AppliqueCrypt",
+        "Title": "JOKER -死線の果ての道化師-"
+    },
+    "Jokyoushi Rinkan no Kyoushitsu": {
+        "$type": "FlyingShineCrypt",
+        "Title": "女教師　輪姦の教室"
+    },
+    "Juurin! Orc Gakuen!": {
+        "$type": "HashCrypt",
+        "Title": "蹂躙！オーク学園！ ～転校生は褐色ビッチな女勇者！？～"
+    },
+    "Juzi Ban Duanpian Zuopinji [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "HmADHnCnSAA=",
+        "Title": "橘子班短篇作品集 [Steam] | Short Stories Collection of Class Tangerine [Steam]"
+    },
+    "Kagachi-sama Onagusame Tatematsurimasu": {
+        "$type": "HashCrypt",
+        "Title": "かがち様お慰め奉ります　～寝取られ村淫夜噺～"
+    },
+    "Kaguya-hime wa Babumi Tappuri no Loli BBA Deshita": {
+        "$type": "HashCrypt",
+        "Title": "かぐや姫はバブみたっぷりのロリBBAでした。 ～うさみみメイドと責められムコ殿～"
+    },
+    "Kahogo na Ryoubo no Shasei Kanri": {
+        "$type": "HashCrypt",
+        "Title": "カホゴな寮母の射精管理 ～ちゃんと我慢してくださいね？～"
+    },
+    "Kaiware!": {
+        "$type": "FlyingShineCrypt",
+        "Title": "かいわれっ！"
+    },
+    "Kakenuke★Seishun Sparking!": {
+        "$type": "CxEncryption",
+        "Mask": 570,
+        "Offset": 1717,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "BAMBAgUA",
+        "EvenBranchOrder": "AAYHAQUEAgM=",
+        "ControlBlockName": "kakenuke.bin",
+        "Title": "かけぬけ★青春スパーキング！ | 闪耀青春追逐记 | 绽放★青春全力向前冲！"
+    },
+    "Kakenuke★Seishun Sparking! [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "KakenukeSSP/Copyright_(C)SAGA_PLANETS./All_Rights_Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0503070206040100050200010304000201001e024101",
+                    "archiveUniqueKey": "{Hibiki-Riri-Shiori-Nagiko-Kikka-Ritsu}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "かけぬけ★青春スパーキング！ [Steam] | 闪耀青春追逐记 [Steam] | 绽放★青春全力向前冲！ [Steam]"
+    },
+    "Kamaitachi no Yoru": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "かまいたちの夜 | 镰鼬之夜"
+    },
+    "Kami-sama no You na Kimi e": {
+        "$type": "XorCrypt",
+        "Key": 199,
+        "Title": "神様のような君へ | 献给神明般的你"
+    },
+    "Kamidanomi Shisugite Ore no Mirai ga Yabai.": {
+        "$type": "XorCrypt",
+        "Key": 205,
+        "Title": "神頼みしすぎて俺の未来がヤバい。 | 求神太多我的未来糟糕了 | 太依赖咒术的我未来堪忧。"
+    },
+    "Kaminarikko Chuuihou!": {
+        "$type": "HighRunningCrypt",
+        "Title": "カミナリっ娘注意報！～未来の予報はヨメのちハラみ!?～"
+    },
+    "KANADE": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "KANADE (C)Frontwing",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "010307040500020600010204050301020081da01d302",
+                    "archiveUniqueKey": "{KanadeIoriMinoriAki}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ]
+    },
+    "Kanae to Meguri to no Sonogo ga Icha Love Sugite Yabai.": {
+        "$type": "SourireCrypt",
+        "Title": "叶とメグリとのその後がイチャらぶすぎてヤバい。 | 与叶和爱莉之后的故事太过亲密糟糕了"
+    },
+    "Kanjuku Sakuranbou!": {
+        "$type": "FlyingShineCrypt",
+        "Title": "完熟☆さくらん棒ッ！ ～ヒキオタ達の姉妹交換～"
+    },
+    "Kanojo no Seiiki [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Kanojo no Seiiki/(C)feng All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0005040102060703020403010500010200007201e602",
+                    "archiveUniqueKey": "{MeNgq6WdKlDd55f9}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "彼女のセイイキ [Steam] | 她的圣域 [Steam] | My Girlfriend’s Special Place [Steam]"
+    },
+    "Kanojo-tachi no Taboo": {
+        "$type": "FlyingShineCrypt",
+        "Title": "彼女たちの禁忌"
+    },
+    "Kanpeki Seitokaichou no Himitsu no Seiheki": {
+        "$type": "HashCrypt",
+        "Title": "完璧生徒会長の秘密の性癖 ～高嶺の花の彼女をＭ女に開花させてやる～"
+    },
+    "KARAKARA": {
+        "$type": "CxEncryption",
+        "Mask": 400,
+        "Offset": 1191,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AgEABQQD",
+        "EvenBranchOrder": "AgAHAwUBBAY=",
+        "ControlBlockName": "karakara.bin",
+        "Title": "カラカラ"
+    },
+    "KARAKARA 2": {
+        "$type": "CxEncryption",
+        "Mask": 697,
+        "Offset": 711,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQQDAgUA",
+        "EvenBranchOrder": "BgUHBAADAQI=",
+        "ControlBlockName": "karakara2.bin",
+        "Title": "カラカラ2"
+    },
+    "Karenai Sekai to Owaru Hana": {
+        "$type": "CxEncryption",
+        "Mask": 578,
+        "Offset": 984,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BAIBAAUD",
+        "EvenBranchOrder": "AgUEBwEGAAM=",
+        "ControlBlockName": "karenai.bin",
+        "Title": "枯れない世界と終わる花 | 永不枯萎的世界与终焉之花 | 不败世界与终焉之花 | 永不枯萎的世界与终结之花"
+    },
+    "Karenai Sekai to Owaru Hana DL": {
+        "$type": "CxEncryption",
+        "Mask": 557,
+        "Offset": 1989,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgMABQEE",
+        "EvenBranchOrder": "BwAFAwECBgQ=",
+        "ControlBlockName": "karenai_dl.bin",
+        "Title": "枯れない世界と終わる花  ダウンロード版 | 永不枯萎的世界与终焉之花 下载版 | 不败世界与终焉之花 下载版 | 永不枯萎的世界与终结之花 下载版"
+    },
+    "Karenai Sekai to Owaru Hana [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "SWEETandTEA_AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "050300020601040702040001030502010081a502a400",
+                    "archiveUniqueKey": "{Haru@Kotose@Yukina@Ren}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "枯れない世界と終わる花 [Steam] | 永不枯萎的世界与终焉之花 [Steam] | 不败世界与终焉之花 [Steam] | 永不枯萎的世界与终结之花 [Steam]"
+    },
+    "Kareshi ni Naisho de Kairaku Ochi": {
+        "$type": "HashCrypt",
+        "Title": "彼氏に内緒で快楽堕ち ～隠れヤリサーのリア充種付痴育～"
+    },
+    "Kari Gurashi Ren'ai": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "かりぐらし恋愛 | 寄宿之恋 | 寄宿之戀"
+    },
+    "Kasshoku Cool Bitch Hitozuma no Seiyoku Kaishou": {
+        "$type": "HashCrypt",
+        "Title": "褐色クールビッチ人妻の性欲解消 ～今度は海でセックスレッスン！？～"
+    },
+    "Kasshoku Orient Bijo to Shujuu Seikou": {
+        "$type": "HashCrypt",
+        "Title": "褐色オリエント美女と主従性交 ～魔性のワガママ搾精契約～"
+    },
+    "Kazoku Choukyou": {
+        "$type": "HashCrypt",
+        "Title": "家族調教"
+    },
+    "Keiyaku Kanojo": {
+        "$type": "PureMoreCrypt",
+        "FileListName": "keikan.lst",
+        "CharMap": "0123456789abcdefghijklmnopqrstuvwxyz０１２３４５６７８９ａｂｃｄｅｆｇｈｉｊｋｌｍｎｏｐｑｒｓｔｕｖｗｘｙｚぁあぃいぅうぇえぉおかがきぎくぐけげこごさざしじすずせぜそぞただちぢっつづてでとどなにぬねのはばぱひびぴふぶぷへべぺほぼぽまみむめもゃやゅゆょよらりるれろゎわゐゑをんァアィイゥウェエォオカガキギクグケゲコゴサザシジスズセゼソゾタダチヂッツヅテデトドナニヌネノハバパヒビピフブプヘベペホボポマミムメモャヤュユョヨラリルレロヮワヰヱヲンヴヵヶ零一二三四五六七八九十百千万億",
+        "LayerNameSuffix": "fkk#LEb7RwOEjWJecq/L3p*TDC1.PPP",
+        "Title": "契約彼女～新米彼女と始める、とってもHでPureな恋愛レッスン～"
+    },
+    "Kemono Musume no Sodatekata": {
+        "$type": "CxEncryption",
+        "Mask": 518,
+        "Offset": 77,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIDBAAF",
+        "EvenBranchOrder": "BQMEBgAHAgE=",
+        "ControlBlockName": "kemono.bin",
+        "Title": "ケモノ娘の育て方 | 兽娘的养成方法 | 兽娘育成方案"
+    },
+    "Kicking Horse Rhapsody": {
+        "$type": "CxEncryption",
+        "Mask": 504,
+        "Offset": 1660,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AwABAgUE",
+        "EvenBranchOrder": "BgADBwQFAQI=",
+        "TpmFileName": "plugin/kickinghorse.tpm",
+        "Title": "キッキングホース★ラプソディ"
+    },
+    "Kinomino ~Cosplay Ken e Youkoso~": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "kinomino.bin",
+        "Title": "きのみの～コスプレ研へようこそ～"
+    },
+    "Kin'iro Loveriche -Golden Time- [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "KinkoiGT/Copyright_(C)SAGA_PLANETS./All_Rights_Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "02000107060405030402010503000002018140011702",
+                    "archiveUniqueKey": "{Sylvy-Reina-Heroina-Ria-Akane-Ayaka}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "金色ラブリッチェ-Golden Time- [Steam] | 金辉恋曲四重奏 -Golden Time- [Steam] | 金輝戀曲四重奏 -Golden Time- [Steam] | Kinkoi: Golden Time [Steam]"
+    },
+    "Kioku no Kenban": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Kioku no Kenban (C)Laplacian All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "020005030706040101000402030502010080d7027501",
+                    "archiveUniqueKey": "{Sari@Eri@Anzy@Alt}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "記憶の鍵盤 | 记忆的琴键 | 記憶的琴鍵"
+    },
+    "Koakuma-chan no Yuuwaku!": {
+        "$type": "XorCrypt",
+        "Key": 10,
+        "Title": "こあくまちゃんの誘惑っ！ | 小恶魔的诱惑！"
+    },
+    "Koi de wa Naku - It's not love, but so where near.": {
+        "$type": "SyangrilaSmartCrypt",
+        "Title": "恋ではなく ―― It’s not love，but so where near."
+    },
+    "Koi ga Saku Koro Sakura Doki": {
+        "$type": "CxEncryption",
+        "Mask": 393,
+        "Offset": 1075,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "BQAEAgMB",
+        "EvenBranchOrder": "AgUAAQMEBwY=",
+        "ControlBlockName": "koiga.bin",
+        "Title": "恋がさくころ桜どき | 恋花绽放樱飞时"
+    },
+    "Koi Suru Kanojo no Bukiyou na Butai": {
+        "$type": "SourireCrypt",
+        "Title": "恋する彼女の不器用な舞台 | 恋爱中的她的笨拙舞台"
+    },
+    "Koibana Ren'ai": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "Title": "コイバナ恋愛 | 八卦恋爱"
+    },
+    "Koikishi Purely ☆ Kiss": {
+        "$type": "CxEncryption",
+        "Mask": 561,
+        "Offset": 1559,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BAEDBQIA",
+        "EvenBranchOrder": "BQIABgQBBwM=",
+        "ControlBlockName": "koikishi.bin",
+        "Title": "恋騎士 Purely☆Kiss | 恋骑士 Purely☆Kiss"
+    },
+    "Koishi Irodoru Seigiranman": {
+        "$type": "XorCrypt",
+        "Key": 105,
+        "Title": "恋し彩る正義爛漫"
+    },
+    "Koko wa Suki na Dake Sex Shite": {
+        "$type": "DieselmineCrypt",
+        "Title": "ここは好きなだけセックスして、みんなに喜ばれる世界！"
+    },
+    "Kokoro no Katachi to Iro to Oto": {
+        "$type": "XorCrypt",
+        "Key": 247,
+        "Title": "ココロのカタチとイロとオト | 心之形心之色心之声"
+    },
+    "Kon Kon": {
+        "$type": "FestivalCrypt",
+        "Title": "魂々"
+    },
+    "Kore tte, Riajuu?": {
+        "$type": "HashCrypt",
+        "Title": "これって、リア充？ ～黒ギャルが、ドーテーを教育するそうですよ～"
+    },
+    "Kouen no Shugo Kishi Kishar": {
+        "$type": "HashCrypt",
+        "Title": "紅炎の守護騎士キシャル～Guardian of Prominence Kishar～"
+    },
+    "Kouki na Ojou-sama o Katappashi kara...": {
+        "$type": "DieselmineCrypt",
+        "Title": "高貴なお嬢様を片っ端から孕ませたら、どうなるか？"
+    },
+    "Kourin no Machi, Lavender no Shoujo": {
+        "$type": "CxEncryption",
+        "Mask": 385,
+        "Offset": 1589,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "BAABBQID",
+        "EvenBranchOrder": "BwUCAwYBBAA=",
+        "TpmFileName": "plugin/lavender.tpm",
+        "Title": "光輪の町、ラベンダーの少女",
+        "StartupTjsNotEncrypted": true
+    },
+    "Kozukuri Onsen ~Ippai Tsukutte Ichizoku Hanei~": {
+        "$type": "HighRunningCrypt",
+        "Title": "こづくり温泉～いっぱいつくって一族繁栄!?～"
+    },
+    "Kugayama Shiori no Shinizama Techou": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "KugayamaShiori no ShinizamaTechou (C)Laplacian All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "000106050407030204000205010300020181d3028102",
+                    "archiveUniqueKey": "{Shiori.Gal.Shisho.Reiko}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "久我山栞の死様手帖 | 久我山栞的死亡手账"
+    },
+    "Kurano-kunchi no Futago Jijou": {
+        "$type": "SourireCrypt",
+        "Title": "倉野くんちのふたご事情 | 仓野家的双胞胎故事"
+    },
+    "Kurenai no Tsuki": {
+        "$type": "CxEncryption",
+        "Mask": 362,
+        "Offset": 1170,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AgUDAQQA",
+        "EvenBranchOrder": "BAUCAAEHAwY=",
+        "TpmFileName": "plugin/kurenai.tpm",
+        "Title": "クレナイノツキ"
+    },
+    "Kuro Gyaru Musume": {
+        "$type": "HashCrypt",
+        "Title": "黒ギャル娘との淫欲相姦～翻弄される父親の性欲～"
+    },
+    "Lilja to Natsuka no Junpaku na Uso": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "lilja-natsuka (C)Frontwing",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0200010307040605010300020405020100812801c302",
+                    "archiveUniqueKey": "{LiljaMeriUtsugiNatsuka}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "リルヤとナツカの純白な嘘 | 丽露娅与夏夏的纯白谎言"
+    },
+    "Limelight Lemonade Jam": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "Package",
+                "key": {
+                    "archiveUniqueKey": "{ena_anj_tuk_rir_mik_nay}",
+                    "bootStrap": "LimeLightRemonadeJam (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "params": "020006050104030701050302000401000201e2028302",
+                    "seed": "560d42b9cab3dca4",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "PKG"
+            },
+            {
+                "description": "Download",
+                "key": {
+                    "archiveUniqueKey": "{EnaAnjTukRirMikNay}",
+                    "bootStrap": "LimeLightRemonadeJam (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "params": "020006050104030701050302000401000201e2028302",
+                    "seed": "bf22368a48210206",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "DL"
+            },
+            {
+                "description": "Trial",
+                "key": {
+                    "archiveUniqueKey": "{ena-anj-tuk-rir-mik-nay}",
+                    "bootStrap": "TenshiSouzouReBoot! (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "params": "020506030100070401040200050302000181ae017500",
+                    "seed": "cab3dca4560d42b9",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TR"
+            }
+        ],
+        "Title": "ライムライト・レモネードジャム | 聚光灯下的青柠恋曲 | 橘光柠水随想曲"
+    },
+    "Lip lipples": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "LipLipples/Copyright_Purple_software_All_Rights_Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "02000701040603050203000401050001020194017c02",
+                    "archiveUniqueKey": "{KrSzkNnHbnMtrMmRn}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "リップリップルズ | 唇心絮语"
+    },
+    "Little Hole": {
+        "$type": "HashCrypt",
+        "Title": "りとるほーる ～俺の娘がこんなに……なハズがない | Littlehole～我的女儿不可能这么……"
+    },
+    "Loca Love - Dousei x Kouhai": {
+        "$type": "CxEncryption",
+        "Mask": 627,
+        "Offset": 1995,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BQQDAgEA",
+        "EvenBranchOrder": "BwQAAwIBBgU=",
+        "ControlBlockName": "loca_love.bin",
+        "Title": "ろけらぶ - 同棲×後輩 | 恋爱定位Location Love同居×后辈"
+    },
+    "L.O.V.E ~Kokuhaku~": {
+        "$type": "ChainReactionCrypt",
+        "Title": "L.O.V.E. ～告白～"
+    },
+    "Love Love Boin series": {
+        "$type": "FlyingShineCrypt",
+        "Title": "らぶらぶボイン"
+    },
+    "Love+Laby": {
+        "$type": "CxEncryption",
+        "Mask": 653,
+        "Offset": 1567,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AQIDAAUE",
+        "EvenBranchOrder": "BQYDAQIEBwA=",
+        "ControlBlockName": "love_laby.bin",
+        "Title": "らぶ+らび"
+    },
+    "LOVELY x CATION": {
+        "$type": "HibikiCrypt",
+        "Title": "LOVELY×CATION"
+    },
+    "Lovesick Puppies -Bokura wa Koi Suru Tame ni Umaretekita-": {
+        "$type": "AppliqueCrypt",
+        "Title": "LOVESICK PUPPIES -僕らは恋するために生まれてきた- | LOVESICK PUPPIES -我们为了恋爱而诞生-"
+    },
+    "M-days Doukoku no Koubi Jigoku": {
+        "$type": "DieselmineCrypt",
+        "Title": "M-days 慟哭の交尾地獄"
+    },
+    "Mahara Miko": {
+        "$type": "PoringSoftCrypt",
+        "Title": "魔孕巫女～お清めは愛欲淫靡に～"
+    },
+    "Mahoutsukai no Yoru": {
+        "$type": "CxEncryption",
+        "Mask": 554,
+        "Offset": 674,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AwIBBAUA",
+        "EvenBranchOrder": "BwYFAQADBAI=",
+        "ControlBlockName": "mahoutsukai.bin",
+        "Title": "魔法使いの夜 | 魔法使之夜"
+    },
+    "Maitetsu [English]": {
+        "$type": "CxEncryption",
+        "Mask": 695,
+        "Offset": 1609,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQMEAgAF",
+        "EvenBranchOrder": "BwAEBgECAwU=",
+        "ControlBlockName": "maitetsu_en.bin"
+    },
+    "Maitetsu - Last Run!!": {
+        "$type": "CxEncryption",
+        "Mask": 574,
+        "Offset": 153,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BQIEAwAB",
+        "EvenBranchOrder": "BAAHBgIBBQM=",
+        "ControlBlockName": "maitetsu_last_run.bin",
+        "Title": "まいてつ Last Run!! | 爱上火车-Last Run!!- | 愛上火車-Last Run!!-"
+    },
+    "Make Me Lover": {
+        "$type": "KissCrypt",
+        "Title": "メイクMeラバー"
+    },
+    "Mama no Okugai Shuuchi Lesson": {
+        "$type": "HashCrypt",
+        "Title": "ママの屋外羞恥レッスン ～視線が快楽に変る時…～"
+    },
+    "Mama to no Ikisugi Ama Ama Seikatsu": {
+        "$type": "HashCrypt",
+        "Title": "ママとのイキすぎ甘々性活～いっぱい気持ちいいコト教えてあ・げ・る～"
+    },
+    "Mamiya-kunchi no Itsutsugo Jijou": {
+        "$type": "SourireCrypt",
+        "Title": "間宮くんちの五つ子事情 | 间宫家的五子情事"
+    },
+    "Manakashi no Yuri wa Akaku Somaru [DL]": {
+        "$type": "CxEncryption",
+        "Mask": 516,
+        "Offset": 761,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AwABBAUC",
+        "EvenBranchOrder": "BAcBAAMFBgI=",
+        "ControlBlockName": "manakashi_dl.bin",
+        "Title": "真愛の百合は赤く染まる | 真爱的百合被染成红色 | 令人怜爱的百合染上红色"
+    },
+    "Manamusume wa, Mazo Seirei": {
+        "$type": "HashCrypt",
+        "Title": "愛娘は、マゾ性隷 ～娘だからって遠慮しないでね？～"
+    },
+    "Mashiro-iro Symphony": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "Remake FHD version",
+                "key": {
+                    "archiveUniqueKey": "{Mashiro_ARSKAGMUSNPN}",
+                    "bootStrap": "(C)CLEARRAVE/PALETTE AllRightsReserved.",
+                    "params": "0305070002010406040005030201020001801c018501",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "RE"
+            },
+            {
+                "sku": "Sana Edition",
+                "description": "SANA",
+                "key": {
+                    "bootStrap": "(C)CLEARRAVE/PALETTE AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0305070002010406040005030201020001801c018501",
+                    "archiveUniqueKey": "{MASHIRO@ArSkAgMuSnPn}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "Mashiro-iro Symphony -Love is pure white- Remake for FHD | Mashiro-iro Symphony: Sana Edition | ましろ色シンフォニー -Love is pure white- Remake for FHD | 纯白交响曲 -Love is pure white- HD Remake | 純白交響曲 -Love is pure white- HD Remake | ましろ色シンフォニー SANA EDITION | 纯白交响曲 SANA EDITION | 純白交響曲 SANA EDITION"
+    },
+    "Me ga Sametara Seieki ga 100 Bai...": {
+        "$type": "DieselmineCrypt",
+        "Title": "目が覚めたら精液が100倍溜まる身体になってた→大量注入！"
+    },
+    "Megami Ryoujoku ~Paizuri Hime Verdandi~": {
+        "$type": "FlyingShineCrypt",
+        "Title": "女神凌辱 ～パイズリ姫ベルダンディー～"
+    },
+    "Mesuga* Choukyou": {
+        "$type": "DieselmineCrypt",
+        "Title": "メスガ●調教～デカチンに屈した少女たち～"
+    },
+    "Minarai Taimashi Maji de Ikimasu!": {
+        "$type": "HashCrypt",
+        "Title": "見習い退魔師 本気でイキますっ！"
+    },
+    "Mirai Sekai no Planeta": {
+        "$type": "CxEncryption",
+        "Mask": 392,
+        "Offset": 351,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "BQIAAQME",
+        "EvenBranchOrder": "BwACBQMBBgQ=",
+        "TpmFileName": "plugin/ミライセカイのプラネッタ.tpm",
+        "Title": "ミライセカイのプラネッタ"
+    },
+    "Mizu no Kakera ~Once Summer of Islet~": {
+        "$type": "MizukakeCrypt",
+        "Title": "みずのかけら -once summer of islet-",
+        "HashAfterCrypt": true
+    },
+    "Mizu no Miyako no Patisserie": {
+        "$type": "CxEncryption",
+        "Mask": 311,
+        "Offset": 1767,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "BAEAAgUD",
+        "EvenBranchOrder": "AAMEAgUGAQc=",
+        "TpmFileName": "plugin/水の都の洋菓子店（パティスリー）.tpm",
+        "Title": "水の都の洋菓子店"
+    },
+    "Mizukoi": {
+        "$type": "FlyingShineCrypt",
+        "Title": "水恋～みずこい～"
+    },
+    "Momoiro Closet": {
+        "$type": "NanaCxCrypt",
+        "Mask": 408,
+        "Offset": 242,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "StartupTjsNotEncrypted": true,
+        "NamesSectionId": "dls:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            1532499583,
+            1492364298,
+            3985974824,
+            3368303250,
+            1642426535,
+            742252838
+        ],
+        "ControlBlockName": "momoiro.bin",
+        "Title": "ももいろクローゼット"
+    },
+    "Momoiro Closet [English]": {
+        "$type": "CxEncryption",
+        "Mask": 389,
+        "Offset": 332,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AgAEAwEF",
+        "EvenBranchOrder": "AQUHAAIEAwY=",
+        "ControlBlockName": "momoiro_en.bin"
+    },
+    "Momojiri Instructor Netori Lesson": {
+        "$type": "HashCrypt",
+        "Title": "桃尻インストラクター寝取りレッスン ～競泳水着でえろざんまい～"
+    },
+    "MOON GHOST": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Moon_Ghost/Copyright_Purple_software_All_Rights_Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "040205070006010303040102050002010081c3029002",
+                    "archiveUniqueKey": "{Binah-Dart-Himeko-Maria}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "ムーン・ゴースト | 月乡幽灵"
+    },
+    "Motto Haramase Honoo no Oppai Chou Ero Appli Gakuen [Offical Chinese-Eng Ver]": {
+        "$type": "HxCryptLite",
+        "Mask": 589,
+        "Offset": 332,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AQIEAAUD",
+        "EvenBranchOrder": "BgUCAQQHAAM=",
+        "ControlBlockName": "heapps.bin",
+        "Title": "吹弹！丰盈！波涛汹涌 超情色APP学院"
+    },
+    "Motto! Haramase! Honoo no Oppai Isekai Chou Ero ♥ Succubus Gakuen! [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "HSUC/Copyright(C)MilkFactoryAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0706040501030002030004020501020100008e027a00",
+                    "archiveUniqueKey": "{k0HDyiZ1xwefYufz}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "もっと！孕ませ！炎のおっぱい異世界超エロ♥サキュバス学園！ [Steam] | 吹弹！丰盈！波涛汹涌！异世界魅魔学园！ [Steam]"
+    },
+    "Motto! Haramase! Honoo no Oppai Isekai Oppai Bunny Gakuen!": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "HMAID/Copyright(C)MilkFactoryAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0701040206050300010300050402010002011e012601",
+                    "archiveUniqueKey": "{OUSUMQRPTP_PUQSOTQRTS}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "もっと！孕ませ！炎のおっぱい異世界おっぱいバニー学園！ | 吹弹！丰盈！波涛汹涌！异世界兔女郎学园！"
+    },
+    "Motto! Haramase! Honoo no Oppai Isekai Oppai Maid Gakuen!": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "HMAID/Copyright(C)MilkFactoryAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0701040206050300010300050402010002011e012601",
+                    "archiveUniqueKey": "{OUSUMQRPTP_PUQSOTQRTS}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "もっと！孕ませ！炎のおっぱい異世界おっぱいメイド学園！ | 吹弹！丰盈！波涛汹涌！异世界女仆学园！"
+    },
+    "Muchimuchi Dekapai Mara Gui Maou-sama": {
+        "$type": "PoringSoftCrypt",
+        "Title": "ムチムチデカパイマラ喰い魔王様とおんぼろ四畳半同棲生活 | 与爆乳魔王的同居生活"
+    },
+    "Mugen no Tír na nÓg": {
+        "$type": "XorCrypt",
+        "Key": 85,
+        "Title": "夢幻のティル・ナ・ノーグ | 梦幻的提尔纳诺"
+    },
+    "Namaiki Delation": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "ナマイキデレーション"
+    },
+    "Namaiki JK ni Fukushuu no Seikatsu Shidou": {
+        "$type": "HashCrypt",
+        "Title": "ナマイキJKに復讐の性活指導 ～先生、お願いだからもう許して…～"
+    },
+    "Nakadashi Hara Maid series": {
+        "$type": "ChainReactionCrypt",
+        "Title": "なかだし孕メイド | なかだし孕メイド2"
+    },
+    "Nanagane Gakuen -Ryokou Bu-": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{Alicia*Renka*Yuzuki*Lilyma*Torin}",
+                    "bootStrap": "NanaganeGakuenTravelClub (C)+LunaSystem All Rights Reserved.",
+                    "params": "04050702010306000102030400050002018152010502",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "七ヶ音学園 -旅行部- | 七音学园-旅行部- | 七ヶ音学園 旅行部 -Tour:01 伊香保編- | 七ヶ音学園 旅行部 -Tour:02 Hakone編- | 七ヶ音学園 旅行部 -Tour:02 箱根編- | 七ヶ音学園 旅行部 -Tour:03 Kinugawa編- | 七ヶ音学園 旅行部 -Tour:03 鬼怒川編- | 七ヶ音学園 旅行部 -Tour:04 Kusatsu編-"
+    },
+    "Nantai Lesson": {
+        "$type": "HashCrypt",
+        "Title": "軟体レッスン ～いいなり彼女とひみつの放課後～"
+    },
+    "Nariyuki→Papakatsu Girls!!": {
+        "$type": "PoringSoftCrypt",
+        "Title": "なりゆき→パパ活GIRLS!! | 惠里和千寻的援交日记"
+    },
+    "Natsu no Owari": {
+        "$type": "XorCrypt",
+        "Key": 87,
+        "Title": "夏ノ終熄 | 夏之终熄 | 夏日终焉"
+    },
+    "Natsuiro Shimai": {
+        "$type": "NatsupochiCrypt",
+        "Title": "夏色姉妹 ～幼馴染と真夏のヒメゴト～ | 夏色姐妹～青梅竹马与盛夏秘事～"
+    },
+    "Natsuiro Shimai Trial": {
+        "$type": "PoringSoftCrypt",
+        "Title": "夏色姉妹 ～幼馴染と真夏のヒメゴト～ 体験版"
+    },
+    "Natsupochi": {
+        "$type": "NatsupochiCrypt",
+        "Title": "なつぽち"
+    },
+    "Natsuzora Kanata": {
+        "$type": "CxEncryption",
+        "Mask": 757,
+        "Offset": 1776,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AgMEAAEF",
+        "EvenBranchOrder": "BwIDBgEABQQ=",
+        "ControlBlockName": "natsuzora.bin",
+        "Title": "夏空カナタ | 夏空彼方"
+    },
+    "Nee♥Summer!": {
+        "$type": "HashCrypt",
+        "Title": "姉♥Summer! ～ねえ♥さまー！～"
+    },
+    "Neko to Wakai Seyo!": {
+        "$type": "XorCrypt",
+        "Key": 44,
+        "Title": "ネコと女子寮せよ！ | 女仆咖啡厅与魔法女子寮"
+    },
+    "Nekogami-sama to, Nanatsuboshi": {
+        "$type": "CxEncryption",
+        "Mask": 518,
+        "Offset": 77,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIDBAAF",
+        "EvenBranchOrder": "BQMEBgAHAgE=",
+        "ControlBlockName": "nekogami.bin",
+        "Title": "ネコ神さまと、ななつぼし -妹の姉- | 猫神大人与七颗星星"
+    },
+    "Neko Para Extra": {
+        "$type": "SmileCrypt",
+        "KeyXor": 1146260359,
+        "FirstXor": 135,
+        "ZeroXor": 35,
+        "Title": "ネコぱらExtra 仔ネコの日の約束 | 猫娘乐园Extra 小猫之日的约定 | 貓娘樂園Extra 貓咪之日的約定"
+    },
+    "Netorare Osananajimi ~Haruka to Chika~": {
+        "$type": "NatsupochiCrypt",
+        "Title": "寝取られ幼馴染～春花と千夏～"
+    },
+    "Nidaime wa ☆ Mahou Shoujo": {
+        "$type": "CxEncryption",
+        "Mask": 507,
+        "Offset": 1872,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BAUAAwIB",
+        "EvenBranchOrder": "BAYCAwUBBwA=",
+        "ControlBlockName": "nidaime.bin",
+        "Title": "二代目は☆魔法少女"
+    },
+    "Niina-chan Lovely Life": {
+        "$type": "NephriteCrypt",
+        "Title": "にいなちゃん Lovely Life"
+    },
+    "Ninki Seiyuu [Steam]": {
+        "$type": "NinkiSeiyuuCrypt",
+        "Key1": 7953573635333415499,
+        "Key2": 12618520504104391278,
+        "Key3": 16867801142055146094,
+        "Title": "人気声優のつくりかた [Steam] | 人气声优的养成方式 [Steam] | 人氣聲優的養成方式 [Steam]"
+    },
+    "Nitou Ou Mono wa Ittou mo Ezu": {
+        "$type": "NatsupochiCrypt",
+        "Title": "二刀追うものは一刀も得ず | 追二刀者不得一刀"
+    },
+    "Nyotai-ka Panic!": {
+        "$type": "HashCrypt",
+        "Title": "女体化パニック！ ～オンナのコのカラダってキモチイイ～"
+    },
+    "Oazuke Fetish!": {
+        "$type": "ExaCrypt",
+        "Title": "おあずけフェティッシュ！"
+    },
+    "Ochiteiku Wakazuma Maiko": {
+        "$type": "NephriteCrypt",
+        "Title": "堕ちていく若妻麻衣子"
+    },
+    "Ochiteyuku Seishoku Shukujo": {
+        "$type": "HashCrypt",
+        "Title": "堕ちてゆく聖職淑女～いけない、夫に無理矢理やらされていただけなのに感じちゃう～"
+    },
+    "Oishii Mahou no Tonaekata": {
+        "$type": "ChainReactionCrypt",
+        "Title": "おいしい魔法のとなえかた。"
+    },
+    "Ojou-sama wa Gakuen no Seieki Benjo": {
+        "$type": "HashCrypt",
+        "Title": "お嬢様は学園の精液便所 ～寝取らせ・ぶっかけ・乱交生活日誌～"
+    },
+    "Okiba ga Nai!": {
+        "$type": "OkibaCrypt",
+        "Title": "置き場がない！"
+    },
+    "Oku-sama wa Moto Yariman -Besluted-": {
+        "$type": "PoringSoftCrypt",
+        "Title": "奥様は元ヤリマン ―Besluted―"
+    },
+    "Omae no Kaa-chan, Ii Onna Da yo na": {
+        "$type": "NatsupochiCrypt",
+        "Title": "お前の母ちゃん、良い女だよな。 | 你妈真漂亮 | 你媽真漂亮"
+    },
+    "Omae no Tsuma wa, Ore no Inran Niku Yome": {
+        "$type": "HashCrypt",
+        "Title": "お前の妻は、オレの淫乱肉嫁 ～お隣さんは欲求不満でした～"
+    },
+    "Omana 2: Omaenchi Moeteruzo": {
+        "$type": "FlyingShineCrypt",
+        "Title": "おまな2 おまえんち萌えてるぞ"
+    },
+    "Omoikkiri! Seieki Tairyou Chuunyuu!": {
+        "$type": "DieselmineCrypt",
+        "Title": "思いっきり! 精液大量注入! ～高飛車女をアヘらせろ!～"
+    },
+    "Omokage ~Ecchi na Happening!? Nandemo Dontokoi!~": {
+        "$type": "AppliqueCrypt",
+        "Title": "オモカゲ ～えっちなハプニング!? なんでもどんとこい!～ | 思影"
+    },
+    "Onaji Class no Idol-san. Around me is full by a celebrity.": {
+        "$type": "XorCrypt",
+        "Key": 232,
+        "Title": "同じクラスのアイドルさん。Around me is full by a celebrity."
+    },
+    "Onee-chan no Yuuwaku": {
+        "$type": "AkabeiCrypt",
+        "Seed": 705275717,
+        "Title": "如月真綾の誘惑 | 如月真绫的指导"
+    },
+    "One Room -Yui Hanasaka Memorial-": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{YuiSpecialEpisode}",
+                    "bootStrap": "OneRoom (C)SMIRAL/One Room Production committee All Rights Reserved.",
+                    "params": "0302000107050604040100020305010002014b02ef00",
+                    "upperKey": "0000000000000000",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "One Room ー花坂結衣メモリアルー | One Room ー花坂结衣 回忆篇ー | One Room ー花坂結衣 回憶篇ー"
+    },
+    "Oni no Wakusei": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "鬼の惑星"
+    },
+    "Onigokko!": {
+        "$type": "CxEncryption",
+        "Mask": 334,
+        "Offset": 1715,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AgEFBAMA",
+        "EvenBranchOrder": "AAQFBwMBBgI=",
+        "ControlBlockName": "onigokko.bin",
+        "Title": "鬼ごっこ！ | 捉迷藏 | 鬼的捉迷藏！"
+    },
+    "Oppai Cafe ~Oyako de Cos Chichi~": {
+        "$type": "HashCrypt",
+        "Title": "おっぱいカフェ ～母娘でコスちち～"
+    },
+    "Ore no Cupid ga Ponkotsu Sugite Kowa~i.": {
+        "$type": "XorCrypt",
+        "Key": 14,
+        "Title": "俺の恋天使がポンコツすぎてコワ～い。 | 我的恋天使太废柴了好可怕。 | 我的恋天使太一无是处了好~担心"
+    },
+    "Ore no Cupid ga Ponkotsu Sugite Kowa~i. - Trial": {
+        "$type": "XorCrypt",
+        "Key": 120,
+        "Title": "俺の恋天使がポンコツすぎてコワ～い。体験版"
+    },
+    "Ore no Hitomi de Maruhadaka! Fukachi na Mirai to Misukasu Vision": {
+        "$type": "XorCrypt",
+        "Key": 60,
+        "Title": "俺の瞳で丸裸！不可知な未来と視透かす運命 | 我的眼睛看光光！不可知的未来与透视的命运"
+    },
+    "Ore no Imouto wa Seijun Bitch": {
+        "$type": "HashCrypt",
+        "Title": "俺の妹は清純ビッチ ～親には秘密のハメハメ性活～"
+    },
+    "Ore no Imouto wa Kyou kara Do S": {
+        "$type": "HashCrypt",
+        "Title": "俺の妹は今日からドＳ ～お、お兄ちゃんなんか、あたしのペットにしてやるんだからっ～"
+    },
+    "Ore no Saimin Fantasia": {
+        "$type": "DieselmineCrypt",
+        "Title": "俺の催眠ファンタジア ～エロ催眠で戦女神から魔王までハメ放題!!～"
+    },
+    "Ore no Sugata ga, Toumei ni!? Invisible to Suuki na Unmei": {
+        "$type": "XorCrypt",
+        "Key": 149,
+        "Title": "俺の姿が、透明に!? 不可視の薬と数奇な運命 | 不可视之药与坎坷的命运"
+    },
+    "Ore to 5-nin no Yome-san ga Raburabu nano wa": {
+        "$type": "CxEncryption",
+        "Mask": 701,
+        "Offset": 279,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "BQIAAQME",
+        "EvenBranchOrder": "AAcBBQIGBAM=",
+        "ControlBlockName": "oreto5nin.bin",
+        "Title": "俺と５人の嫁さんがラブラブなのは、未来からきた赤ちゃんのおかげに違いない！？ | 托了未来孩子的福，我娶了五个老婆？！"
+    },
+    "Ore wa, Shokushu Breeder": {
+        "$type": "HashCrypt",
+        "Title": "オレは、触手ブリーダー ～寄生触手で苗床化する女たち～"
+    },
+    "Osakoi": {
+        "$type": "CxEncryption",
+        "Mask": 320,
+        "Offset": 1375,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQAEAwUC",
+        "EvenBranchOrder": "BQACAwcEAQY=",
+        "TpmFileName": "plugin/nyan03_osakoi.tpm",
+        "Title": "おさこい ～俺と二人の甘々ご奉仕H生活～"
+    },
+    "Osananajimi ga Chichioya": {
+        "$type": "HashCrypt",
+        "Title": "幼馴染みが父親とデキていた件について ～おやじからの羞恥ネトリ調教～"
+    },
+    "Osananajimi wa, Kakure Do M": {
+        "$type": "HashCrypt",
+        "Title": "幼馴染は、隠れドＭ ～変態調教に誘ったらドハマりしちゃった～"
+    },
+    "Otome＊Domain": {
+        "$type": "CxEncryption",
+        "Mask": 380,
+        "Offset": 191,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AgADBAEF",
+        "EvenBranchOrder": "BQQGAgAHAQM=",
+        "ControlBlockName": "otome.bin",
+        "Title": "オトメ＊ドメイン | 少女＊领域 | 少女领域"
+    },
+    "Otome Sekai no Arukikata": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "OtomeSekai_CopyRight_Orthros_AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "020601050407000304030201050000010280b2023700",
+                    "archiveUniqueKey": "{Yui+Akari+Miku+Yaeka+Rin+Ruriko+Mayumi}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "オトメ世界の歩き方 | 少女世界的生存之道"
+    },
+    "Otto ni Ienai Gifu to no Kan'in": {
+        "$type": "HashCrypt",
+        "Title": "夫に言えない義父との姦淫 ～嫌なのに忘れられなくなりそう～"
+    },
+    "Ouka Ryouran": {
+        "$type": "FlyingShineCrypt",
+        "Title": "桜花繚乱"
+    },
+    "Oyako Koukan": {
+        "$type": "HashCrypt",
+        "Title": "母娘肛姦 ～私のお尻に染みついていく雄の匂い～"
+    },
+    "Oyako Ninjutsu Kunoichi PonPon!!": {
+        "$type": "FlyingShineCrypt",
+        "Title": "母娘妊術くのいちPonPon!!"
+    },
+    "Oyako no Himitsu": {
+        "$type": "HashCrypt",
+        "Title": "父娘の秘密 ～妻に言えない親子の関係～"
+    },
+    "P.S. Anata o Kokoro kara Aishiteimasu": {
+        "$type": "HashCrypt",
+        "Title": "P.S. あなたを心から愛しています。～最期まで気づけなかった妻の苦しみ～"
+    },
+    "Papa, Dakishimete Ageru": {
+        "$type": "HashCrypt",
+        "Title": "パパ、抱きしめてあげる ～バブみな愛娘の母性に甘えて中出し三昧～"
+    },
+    "Papa Daisuki! to Itte Kure...": {
+        "$type": "HashCrypt",
+        "Title": "パパ大好き！と言ってくれ…～反抗期の娘を催眠アプリで狂愛しつけ～"
+    },
+    "Papikon ~Futago no Musume wa Doukyuusei?!~": {
+        "$type": "ChocolatCrypt",
+        "StartupTjsNotEncrypted": true,
+        "Title": "ぱ・ぴ・こ・ん ～双子の娘はどうきゅうせい!?～ | 萌・上・父・上"
+    },
+    "Parquet": {
+        "$type": "CxEncryption",
+        "Mask": 699,
+        "Offset": 196,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgEAAwQF",
+        "EvenBranchOrder": "BgEABwUDBAI=",
+        "ControlBlockName": "parquet.bin",
+        "Title": "PARQUET"
+    },
+    "PENDULUM": {
+        "$type": "CxEncryption",
+        "Mask": 380,
+        "Offset": 1666,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AgEEBQAD",
+        "EvenBranchOrder": "BAYBBQIHAAM=",
+        "ControlBlockName": "pendulum.bin"
+    },
+    "PRETTY x CATION": {
+        "$type": "AppliqueCrypt",
+        "Title": "プリティケーション | PRETTY×CATION"
+    },
+    "Pretty x Cation 2": {
+        "$type": "AppliqueCrypt",
+        "Title": "プリティケーション2 | PRETTY×CATION2"
+    },
+    "PRICE": {
+        "$type": "PoringSoftCrypt"
+    },
+    "Princess Saga": {
+        "$type": "FlyingShineCrypt",
+        "Title": "プリンセスサーガ"
+    },
+    "Puramai Wars": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "プラマイウォーズ | 正负战争"
+    },
+    "PURELY x CATION": {
+        "$type": "PuCaCrypt",
+        "HashTable": [
+            2973060117,
+            3110907910,
+            5928495,
+            3996087360,
+            59226653,
+            3654524669,
+            4285421800,
+            3106491131,
+            3503769144,
+            2695546800,
+            3466626651,
+            476175124,
+            4011134407,
+            1134990289,
+            1896688000,
+            3350866490,
+            4256029198,
+            1234119340,
+            4286929704,
+            2375390458,
+            1511181946,
+            1873108191,
+            713711560,
+            3871855233,
+            1166290799,
+            1983402936,
+            59142054,
+            1436954750,
+            3775493970,
+            2381873347,
+            1652264962,
+            1773190413,
+            1901946443,
+            2983697227,
+            3386732454,
+            1420405981,
+            3458099917,
+            3459696020,
+            2854601074,
+            2151150242,
+            873580943,
+            3951633673,
+            858980605,
+            3394701319,
+            3477634643,
+            1155964947,
+            2121337663,
+            1750793461,
+            3317152749,
+            1508931760,
+            106697855,
+            1530528080,
+            3681333500,
+            4250263468,
+            2727502642,
+            3032903351,
+            443565257,
+            2317297865,
+            1552064824,
+            1746688873,
+            3147812161
+        ],
+        "KeyTable": "lPnQv+ICFwTHT6TrOC5/xfFT1wWFIDd+kEdZga08/fK0tFkiMmuNXXD2Avis7MAKEk+ArwNTzUg2NseWvg==",
+        "Title": "PURELY×CATION"
+    },
+    "PURELY x CATION [Trial]": {
+        "$type": "AppliqueCrypt",
+        "Title": "PURELY×CATION 体験版"
+    },
+    "Qi Feng [Steam Demo]": {
+        "$type": "NVLCrypt",
+        "Key": "kkRLbfKkPQA=",
+        "Title": "祈風 [Steam Demo] | 祈风 [Steam Demo]"
+    },
+    "Qi Feng [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "tO/augDUQQA=",
+        "Title": "祈風 [Steam] | 祈风 [Steam]"
+    },
+    "Rakugaki Overheart": {
+        "$type": "NephriteCrypt",
+        "Title": "らくがきオーバーハート"
+    },
+    "Re:": {
+        "$type": "FlyingShineCrypt"
+    },
+    "Re:birth Colony -Lost Azurite-": {
+        "$type": "AppliqueCrypt"
+    },
+    "Real Imouto ga Iru Ooizumi-kun no Baai": {
+        "$type": "CxEncryption",
+        "Mask": 690,
+        "Offset": 742,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "BQABBAMC",
+        "EvenBranchOrder": "AgQDAAEFBgc=",
+        "ControlBlockName": "real_imouto.bin",
+        "Title": "リアル妹がいる大泉くんのばあい | 实妹相伴的大泉君"
+    },
+    "relations. sister x sister.": {
+        "$type": "CxEncryption",
+        "Mask": 451,
+        "Offset": 231,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AwQAAgEF",
+        "EvenBranchOrder": "AgQBAAUDBgc=",
+        "TpmFileName": "plugin/relations.tpm",
+        "Title": "リレーションズ シスター×シスター | リレーションズ　シスター・シスター"
+    },
+    "Ren'ai x Royale": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "恋愛×ロワイアル | 恋爱×决胜战 | 恋爱×争夺战"
+    },
+    "Ren'ai x Royale - Nonoka & Renna & Yuna Mini After Story": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "恋愛×ロワイアル 乃々香＆蓮菜＆由奈 ミニアフターストーリー | 恋爱×决胜战 乃乃香&莲菜&由奈小故事"
+    },
+    "Ren'ai, Karichaimashita": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "恋愛、借りちゃいました | 恋爱，我就借走了 | 想谈个恋爱吗？那就给钱吧 | 恋爱，我就借走咯"
+    },
+    "RGH ~Koi to Hero to Gakuen to~": {
+        "$type": "NephriteCrypt",
+        "Title": "RGH～恋とヒーローと学園と～"
+    },
+    "Riajuu Saimin": {
+        "$type": "CxEncryption",
+        "Mask": 518,
+        "Offset": 1506,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AAIEAQUD",
+        "EvenBranchOrder": "BQMGAgEHBAA=",
+        "ControlBlockName": "riajuu.bin",
+        "Title": "リア充催眠～リアルが充実する催眠生活はじめました。～",
+        "ObfuscatedIndex": true
+    },
+    "Riddle Joker": {
+        "$type": "RiddleCxCrypt",
+        "Mask": 280,
+        "Offset": 271,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgUDBAEA",
+        "EvenBranchOrder": "AAIDAQUGBwQ=",
+        "StartupTjsNotEncrypted": true,
+        "NamesSectionId": "yuz:",
+        "RandomSeed": 2463534242,
+        "YuzKey": [
+            2660206490,
+            3437206417,
+            2258490061,
+            2497682059,
+            3184993560,
+            3577860684
+        ],
+        "ControlBlockName": "riddle.bin"
+    },
+    "Riddle Joker [Steam]": {
+        "$type": "CxEncryption",
+        "Mask": 350,
+        "Offset": 234,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BQADBAIB",
+        "EvenBranchOrder": "BgQFAAIHAQM=",
+        "ControlBlockName": "riddle_steam.bin"
+    },
+    "Riding Incubus": {
+        "$type": "PoringSoftCrypt",
+        "Title": "らいでぃんぐ いんきゅばす"
+    },
+    "Role player: Ikura Shimai no Nenmaku Portrait - Gurigucha LIVE!": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "roleplayer3_CopyrightHendingAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0407000201060305030104000502020001004602c000",
+                    "archiveUniqueKey": "{kar+rin}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "Role player：いくら姉妹の粘膜ポトレ ぐりぐちゃLIVE！"
+    },
+    "Role Player: Okayu Shimai no Nenmaku Portrait - Gurigucha Live!": {
+        "$type": "AkabeiCrypt",
+        "Seed": 798088789,
+        "Title": "Role player：小粥姉妹の粘膜ポトレ ぐりぐちゃLIVE！ | ROLEPLAYER：小粥姐妹的黏膜游戏！"
+    },
+    "Rong Xue [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "+64areSLJUY=",
+        "Title": "茸雪 [Steam] | Tiny Snow [Steam]"
+    },
+    "Royal Garden": {
+        "$type": "SmileCrypt",
+        "KeyXor": 1651056185,
+        "FirstXor": 57,
+        "ZeroXor": 106,
+        "Title": "ロイヤルガーデン～乙女に恋する皇子の戯曲～"
+    },
+    "Rui wa Tomo o Yobu": {
+        "$type": "CxEncryption",
+        "Mask": 740,
+        "Offset": 199,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQUEAgAD",
+        "EvenBranchOrder": "AAMFAgEHBAY=",
+        "TpmFileName": "plugin/ruitomo.tpm",
+        "Title": "るいは智を呼ぶ | 智以泪聚"
+    },
+    "Rui wa Tomo o Yobu -Full Voice Edition-": {
+        "$type": "CxEncryption",
+        "Mask": 586,
+        "Offset": 964,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AwQAAQIF",
+        "EvenBranchOrder": "BAEAAwYCBwU=",
+        "ControlBlockName": "ruiwatomo_fv.bin",
+        "Title": "るいは智を呼ぶ -フルボイスエディション- | 智以泪聚 -全语音版-"
+    },
+    "Rui wa Tomo o Yobu Fan Disc -Asu no Mukou ni Mieru Kaze-": {
+        "$type": "CxEncryption",
+        "Mask": 292,
+        "Offset": 1597,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AwIABAUB",
+        "EvenBranchOrder": "BQQCAQcDAAY=",
+        "ControlBlockName": "ruiwatomo.bin",
+        "Title": "るいは智を呼ぶファンディスク ―明日のむこうに視える風― | 智以泪聚ＦＤ -吹向明日彼岸的可视之风-"
+    },
+    "Ryuukishi Bloody†Saga": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "竜騎士Bloody†Saga | 龙骑士Bloody†Saga"
+    },
+    "Sabbat of the Witch": {
+        "$type": "CxEncryption",
+        "Mask": 703,
+        "Offset": 526,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AgMEBQAB",
+        "EvenBranchOrder": "BwYEAQMAAgU=",
+        "ControlBlockName": "sabbat.bin",
+        "Title": "サノバウィッチ [English] | 魔女的夜宴 [English]"
+    },
+    "Sabbat of the Witch [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "Sabbat_of_the_Witch (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0406020007010305030005040201010200802602c801",
+                    "archiveUniqueKey": "{NENeMEGURuTSUMUGiTOUKoWAKANa}",
+                    "upperKey": "a4e08d9b7e4b96dd"
+                }
+            }
+        ],
+        "Title": "サノバウィッチ [Steam] | 魔女的夜宴 [Steam]"
+    },
+    "Saikyou Chikan Densha": {
+        "$type": "FlyingShineCrypt",
+        "Title": "埼狂痴漢電車～7人の獲物達～"
+    },
+    "Sailor Fuku Shinryou Tsumaka": {
+        "$type": "FlyingShineCrypt",
+        "Title": "セーラー服心療妻科～内緒のえっちなカウンセリング～"
+    },
+    "Same to Ikiru Nanokakan": {
+        "$type": "XorCrypt",
+        "Key": 114,
+        "Title": "サメと生きる七日間 | 与鲨鱼共度的七日间"
+    },
+    "Same to Ikiru Nanokakan [Trial]": {
+        "$type": "XorCrypt",
+        "Key": 209,
+        "Title": "サメと生きる七日間 体験版"
+    },
+    "Sanoba Witch": {
+        "$type": "YuzuCrypt",
+        "Title": "サノバウィッチ | 魔女的夜宴"
+    },
+    "Sakura Sakura": {
+        "$type": "HashCrypt",
+        "Title": "さくらさくら"
+    },
+    "Sakura, Sakimashita.": {
+        "$type": "CxEncryption",
+        "Mask": 305,
+        "Offset": 1847,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AgMFBAAB",
+        "EvenBranchOrder": "BQYABwIDBAE=",
+        "ControlBlockName": "sakura.bin",
+        "Title": "さくら、咲きました。 | 樱花开了。"
+    },
+    "Segare no Niizuma": {
+        "$type": "HashCrypt",
+        "Title": "せがれの新妻"
+    },
+    "Seieki Tairyou Chuunyuu! 5": {
+        "$type": "DieselmineCrypt",
+        "Title": "精液大量注入！5～オレの高飛車な美少女ご主人様がこんなに盛大にアヘるわけがない!?～"
+    },
+    "Seiin no Meikyuu": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "seiin.bin",
+        "Title": "聖淫の迷宮"
+    },
+    "Seirei Tenshou": {
+        "$type": "SeitenCrypt",
+        "Title": "聖なるかな外伝・精霊天翔 ～壊れゆく世界の少女たち～ | 精灵天翔・迈向毁灭世界的少女们"
+    },
+    "Seiso na Ano Ko wa, Kakure Bitch": {
+        "$type": "HashCrypt",
+        "Title": "清楚なあの娘は、隠れビッチ ～いつでもどこでも欲情ＳＥＸ～"
+    },
+    "Sekai-Ichi Yaritai Jugyou ~Rin-sensei no Loli Bitch na Hanten Sekai~": {
+        "$type": "NekoWorksCrypt",
+        "Key": "l4m0/ejjYWYBNve+9k1+TgAAAAAAAAAAAQAAABcAAAA=",
+        "Title": "世界一ヤリたい授業 ～林先生のロリビッチな反転世界～"
+    },
+    "Sekisaba!": {
+        "$type": "SmxCrypt",
+        "Mask": 5,
+        "KeySeq": "AgUEAwICAw==",
+        "Title": "せきさば！～私立せきがはら学園女子サバイバルゲーム部～"
+    },
+    "Se-n-pa-i ~Hiromi-senpai": {
+        "$type": "NephriteCrypt",
+        "Title": "セ・ン・パ・イ〜広海センパイとのラブエロ部活"
+    },
+    "Senden no Shugo Kishi Niina": {
+        "$type": "HashCrypt",
+        "Title": "閃電の守護騎士ニィナ"
+    },
+    "Senren＊Banka": {
+        "$type": "SenrenCxCrypt",
+        "Mask": 308,
+        "Offset": 1846,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AwECBAAF",
+        "EvenBranchOrder": "BwQDBgIAAQU=",
+        "NamesSectionId": "sen:",
+        "ControlBlockName": "senren_banka.bin",
+        "Title": "千恋＊万花 | 千戀＊萬花"
+    },
+    "Serifu de Kanjite! Seiyuu Doushi": {
+        "$type": "DieselmineCrypt",
+        "Title": "セリフで感じて！声優どうし"
+    },
+    "Shiden ~Enkan no Kizuna~": {
+        "$type": "AppliqueCrypt",
+        "Title": "紫電～円環の絆～ | 紫电～环之羁绊～"
+    },
+    "Shikijou Kyoudan": {
+        "$type": "HashCrypt",
+        "Title": "色情教団 | 妃神会秘史"
+    },
+    "Shimai Soukan ~Kindan no Kakeizu~": {
+        "$type": "FlyingShineCrypt",
+        "Title": "実姉妹 ～濡れた相姦図～"
+    },
+    "Shin'yuu no Kyonyuu Mama to Nakadashi Seikatsu": {
+        "$type": "FlyingShineCrypt",
+        "Title": "親友の巨乳ママと中出し性活～こんなに射精してちゃ孕んじゃったね"
+    },
+    "Shindan no Kekka, Sore wa Koi no Yamai Desu": {
+        "$type": "PoringSoftCrypt",
+        "Title": "診断の結果、それは恋の病です | 诊断的结果、那是名为恋爱的病"
+    },
+    "Shiniyuku Kimi, Yakata ni Mebuku Zouo": {
+        "$type": "CxEncryption",
+        "Mask": 379,
+        "Offset": 858,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQIEBQMA",
+        "EvenBranchOrder": "AAcFAgEGAwQ=",
+        "ControlBlockName": "shiniyuku.bin",
+        "Title": "死に逝く君、館に芽吹く憎悪 | 濒死轮回的卿于馆中萌生的憎恶"
+    },
+    "Shiniyuku Kishi, Isekai ni Hibiku Danmatsuma": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "DL",
+                "description": "DL",
+                "key": {
+                    "bootStrap": "(C)CLEARRAVE/PALETTE AllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "0305070002010406040005030201020001801c018501",
+                    "archiveUniqueKey": "{MASHIRO@ArSkAgMuSnPn}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "死に逝く騎士、異世界に響く断末魔 | 濒死的骑士，于异世界中响彻的绝唱"
+    },
+    "Shirokoi Sakura * Gram LF": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "ShirokoiSakura*GramLF(C)NanawindAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "030002010506040705030102040001020080a202e402",
+                    "archiveUniqueKey": "{YUURI+KAZUHA+KOZUE+ASAHI+NONOKA+MAORI}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "白恋サクラ＊グラムＬＦ"
+    },
+    "Shirouto Yanmama, Kosatsu AV Debut": {
+        "$type": "HashCrypt",
+        "Title": "素人ヤンママ、個撮AVデビュー ～見てな、女はド胸だぜ！～"
+    },
+    "Shitenasasou de, Shiteiru Kanojo no Shiteinai Koto": {
+        "$type": "HashCrypt",
+        "Title": "してなさそうで、している彼女のしていない事～キミの初めてになってやる～"
+    },
+    "Shogun-sama wa Otoshigoro": {
+        "$type": "CxEncryption",
+        "Mask": 499,
+        "Offset": 430,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQAEAgUD",
+        "EvenBranchOrder": "BQMEBgIAAQc=",
+        "ControlBlockName": "shogunsama.bin",
+        "Title": "将軍様はお年頃 | 将军大人芳华正茂"
+    },
+    "Shogun-sama wa Otoshigoro Fandisc": {
+        "$type": "CxEncryption",
+        "Mask": 499,
+        "Offset": 430,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AQAEAgUD",
+        "EvenBranchOrder": "BQMEBgIAAQc=",
+        "ControlBlockName": "shogunsama_fd.bin",
+        "Title": "将軍様はお年頃 ふぁんでぃすく -御三家だヨ！ 全員集合- | 将军大人正值妙龄 FD"
+    },
+    "Shokusai no Miyako": {
+        "$type": "FlyingShineCrypt",
+        "Title": "触祭の都"
+    },
+    "Shokushu Ouji no Nikuyome Sagashi": {
+        "$type": "HashCrypt",
+        "Title": "触手王子の肉嫁探し～母と姉弟の終わらない絶頂地獄～"
+    },
+    "Shoujo☆Kageki Revue Starlight Butai Souzougeki Harukanaru El Dorado": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "RevueStarlight (C)BushiroadGames/Frontwing",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "030407000105060205040103020000020181df020c02",
+                    "archiveUniqueKey": "{kar.hik.may.jun.mah.nan.kro.fut.kao}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "少女☆歌劇 レヴュースタァライト　舞台奏像劇　遥かなるエルドラド | 少女☆歌剧 Revue Starlight 舞台奏像剧 遥远的黄金国 | 少女☆歌劇 Revue Starlight 舞台奏像劇 遙遠的黃金國"
+    },
+    "Shoujo to Toshi no Sa, Futamawari.": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "少女と年の差、ふたまわり。 | 少女与我，两纪之差。"
+    },
+    "Shugaten! -sugarfull tempering-": {
+        "$type": "CxEncryption",
+        "Mask": 676,
+        "Offset": 1115,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "BAECBQAD",
+        "EvenBranchOrder": "AgAGBwMBBAU=",
+        "ControlBlockName": "shugaten.bin",
+        "Title": "しゅがてん！-sugarfull tempering- | 糖调! -sugarfull tempering- | 糖调! | 甜糖热恋"
+    },
+    "Shuidi Li de Xiatian": {
+        "$type": "NatsupochiCrypt",
+        "Title": "水滴里的夏天"
+    },
+    "Sis x Miko": {
+        "$type": "SisMikoCrypt",
+        "StartupTjsNotEncrypted": true,
+        "Title": "シス×みこ"
+    },
+    "Sis Koi ~Shisukoi~": {
+        "$type": "CxEncryption",
+        "Mask": 286,
+        "Offset": 1777,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "BQQBAwIA",
+        "EvenBranchOrder": "AwAFAgQBBwY=",
+        "TpmFileName": "plugin/妹恋！.tpm",
+        "Title": "妹恋～しすこい～"
+    },
+    "Smile Cubic!": {
+        "$type": "CxEncryption",
+        "Mask": 610,
+        "Offset": 1802,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQIDBQQA",
+        "EvenBranchOrder": "BwMGAgABBAU=",
+        "TpmFileName": "plugin/mogla.tpm",
+        "Title": "すまいる Cubic! -水平線まで何マイル？アフター＆アナザーストーリーズ-"
+    },
+    "Sobo to Boku": {
+        "$type": "HashCrypt",
+        "Title": "祖母と僕 ～おばあちゃん、なにかでちゃうよぉ～"
+    },
+    "Sorairo Innocent": {
+        "$type": "AppliqueCrypt",
+        "Title": "空色イノセント"
+    },
+    "Sorairo no Shizuku": {
+        "$type": "MizukakeCrypt",
+        "Title": "そらいろの雫",
+        "HashAfterCrypt": true
+    },
+    "Soukan Chiryou Byoutou": {
+        "$type": "FlyingShineCrypt",
+        "Title": "相姦恥療病棟 ～ナースはママで、女医は叔母"
+    },
+    "Soukou Seiki Ysphere": {
+        "$type": "PinPointCrypt",
+        "Title": "装煌聖姫イースフィア～淫虐の洗脳改造～"
+    },
+    "Sousaku Kanojo no Ren'ai Koushiki": {
+        "$type": "AkabeiCrypt",
+        "Seed": 798088789,
+        "Title": "創作彼女の恋愛公式 | 创作少女的恋爱公式 | 创作彼女的恋爱方程式 | 創作彼女的戀愛方程式"
+    },
+    "Sousaku Kanojo no Ren'ai Koushiki - Trial Edition": {
+        "$type": "AkabeiCrypt",
+        "Seed": 798088789,
+        "Title": "創作彼女の恋愛公式 体験版"
+    },
+    "Sousei no Himegimi": {
+        "$type": "HashCrypt",
+        "Title": "双性の姫君 ～ふたなり姉妹と魔王の求愛～"
+    },
+    "Specialite!": {
+        "$type": "StripeCrypt",
+        "Key": 175,
+        "Title": "すぺしゃりて!"
+    },
+    "Sugar Sweet Temptation": {
+        "$type": "CxEncryption",
+        "Mask": 532,
+        "Offset": 242,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQIDAAUE",
+        "EvenBranchOrder": "BgQFAAIDAQc=",
+        "ControlBlockName": "sugar_sweet.bin",
+        "Title": "しゅがてん！-sugarfull tempering- [Steam] | 糖调! -sugarfull tempering- [Steam] | 糖调! [Steam] | 甜糖热恋 [Steam]"
+    },
+    "Suiheisen made Nan Mile?": {
+        "$type": "CxEncryption",
+        "Mask": 610,
+        "Offset": 1802,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQIDBQQA",
+        "EvenBranchOrder": "BwMGAgABBAU=",
+        "TpmFileName": "plugin/mogla.tpm",
+        "Title": "水平線まで何マイル？ - Deep Blue Sky ＆ Pure White Wings - | 离水平线还有多远？-深蓝的天空和洁白的翅膀- | 水平线尽头有多远"
+    },
+    "Suiren to Shion": {
+        "$type": "AkabeiCrypt",
+        "Seed": 798088789,
+        "Title": "水蓮と紫苑 | 水莲与紫苑"
+    },
+    "Suisei Ginka": {
+        "$type": "CxEncryption",
+        "Mask": 353,
+        "Offset": 1746,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AAQCAQMF",
+        "EvenBranchOrder": "BgAEBQEHAgM=",
+        "ControlBlockName": "suisei.bin",
+        "Title": "スイセイギンカ"
+    },
+    "Suki de Suki de Tamaranai": {
+        "$type": "CxEncryption",
+        "Mask": 701,
+        "Offset": 806,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "BAMFAQAC",
+        "EvenBranchOrder": "AgUEAQAHAwY=",
+        "TpmFileName": "plugin/sukitama.tpm",
+        "Title": "好きで好きでたまらない"
+    },
+    "Suki to Suki to de Sankaku Ren'ai": {
+        "$type": "NekoWorksCrypt",
+        "Key": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+        "Title": "スキとスキとでサンカク恋愛 | 青春×好奇相伴的三角恋爱"
+    },
+    "Sukui no Serenade": {
+        "$type": "CxEncryption",
+        "Mask": 401,
+        "Offset": 1054,
+        "PrologOrder": "AAEC",
+        "OddBranchOrder": "AwUAAgQB",
+        "EvenBranchOrder": "AAYFAgEEAwc=",
+        "TpmFileName": "plugin/serenade.tpm",
+        "Title": "スクイの小夜曲 | 救赎的小夜曲"
+    },
+    "Surechigau Kyoudai no Kowareru Rinrikan": {
+        "$type": "XorCrypt",
+        "Key": 248,
+        "Title": "すれ違う兄妹の壊れる倫理観"
+    },
+    "Swan Song": {
+        "$type": "FlyingShineCrypt",
+        "Title": "スワンソング"
+    },
+    "Sweet ☆ Switch": {
+        "$type": "HashCrypt",
+        "Title": "すうぃ～と☆SwitcH ～まじわるシセンでとろけるカラダ～"
+    },
+    "Tamayura Mirai": {
+        "$type": "CxEncryption",
+        "Mask": 288,
+        "Offset": 1325,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "BQIDAAQB",
+        "EvenBranchOrder": "AAcGBQMBBAI=",
+        "ControlBlockName": "tamayura.bin",
+        "Title": "タマユラミライ | 玉响未来 | 深野协调魔法使 | 玉響未來"
+    },
+    "Tanetsuke Dungeon": {
+        "$type": "HashCrypt",
+        "Title": "種付けダンジョン～褐色エルフ産卵アクメ～"
+    },
+    "Tasogare no Sinsemilla": {
+        "$type": "CxEncryption",
+        "Mask": 599,
+        "Offset": 656,
+        "PrologOrder": "AQIA",
+        "OddBranchOrder": "AQQFAgMA",
+        "EvenBranchOrder": "AgcGAQMEBQA=",
+        "ControlBlockName": "tasogare.bin",
+        "Title": "黄昏のシンセミア | 黄昏的禁忌之药"
+    },
+    "Tawawa Oku-san x Happening Gym": {
+        "$type": "HashCrypt",
+        "Title": "たわわ奥さん×ハプニングジム ～むっちりボディとすけべなエクササイズ～"
+    },
+    "Teakamamire no Danshi": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3854429322,
+        "Title": "手垢塗れの堕天使"
+    },
+    "Teakamamire no Fukushuu": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3598228156,
+        "Title": "手垢塗れの復讐"
+    },
+    "Teakamamire no Tenshi": {
+        "$type": "AkabeiCrypt",
+        "Seed": 3737124058,
+        "Title": "手垢塗れの天使 | 被黑暗洗礼的天使"
+    },
+    "Temptation -Saiin no Naraku-": {
+        "$type": "NatsupochiCrypt",
+        "Title": "Temptation -催淫の奈落-"
+    },
+    "Temptation Naked": {
+        "$type": "HashCrypt"
+    },
+    "Tenshin Ranman - Lucky or Unlucky!?": {
+        "$type": "CxEncryption",
+        "Mask": 359,
+        "Offset": 1176,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQAFBAMC",
+        "EvenBranchOrder": "BAIDBQYBBwA=",
+        "ControlBlockName": "tenshin.bin",
+        "Title": "天神乱漫 LUCKY or UNLUCKY!? | 天神乱漫 Happy Go Lucky!!"
+    },
+    "Tenshi☆Souzou RE-BOOT!": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "Package",
+                "key": {
+                    "archiveUniqueKey": "{NoaAmaKurKagOriFum}",
+                    "bootStrap": "TenshiSouzouReBoot! (C)YUZUSOFT/JUNOS INC. All Rights Reserved.",
+                    "params": "020506030100070401040200050302000181ae017500",
+                    "seed": "24b1ebdec80b6ddb",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "PKG"
+            }
+        ],
+        "Title": "天使☆騒々 RE-BOOT! | 天使☆纷扰 RE-BOOT!"
+    },
+    "Tenshi☆Souzou RE-BOOT! [Steam]": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "Stram / HF Store, multilang",
+                "key": {
+                    "archiveUniqueKey": "{Noa=Ama=Kur=Kag=Ori=Fum}",
+                    "bootStrap": "TenshiSouzouReBoot! (C)YUZUSOFT/JUNOS/Nekonyan/HikariField INC. All Rights Reserved.",
+                    "params": "050300020704060105040300010200020181dc019502",
+                    "seed": "a151fe126bc534ef",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "STEAM"
+            }
+        ],
+        "Title": "天使☆騒々 RE-BOOT! [Steam] | 天使☆嚣嚣 RE-BOOT! | Angelic☆Chaos RE-BOOT! | 天使☆囂囂 RE-BOOT!"
+    },
+    "Tettei Anal Chiiku": {
+        "$type": "HashCrypt",
+        "Title": "徹底アナル恥育 ～こっちが、気持ち良すぎて…～"
+    },
+    "The3Days -15-nin Renzoku Rape-": {
+        "$type": "DieselmineCrypt",
+        "Title": "The3Days -15人連続レイプ-"
+    },
+    "Toaru Jukujo no Hentai Choukyou": {
+        "$type": "HashCrypt",
+        "Title": "とある熟女の変態調教 ～老いてなお滴る秘蜜と悦楽～"
+    },
+    "Tobenai Chou no Valentine": {
+        "$type": "XorCrypt",
+        "Key": 173,
+        "Title": "飛べない蝶のバレンタイン | 折翼之蝶的情人节"
+    },
+    "Tokidoki Pakucchao!": {
+        "$type": "TokidokiCrypt",
+        "HashAfterCrypt": true,
+        "Title": "ときどきパクッちゃお！"
+    },
+    "Tonarizuma 2 ~Otto ja Dekinai Koto Ippai Shite~": {
+        "$type": "HashCrypt",
+        "Title": "隣妻2 ～夫じゃできないこといっぱいシて～"
+    },
+    "Towazugatari ~Shoujo Ryoujoku Hishou~": {
+        "$type": "CxEncryption",
+        "Mask": 949,
+        "Offset": 1131,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgABAwQF",
+        "EvenBranchOrder": "AAQBAgcFAwY=",
+        "ControlBlockName": "towazugatari.bin",
+        "Title": "永遠ズ語リ～少女凌辱秘抄～"
+    },
+    "Treasure Hunting": {
+        "$type": "MadoCrypt",
+        "Seed": 0,
+        "Title": "トレジャーハンティング—クレアのビッチな冒険—"
+    },
+    "Tsubasa no Oka no Hime": {
+        "$type": "PoringSoftCrypt",
+        "Title": "つばさの丘の姫王 A red and blue moon -finite loop-"
+    },
+    "Tsuma ga Kakushiteita Video...": {
+        "$type": "PinPointCrypt",
+        "Title": "妻が隠していたビデオ… ～元カレ寝取らせ観察記～"
+    },
+    "Tsuma Kai -Tsuma Gai-": {
+        "$type": "FlyingShineCrypt",
+        "Title": "貸し出し妻、満里奈の“ネトラセ”報告 外伝1 ―女子校生、満里奈の性感開発―"
+    },
+    "Tsuma no Sobo wa": {
+        "$type": "HashCrypt",
+        "Title": "妻の祖母は、まだまだ現役超美熟女～孫婿ちゃん、寂しい時にはいつでもいらっしゃい～"
+    },
+    "Tsuma to Musuko ni Barete": {
+        "$type": "HashCrypt",
+        "Title": "妻と息子にバレてはいけない背徳の媚熱 ～あやまちの密愛2～"
+    },
+    "Tsumugi no Hanayome": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "sku": "TBD",
+                "description": "TBD",
+                "key": {
+                    "bootStrap": "TsumugiNoHanayome_CopyrightHendingAllRightsReserved.",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights.",
+                    "params": "050704000106020305040203010000020181b0010f02",
+                    "archiveUniqueKey": "{kirei_yamabuki_x_mashro_aoi}",
+                    "upperKey": "0000000000000000"
+                }
+            }
+        ],
+        "Title": "紬の花嫁"
+    },
+    "Tsundere Itoko to Koakuma ...": {
+        "$type": "DieselmineCrypt",
+        "Title": "ツンデレ従姉妹と小悪魔な姪が可愛すぎるので、エロ教育して孕ませちゃうお話"
+    },
+    "Tsuyuchiru Letter ~Umi to Shiori ni Amaoto o~": {
+        "$type": "CxEncryption",
+        "Mask": 592,
+        "Offset": 782,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgUBAwQA",
+        "EvenBranchOrder": "BwMBBQQAAgY=",
+        "ControlBlockName": "tsuyuchiru.bin",
+        "Title": "ツユチル・レター～海と栞に雨音を～ | 梅时露霁书~雨潺海汐间~ | 梅時露霽書～雨潺海汐間～"
+    },
+    "Ubawareta Gakuen ~Wana ni Ochita Yuutousei~": {
+        "$type": "HashCrypt",
+        "Title": "奪われた学園 ～罠に落ちた優等生～"
+    },
+    "Uchi ni Tenshi ga Yari ni kita": {
+        "$type": "HashCrypt",
+        "Title": "ウチに天使がヤリに来た -爆乳天使のご奉仕性活-"
+    },
+    "Uchi wa Mou, Enki Dekinai.": {
+        "$type": "XorCrypt",
+        "Key": 2,
+        "Title": "ウチはもう、延期できない。 | 我们是不能延期了"
+    },
+    "Umi to Yuki no Cyan Blue": {
+        "$type": "XorCrypt",
+        "Key": 160,
+        "Title": "海と雪のシアンブルー | 海与雪的青蓝色"
+    },
+    "Ushinawareta Mirai o Motomete": {
+        "$type": "CxEncryption",
+        "Mask": 572,
+        "Offset": 1551,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "BAUCAQAD",
+        "EvenBranchOrder": "AQUAAwIHBgQ=",
+        "ControlBlockName": "ushinawareta.bin",
+        "Title": "失われた未来を求めて | 寻找失去的未来"
+    },
+    "Virgin Mama": {
+        "$type": "HashCrypt",
+        "Title": "ヴァージン・ママ ～息子のおねだりを拒みきれないコスプレ相姦～"
+    },
+    "Wagamama High Spec": {
+        "$type": "CxEncryption",
+        "Mask": 748,
+        "Offset": 575,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "BAABBQMC",
+        "EvenBranchOrder": "AQIDBgQHAAU=",
+        "ControlBlockName": "wagamama.bin",
+        "Title": "ワガママハイスペック | 娇蛮任性HIGHSPEC | 任性highspec"
+    },
+    "Wagamama High Spec [English]": {
+        "$type": "CxEncryption",
+        "Mask": 608,
+        "Offset": 645,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AwUEAAIB",
+        "EvenBranchOrder": "BwABBAUCAwY=",
+        "ControlBlockName": "wagamama_en.bin"
+    },
+    "Wagamama High Spec [Steam]": {
+        "$type": "CxEncryption",
+        "Mask": 302,
+        "Offset": 1387,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AwUCBAEA",
+        "EvenBranchOrder": "BwYEAwUBAAI=",
+        "ControlBlockName": "wagamama_steam.bin",
+        "Title": "ワガママハイスペック [Steam]"
+    },
+    "Wagamama High Spec OC": {
+        "$type": "CxEncryption",
+        "Mask": 608,
+        "Offset": 645,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AwUEAAIB",
+        "EvenBranchOrder": "BwABBAUCAwY=",
+        "ControlBlockName": "wagamama_oc.bin",
+        "Title": "ワガママハイスペック OC | 娇蛮任性HIGH SPEC OC | 任性HighSpec OC"
+    },
+    "Walpurgis": {
+        "$type": "CxEncryption",
+        "Mask": 708,
+        "Offset": 1879,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "BAMABQEC",
+        "EvenBranchOrder": "AwIGAAEFBwQ=",
+        "ControlBlockName": "walpurgis.bin",
+        "Title": "ヴァルプルギス"
+    },
+    "Wanruo Zhaoyang": {
+        "$type": "NatsupochiCrypt",
+        "Title": "宛若朝阳"
+    },
+    "With Ribbon": {
+        "$type": "SourireCrypt"
+    },
+    "Wuyue Moli Episode 01 - Hewei Shen?": {
+        "$type": "PoringSoftCrypt",
+        "Title": "五月茉莉 首部曲-何謂神？ | MayJasmine Episode01 What is God? | 五月茉莉 首部曲-何谓神？"
+    },
+    "Wu zhi Benjing": {
+        "$type": "Xor2Crypt",
+        "Key1": 91,
+        "Key2": 57,
+        "Title": "雾之本境"
+    },
+    "Wu zhi Benjing S [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "L/0VPDRxerg=",
+        "Title": "雾之本境S [Steam]"
+    },
+    "Xue zhi Benjing 2010": {
+        "$type": "HashCrypt",
+        "Title": "雪之本境 2010"
+    },
+    "Xue zhi Benjing ~Jie Jing Pian~": {
+        "$type": "NatsupochiCrypt",
+        "Title": "雪之本境～解境篇～"
+    },
+    "Xue zhi Benjing Ex": {
+        "$type": "NatsupochiCrypt",
+        "Title": "雪之本境Ex"
+    },
+    "Xue zhi Benjing S [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "L7qlaLOri4I=",
+        "Title": "雪之本境S [Steam]"
+    },
+    "xx na Kanojo no Tsukurikata 2": {
+        "$type": "Kano2Crypt",
+        "Title": "××な彼女のつくりかた2"
+    },
+    "Yakimochi Stream": {
+        "$type": "MadoCrypt",
+        "Seed": 4076513695,
+        "Title": "ヤキモチストリーム | 吃醋大作战 | 醋意乱流"
+    },
+    "Yarinaoshi Crank-In": {
+        "$type": "XorCrypt",
+        "Key": 26,
+        "Title": "やりなおしクランクイン | 青春Encore"
+    },
+    "Yaya, Okiba ga Nai!": {
+        "$type": "SmxCrypt",
+        "Mask": 4,
+        "KeySeq": "AQMDAgQB",
+        "Title": "やや置き場がない！"
+    },
+    "Ye zhi Libie: Ruoye Guichen Demo": {
+        "$type": "LeaveSLeaveCrypt",
+        "Title": "叶之离别:若叶归尘 Demo"
+    },
+    "Yiwang Huayuan": {
+        "$type": "Xor2Crypt",
+        "Key1": 83,
+        "Key2": 58,
+        "Title": "遗忘花园"
+    },
+    "Yome no Ane ga Kyonyuu Sugite": {
+        "$type": "HashCrypt",
+        "Title": "嫁の姉が巨乳過ぎて我慢できない ～義姉さんがこんなにエロかったなんて！"
+    },
+    "Yome no Imouto to no In'ai": {
+        "$type": "HashCrypt",
+        "Title": "嫁の妹との淫愛～妻に隠れて交わる夫と義妹～"
+    },
+    "Yome Sagashi ga Hakadori Sugite Yabai.": {
+        "$type": "HashCrypt",
+        "Title": "嫁探しが捗りすぎてヤバい。 | 新娘太好找了我很方！"
+    },
+    "Yomibito Shirazu ~Amai Meshibe no Seichoushi~": {
+        "$type": "CxEncryption",
+        "Mask": 949,
+        "Offset": 1131,
+        "PrologOrder": "AgEA",
+        "OddBranchOrder": "AgABAwQF",
+        "EvenBranchOrder": "AAQBAgcFAwY=",
+        "ControlBlockName": "yomibito.bin",
+        "Title": "黄泉ビト知ラズ～甘い雌蕊の性徴詩～"
+    },
+    "Yotsunoha": {
+        "$type": "HaikuoCrypt",
+        "Title": "よつのは | 四叶草"
+    },
+    "Youjoku no Onna Kishi": {
+        "$type": "HybridCrypt",
+        "Title": "孕辱の女騎士、オーガの苗床に堕つ"
+    },
+    "Youjoku no Ouhi to Sono Himegimi": {
+        "$type": "HybridCrypt",
+        "Title": "孕辱の王妃とその姫君"
+    },
+    "your diary + H": {
+        "$type": "SourireCrypt"
+    },
+    "Yu Gang Jilong": {
+        "$type": "PoringSoftCrypt",
+        "Title": "雨港基隆"
+    },
+    "Yuezhuo: Jinghuashuiyue": {
+        "$type": "PoringSoftCrypt",
+        "Title": "鸑鷟：镜花水月"
+    },
+    "Yuezhuo: Juzi Zhuan": {
+        "$type": "PoringSoftCrypt",
+        "Title": "鸑鷟：橘子传"
+    },
+    "Yurameku Kokoro ni Michita Sekai de": {
+        "$type": "XorCrypt",
+        "Key": 205,
+        "Title": "ゆらめく心に満ちた世界で、君の夢と欲望は叶うか | 三千心世界，梦终将实现"
+    },
+    "Yurikago yori Tenshi made": {
+        "$type": "SmxCrypt",
+        "Mask": 4,
+        "KeySeq": "AgMEBQQC",
+        "Title": "揺り籠より天使まで"
+    },
+    "Yurikago yori Tenshi made [Trial]": {
+        "$type": "AppliqueCrypt",
+        "Title": "揺り籠より天使まで 体験版"
+    },
+    "Yuugu ~Nyomitsu Gangu Adesugata~": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "yuugu.bin",
+        "Title": "遊具～女密玩具・艶姿～"
+    },
+    "Yuugu 2 ~Dai Ni Kinsho no Nozomu Mono~": {
+        "$type": "CxEncryption",
+        "Mask": 531,
+        "Offset": 1139,
+        "PrologOrder": "AQAC",
+        "OddBranchOrder": "AQQAAwIF",
+        "EvenBranchOrder": "BQQBAAcGAgM=",
+        "ControlBlockName": "yuugu2.bin",
+        "Title": "遊具2～第二禁書ノ望ムモノ～"
+    },
+    "Yuusha to Maou to, Majo no Cafe": {
+        "$type": "XorCrypt",
+        "Key": 205,
+        "Title": "勇者と魔王と、魔女のカフェ"
+    },
+    "Yuxiang [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "e5hjiwBwQgA=",
+        "Title": "余香 [Steam] | Lingering Fragrance [Steam]"
+    },
+    "Yuye": {
+        "$type": "NatsupochiCrypt",
+        "Title": "雨夜"
+    },
+    "Zecchou Spiral!!": {
+        "$type": "CxEncryption",
+        "Mask": 492,
+        "Offset": 1927,
+        "PrologOrder": "AgAB",
+        "OddBranchOrder": "AAQDAQIF",
+        "EvenBranchOrder": "AwQABQcCAQY=",
+        "ControlBlockName": "zecchou.bin",
+        "Title": "ぜっちょースパイラル!! ～下宿人はわがままエッチな女の子ばかり～",
+        "ObfuscatedIndex": true
+    },
+    "Zettai Karen! Ojou-sama": {
+        "$type": "CxEncryption",
+        "Mask": 706,
+        "Offset": 1959,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQQFAAID",
+        "EvenBranchOrder": "BwMAAgEGBQQ=",
+        "ControlBlockName": "zettai.bin",
+        "Title": "絶対可憐！お嬢様っ"
+    },
+    "Zettai Sakusei! Succubus-chan": {
+        "$type": "HashCrypt",
+        "Title": "絶対搾精！ サキュバスちゃん"
+    },
+    "Zhen Lian ~Jiyu Fengqiu~ [Steam]": {
+        "$type": "NVLCrypt",
+        "Key": "lv1cSgA0SAA=",
+        "Title": "真恋～寄语枫秋～ [Steam] | 真戀～寄語楓秋～ [Steam]"
+    },
+    "Ziluolan: Li - Season 2 -Shui Zhong Daoying-": {
+        "$type": "Xor2Crypt",
+        "Key1": 61,
+        "Key2": 229,
+        "Title": "紫罗兰·里 第二季 夏 -水中倒影-"
+    },
+    "Zutto Sukishite Takusan Sukishite": {
+        "$type": "CxEncryption",
+        "Mask": 555,
+        "Offset": 1736,
+        "PrologOrder": "AAIB",
+        "OddBranchOrder": "AQIFAwAE",
+        "EvenBranchOrder": "BgMAAgUBBwQ=",
+        "ControlBlockName": "zutto.bin",
+        "Title": "ずっとすきしてたくさんすきして | 挚爱随行_倾慕相伴"
+    },
+    "Zwei Trigger": {
+        "$type": "Hxv4Crypt",
+        "KeyPackages": [
+            {
+                "description": "TBD",
+                "key": {
+                    "archiveUniqueKey": "{Kaname+Yuna-Touka+Kikka}",
+                    "bootStrap": "ZweiTrigger_CopyRight_Orthros_AllRightsReserved.",
+                    "params": "040300060501020705010403000200020101e1020501",
+                    "warning": "Warning! Extracting this game data may infringe on author's rights."
+                },
+                "sku": "TBD"
+            }
+        ],
+        "Title": "ツヴァイトリガー"
+    }
+}

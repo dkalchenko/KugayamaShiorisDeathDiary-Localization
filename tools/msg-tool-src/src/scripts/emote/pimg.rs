@@ -1,0 +1,766 @@
+//! Emote Multiple Image File (.pimg)
+use crate::ext::io::*;
+use crate::ext::psb::*;
+use crate::scripts::base::*;
+use crate::types::*;
+use crate::utils::img::*;
+use crate::utils::psd::*;
+use crate::utils::struct_pack::*;
+use anyhow::Result;
+use emote_psb::PsbReader;
+use libtlg_rs::*;
+use std::collections::HashMap;
+use std::io::{Read, Seek};
+use std::path::Path;
+use std::sync::OnceLock;
+
+/// Cached overlay state for PImg composite image computation.
+#[derive(Debug)]
+struct PImgOverlayState {
+    width: u32,
+    height: u32,
+    bases: HashMap<i64, (Tlg, u32, u32, u8)>,
+    base_id: i64,
+    all_non_diff: bool,
+}
+
+#[derive(Debug)]
+/// Emote PImg Script Builder
+pub struct PImgBuilder {}
+
+impl PImgBuilder {
+    /// Creates a new instance of `PImgBuilder`
+    pub const fn new() -> Self {
+        Self {}
+    }
+}
+
+impl ScriptBuilder for PImgBuilder {
+    fn default_encoding(&self) -> Encoding {
+        Encoding::Utf8
+    }
+
+    fn build_script(
+        &self,
+        buf: Vec<u8>,
+        filename: &str,
+        _encoding: Encoding,
+        _archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync>> {
+        Ok(Box::new(PImg::new(MemReader::new(buf), filename, config)?))
+    }
+
+    fn build_script_from_file(
+        &self,
+        filename: &str,
+        _encoding: Encoding,
+        _archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync>> {
+        if filename == "-" {
+            let data = crate::utils::files::read_file(filename)?;
+            Ok(Box::new(PImg::new(MemReader::new(data), filename, config)?))
+        } else {
+            let f = std::fs::File::open(filename)?;
+            let reader = std::io::BufReader::new(f);
+            Ok(Box::new(PImg::new(reader, filename, config)?))
+        }
+    }
+
+    fn build_script_from_reader<'a>(
+        &self,
+        reader: Box<dyn ReadSeek + Send + Sync + 'a>,
+        filename: &str,
+        _encoding: Encoding,
+        _archive_encoding: Encoding,
+        config: &ExtraConfig,
+        _archive: Option<&Box<dyn Script>>,
+    ) -> Result<Box<dyn Script + Send + Sync + 'a>> {
+        Ok(Box::new(PImg::new(reader, filename, config)?))
+    }
+
+    fn extensions(&self) -> &'static [&'static str] {
+        &["pimg"]
+    }
+
+    fn script_type(&self) -> &'static ScriptType {
+        &ScriptType::EmotePimg
+    }
+
+    fn is_this_format(&self, filename: &str, buf: &[u8], buf_len: usize) -> Option<u8> {
+        if Path::new(filename)
+            .extension()
+            .map(|ext| ext.to_ascii_lowercase() == "pimg")
+            .unwrap_or(false)
+            && buf_len >= 4
+            && buf.starts_with(b"PSB\0")
+        {
+            return Some(255);
+        }
+        None
+    }
+
+    fn is_image(&self) -> bool {
+        true
+    }
+}
+
+struct PImgLayer<'a> {
+    data: &'a PsbValueFixed,
+    name: &'a str,
+    layer_id: i64,
+    /// seems is layer type in PSD files
+    layer_type: i64,
+    left: u32,
+    top: u32,
+    width: u32,
+    height: u32,
+    opacity: u8,
+    visible: bool,
+    type_: i64,
+    children: Vec<PImgLayer<'a>>,
+}
+
+impl std::fmt::Debug for PImgLayer<'_> {
+    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+        f.debug_struct("PImgLayer")
+            .field("layer_id", &self.layer_id)
+            .field("layer_type", &self.layer_type)
+            .field("name", &self.name)
+            .field("left", &self.left)
+            .field("top", &self.top)
+            .field("width", &self.width)
+            .field("height", &self.height)
+            .field("opacity", &self.opacity)
+            .field("visible", &self.visible)
+            .field("type", &self.type_)
+            .field("children", &self.children)
+            .finish()
+    }
+}
+
+impl<'a> PImgLayer<'a> {
+    pub fn new(data: &'a PsbValueFixed, layers: &'a PsbValueFixed) -> Result<Self> {
+        let layer_id = data["layer_id"]
+            .as_i64()
+            .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid layer_id"))?;
+        let layer_type = data["layer_type"]
+            .as_i64()
+            .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid layer_type"))?;
+        let name = data["name"]
+            .as_str()
+            .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid name"))?;
+        let left = data["left"].as_u32();
+        let top = data["top"].as_u32();
+        let width = data["width"].as_u32();
+        let height = data["height"].as_u32();
+        let (left, top, width, height) = if layer_type != 0 {
+            (
+                left.unwrap_or(0),
+                top.unwrap_or(0),
+                width.unwrap_or(0),
+                height.unwrap_or(0),
+            )
+        } else {
+            (
+                left.ok_or_else(|| anyhow::anyhow!("Layer does not have a valid left"))?,
+                top.ok_or_else(|| anyhow::anyhow!("Layer does not have a valid top"))?,
+                width.ok_or_else(|| anyhow::anyhow!("Layer does not have a valid width"))?,
+                height.ok_or_else(|| anyhow::anyhow!("Layer does not have a valid height"))?,
+            )
+        };
+        let opacity = data["opacity"]
+            .as_u8()
+            .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid opacity"))?;
+        let visible = data["visible"].as_i64().unwrap_or(1) != 0;
+        let type_ = data["type"]
+            .as_i64()
+            .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid type"))?;
+        let mut children = Vec::new();
+        for layer in layers.members() {
+            if layer_type == 2 || layer_type == 1 {
+                if let Some(parent_id) = layer["group_layer_id"].as_i64() {
+                    if parent_id == layer_id {
+                        children.push(PImgLayer::new(layer, layers)?);
+                    }
+                }
+            } else if layer_type == 0 {
+                if let Some(base_id) = layer["diff_id"].as_i64() {
+                    if base_id == layer_id {
+                        children.push(PImgLayer::new(layer, layers)?);
+                    }
+                }
+            }
+        }
+        Ok(Self {
+            data,
+            layer_id,
+            layer_type,
+            name,
+            left,
+            top,
+            width,
+            height,
+            opacity,
+            visible,
+            type_,
+            children,
+        })
+    }
+
+    fn len(&self) -> usize {
+        1 + self.children.iter().map(|c| c.len()).sum::<usize>()
+    }
+
+    fn load_img(&self, img: &PImg) -> Result<ImageData> {
+        if self.layer_type == 2 || self.layer_type == 1 {
+            anyhow::bail!("Group layers do not have image data");
+        }
+        if self.layer_id == -1 {
+            // Generate a empty image
+            Ok(ImageData {
+                width: self.width,
+                height: self.height,
+                color_type: ImageColorType::Rgba,
+                depth: 8,
+                data: vec![0u8; (self.width * self.height * 4) as usize],
+            })
+        } else {
+            let tlg = img.load_img(self.layer_id).map_err(|e| {
+                anyhow::anyhow!("Failed to load image for layer_id {}: {}", self.layer_id, e)
+            })?;
+            let mut img = ImageData {
+                width: tlg.width,
+                height: tlg.height,
+                color_type: match tlg.color {
+                    TlgColorType::Bgr24 => ImageColorType::Bgr,
+                    TlgColorType::Bgra32 => ImageColorType::Bgra,
+                    TlgColorType::Grayscale8 => ImageColorType::Grayscale,
+                },
+                depth: 8,
+                data: tlg.data.clone(),
+            };
+            convert_to_rgba(&mut img)?;
+            Ok(img)
+        }
+    }
+
+    fn save_to_psd(&self, img: &PImg, psd: &mut PsdWriter, base: &mut ImageData) -> Result<()> {
+        if self.children.is_empty() {
+            let img = self.load_img(img)?;
+            let mut visible = self.visible;
+            if !self.data["diff_id"].is_none() {
+                visible = false; // Diff layers are always hide by default
+            }
+            if visible {
+                draw_on_img_with_opacity(base, &img, self.left, self.top, self.opacity)?;
+            }
+            let layer_name_source_setting = LayerNameSourceSetting {
+                id: self.layer_id as i32,
+            };
+            let mut packed = Vec::new();
+            layer_name_source_setting.pack(&mut packed, true, Encoding::Utf8, &None)?;
+            let additional_info = vec![AdditionalLayerInfo {
+                signature: *IMAGE_RESOURCE_SIGNATURE,
+                key: *LAYER_NAME_SOURCE_SETTING_KEY,
+                data: packed,
+            }];
+            let option = PsdLayerOption {
+                visible,
+                opacity: self.opacity,
+                additional_info,
+            };
+            psd.add_layer(self.name, self.left, self.top, img, Some(option))?;
+        } else {
+            psd.add_layer_group_end()?;
+            if self.layer_type == 0 {
+                let img = self.load_img(img)?;
+                let visible = self.visible;
+                if visible {
+                    draw_on_img_with_opacity(base, &img, self.left, self.top, self.opacity)?;
+                }
+                let layer_name_source_setting = LayerNameSourceSetting {
+                    id: self.layer_id as i32,
+                };
+                let mut packed = Vec::new();
+                layer_name_source_setting.pack(&mut packed, true, Encoding::Utf8, &None)?;
+                let additional_info = vec![AdditionalLayerInfo {
+                    signature: *IMAGE_RESOURCE_SIGNATURE,
+                    key: *LAYER_NAME_SOURCE_SETTING_KEY,
+                    data: packed,
+                }];
+                let option = PsdLayerOption {
+                    visible,
+                    opacity: self.opacity,
+                    additional_info,
+                };
+                psd.add_layer(self.name, self.left, self.top, img, Some(option))?;
+            }
+            for child in &self.children {
+                child.save_to_psd(img, psd, base)?;
+            }
+            let layer_name_source_setting = LayerNameSourceSetting {
+                id: self.layer_id as i32,
+            };
+            let mut packed = Vec::new();
+            layer_name_source_setting.pack(&mut packed, true, Encoding::Utf8, &None)?;
+            let additional_info = vec![AdditionalLayerInfo {
+                signature: *IMAGE_RESOURCE_SIGNATURE,
+                key: *LAYER_NAME_SOURCE_SETTING_KEY,
+                data: packed,
+            }];
+            let option = if self.layer_type == 0 {
+                Some(PsdLayerOption {
+                    additional_info,
+                    ..Default::default()
+                })
+            } else {
+                Some(PsdLayerOption {
+                    visible: self.visible,
+                    opacity: self.opacity,
+                    additional_info,
+                })
+            };
+            psd.add_layer_group(self.name, self.layer_type == 2, option)?;
+        }
+        Ok(())
+    }
+}
+
+#[derive(Debug)]
+struct PImgLayerRoot<'a> {
+    layers: Vec<PImgLayer<'a>>,
+}
+
+impl<'a> PImgLayerRoot<'a> {
+    pub fn new(layers: &'a PsbValueFixed) -> Result<Self> {
+        let mut root_layers = Vec::new();
+        for layer in layers.members() {
+            if layer["group_layer_id"].is_none() && layer["diff_id"].is_none() {
+                root_layers.push(PImgLayer::new(layer, layers)?);
+            }
+        }
+        Ok(Self {
+            layers: root_layers,
+        })
+    }
+
+    fn len(&self) -> usize {
+        self.layers.iter().map(|l| l.len()).sum()
+    }
+
+    fn save_to_psd(&self, img: &PImg, psd: &mut PsdWriter, base: &mut ImageData) -> Result<()> {
+        for layer in &self.layers {
+            layer.save_to_psd(img, psd, base)?;
+        }
+        Ok(())
+    }
+}
+
+#[derive(Debug)]
+/// Emote PImg Script
+pub struct PImg {
+    psb: VirtualPsbFixed,
+    overlay: Option<bool>,
+    psd: bool,
+    psd_compress: bool,
+    zlib_compression_level: u32,
+    psd_no_diff: bool,
+    overlay_state: OnceLock<PImgOverlayState>,
+}
+
+impl PImg {
+    /// Create a new PImg script
+    ///
+    /// * `reader` - The reader containing the PImg script data
+    /// * `filename` - The name of the file
+    /// * `config` - Extra configuration options
+    pub fn new<R: Read + Seek>(reader: R, _filename: &str, config: &ExtraConfig) -> Result<Self> {
+        let psb = PsbReader::open_psb_v2(reader)?.to_psb_fixed();
+        Ok(Self {
+            psb,
+            overlay: config.emote_pimg_overlay,
+            psd: config.emote_pimg_psd,
+            psd_compress: config.psd_compress,
+            zlib_compression_level: config.zlib_compression_level,
+            psd_no_diff: config.emote_pimg_psd_no_diff,
+            overlay_state: OnceLock::new(),
+        })
+    }
+
+    fn load_img(&self, layer_id: i64) -> Result<Tlg> {
+        let layer_id = layer_id as usize;
+        let psb = self.psb.root();
+        let reference = &psb[format!("{layer_id}.tlg")];
+        let resource_id = reference
+            .resource_id()
+            .ok_or_else(|| anyhow::anyhow!("Layer {layer_id} does not have a resource ID"))?
+            as usize;
+        if resource_id >= self.psb.resources().len() {
+            return Err(anyhow::anyhow!(
+                "Resource ID {resource_id} for layer {layer_id} is out of bounds"
+            ));
+        }
+        let resource = &self.psb.resources()[resource_id];
+        Ok(load_tlg(MemReaderRef::new(&resource))?)
+    }
+
+    /// Returns true if overlay composite mode should be used.
+    fn overlay_mode(&self) -> bool {
+        let psb = self.psb.root();
+        self.overlay.unwrap_or_else(|| {
+            psb["layers"]
+                .members()
+                .all(|layer| layer["group_layer_id"].is_none())
+        })
+    }
+
+    /// Computes the overlay state by scanning all layers and loading base images.
+    fn compute_overlay_state(&self) -> Result<PImgOverlayState> {
+        let psb = self.psb.root();
+        let width = psb["width"]
+            .as_u32()
+            .ok_or(anyhow::anyhow!("missing width"))?;
+        let height = psb["height"]
+            .as_u32()
+            .ok_or(anyhow::anyhow!("missing height"))?;
+        let is_all_non_diff = psb["layers"]
+            .members()
+            .all(|layer| layer["diff_id"].is_none());
+        let mut bases = HashMap::new();
+        let mut base_id = None;
+        for i in psb["layers"].members() {
+            if !i["diff_id"].is_none() {
+                continue;
+            }
+            let layer_id = i["layer_id"]
+                .as_i64()
+                .ok_or(anyhow::anyhow!("missing layer_id"))?;
+            let top = i["top"].as_u32().ok_or(anyhow::anyhow!("missing top"))?;
+            let left = i["left"].as_u32().ok_or(anyhow::anyhow!("missing left"))?;
+            if is_all_non_diff {
+                let w = i["width"]
+                    .as_u32()
+                    .ok_or(anyhow::anyhow!("missing width for non-diff layer"))?;
+                let h = i["height"]
+                    .as_u32()
+                    .ok_or(anyhow::anyhow!("missing height for non-diff layer"))?;
+                if !(top == 0 && left == 0 && w == width && h == height) {
+                    continue;
+                }
+            }
+            let opacity = i["opacity"]
+                .as_u8()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid opacity"))?;
+            bases.insert(layer_id, (self.load_img(layer_id)?, top, left, opacity));
+            base_id = Some(layer_id);
+        }
+        Ok(PImgOverlayState {
+            width,
+            height,
+            bases,
+            base_id: base_id.ok_or(anyhow::anyhow!("No valid base layer found"))?,
+            all_non_diff: is_all_non_diff,
+        })
+    }
+
+    /// Returns the cached overlay state, computing it once if needed.
+    fn get_overlay_state(&self) -> Result<&PImgOverlayState> {
+        if let Some(state) = self.overlay_state.get() {
+            return Ok(state);
+        }
+        let state = self.compute_overlay_state()?;
+        Ok(self.overlay_state.get_or_init(|| state))
+    }
+}
+
+impl Script for PImg {
+    fn default_output_script_type(&self) -> OutputScriptType {
+        OutputScriptType::Custom
+    }
+
+    fn is_output_supported(&self, output: OutputScriptType) -> bool {
+        matches!(output, OutputScriptType::Custom)
+    }
+
+    fn custom_output_extension<'a>(&'a self) -> &'a str {
+        "psd"
+    }
+
+    fn default_format_type(&self) -> FormatOptions {
+        FormatOptions::None
+    }
+
+    fn is_image(&self) -> bool {
+        !self.psd
+    }
+
+    fn is_multi_image(&self) -> bool {
+        !self.psd
+    }
+
+    fn iter_multi_image_name<'a>(
+        &'a self,
+    ) -> Result<Box<dyn Iterator<Item = Result<String>> + 'a>> {
+        let psb = self.psb.root();
+        if !self.overlay_mode() {
+            Ok(Box::new(
+                psb.iter()
+                    .filter(|(k, _)| k.ends_with(".tlg"))
+                    .map(|(k, _)| Ok(k.trim_end_matches(".tlg").to_string())),
+            ))
+        } else {
+            if !psb["layers"].is_list() {
+                return Err(anyhow::anyhow!("layers is not a list"));
+            }
+            Ok(Box::new(psb["layers"].members().map(|layer| {
+                layer["name"]
+                    .as_str()
+                    .map(|s| s.to_string())
+                    .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid name"))
+            })))
+        }
+    }
+
+    fn open_image<'a>(&'a self, index: usize) -> Result<ImageDataWithName> {
+        let psb = self.psb.root();
+        if !self.overlay_mode() {
+            // Non-overlay mode: find the index-th .tlg entry and load it directly
+            let mut count = 0;
+            for (k, v) in psb.iter() {
+                if !k.ends_with(".tlg") {
+                    continue;
+                }
+                if count == index {
+                    let resource_id = v
+                        .resource_id()
+                        .ok_or_else(|| anyhow::anyhow!("Layer {} does not have a resource ID", k))?
+                        as usize;
+                    let name = k.trim_end_matches(".tlg").to_string();
+                    if resource_id >= self.psb.resources().len() {
+                        return Err(anyhow::anyhow!(
+                            "Resource ID {} for layer {} is out of bounds",
+                            resource_id,
+                            k
+                        ));
+                    }
+                    let resource = &self.psb.resources()[resource_id];
+                    let tlg = load_tlg(MemReaderRef::new(resource))?;
+                    return Ok(ImageDataWithName {
+                        name,
+                        data: ImageData {
+                            width: tlg.width,
+                            height: tlg.height,
+                            color_type: match tlg.color {
+                                TlgColorType::Bgr24 => ImageColorType::Bgr,
+                                TlgColorType::Bgra32 => ImageColorType::Bgra,
+                                TlgColorType::Grayscale8 => ImageColorType::Grayscale,
+                            },
+                            depth: 8,
+                            data: tlg.data.clone(),
+                        },
+                    });
+                }
+                count += 1;
+            }
+            Err(anyhow::anyhow!("Layer index {} out of bounds", index))
+        } else {
+            // Overlay mode: composite the index-th layer
+            let state = self.get_overlay_state()?;
+            let layer = psb["layers"]
+                .members()
+                .nth(index)
+                .ok_or_else(|| anyhow::anyhow!("Layer index {} out of bounds", index))?;
+            let layer_id = layer["layer_id"]
+                .as_i64()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid layer_id"))?;
+            let layer_name = layer["name"]
+                .as_str()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid name"))?;
+            let width = layer["width"]
+                .as_u32()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid width"))?;
+            let height = layer["height"]
+                .as_u32()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid height"))?;
+            let top = layer["top"]
+                .as_u32()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid top"))?;
+            let left = layer["left"]
+                .as_u32()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid left"))?;
+            let opacity = layer["opacity"]
+                .as_u8()
+                .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid opacity"))?;
+            if (layer["diff_id"].is_none() && !state.all_non_diff)
+                || (state.all_non_diff && layer_id == state.base_id)
+            {
+                // Base layer (no diff compositing needed)
+                let base = &state
+                    .bases
+                    .get(&layer_id)
+                    .ok_or_else(|| {
+                        anyhow::anyhow!("Base image for layer_id {} not found", layer_id)
+                    })?
+                    .0;
+                let mut data = ImageData {
+                    width: state.width,
+                    height: state.height,
+                    color_type: match base.color {
+                        TlgColorType::Bgr24 => ImageColorType::Bgr,
+                        TlgColorType::Bgra32 => ImageColorType::Bgra,
+                        TlgColorType::Grayscale8 => ImageColorType::Grayscale,
+                    },
+                    depth: 8,
+                    data: base.data.clone(),
+                };
+                if opacity != 255 {
+                    apply_opacity(&mut data, opacity)?;
+                }
+                if state.width != width || state.height != height || top != 0 || left != 0 {
+                    data = draw_on_canvas(data, state.width, state.height, left, top)?;
+                }
+                Ok(ImageDataWithName {
+                    name: layer_name.to_string(),
+                    data,
+                })
+            } else {
+                // Diff layer: composite diff onto base
+                let diff_id = if state.all_non_diff {
+                    state.base_id
+                } else {
+                    layer["diff_id"]
+                        .as_i64()
+                        .ok_or_else(|| anyhow::anyhow!("Layer does not have a valid diff_id"))?
+                };
+                let (base, base_top, base_left, base_opacity) = state
+                    .bases
+                    .get(&diff_id)
+                    .ok_or_else(|| anyhow::anyhow!("Base image layer {} not found", diff_id))?;
+                let diff = self.load_img(layer_id)?;
+                if base.color != diff.color {
+                    return Err(anyhow::anyhow!(
+                        "Color type mismatch for layer_id {}: base color {:?}, diff color {:?}",
+                        layer_id,
+                        base.color,
+                        diff.color
+                    ));
+                }
+                let mut base_img = ImageData {
+                    width: base.width,
+                    height: base.height,
+                    color_type: match base.color {
+                        TlgColorType::Bgr24 => ImageColorType::Bgr,
+                        TlgColorType::Bgra32 => ImageColorType::Bgra,
+                        TlgColorType::Grayscale8 => ImageColorType::Grayscale,
+                    },
+                    depth: 8,
+                    data: base.data.clone(),
+                };
+                if base.width != state.width
+                    || base.height != state.height
+                    || *base_top != 0
+                    || *base_left != 0
+                {
+                    base_img =
+                        draw_on_canvas(base_img, state.width, state.height, *base_left, *base_top)?;
+                }
+                if *base_opacity != 255 {
+                    apply_opacity(&mut base_img, *base_opacity)?;
+                }
+                let diff_img = ImageData {
+                    width: diff.width,
+                    height: diff.height,
+                    color_type: match diff.color {
+                        TlgColorType::Bgr24 => ImageColorType::Bgr,
+                        TlgColorType::Bgra32 => ImageColorType::Bgra,
+                        TlgColorType::Grayscale8 => ImageColorType::Grayscale,
+                    },
+                    depth: 8,
+                    data: diff.data.clone(),
+                };
+                draw_on_img_with_opacity(&mut base_img, &diff_img, left, top, opacity)?;
+                Ok(ImageDataWithName {
+                    name: layer_name.to_string(),
+                    data: base_img,
+                })
+            }
+        }
+    }
+
+    fn custom_export(&self, filename: &std::path::Path, encoding: Encoding) -> Result<()> {
+        let psb = self.psb.root();
+        let width = psb["width"]
+            .as_u32()
+            .ok_or(anyhow::anyhow!("missing width"))?;
+        let height = psb["height"]
+            .as_u32()
+            .ok_or(anyhow::anyhow!("missing height"))?;
+        let mut psd = PsdWriter::new(width, height, ImageColorType::Rgba, 8, encoding)?
+            .compress(self.psd_compress)
+            .zlib_compression_level(self.zlib_compression_level);
+        let mut base = ImageData {
+            width,
+            height,
+            color_type: ImageColorType::Rgba,
+            depth: 8,
+            data: vec![0u8; (width * height * 4) as usize],
+        };
+        if !self.psd_no_diff {
+            let is_no_group = psb["layers"]
+                .members()
+                .all(|layer| layer["group_layer_id"].is_none());
+            let is_all_non_diff = psb["layers"]
+                .members()
+                .all(|layer| layer["diff_id"].is_none());
+            if is_all_non_diff && is_no_group {
+                let mut psb = psb.clone();
+                let diff_id = {
+                    let base_layer = psb["layers"]
+                        .members()
+                        .rev()
+                        .find(|layer| {
+                            layer["diff_id"].is_none()
+                                && layer["top"].as_i64() == Some(0)
+                                && layer["left"].as_i64() == Some(0)
+                                && layer["width"].as_u32() == Some(width)
+                                && layer["height"].as_u32() == Some(height)
+                        })
+                        .ok_or(anyhow::anyhow!(
+                            "No valid base layer found for overlay mode"
+                        ))?;
+                    base_layer["layer_id"]
+                        .as_i64()
+                        .ok_or(anyhow::anyhow!("missing layer_id for base layer"))?
+                };
+                for layer in psb["layers"].members_mut() {
+                    let layer_id = layer["layer_id"].as_i64().unwrap_or(-1);
+                    if layer_id != diff_id {
+                        layer["diff_id"] = diff_id.into();
+                    }
+                }
+                let layers = PImgLayerRoot::new(&psb["layers"])?;
+                if layers.len() != psb["layers"].len() {
+                    return Err(anyhow::anyhow!("Layer hierarchy is invalid"));
+                }
+                layers.save_to_psd(self, &mut psd, &mut base)?;
+                let file = std::fs::File::create(filename)?;
+                let mut writer = std::io::BufWriter::new(file);
+                psd.save(base, &mut writer)?;
+                return Ok(());
+            }
+        }
+        let layers = PImgLayerRoot::new(&psb["layers"])?;
+        if layers.len() != psb["layers"].len() {
+            return Err(anyhow::anyhow!("Layer hierarchy is invalid"));
+        }
+        layers.save_to_psd(self, &mut psd, &mut base)?;
+        let file = std::fs::File::create(filename)?;
+        let mut writer = std::io::BufWriter::new(file);
+        psd.save(base, &mut writer)?;
+        Ok(())
+    }
+}

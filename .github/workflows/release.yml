@@ -1,0 +1,132 @@
+name: Build release installer
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate vendored msg-tool
+        shell: pwsh
+        run: |
+          $tool = 'tools/msg-tool/msg_tool.exe'
+          $expectedHash = '62fe396780468200cb50f287fe213e697a903f0a85a91153fa3692598ae8ab5d'
+          if (-not (Test-Path -LiteralPath $tool -PathType Leaf)) {
+            throw "Missing vendored tool: $tool"
+          }
+          $actualHash = (Get-FileHash -LiteralPath $tool -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actualHash -cne $expectedHash) {
+            throw "msg-tool checksum mismatch: $actualHash"
+          }
+          $version = (& $tool --version | Out-String).Trim()
+          if ($version -cne 'msg_tool 0.4.0-alpha.3') {
+            throw "msg-tool version mismatch: $version"
+          }
+          $sourceFiles = @(
+            'tools/msg-tool-src/Cargo.toml',
+            'tools/msg-tool-src/Cargo.lock',
+            'tools/msg-tool-src/LICENSE',
+            'tools/msg-tool-src/msg_tool_xp3data/bin/altered_pink.bin'
+          )
+          foreach ($file in $sourceFiles) {
+            if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
+              throw "Missing msg-tool corresponding source file: $file"
+            }
+          }
+
+      - name: Set up MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      - name: Set up NuGet
+        uses: NuGet/setup-nuget@v2
+
+      - name: Restore KrkrPatch dependencies
+        shell: pwsh
+        run: |
+          nuget restore Distribution/source/KrkrPatch/KrkrPatch.sln -PackagesDirectory Distribution/source/KrkrPatch/packages
+          $vcpkg = Join-Path $env:VCPKG_INSTALLATION_ROOT 'vcpkg.exe'
+          & $vcpkg install --triplet x86-windows-static --x-manifest-root=Distribution/source/KrkrPatch
+          & $vcpkg integrate install
+
+      - name: Build KrkrPatch Win32
+        shell: pwsh
+        run: |
+          msbuild Distribution/source/KrkrPatch/KrkrPatch.sln /m /restore /p:Configuration=Release /p:Platform=x86 /p:VcpkgTriplet=x86-windows-static /p:VcpkgRoot="$env:VCPKG_INSTALLATION_ROOT\"
+          Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatchLoader/Win32/Release/KrkrPatchLoader.exe Distribution/payload/KrkrPatchLoader.exe -Force
+          Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatch/Win32/Release/KrkrPatch.dll Distribution/payload/KrkrPatch.dll -Force
+
+      - name: Validate release payload
+        shell: pwsh
+        run: |
+          $files = @(
+            'Distribution/payload/KrkrPatchLoader.exe',
+            'Distribution/payload/KrkrPatch.dll',
+            'Distribution/payload/KrkrPatch.json',
+            'Distribution/payload/localization.xp3'
+          )
+          foreach ($file in $files) {
+            if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
+              throw "Missing payload file: $file"
+            }
+          }
+          foreach ($file in $files[0..1]) {
+            $stream = [IO.File]::OpenRead($file)
+            try {
+              $reader = [IO.BinaryReader]::new($stream)
+              $stream.Position = 0x3c
+              $peOffset = $reader.ReadInt32()
+              $stream.Position = $peOffset + 4
+              if ($reader.ReadUInt16() -ne 0x14c) {
+                throw "$file is not x86."
+              }
+            } finally {
+              $stream.Dispose()
+            }
+          }
+
+      - name: Install verified Inno Setup
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download is-7_1_0 --repo jrsoftware/issrc --pattern innosetup-7.1.0-x64.exe --dir $env:RUNNER_TEMP
+          $installer = Join-Path $env:RUNNER_TEMP 'innosetup-7.1.0-x64.exe'
+          $expected = '0362a383ed217d4c4239b5933866dd96d3eb2102737da92f80f6057a4b40df2f'
+          $actual = (Get-FileHash -LiteralPath $installer -Algorithm SHA256).Hash.ToLowerInvariant()
+          if ($actual -cne $expected) {
+            throw "Inno Setup checksum mismatch: $actual"
+          }
+          Start-Process -FilePath $installer -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -Wait
+
+      - name: Build LocalizationSetup.exe
+        shell: pwsh
+        run: |
+          $version = if ('${{ github.event.release.tag_name }}') { '${{ github.event.release.tag_name }}'.TrimStart('v') } else { '0.0.0-dev' }
+          & 'C:\Program Files\Inno Setup 7\ISCC.exe' "/DMyAppVersion=$version" '/ODistribution' '/FLocalizationSetup' 'Distribution/source/installer/LocalizationSetup.iss'
+          if ($LASTEXITCODE -ne 0) {
+            throw "Inno Setup failed with exit code $LASTEXITCODE."
+          }
+
+      - name: Upload workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LocalizationSetup
+          path: Distribution/LocalizationSetup.exe
+          if-no-files-found: error
+
+      - name: Attach installer to release
+        if: github.event_name == 'release'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload '${{ github.event.release.tag_name }}' Distribution/LocalizationSetup.exe --clobber

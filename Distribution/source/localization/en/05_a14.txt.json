@@ -1,0 +1,192 @@
+[
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Hm? What is this place? Is something here or what?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You went here with Shiorin? An urban legend? Ah, okay, sure. So you actually experienced it.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ghost marriage, huh. Ghost marriage... That thing where you pick up a letter and end up marrying a corpse, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh? What the heck—that's scary.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"And you actually tried it? I can't believe you... There's no way I could do that.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Anyway, Shiori ain't here. Let's go, I don't wanna find any weird letters lying around.\""
+  },
+  {
+    "message": "...?"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What? What're you waiting for?\""
+  },
+  {
+    "message": "......"
+  },
+  {
+    "message": "Something's on the ground."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"What's this?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"No, seriously, what *is* this...?\""
+  },
+  {
+    "message": "(Pick it up)"
+  },
+  {
+    "message": "..."
+  },
+  {
+    "message": "It feels kind of weird."
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"No way you're picking that up, you're unreal. That thing's already giving me the creeps.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"How do I put it? It's like... the same vibe as when you bump into a ghost. Kinda like that, but not at the same time. You get me? Nope?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Point is, it's some kinda occult thing. I think.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You think it's got something to do with that other world...? Kinda feels like it, yeah?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, maybe that occult girl would know. This kinda stuff's her specialty, right?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"If you're curious, why not ask her? I don't really care either way.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So yeah, up to you. For now, why not just take it? C'mon, let's go.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You could just take it for now. Who knows, maybe some occult nut's gonna pay good money for it.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"If it sells, let's split—Wait, never mind. Money's useless to me.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So yeah, do whatever you want. C'mon, let's go.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, yeah, this again. Sure, go ahead.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I don't really get it, but maybe something'll happen if you get 'em all?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Might as well pick it up. Maybe we'll even get some prize or something.\""
+  },
+  {
+    "message": "(Pick it up)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Let's go. Doesn't look like Shiorin's here.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Oh, an OOPArt. Yeah, it's giving off these weird vibes...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So, I just noticed something. Don't they kinda shake when you bring them close together?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"See, look. They're totally vibrating. How does it even do that? Creepy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Well, whatever. We've got 'em all now. We should take them to the occult girl.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, maybe they'll blow up once you put 'em all together... Not that I'd know.\""
+  },
+  {
+    "message": "(Pick it up)"
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Maybe just stash it away for now. And be careful with it, mmkay~? Alright, let's go~\""
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Grand Park)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Children's Park)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  },
+  {
+    "message": "(Crosswalk)"
+  },
+  {
+    "message": "(Payphone)"
+  }
+]

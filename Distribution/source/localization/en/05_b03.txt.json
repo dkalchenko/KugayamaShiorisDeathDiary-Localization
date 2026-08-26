@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Gyaruko-san",
+    "message": "\"...Hm?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Hello. It's been a while.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh. How long *has* it been again? Feels like forever.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"It hasn't been that long, at least by my sense of time.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Whoa, Shiorin's here too. So you found her?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Sorry for the trouble...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, whatever. But uh, weren't you stuck in the library?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Thanks to these two, I'm able to leave now. I see you've regained your memories.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yep, thanks to these two~\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"You've completely stopped coming to the library, haven't you?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Wait, Gyaruko-san at the library? That's kind of unexpected.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Ghosts have a lot of free time, yeah? So I figured I'd try reading or something, but nah. Wasn't for me. And by the way...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Hey, you. The heck are you just standing there for? That's right, I'm talking to you, buddy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"You turn down my invitation, then show up with another woman. What the hell, pal?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"And here I was, waiting for you to let me tag along.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"I was the one who insisted on coming along. If you are to blame someone, blame me.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Nah, I'm just messing around. I wouldn't get angry over something like that.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"So? How'd it go, Shiorin? You got to talk to that old dude yesterday, yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes, we did.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Did ya find anything out?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"His name is Yasuda, and we learned what kind of person he is.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? What's that supposed to mean, did that old dude spill the beans himself or something?\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"We looked him up on our buddy's smartphone.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Simply put, Yasuda is extremely likely to be the main perpetrator of the case.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"And considering his actions while he was alive, we've concluded that his testimony isn't trustworthy.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Uh, I was asking Shiorin, though...\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I'm sorry for worrying you.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"I was pretty shaken yesterday, but now I've decided to find out the truth myself—no—together.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"And I have you to thank as well, Gyaruko-san.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh. You're welcome, I guess.\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Right now, we're looking for someone called Girl A, who's connected to the case.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"If it's okay, would you like to come with us? We'd like to rely on your connections.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Eh, do I really need to tag along? You've already found Shiorin, and all. I'd just get in the way, don'tcha think?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"'Sides, Shiorin still hasn't even gotten her memories back yet, yeah?\""
+  },
+  {
+    "name": "Shiori",
+    "message": "\"Yes. They still haven't returned.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Then I'll do stuff my way. I'll call ya if I find something.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Call?\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Yeah, it goes through somehow. I don't really get it either.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"A phone call with a ghost... I see. A fascinating phenomenon. To have a tie that deep, you must share a very strong connection...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Huh? Connection? Like signal bars and stuff? I dunno, it's not like I'm on some phone plan or anything. Or am I? Dunno.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"No, not that kind of connection...\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"I don't really get it, but whatever. Anyway, I'll give you a call if anything comes up.\""
+  },
+  {
+    "name": "Ms. Librarian",
+    "message": "\"Very well.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Alright, I'm off. See ya~\""
+  },
+  {
+    "message": "\"Thanks for worrying about us.\""
+  },
+  {
+    "name": "Gyaruko-san",
+    "message": "\"Aye aye~. Go get 'em, yeah?\""
+  },
+  {
+    "message": "(Convenience Store)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Library)"
+  },
+  {
+    "message": "(Supermarket)"
+  },
+  {
+    "message": "(Flower Garden)"
+  },
+  {
+    "message": "(Parking Lot)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Housing Complex)"
+  },
+  {
+    "message": "(Shrine)"
+  }
+]
