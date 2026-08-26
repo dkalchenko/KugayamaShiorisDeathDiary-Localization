@@ -209,7 +209,10 @@ function Get-PkgConfig {
 
     if (-not $valid) {
         Reset-DependencyDirectory $toolDirectory | Out-Null
-        $tar = (Get-Command 'tar.exe' -CommandType Application -ErrorAction Stop).Source
+        $tar = Join-Path $env:SystemRoot 'System32\tar.exe'
+        if (-not (Test-Path -LiteralPath $tar -PathType Leaf)) {
+            throw "Windows system tar was not found: $tar"
+        }
         foreach ($archive in $configuration.archives) {
             $archivePath = Get-VerifiedDownload ([string]$archive.url) ([string]$archive.sha512) 'SHA512'
             Invoke-Native $tar @('-xf', $archivePath, '-C', $toolDirectory)
