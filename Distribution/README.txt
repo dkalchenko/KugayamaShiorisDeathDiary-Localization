@@ -18,7 +18,7 @@ KrkrPatch.dll
 KrkrPatch.json
 localization.xp3
 
-The original game archives are not modified. The patch replaces the game's English scenario-text slot with Russian. Character and speaker names remain exactly as in the English localization.
+The original game archives are not modified. The patch replaces the game's English scenario-text slot with Russian. Character and speaker names remain exactly as in the English localization. Menus and other UI assets are not translated and remain in English.
 
 Uninstall
 Open Windows Installed Apps, find Kugayama Shiori Russian Localization, and select Uninstall. Uninstallation removes the four installed localization files, the generated KrkrPatch.log, and installed shortcuts.
@@ -26,6 +26,7 @@ Open Windows Installed Apps, find Kugayama Shiori Russian Localization, and sele
 Troubleshooting
 - Verify that KugayamaShiorisDeathDiary.exe exists in the selected directory.
 - Launch KrkrPatchLoader.exe, not KugayamaShiorisDeathDiary.exe.
+- Check story dialogue, not the untranslated menu/UI.
 - If launch fails, attach KrkrPatch.log from the game folder to the issue report.
 - Antivirus software may inspect the runtime patch DLL because it hooks the game's file-loading functions.
 - Unsigned releases can show Windows Unknown publisher or SmartScreen warnings. Verify LocalizationSetup.exe using the matching SHA256SUMS.txt; removing the publisher warning requires a publicly trusted Authenticode signature.
@@ -33,7 +34,7 @@ Troubleshooting
 
 The Russian text was translated manually. English localization JSON is not distributed; development scripts extract it from the user's installed game into ignored generated output.
 
-KrkrPatchLoader.exe and KrkrPatch.dll are GPL-3.0-covered KrkrPatch binaries built from upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 with the documented DetourRestoreAfterWith compatibility modification. The matching release provides KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip beside LocalizationSetup.exe. The build recipe and licence notices are in the repository source archive for the same release tag.
+KrkrPatchLoader.exe and KrkrPatch.dll are GPL-3.0-covered KrkrPatch binaries built from upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 with the documented Steam compatibility modifications. The matching release provides KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip beside LocalizationSetup.exe. The build recipe and licence notices are in the repository source archive for the same release tag.
 
 The matching release also provides ThirdPartyLicenses.zip and SHA256SUMS.txt. Verify LocalizationSetup.exe against SHA256SUMS.txt before running it.
 

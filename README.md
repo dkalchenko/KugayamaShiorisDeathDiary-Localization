@@ -9,7 +9,7 @@ Download `LocalizationSetup.exe` from the matching GitHub release. The installer
 - `KrkrPatch.json`
 - `localization.xp3`
 
-Launch the game through `KrkrPatchLoader.exe` or the installer-created shortcut. The original game archives are not modified. Character and speaker names remain identical to the English localization.
+Launch the game through `KrkrPatchLoader.exe` or the installer-created shortcut. The original game archives are not modified. Story dialogue is translated; menus and other UI assets remain in English. Character and speaker names remain identical to the English localization.
 
 See [Distribution/README.txt](Distribution/README.txt) for installation and removal instructions.
 

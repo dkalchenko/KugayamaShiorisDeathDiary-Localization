@@ -196,12 +196,14 @@ jobs:
           [IO.Directory]::CreateDirectory((Split-Path $buildSupportPatches -Parent)) | Out-Null
           Copy-Item -LiteralPath 'Distribution/source/patches' -Destination $buildSupportPatches -Recurse
 
-          $compiledSource = Join-Path $manifestRoot 'KrkrPatch/dllmain.cpp'
-          $archivedSource = Join-Path $sourceStageRoot 'KrkrPatch/dllmain.cpp'
-          $compiledHash = (Get-FileHash -LiteralPath $compiledSource -Algorithm SHA256).Hash
-          $archivedHash = (Get-FileHash -LiteralPath $archivedSource -Algorithm SHA256).Hash
-          if ($compiledHash -cne $archivedHash) {
-            throw 'Archived KrkrPatch source does not match the compiled source.'
+          foreach ($relativePath in @('KrkrPatch/dllmain.cpp', 'KrkrPatchLoader/KrkrPatchLoader.cpp')) {
+            $compiledSource = Join-Path $manifestRoot $relativePath
+            $archivedSource = Join-Path $sourceStageRoot $relativePath
+            $compiledHash = (Get-FileHash -LiteralPath $compiledSource -Algorithm SHA256).Hash
+            $archivedHash = (Get-FileHash -LiteralPath $archivedSource -Algorithm SHA256).Hash
+            if ($compiledHash -cne $archivedHash) {
+              throw "Archived KrkrPatch source does not match the compiled source: $relativePath"
+            }
           }
 
           if (Test-Path -LiteralPath $sourceArchive) {
@@ -325,6 +327,13 @@ jobs:
           $config = Get-Content -LiteralPath 'Distribution/payload/KrkrPatch.json' -Raw | ConvertFrom-Json
           if ([int]$config.logLevel -ne 4) {
             throw 'Diagnostic KrkrPatch logLevel must be 4.'
+          }
+          $manifest = Get-Content -LiteralPath 'Distribution/source/scenarios.json' -Raw | ConvertFrom-Json
+          if ([string]$config.steamAppId -cne [string]$manifest.steamAppId) {
+            throw 'KrkrPatch steamAppId does not match the localization manifest.'
+          }
+          if (-not [bool]$config.patchNoProtocol) {
+            throw 'KrkrPatch must accept bare scenario storage paths.'
           }
 
       - name: Install verified Inno Setup
