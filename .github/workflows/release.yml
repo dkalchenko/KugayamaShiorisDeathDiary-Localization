@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022
 
     steps:
       - name: Check out repository
@@ -54,14 +54,30 @@ jobs:
         shell: pwsh
         run: |
           nuget restore Distribution/source/KrkrPatch/KrkrPatch.sln -PackagesDirectory Distribution/source/KrkrPatch/packages
+          if ($LASTEXITCODE -ne 0) {
+            throw "NuGet restore failed with exit code $LASTEXITCODE."
+          }
+          $manifestRoot = (Resolve-Path 'Distribution/source/KrkrPatch').Path
+          $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
           $vcpkg = Join-Path $env:VCPKG_INSTALLATION_ROOT 'vcpkg.exe'
-          & $vcpkg install --triplet x86-windows-static --x-manifest-root=Distribution/source/KrkrPatch
+          & $vcpkg install --triplet x86-windows-static "--x-manifest-root=$manifestRoot" "--x-install-root=$installedRoot"
+          if ($LASTEXITCODE -ne 0) {
+            throw "vcpkg restore failed with exit code $LASTEXITCODE."
+          }
           & $vcpkg integrate install
+          if ($LASTEXITCODE -ne 0) {
+            throw "vcpkg integration failed with exit code $LASTEXITCODE."
+          }
 
       - name: Build KrkrPatch Win32
         shell: pwsh
         run: |
-          msbuild Distribution/source/KrkrPatch/KrkrPatch.sln /m /restore /p:Configuration=Release /p:Platform=x86 /p:VcpkgTriplet=x86-windows-static /p:VcpkgRoot="$env:VCPKG_INSTALLATION_ROOT\"
+          $manifestRoot = (Resolve-Path 'Distribution/source/KrkrPatch').Path
+          $installedRoot = Join-Path $manifestRoot 'vcpkg_installed'
+          msbuild Distribution/source/KrkrPatch/KrkrPatch.sln /m /p:Configuration=Release /p:Platform=x86 /p:VcpkgTriplet=x86-windows-static /p:VcpkgManifestInstall=false "/p:VcpkgInstalledDir=$installedRoot" "/p:VcpkgRoot=$env:VCPKG_INSTALLATION_ROOT"
+          if ($LASTEXITCODE -ne 0) {
+            throw "KrkrPatch build failed with exit code $LASTEXITCODE."
+          }
           Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatchLoader/Win32/Release/KrkrPatchLoader.exe Distribution/payload/KrkrPatchLoader.exe -Force
           Copy-Item Distribution/source/KrkrPatch/Build/KrkrPatch/Win32/Release/KrkrPatch.dll Distribution/payload/KrkrPatch.dll -Force
 
