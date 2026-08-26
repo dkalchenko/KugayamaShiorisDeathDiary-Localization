@@ -25,6 +25,23 @@
       "sha512": "648d894940bcc29951752d7a8fd18c770ee8d4fd944e17f1a52588e51ca8f58375ba48514538f2e1387786fd812bb86f75fd6bdd0892685cdcafb2989942c848"
     }
   },
+  "pkgConfig": {
+    "version": "0.29.2",
+    "executableRelativePath": "mingw32/bin/pkg-config.exe",
+    "executableSha256": "a318bd07a21b3e6a0eb0a2c831da2485d95f28a5fb0fc9ef5a7043319f0444bb",
+    "runtimeRelativePath": "mingw32/bin/libwinpthread-1.dll",
+    "runtimeSha256": "fdbc593ecaa4d63c2e3c1b5409138b8efda64ed429558a8c451d004e8f1c1005",
+    "archives": [
+      {
+        "url": "https://github.com/msys2/msys2-archive/releases/download/2022-12-16-mingw32/mingw-w64-i686-pkg-config-0.29.2-3-any.pkg.tar.zst",
+        "sha512": "0c086bf306b6a18988cc982b3c3828c4d922a1b60fd24e17c3bead4e296ee6de48ce148bc6f9214af98be6a86cb39c37003d2dcb6561800fdf7d0d1028cf73a4"
+      },
+      {
+        "url": "https://github.com/msys2/msys2-archive/releases/download/2022-12-16-mingw32/mingw-w64-i686-libwinpthread-git-10.0.0.r157.gd295924f0-1-any.pkg.tar.zst",
+        "sha512": "cfd3cc5473b62c4b8875be4225eb3e3c89259028fb5a95b7d8f41c33e4a20525f5ef217604dcf635fbd57e5d8624a011940e3df814913d5fc44ae3810c1ae2c5"
+      }
+    ]
+  },
   "nuget": {
     "clientVersion": "7.9.0",
     "clientUrl": "https://dist.nuget.org/win-x86-commandline/v7.9.0/nuget.exe",

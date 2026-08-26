@@ -188,6 +188,47 @@ function Get-MsgTool {
     return $executablePath
 }
 
+function Get-PkgConfig {
+    $configuration = $lock.pkgConfig
+    $toolDirectory = Assert-SafeChildPath (Join-Path $destinationRoot "pkg-config-$($configuration.version)")
+    $executablePath = [IO.Path]::GetFullPath((Join-Path $toolDirectory ([string]$configuration.executableRelativePath)))
+    $runtimePath = [IO.Path]::GetFullPath((Join-Path $toolDirectory ([string]$configuration.runtimeRelativePath)))
+    foreach ($path in @($executablePath, $runtimePath)) {
+        $relativePath = [IO.Path]::GetRelativePath($toolDirectory, $path)
+        if ([IO.Path]::IsPathRooted($relativePath) -or $relativePath -eq '..' -or $relativePath.StartsWith("..$([IO.Path]::DirectorySeparatorChar)", [StringComparison]::Ordinal)) {
+            throw 'Invalid pkg-config tool path.'
+        }
+    }
+
+    $valid = (Test-FileHash $executablePath ([string]$configuration.executableSha256)) -and
+        (Test-FileHash $runtimePath ([string]$configuration.runtimeSha256))
+    if ($valid) {
+        $version = (& $executablePath --version | Out-String).Trim()
+        $valid = $LASTEXITCODE -eq 0 -and $version -ceq [string]$configuration.version
+    }
+
+    if (-not $valid) {
+        Reset-DependencyDirectory $toolDirectory | Out-Null
+        $tar = (Get-Command 'tar.exe' -CommandType Application -ErrorAction Stop).Source
+        foreach ($archive in $configuration.archives) {
+            $archivePath = Get-VerifiedDownload ([string]$archive.url) ([string]$archive.sha512) 'SHA512'
+            Invoke-Native $tar @('-xf', $archivePath, '-C', $toolDirectory)
+        }
+        if (-not (Test-FileHash $executablePath ([string]$configuration.executableSha256))) {
+            throw 'Extracted pkg-config executable checksum mismatch.'
+        }
+        if (-not (Test-FileHash $runtimePath ([string]$configuration.runtimeSha256))) {
+            throw 'Extracted pkg-config runtime checksum mismatch.'
+        }
+        Unblock-File -LiteralPath @($executablePath, $runtimePath) -ErrorAction SilentlyContinue
+        $version = (& $executablePath --version | Out-String).Trim()
+        if ($LASTEXITCODE -ne 0 -or $version -cne [string]$configuration.version) {
+            throw "Unexpected pkg-config version: $version"
+        }
+    }
+    return $executablePath
+}
+
 $requestedComponents = if ($Components -contains 'All') {
     @('MsgTool', 'KrkrPatch', 'Vcpkg')
 } else {
@@ -205,6 +246,9 @@ if ($requestedComponents -contains 'KrkrPatch') {
 }
 if ($requestedComponents -contains 'Vcpkg') {
     $result.VcpkgRoot = Get-PinnedRepository 'vcpkg' $lock.vcpkg
+    $result.PkgConfigPath = Get-PkgConfig
+    $env:PKG_CONFIG = $result.PkgConfigPath
+    Add-GitHubEnvironmentValue 'PKG_CONFIG' $result.PkgConfigPath
     $sevenZip = $lock.vcpkg.sevenZip
     $archiveName = [string]$sevenZip.archiveName
     if ([string]::IsNullOrWhiteSpace($archiveName) -or [IO.Path]::GetFileName($archiveName) -cne $archiveName) {

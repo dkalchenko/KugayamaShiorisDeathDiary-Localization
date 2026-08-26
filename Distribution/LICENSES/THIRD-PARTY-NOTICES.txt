@@ -33,5 +33,14 @@ NuGet components: VC-LTL 5.3.1, YY.NuGet.Import.Helper 1.0.1
 Licence material: ThirdPartyLicenses.zip in the matching release
 Purpose: compiled runtime dependencies and build integration for KrkrPatch
 
+MSYS2 pkg-config build tool
+Upstream archive: https://github.com/msys2/msys2-archive/releases/tag/2022-12-16-mingw32
+pkg-config version: 0.29.2-3
+libwinpthread version: 10.0.0.r157.gd295924f0-1
+Licences: GPL for pkg-config; MIT and BSD for libwinpthread
+Purpose: build-only pkg-config validation for vcpkg
+Acquisition: downloaded from the official MSYS2 archive in release CI and checksum-verified using third-party.lock.json
+Distribution status: not committed, packaged, installed, or attached to project releases
+
 Game material
 The localization is for Steam app 4141950. The project licence grants no rights in the game's text, characters, names, artwork, audio, trademarks, or other game-owned material. English localization JSON is generated from the user's installed copy and is not distributed.
