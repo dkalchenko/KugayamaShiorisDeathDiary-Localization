@@ -151,7 +151,11 @@ jobs:
             throw "Unexpected KrkrPatch revision: $actualCommit"
           }
           $modifiedFiles = @(& git -C $manifestRoot diff --name-only)
-          if ($LASTEXITCODE -ne 0 -or $modifiedFiles.Count -ne 1 -or $modifiedFiles[0] -cne 'KrkrPatch/dllmain.cpp') {
+          $diffExitCode = $LASTEXITCODE
+          $expectedModifiedFiles = @('KrkrPatch/dllmain.cpp', 'KrkrPatchLoader/KrkrPatchLoader.cpp')
+          $unexpectedFiles = @($modifiedFiles | Where-Object { $_ -cnotin $expectedModifiedFiles })
+          $missingFiles = @($expectedModifiedFiles | Where-Object { $_ -cnotin $modifiedFiles })
+          if ($diffExitCode -ne 0 -or $unexpectedFiles.Count -gt 0 -or $missingFiles.Count -gt 0) {
             throw "Unexpected KrkrPatch source modifications: $($modifiedFiles -join ', ')"
           }
 
