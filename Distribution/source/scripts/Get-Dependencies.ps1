@@ -252,6 +252,16 @@ if ($requestedComponents -contains 'Vcpkg') {
     $result.PkgConfigPath = Get-PkgConfig
     $env:PKG_CONFIG = $result.PkgConfigPath
     Add-GitHubEnvironmentValue 'PKG_CONFIG' $result.PkgConfigPath
+    $keptEnvironmentVariables = @(
+        ([string]$env:VCPKG_KEEP_ENV_VARS -split ';') |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
+    )
+    if ($keptEnvironmentVariables -notcontains 'PKG_CONFIG') {
+        $keptEnvironmentVariables += 'PKG_CONFIG'
+    }
+    $env:VCPKG_KEEP_ENV_VARS = $keptEnvironmentVariables -join ';'
+    Add-GitHubEnvironmentValue 'VCPKG_KEEP_ENV_VARS' $env:VCPKG_KEEP_ENV_VARS
     $sevenZip = $lock.vcpkg.sevenZip
     $archiveName = [string]$sevenZip.archiveName
     if ([string]::IsNullOrWhiteSpace($archiveName) -or [IO.Path]::GetFileName($archiveName) -cne $archiveName) {
