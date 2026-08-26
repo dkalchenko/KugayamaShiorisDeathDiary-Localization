@@ -19,7 +19,7 @@ Russian JSON, build scripts, the installer definition, and the compiled `localiz
 
 The localization scripts download pinned `msg-tool` `v0.4.0-alpha.3` on demand using `third-party.lock.json`, verify its SHA-256, and cache it outside the repository under the user's local application-data directory. Neither `msg-tool` nor its source is committed, installed, or attached to releases.
 
-Release CI fetches unmodified KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, builds its x86 loader and DLL, and attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31.zip` beside `LocalizationSetup.exe` as corresponding source.
+Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, applies the checked-in SteamStub compatibility patch, builds its x86 loader and DLL, and attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip` beside `LocalizationSetup.exe` as corresponding source.
 
 Each release also provides `ThirdPartyLicenses.zip` and `SHA256SUMS.txt`. Verify the installer checksum before running it.
 

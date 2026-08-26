@@ -1,7 +1,7 @@
 {
   "gameExecutableFile": "KugayamaShiorisDeathDiary.exe",
   "gameCommandLine": "",
-  "logLevel": 0,
+  "logLevel": 4,
   "patchProtocols": [
     "arc://",
     "archive://"
@@ -11,4 +11,3 @@
   ],
   "patchNoProtocol": false
 }
-

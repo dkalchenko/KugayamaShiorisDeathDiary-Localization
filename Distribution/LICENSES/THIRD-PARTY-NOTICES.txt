@@ -2,9 +2,11 @@ KrkrPatch
 Runtime files: KrkrPatchLoader.exe, KrkrPatch.dll
 Upstream: https://github.com/crskycode/KrkrPatch
 Source revision: 587261001bf95feab4f0f1cbcbd22cfdadb97e31
+Local modification: KrkrPatch/dllmain.cpp calls DetourRestoreAfterWith during DLL_PROCESS_ATTACH for SteamStub compatibility
+Modification date: 2026-08-26
 Licence: GNU GPL version 3
 Licence text: KrkrPatch-GPL-3.0.txt
-Corresponding-source release asset: KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31.zip
+Corresponding-source release asset: KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip
 Release page: https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/releases
 Build recipe: .github/workflows/release.yml in the matching repository release tag
 

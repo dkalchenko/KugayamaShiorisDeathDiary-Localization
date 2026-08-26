@@ -42,7 +42,7 @@ jobs:
             }
             Add-Content -LiteralPath $env:GITHUB_ENV -Value "$($entry.Key)=$($entry.Value)" -Encoding utf8
           }
-          Add-Content -LiteralPath $env:GITHUB_ENV -Value "KRKRPATCH_SOURCE_ARCHIVE=KrkrPatch-source-$($values.KRKRPATCH_COMMIT).zip" -Encoding utf8
+          Add-Content -LiteralPath $env:GITHUB_ENV -Value "KRKRPATCH_SOURCE_ARCHIVE=KrkrPatch-source-$($values.KRKRPATCH_COMMIT)-localization-patched.zip" -Encoding utf8
           Add-Content -LiteralPath $env:GITHUB_ENV -Value 'THIRD_PARTY_LICENSE_ARCHIVE=ThirdPartyLicenses.zip' -Encoding utf8
 
       - name: Set up MSBuild
@@ -76,6 +76,14 @@ jobs:
 
           $destination = Join-Path $env:RUNNER_TEMP 'dependencies'
           & 'Distribution/source/scripts/Get-Dependencies.ps1' -Components KrkrPatch,Vcpkg -DestinationPath $destination -GitHubEnvironmentPath $env:GITHUB_ENV
+
+      - name: Apply KrkrPatch SteamStub compatibility patch
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          & 'Distribution/source/scripts/Apply-KrkrPatchCompatibilityPatch.ps1' -KrkrPatchRoot $env:KRKRPATCH_ROOT
 
       - name: Restore KrkrPatch dependencies
         shell: pwsh
@@ -142,10 +150,64 @@ jobs:
           if ($LASTEXITCODE -ne 0 -or $actualCommit -cne $env:KRKRPATCH_COMMIT) {
             throw "Unexpected KrkrPatch revision: $actualCommit"
           }
-          & git -C $manifestRoot archive --format=zip "--prefix=KrkrPatch-$env:KRKRPATCH_COMMIT/" "--output=$sourceArchive" $env:KRKRPATCH_COMMIT
-          if ($LASTEXITCODE -ne 0) {
-            throw "KrkrPatch source archive failed with exit code $LASTEXITCODE."
+          $modifiedFiles = @(& git -C $manifestRoot diff --name-only)
+          if ($LASTEXITCODE -ne 0 -or $modifiedFiles.Count -ne 1 -or $modifiedFiles[0] -cne 'KrkrPatch/dllmain.cpp') {
+            throw "Unexpected KrkrPatch source modifications: $($modifiedFiles -join ', ')"
           }
+
+          $sourceStageParent = Join-Path $env:RUNNER_TEMP 'release-source'
+          $sourceStageRoot = Join-Path $sourceStageParent "KrkrPatch-$env:KRKRPATCH_COMMIT-localization-patched"
+          if (Test-Path -LiteralPath $sourceStageParent) {
+            Remove-Item -LiteralPath $sourceStageParent -Recurse -Force
+          }
+          [IO.Directory]::CreateDirectory($sourceStageRoot) | Out-Null
+
+          $trackedFiles = @(& git -C $manifestRoot ls-files)
+          if ($LASTEXITCODE -ne 0 -or $trackedFiles.Count -eq 0) {
+            throw 'KrkrPatch tracked-source enumeration failed.'
+          }
+          foreach ($relativePath in $trackedFiles) {
+            $sourcePath = Join-Path $manifestRoot $relativePath
+            $destinationPath = Join-Path $sourceStageRoot $relativePath
+            [IO.Directory]::CreateDirectory((Split-Path $destinationPath -Parent)) | Out-Null
+            Copy-Item -LiteralPath $sourcePath -Destination $destinationPath
+          }
+
+          $patchesDestination = Join-Path $sourceStageRoot 'localization-patches'
+          Copy-Item -LiteralPath 'Distribution/source/patches' -Destination $patchesDestination -Recurse
+
+          $buildSupportRoot = Join-Path $sourceStageRoot 'localization-build-support'
+          $buildSupportFiles = @(
+            '.github/workflows/release.yml',
+            'LICENSE',
+            'third-party.lock.json',
+            'Distribution/LICENSES/THIRD-PARTY-NOTICES.txt',
+            'Distribution/source/README.md',
+            'Distribution/source/scripts/Get-Dependencies.ps1',
+            'Distribution/source/scripts/Apply-KrkrPatchCompatibilityPatch.ps1'
+          )
+          foreach ($relativePath in $buildSupportFiles) {
+            $sourcePath = Join-Path $env:GITHUB_WORKSPACE $relativePath
+            $destinationPath = Join-Path $buildSupportRoot $relativePath
+            [IO.Directory]::CreateDirectory((Split-Path $destinationPath -Parent)) | Out-Null
+            Copy-Item -LiteralPath $sourcePath -Destination $destinationPath
+          }
+          $buildSupportPatches = Join-Path $buildSupportRoot 'Distribution/source/patches'
+          [IO.Directory]::CreateDirectory((Split-Path $buildSupportPatches -Parent)) | Out-Null
+          Copy-Item -LiteralPath 'Distribution/source/patches' -Destination $buildSupportPatches -Recurse
+
+          $compiledSource = Join-Path $manifestRoot 'KrkrPatch/dllmain.cpp'
+          $archivedSource = Join-Path $sourceStageRoot 'KrkrPatch/dllmain.cpp'
+          $compiledHash = (Get-FileHash -LiteralPath $compiledSource -Algorithm SHA256).Hash
+          $archivedHash = (Get-FileHash -LiteralPath $archivedSource -Algorithm SHA256).Hash
+          if ($compiledHash -cne $archivedHash) {
+            throw 'Archived KrkrPatch source does not match the compiled source.'
+          }
+
+          if (Test-Path -LiteralPath $sourceArchive) {
+            Remove-Item -LiteralPath $sourceArchive -Force
+          }
+          Compress-Archive -LiteralPath $sourceStageRoot -DestinationPath $sourceArchive -CompressionLevel Optimal
 
           [IO.Directory]::CreateDirectory($licenseRoot) | Out-Null
           Copy-Item -LiteralPath 'Distribution/LICENSES' -Destination (Join-Path $licenseRoot 'repository') -Recurse
@@ -258,6 +320,11 @@ jobs:
             } finally {
               $stream.Dispose()
             }
+          }
+
+          $config = Get-Content -LiteralPath 'Distribution/payload/KrkrPatch.json' -Raw | ConvertFrom-Json
+          if ([int]$config.logLevel -ne 4) {
+            throw 'Diagnostic KrkrPatch logLevel must be 4.'
           }
 
       - name: Install verified Inno Setup

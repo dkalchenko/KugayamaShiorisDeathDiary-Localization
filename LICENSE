@@ -6,7 +6,7 @@ To the extent repository contributors own copyright in the original Russian tran
 
 Excluded material
 
-- KrkrPatch source and binaries are licensed under GNU GPL version 3 according to their included licence and notices. Release builds use upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 and publish its corresponding source beside the installer.
+- KrkrPatch source and binaries are licensed under GNU GPL version 3 according to their included licence and notices. Release builds use upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 with the documented DetourRestoreAfterWith compatibility modification and publish the complete modified corresponding source beside the installer.
 - Components incorporated by Inno Setup and by KrkrPatch dependencies remain under their respective licences.
 - Third-party and game-owned material remains under its respective owner's terms.
 - A file-specific licence or notice overrides this repository licence for that file.

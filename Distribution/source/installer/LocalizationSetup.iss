@@ -45,6 +45,9 @@ Name: "{autodesktop}\Kugayama Shiori Russian Localization"; Filename: "{app}\Krk
 [Run]
 Filename: "{app}\KrkrPatchLoader.exe"; Description: "Launch the Russian localization"; WorkingDir: "{app}"; Flags: nowait postinstall skipifsilent runasoriginaluser
 
+[UninstallDelete]
+Type: files; Name: "{app}\KrkrPatch.log"
+
 [Code]
 function UnescapeVdfPath(Value: String): String;
 begin

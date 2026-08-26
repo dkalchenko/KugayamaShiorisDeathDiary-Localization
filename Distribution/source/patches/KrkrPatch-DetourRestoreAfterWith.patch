@@ -1,0 +1,23 @@
+diff --git a/KrkrPatch/dllmain.cpp b/KrkrPatch/dllmain.cpp
+--- a/KrkrPatch/dllmain.cpp
++++ b/KrkrPatch/dllmain.cpp
+@@ -279,13 +279,19 @@ void OnShutdown()
+ 
+ 
+ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
+ {
++	if (DetourIsHelperProcess())
++	{
++		return TRUE;
++	}
++
+ 	switch (ul_reason_for_call)
+ 	{
+ 		case DLL_PROCESS_ATTACH:
+ 		{
++			DetourRestoreAfterWith();
+ 			g_hEXE = GetModuleHandle(NULL);
+ 			g_hDLL = hModule;
+ 			OnStartup();
+ 			break;
+ 		}

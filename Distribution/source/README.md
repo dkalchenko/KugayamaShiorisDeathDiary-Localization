@@ -34,9 +34,9 @@ The compiler reads the installed game archive as the authoritative English sourc
 
 ## Release build
 
-Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31` directly from upstream, builds `KrkrPatchLoader.exe` and `KrkrPatch.dll` for x86, and packages them with `KrkrPatch.json` and `localization.xp3` in `LocalizationSetup.exe`.
+Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31` directly from upstream, applies `patches/KrkrPatch-DetourRestoreAfterWith.patch`, builds `KrkrPatchLoader.exe` and `KrkrPatch.dll` for x86, and packages them with `KrkrPatch.json` and `localization.xp3` in `LocalizationSetup.exe`. The patch restores the original in-memory import table before SteamStub executes. Diagnostic builds use `logLevel` `4` and create `KrkrPatch.log` in the game folder.
 
-KrkrPatch source is not committed here. Each release attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31.zip` beside the installer. The workflow in `.github/workflows/release.yml` is the corresponding build recipe.
+Upstream KrkrPatch source is not committed here. Each release attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip` beside the installer. It contains the complete patched source used for the binaries, the compatibility patch, its modification notice, and the exact KrkrPatch build-support files. The workflow in `.github/workflows/release.yml` is the corresponding build recipe.
 
 The release also contains `ThirdPartyLicenses.zip` with collected vcpkg, NuGet, KrkrPatch, Inno Setup, and repository notices, plus `SHA256SUMS.txt` covering every release asset.
 
