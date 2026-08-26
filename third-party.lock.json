@@ -18,7 +18,12 @@
     "repository": "https://github.com/microsoft/vcpkg.git",
     "commit": "12c2a93b4007612b5ffa980c9d2235eb0bcac10f",
     "tree": "e8f2c3396dc96ff383fe73a248e3f7fadad10b3c",
-    "triplet": "x86-windows-static"
+    "triplet": "x86-windows-static",
+    "sevenZip": {
+      "archiveName": "7z2107-extra.7z",
+      "url": "https://github.com/ip7z/7zip/releases/download/21.07/7z2107-extra.7z",
+      "sha512": "648d894940bcc29951752d7a8fd18c770ee8d4fd944e17f1a52588e51ca8f58375ba48514538f2e1387786fd812bb86f75fd6bdd0892685cdcafb2989942c848"
+    }
   },
   "nuget": {
     "clientVersion": "7.9.0",

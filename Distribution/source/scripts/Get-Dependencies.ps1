@@ -69,27 +69,31 @@ function Reset-DependencyDirectory {
 function Test-FileHash {
     param(
         [string]$Path,
-        [string]$ExpectedHash
+        [string]$ExpectedHash,
+        [ValidateSet('SHA256', 'SHA512')]
+        [string]$Algorithm = 'SHA256'
     )
 
     if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
         return $false
     }
-    $actualHash = (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash
+    $actualHash = (Get-FileHash -LiteralPath $Path -Algorithm $Algorithm).Hash
     return $actualHash.Equals($ExpectedHash, [StringComparison]::OrdinalIgnoreCase)
 }
 
 function Get-VerifiedDownload {
     param(
         [string]$Url,
-        [string]$ExpectedHash
+        [string]$ExpectedHash,
+        [ValidateSet('SHA256', 'SHA512')]
+        [string]$Algorithm = 'SHA256'
     )
 
     $downloadsRoot = Join-Path $destinationRoot 'downloads'
     [IO.Directory]::CreateDirectory($downloadsRoot) | Out-Null
     $fileName = [IO.Path]::GetFileName(([Uri]$Url).AbsolutePath)
     $downloadPath = Assert-SafeChildPath (Join-Path $downloadsRoot $fileName)
-    if (Test-FileHash $downloadPath $ExpectedHash) {
+    if (Test-FileHash $downloadPath $ExpectedHash $Algorithm) {
         return $downloadPath
     }
 
@@ -98,7 +102,7 @@ function Get-VerifiedDownload {
         Remove-Item -LiteralPath $partialPath -Force
     }
     Invoke-WebRequest -Uri $Url -OutFile $partialPath
-    if (-not (Test-FileHash $partialPath $ExpectedHash)) {
+    if (-not (Test-FileHash $partialPath $ExpectedHash $Algorithm)) {
         Remove-Item -LiteralPath $partialPath -Force
         throw "Downloaded file checksum mismatch: $Url"
     }
@@ -201,6 +205,19 @@ if ($requestedComponents -contains 'KrkrPatch') {
 }
 if ($requestedComponents -contains 'Vcpkg') {
     $result.VcpkgRoot = Get-PinnedRepository 'vcpkg' $lock.vcpkg
+    $sevenZip = $lock.vcpkg.sevenZip
+    $archiveName = [string]$sevenZip.archiveName
+    if ([string]::IsNullOrWhiteSpace($archiveName) -or [IO.Path]::GetFileName($archiveName) -cne $archiveName) {
+        throw 'Invalid vcpkg 7-Zip archive name.'
+    }
+    $sevenZipArchive = Get-VerifiedDownload ([string]$sevenZip.url) ([string]$sevenZip.sha512) 'SHA512'
+    $vcpkgDownloads = Join-Path $result.VcpkgRoot 'downloads'
+    [IO.Directory]::CreateDirectory($vcpkgDownloads) | Out-Null
+    $sevenZipTarget = Join-Path $vcpkgDownloads $archiveName
+    Copy-Item -LiteralPath $sevenZipArchive -Destination $sevenZipTarget -Force
+    if (-not (Test-FileHash $sevenZipTarget ([string]$sevenZip.sha512) 'SHA512')) {
+        throw 'Cached vcpkg 7-Zip archive checksum mismatch.'
+    }
     $vcpkgExecutable = Join-Path $result.VcpkgRoot 'vcpkg.exe'
     if (-not (Test-Path -LiteralPath $vcpkgExecutable -PathType Leaf)) {
         Invoke-Native (Join-Path $result.VcpkgRoot 'bootstrap-vcpkg.bat') @('-disableMetrics')
