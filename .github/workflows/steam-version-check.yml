@@ -1,0 +1,118 @@
+name: Check Steam game version
+
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: steam-version-check
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+
+      - name: Check public Steam build
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $manifest = Get-Content -LiteralPath 'Distribution/source/scenarios.json' -Raw | ConvertFrom-Json
+          $appId = [string]$manifest.steamAppId
+          $supportedBuildId = [string]$manifest.steamPublicBuildId
+          if ($appId -notmatch '^\d+$' -or $supportedBuildId -notmatch '^\d+$') {
+            throw 'Steam AppID or supported BuildID is missing or invalid.'
+          }
+
+          $uri = "https://api.steamcmd.net/v1/info/$appId"
+          $response = $null
+          for ($attempt = 1; $attempt -le 3; $attempt++) {
+            try {
+              $response = Invoke-RestMethod -Uri $uri -Headers @{
+                'User-Agent' = 'KugayamaShiorisDeathDiary-Localization-GitHubActions'
+              } -TimeoutSec 30
+              break
+            } catch {
+              if ($attempt -eq 3) {
+                throw
+              }
+              Start-Sleep -Seconds (5 * $attempt)
+            }
+          }
+
+          $appProperty = $response.data.PSObject.Properties[$appId]
+          if ($null -eq $appProperty) {
+            throw "Steam metadata does not contain AppID $appId."
+          }
+          $currentBuildId = [string]$appProperty.Value.depots.branches.public.buildid
+          if ($currentBuildId -notmatch '^\d+$') {
+            throw 'Steam metadata does not contain a valid public BuildID.'
+          }
+
+          Add-Content -LiteralPath $env:GITHUB_STEP_SUMMARY -Value @"
+          ## Steam version check
+
+          | Version | BuildID |
+          | --- | --- |
+          | Supported | $supportedBuildId |
+          | Current public Steam build | $currentBuildId |
+          "@
+
+          if ($currentBuildId -ceq $supportedBuildId) {
+            Write-Output "Steam public BuildID $currentBuildId is supported."
+            exit 0
+          }
+
+          $label = 'steam-update'
+          & gh label create $label --color 'D93F0B' --description 'A new public Steam build needs compatibility testing' --force
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Failed to create or update the Steam update label.'
+          }
+
+          $title = "[Steam] Public build changed: $supportedBuildId -> $currentBuildId"
+          $issuesJson = (& gh issue list --state all --label $label --limit 100 --json number,title,url | Out-String)
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Failed to check existing Steam update issues.'
+          }
+          $existingIssue = @($issuesJson | ConvertFrom-Json | Where-Object { $_.title -ceq $title })
+          if ($existingIssue.Count -gt 0) {
+            Write-Output "Issue already exists: $($existingIssue[0].url)"
+            exit 0
+          }
+
+          $detectedAt = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss 'UTC'")
+          $bodyPath = Join-Path $env:RUNNER_TEMP 'steam-update-issue.md'
+          $body = @"
+          Steam published a different public game build.
+
+          | Version | BuildID |
+          | --- | --- |
+          | Supported by the localization | $supportedBuildId |
+          | Current public Steam build | $currentBuildId |
+
+          Detected: $detectedAt
+
+          This does not prove that the localization is incompatible. Verify the new game files before changing the supported BuildID or hashes. Do not publish a localization release automatically.
+
+          Steam AppID: $appId
+          "@
+          [IO.File]::WriteAllText($bodyPath, $body, [Text.UTF8Encoding]::new($false))
+
+          $issueUrl = (& gh issue create --title $title --body-file $bodyPath --label $label | Out-String).Trim()
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Failed to create the Steam update issue.'
+          }
+          Write-Output "Created issue: $issueUrl"
+          Write-Output "::notice title=Steam game update detected::Public BuildID changed from $supportedBuildId to $currentBuildId."
