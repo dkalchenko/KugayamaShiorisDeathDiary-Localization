@@ -1,8 +1,8 @@
 KrkrPatch
-Runtime files: KrkrPatchLoader.exe, KrkrPatch.dll
+Runtime file: KrkrPatch.dll
 Upstream: https://github.com/crskycode/KrkrPatch
 Source revision: 587261001bf95feab4f0f1cbcbd22cfdadb97e31
-Local modification: KrkrPatch/dllmain.cpp calls DetourRestoreAfterWith during DLL_PROCESS_ATTACH for SteamStub compatibility
+Local modification: startup restoration and fail-open initialization changes in KrkrPatch/dllmain.cpp for the WINMM.dll proxy
 Modification date: 2026-08-26
 Licence: GNU GPL version 3
 Licence text: KrkrPatch-GPL-3.0.txt

@@ -152,7 +152,7 @@ jobs:
           }
           $modifiedFiles = @(& git -C $manifestRoot diff --name-only)
           $diffExitCode = $LASTEXITCODE
-          $expectedModifiedFiles = @('KrkrPatch/dllmain.cpp', 'KrkrPatchLoader/KrkrPatchLoader.cpp')
+          $expectedModifiedFiles = @('KrkrPatch/dllmain.cpp')
           $unexpectedFiles = @($modifiedFiles | Where-Object { $_ -cnotin $expectedModifiedFiles })
           $missingFiles = @($expectedModifiedFiles | Where-Object { $_ -cnotin $modifiedFiles })
           if ($diffExitCode -ne 0 -or $unexpectedFiles.Count -gt 0 -or $missingFiles.Count -gt 0) {
@@ -187,6 +187,10 @@ jobs:
             'third-party.lock.json',
             'Distribution/LICENSES/THIRD-PARTY-NOTICES.txt',
             'Distribution/source/README.md',
+            'Distribution/source/installer/LocalizationSetup.iss',
+            'Distribution/source/proxy/WinmmProxy.cpp',
+            'Distribution/source/proxy/WinmmProxy.def',
+            'Distribution/source/proxy/WinmmProxy.vcxproj',
             'Distribution/source/scripts/Get-Dependencies.ps1',
             'Distribution/source/scripts/Apply-KrkrPatchCompatibilityPatch.ps1'
           )
@@ -200,7 +204,7 @@ jobs:
           [IO.Directory]::CreateDirectory((Split-Path $buildSupportPatches -Parent)) | Out-Null
           Copy-Item -LiteralPath 'Distribution/source/patches' -Destination $buildSupportPatches -Recurse
 
-          foreach ($relativePath in @('KrkrPatch/dllmain.cpp', 'KrkrPatchLoader/KrkrPatchLoader.cpp')) {
+          foreach ($relativePath in @('KrkrPatch/dllmain.cpp')) {
             $compiledSource = Join-Path $manifestRoot $relativePath
             $archivedSource = Join-Path $sourceStageRoot $relativePath
             $compiledHash = (Get-FileHash -LiteralPath $compiledSource -Algorithm SHA256).Hash
@@ -281,6 +285,7 @@ jobs:
           $solution = Join-Path $manifestRoot 'KrkrPatch.sln'
           $arguments = @(
             $solution,
+            '/t:KrkrPatch',
             '/m',
             '/p:Configuration=Release',
             '/p:Platform=x86',
@@ -293,8 +298,20 @@ jobs:
           if ($LASTEXITCODE -ne 0) {
             throw "KrkrPatch build failed with exit code $LASTEXITCODE."
           }
-          Copy-Item -LiteralPath (Join-Path $manifestRoot 'Build/KrkrPatchLoader/Win32/Release/KrkrPatchLoader.exe') -Destination 'Distribution/payload/KrkrPatchLoader.exe' -Force
           Copy-Item -LiteralPath (Join-Path $manifestRoot 'Build/KrkrPatch/Win32/Release/KrkrPatch.dll') -Destination 'Distribution/payload/KrkrPatch.dll' -Force
+
+      - name: Build WINMM proxy Win32
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $project = 'Distribution/source/proxy/WinmmProxy.vcxproj'
+          & msbuild $project /m /p:Configuration=Release /p:Platform=Win32
+          if ($LASTEXITCODE -ne 0) {
+            throw "WINMM proxy build failed with exit code $LASTEXITCODE."
+          }
+          Copy-Item -LiteralPath 'Distribution/source/proxy/bin/Release/WINMM.dll' -Destination 'Distribution/payload/WINMM.dll' -Force
 
       - name: Validate release payload
         shell: pwsh
@@ -303,17 +320,17 @@ jobs:
           Set-StrictMode -Version Latest
 
           $files = @(
-            'Distribution/payload/KrkrPatchLoader.exe',
             'Distribution/payload/KrkrPatch.dll',
             'Distribution/payload/KrkrPatch.json',
-            'Distribution/payload/localization.xp3'
+            'Distribution/payload/localization.xp3',
+            'Distribution/payload/WINMM.dll'
           )
           foreach ($file in $files) {
             if (-not (Test-Path -LiteralPath $file -PathType Leaf)) {
               throw "Missing payload file: $file"
             }
           }
-          foreach ($file in $files[0..1]) {
+          foreach ($file in @('Distribution/payload/KrkrPatch.dll', 'Distribution/payload/WINMM.dll')) {
             $stream = [IO.File]::OpenRead($file)
             try {
               $reader = [IO.BinaryReader]::new($stream)
@@ -329,15 +346,22 @@ jobs:
           }
 
           $config = Get-Content -LiteralPath 'Distribution/payload/KrkrPatch.json' -Raw | ConvertFrom-Json
-          if ([int]$config.logLevel -ne 4) {
-            throw 'Diagnostic KrkrPatch logLevel must be 4.'
+          if ([int]$config.logLevel -ne 1) {
+            throw 'Release KrkrPatch logLevel must be 1.'
           }
           $manifest = Get-Content -LiteralPath 'Distribution/source/scenarios.json' -Raw | ConvertFrom-Json
-          if ([string]$config.steamAppId -cne [string]$manifest.steamAppId) {
-            throw 'KrkrPatch steamAppId does not match the localization manifest.'
-          }
           if (-not [bool]$config.patchNoProtocol) {
             throw 'KrkrPatch must accept bare scenario storage paths.'
+          }
+
+          $proxySource = Get-Content -LiteralPath 'Distribution/source/proxy/WinmmProxy.cpp' -Raw
+          $installerSource = Get-Content -LiteralPath 'Distribution/source/installer/LocalizationSetup.iss' -Raw
+          foreach ($expectedHash in @([string]$manifest.gameExecutableSha256, [string]$manifest.sourceArchiveSha256)) {
+            if ($expectedHash.Length -ne 64 -or
+                $proxySource.IndexOf($expectedHash, [StringComparison]::OrdinalIgnoreCase) -lt 0 -or
+                $installerSource.IndexOf($expectedHash, [StringComparison]::OrdinalIgnoreCase) -lt 0) {
+              throw "Runtime compatibility hash is inconsistent: $expectedHash"
+            }
           }
 
       - name: Install verified Inno Setup
@@ -371,7 +395,8 @@ jobs:
           $version = if ('${{ github.event.release.tag_name }}') { '${{ github.event.release.tag_name }}'.TrimStart('v') } else { '0.0.0-dev' }
           $innoMajorVersion = ([Version]$env:INNO_VERSION).Major
           $compiler = Join-Path $env:ProgramFiles "Inno Setup $innoMajorVersion/ISCC.exe"
-          & $compiler "/DMyAppVersion=$version" '/ODistribution' '/FLocalizationSetup' 'Distribution/source/installer/LocalizationSetup.iss'
+          $proxyHash = (Get-FileHash -LiteralPath 'Distribution/payload/WINMM.dll' -Algorithm SHA256).Hash
+          & $compiler "/DMyAppVersion=$version" "/DWinmmProxySha256=$proxyHash" '/ODistribution' '/FLocalizationSetup' 'Distribution/source/installer/LocalizationSetup.iss'
           if ($LASTEXITCODE -ne 0) {
             throw "Inno Setup failed with exit code $LASTEXITCODE."
           }

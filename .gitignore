@@ -7,6 +7,7 @@
 /Distribution/SHA256SUMS.txt
 /Distribution/payload/KrkrPatchLoader.exe
 /Distribution/payload/KrkrPatch.dll
+/Distribution/payload/WINMM.dll
 /Distribution/unins*.exe
 /Distribution/unins*.dat
 

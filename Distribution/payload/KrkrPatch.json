@@ -1,8 +1,5 @@
 {
-  "gameExecutableFile": "KugayamaShiorisDeathDiary.exe",
-  "gameCommandLine": "",
-  "steamAppId": "4141950",
-  "logLevel": 4,
+  "logLevel": 1,
   "patchProtocols": [
     "arc://",
     "archive://"

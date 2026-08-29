@@ -1,32 +1,88 @@
 # Kugayama Shiori no Shinizama Techou — Russian localization
 
-Unofficial manual Russian localization for Steam app `4141950`, game archive `patch.xp3` version `1.05`.
+An unofficial Russian translation for the Steam version of the game.
 
-Download `LocalizationSetup.exe` from the matching GitHub release. The installer verifies the game folder and installs exactly four files:
+## What is translated
 
-- `KrkrPatchLoader.exe`
-- `KrkrPatch.dll`
-- `KrkrPatch.json`
-- `localization.xp3`
+- Story dialogue is translated into Russian.
+- Character and speaker names stay the same as in the English version.
+- Menus and some other parts of the game remain in English.
 
-Launch the game through `KrkrPatchLoader.exe` or the installer-created shortcut. The original game archives are not modified. Story dialogue is translated; menus and other UI assets remain in English. Character and speaker names remain identical to the English localization.
+## Installation
 
-See [Distribution/README.txt](Distribution/README.txt) for installation and removal instructions.
+1. Install the game from Steam and let Steam finish all updates.
+2. Close the game.
+3. Download `LocalizationSetup.exe` from the [latest project release](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/releases/latest).
+4. Run `LocalizationSetup.exe`. If Windows asks for permission, select **Yes**.
+5. Check the game folder shown by the installer. It should normally find the Steam folder automatically.
+6. Select **Install**.
+7. Start the game normally with the **Play** button in Steam.
 
-## Source and releases
+You do not need to start a separate translation program. The translation loads automatically when the game starts.
 
-Russian JSON, build scripts, the installer definition, and the compiled `localization.xp3` are kept in `Distribution/`. English localization JSON is extracted from the user's installed game into ignored `Distribution/source/generated/` output and is not distributed.
+## Removing the translation
 
-The localization scripts download pinned `msg-tool` `v0.4.0-alpha.3` on demand using `third-party.lock.json`, verify its SHA-256, and cache it outside the repository under the user's local application-data directory. Neither `msg-tool` nor its source is committed, installed, or attached to releases.
+1. Open Windows **Settings**.
+2. Go to **Apps** → **Installed apps**.
+3. Find **Kugayama Shiori Russian Localization**.
+4. Select **Uninstall**.
 
-Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, applies the checked-in SteamStub compatibility patch, builds its x86 loader and DLL, and attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip` beside `LocalizationSetup.exe` as corresponding source.
+Steam's **Verify integrity of game files** option does not remove the translation. Use the steps above when you want to remove it.
 
-Each release also provides `ThirdPartyLicenses.zip` and `SHA256SUMS.txt`. Verify the installer checksum before running it.
+## Troubleshooting
 
-Releases remain unsigned until a public Authenticode signing identity is configured. Windows can therefore show `Unknown publisher`; checksum files provide integrity verification but do not replace Windows code signing.
+### The installer cannot find the game
 
-See [Distribution/source/README.md](Distribution/source/README.md) for reproduction instructions and [third-party notices](Distribution/LICENSES/THIRD-PARTY-NOTICES.txt) for provenance.
+Select the game folder yourself. The usual folder is:
+
+```text
+C:\Program Files (x86)\Steam\steamapps\common\久我山栞の死様手帖
+```
+
+Do not select a new folder or a folder inside the game folder.
+
+### The installer says the game version is not supported
+
+1. Open your Steam Library.
+2. Right-click the game and select **Properties**.
+3. Open **Installed Files**.
+4. Select **Verify integrity of game files**.
+5. Wait for Steam to finish, then run the translation installer again.
+
+If the message still appears after a new game update, wait for a translation release that supports that update.
+
+### The installer says `WINMM.dll` already exists
+
+Another game modification may already use that file. The installer will not replace it because doing so could break the other modification. Remove the other modification by following its own removal instructions, then run this installer again.
+
+### The game starts, but it is still in English
+
+Check a story scene first. Menus are not translated and will remain in English.
+
+If story dialogue is also in English:
+
+1. Close the game.
+2. Download and install the latest translation release again.
+3. Start the game from Steam.
+
+After an unsupported game update, the translation stays off so that the original game can still start.
+
+### The game does not start
+
+1. Remove the translation through Windows **Installed apps**.
+2. Verify the game files in Steam.
+3. Try starting the game again.
+
+If the original game works after removal, report the problem on the project's [Issues page](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/issues). Attach `LocalizationBootstrap.log` and `KrkrPatch.log` from the game folder if those files exist.
+
+### Windows shows an unknown publisher warning
+
+Only run the installer downloaded from this project's official release page. Current releases may show this warning because they are not yet signed for Windows.
+
+## For developers
+
+Build and source information is available in [Distribution/source/README.md](Distribution/source/README.md). More detailed installation notes are available in [Distribution/README.txt](Distribution/README.txt).
 
 ## Licence
 
-Repository-owned work is 0BSD. KrkrPatch and its binaries are GPL-3.0. Game-owned material remains the property of its respective owners. See [LICENSE](LICENSE).
+Project-owned work uses the 0BSD licence. KrkrPatch uses GPL-3.0. The game and its files belong to their respective owners. See [LICENSE](LICENSE).

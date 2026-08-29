@@ -12,13 +12,9 @@ $repoRoot = Split-Path (Split-Path $sourceRoot -Parent) -Parent
 $lock = Get-Content -LiteralPath (Join-Path $repoRoot 'third-party.lock.json') -Raw | ConvertFrom-Json
 $patchPath = Join-Path $sourceRoot 'patches\KrkrPatch-DetourRestoreAfterWith.patch'
 $manifestRoot = [IO.Path]::GetFullPath($KrkrPatchRoot)
-$targetPaths = @(
-    'KrkrPatch/dllmain.cpp'
-    'KrkrPatchLoader/KrkrPatchLoader.cpp'
-)
+$targetPaths = @('KrkrPatch/dllmain.cpp')
 $expectedPatchedBlobs = @{
-    'KrkrPatch/dllmain.cpp' = 'a532bffe3f707d57f4125727d6367fea267007f4'
-    'KrkrPatchLoader/KrkrPatchLoader.cpp' = '7b97c421b670b8659bd930359710272e41f141a3'
+    'KrkrPatch/dllmain.cpp' = 'a5a2a264534f5a470cef62c4fdd42d157a1ad66c'
 }
 
 if (-not (Test-Path -LiteralPath (Join-Path $manifestRoot '.git') -PathType Container)) {
@@ -85,17 +81,14 @@ foreach ($targetPath in $targetPaths) {
 
 $source = Get-Content -LiteralPath (Join-Path $manifestRoot 'KrkrPatch/dllmain.cpp') -Raw
 $restoreIndex = $source.IndexOf('DetourRestoreAfterWith();', [StringComparison]::Ordinal)
-$startupIndex = $source.IndexOf('OnStartup();', [StringComparison]::Ordinal)
-if ($restoreIndex -lt 0 -or $startupIndex -lt 0 -or $restoreIndex -gt $startupIndex) {
+$deferIndex = $source.IndexOf('GetEnvironmentVariableW(L"KRKRPATCH_DEFER_STARTUP"', [StringComparison]::Ordinal)
+$startupIndex = $source.IndexOf('InitializeKrkrPatch();', [StringComparison]::Ordinal)
+if ($restoreIndex -lt 0 -or $deferIndex -lt 0 -or $startupIndex -lt 0 -or $restoreIndex -gt $deferIndex -or $deferIndex -gt $startupIndex) {
     throw 'DetourRestoreAfterWith is not applied before KrkrPatch startup.'
 }
-
-$loaderSource = Get-Content -LiteralPath (Join-Path $manifestRoot 'KrkrPatchLoader/KrkrPatchLoader.cpp') -Raw
-$appIdIndex = $loaderSource.IndexOf('SetEnvironmentVariableW(L"SteamAppId"', [StringComparison]::Ordinal)
-$gameIdIndex = $loaderSource.IndexOf('SetEnvironmentVariableW(L"SteamGameId"', [StringComparison]::Ordinal)
-$createProcessIndex = $loaderSource.IndexOf('DetourCreateProcessWithDllsW(', [StringComparison]::Ordinal)
-if ($appIdIndex -lt 0 -or $gameIdIndex -lt 0 -or $createProcessIndex -lt 0 -or $appIdIndex -gt $createProcessIndex -or $gameIdIndex -gt $createProcessIndex) {
-    throw 'Steam application environment is not configured before game launch.'
+if (-not $source.Contains('extern "C" __declspec(dllexport) BOOL InitializeKrkrPatch()', [StringComparison]::Ordinal) -or
+    -not $source.Contains('g_startupResult = OnStartup() ? TRUE : FALSE;', [StringComparison]::Ordinal)) {
+    throw 'KrkrPatch fail-open initialization entry point is missing.'
 }
 
 [pscustomobject]@{

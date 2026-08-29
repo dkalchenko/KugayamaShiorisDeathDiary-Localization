@@ -34,7 +34,9 @@ The compiler reads the installed game archive as the authoritative English sourc
 
 ## Release build
 
-Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31` directly from upstream, applies `patches/KrkrPatch-DetourRestoreAfterWith.patch`, builds `KrkrPatchLoader.exe` and `KrkrPatch.dll` for x86, and packages them with `KrkrPatch.json` and `localization.xp3` in `LocalizationSetup.exe`. The compatibility patch restores the original in-memory import table and passes the configured Steam app ID to the injected game process. `patchNoProtocol` is enabled because this game can request scenario files by bare storage name. Diagnostic builds use `logLevel` `4` and create `KrkrPatch.log` in the game folder.
+Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, applies `patches/KrkrPatch-DetourRestoreAfterWith.patch`, and builds its x86 DLL. CI also builds the checked-in x86 `WINMM.dll` proxy and packages all runtime files in `LocalizationSetup.exe`. Steam still launches the original game executable; Windows loads the proxy, which forwards the game's four imported multimedia timer functions to the system `winmm.dll`.
+
+Before initializing KrkrPatch, the proxy verifies the exact supported game EXE and `patch.xp3` SHA-256 hashes. Missing files, hash mismatches, DLL load failures, invalid KrkrPatch configuration, and hook-installation failures are logged and fall back to the unlocalized game. `patchNoProtocol` remains enabled because this game can request scenario files by bare storage name. Release configuration uses `logLevel` `1`.
 
 Upstream KrkrPatch source is not committed here. Each release attaches `KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip` beside the installer. It contains the complete patched source used for the binaries, the compatibility patch, its modification notice, and the exact KrkrPatch build-support files. The workflow in `.github/workflows/release.yml` is the corresponding build recipe.
 
@@ -44,6 +46,6 @@ The release also contains `ThirdPartyLicenses.zip` with collected vcpkg, NuGet, 
 
 The current workflow produces an unsigned installer. Changing Inno Setup's `AppPublisher` value or using a self-signed certificate cannot remove the public Windows `Unknown publisher` warning.
 
-Official releases need a publicly trusted Authenticode identity. After selecting a signing provider, configure signing only in a protected GitHub release environment: sign and RFC 3161 timestamp `KrkrPatchLoader.exe` and `KrkrPatch.dll`, verify them, compile the installer, then sign and verify `LocalizationSetup.exe`. Generate checksums only after signing. Inno Setup's generated uninstaller requires `SignedUninstaller=yes` and signing access during compilation if it must also carry the publisher signature.
+Official releases need a publicly trusted Authenticode identity. After selecting a signing provider, configure signing only in a protected GitHub release environment: sign and RFC 3161 timestamp `KrkrPatch.dll` and `WINMM.dll`, verify them, compile the installer, then sign and verify `LocalizationSetup.exe`. Generate checksums only after signing. Inno Setup's generated uninstaller requires `SignedUninstaller=yes` and signing access during compilation if it must also carry the publisher signature.
 
 Microsoft's current signing options are documented at <https://learn.microsoft.com/windows/apps/package-and-deploy/code-signing-options>. SmartScreen reputation is separate from certificate validity and can take time to accumulate even after signing: <https://learn.microsoft.com/windows/apps/package-and-deploy/smartscreen-reputation>.
