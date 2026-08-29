@@ -70,6 +70,7 @@ function Write-FileList {
     foreach ($scenario in $Manifest.scenarios) {
         $lines.Add("$($scenario.hash):$($scenario.fileName)")
     }
+    $lines.Add("$($Manifest.uiText.hash):$($Manifest.uiText.fileName)")
     [IO.File]::WriteAllLines($Path, $lines, [Text.UTF8Encoding]::new($false))
 }
 
@@ -119,7 +120,14 @@ if ([IO.Path]::GetExtension($resolvedInput) -ieq '.xp3') {
         )
     }
 
-    Write-Host "Exported $($manifest.scenarios.Count) scenarios to $output"
+    $uiTextInput = Join-Path $originalDirectory $manifest.uiText.fileName
+    $uiTextOutput = Join-Path $output $manifest.uiText.fileName
+    if (-not (Test-Path -LiteralPath $uiTextInput -PathType Leaf)) {
+        throw "UI text was not extracted: $($manifest.uiText.fileName)"
+    }
+    [IO.File]::Copy($uiTextInput, $uiTextOutput, $true)
+
+    Write-Host "Exported $($manifest.scenarios.Count) scenarios and UI text to $output"
     return
 }
 

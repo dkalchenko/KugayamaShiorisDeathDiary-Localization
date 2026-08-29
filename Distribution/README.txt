@@ -19,7 +19,7 @@ KrkrPatch.json
 localization.xp3
 WINMM.dll
 
-The original game archives and executable are not modified. WINMM.dll forwards the game's multimedia timer calls to the real Windows DLL, verifies the supported game EXE and patch.xp3 hashes, and initializes KrkrPatch. If validation or localization initialization fails, it logs the reason to LocalizationBootstrap.log and starts the original game without localization. The patch replaces the game's English scenario-text slot with Russian. Character and speaker names remain exactly as in the English localization. Menus and other UI assets are not translated and remain in English.
+The original game archives and executable are not modified. WINMM.dll forwards the game's multimedia timer calls to the real Windows DLL, verifies the supported game EXE and patch.xp3 hashes, and initializes KrkrPatch. If validation or localization initialization fails, it logs the reason to LocalizationBootstrap.log and starts the original game without localization. The patch replaces the game's English scenario-text slot with Russian and translates menus, settings, and game messages. Character and speaker names remain exactly as in the English localization. Text that is part of a picture, including parts of the title screen, remains in English.
 
 If another mod already installed WINMM.dll, Setup stops and does not overwrite it. A prior proxy installed and recorded by this localization can be upgraded. Steam file verification is not an uninstall mechanism and provides no supported pre-verification callback for this installer. If Steam changes the game EXE or patch.xp3, the runtime hash check skips localization and starts vanilla. Remove the localization through Windows Installed Apps when desired.
 
@@ -29,7 +29,7 @@ Open Windows Installed Apps, find Kugayama Shiori Russian Localization, and sele
 Troubleshooting
 - Verify that the supported KugayamaShiorisDeathDiary.exe and patch.xp3 versions are installed.
 - Launch normally from Steam.
-- Check story dialogue, not the untranslated menu/UI.
+- Check story dialogue or the menu at the top of the game window. Some words that are part of pictures remain in English.
 - If localization is skipped, attach LocalizationBootstrap.log and KrkrPatch.log from the game folder to the issue report.
 - Antivirus software may inspect the runtime patch DLL because it hooks the game's file-loading functions.
 - Unsigned releases can show Windows Unknown publisher or SmartScreen warnings. Verify LocalizationSetup.exe using the matching SHA256SUMS.txt; removing the publisher warning requires a publicly trusted Authenticode signature.

@@ -113,6 +113,59 @@ function Assert-TranslationRoundTrip {
     }
 }
 
+function Read-UiTextEntries {
+    param([string]$Path)
+
+    $section = ''
+    $entries = @{}
+    foreach ($line in [IO.File]::ReadAllLines($Path)) {
+        $trimmed = $line.Trim()
+        if ($trimmed -match '^!section\s+(.+)$') {
+            $section = $Matches[1].Trim()
+            continue
+        }
+        if ([string]::IsNullOrWhiteSpace($trimmed) -or $trimmed.StartsWith('#')) {
+            continue
+        }
+        if ($trimmed -notmatch '^([^\s]+)\s+(.+)$') {
+            throw "Invalid UI text line in ${Path}: $line"
+        }
+        $entryKey = "$section/$($Matches[1])"
+        if ($entries.ContainsKey($entryKey)) {
+            throw "Duplicate UI text key in ${Path}: $entryKey"
+        }
+        $entries[$entryKey] = $Matches[2].TrimEnd()
+    }
+    return $entries
+}
+
+function Assert-UiTranslation {
+    param(
+        [string]$EnglishPath,
+        [string]$TranslationPath
+    )
+
+    $english = Read-UiTextEntries $EnglishPath
+    $translation = Read-UiTextEntries $TranslationPath
+    if ($english.Count -ne $translation.Count) {
+        throw "UI text entry count differs: expected $($english.Count), found $($translation.Count)."
+    }
+
+    foreach ($entryKey in $english.Keys) {
+        if (-not $translation.ContainsKey($entryKey)) {
+            throw "Missing UI text key: $entryKey"
+        }
+        if ($entryKey -eq 'system/GenericDateFormat') {
+            continue
+        }
+        $englishTokens = @([regex]::Matches($english[$entryKey], '\$\{[^}\r\n]*\}') | ForEach-Object Value | Sort-Object)
+        $translationTokens = @([regex]::Matches($translation[$entryKey], '\$\{[^}\r\n]*\}') | ForEach-Object Value | Sort-Object)
+        if (($englishTokens -join "`n") -cne ($translationTokens -join "`n")) {
+            throw "UI text placeholders differ: $entryKey"
+        }
+    }
+}
+
 $tool = Resolve-MsgTool $MsgToolPath
 $resolvedInput = (Resolve-Path -LiteralPath $InputPath).Path
 $output = [IO.Path]::GetFullPath($OutputPath)
@@ -143,6 +196,7 @@ if (Test-Path -LiteralPath $patchedDirectory) {
 } else {
     @($manifest.scenarios)
 }
+$includeUiText = -not (Test-Path -LiteralPath $resolvedInput -PathType Leaf)
 
 if (@($selected).Count -eq 0) {
     throw "No manifest entry matches $resolvedInput"
@@ -170,6 +224,18 @@ foreach ($scenario in $selected) {
         $translationPath,
         $patchedPath
     )
+}
+
+if ($includeUiText) {
+    $uiTranslationPath = Join-Path $resolvedInput $manifest.uiText.fileName
+    $uiEnglishPath = Join-Path $englishDirectory $manifest.uiText.fileName
+    $uiPatchedPath = Join-Path $patchedDirectory $manifest.uiText.fileName
+    if (-not (Test-Path -LiteralPath $uiTranslationPath -PathType Leaf)) {
+        throw "Missing UI translation: $uiTranslationPath"
+    }
+    Assert-UiTranslation $uiEnglishPath $uiTranslationPath
+    $uiTranslation = [IO.File]::ReadAllText($uiTranslationPath)
+    [IO.File]::WriteAllText($uiPatchedPath, $uiTranslation, [Text.UnicodeEncoding]::new($false, $true))
 }
 
 [IO.Directory]::CreateDirectory((Split-Path $output -Parent)) | Out-Null
@@ -201,6 +267,18 @@ if ($verifiedCount -ne @($selected).Count) {
     throw "Archive verification failed: expected $(@($selected).Count) SCNs, found $verifiedCount."
 }
 
+if ($includeUiText) {
+    $verifiedUiPath = Join-Path $verificationDirectory $manifest.uiText.fileName
+    if (-not (Test-Path -LiteralPath $verifiedUiPath -PathType Leaf)) {
+        throw "Archive verification failed: missing $($manifest.uiText.fileName)."
+    }
+    $expectedUi = [IO.File]::ReadAllText((Join-Path $resolvedInput $manifest.uiText.fileName)).Replace("`r`n", "`n")
+    $verifiedUi = [IO.File]::ReadAllText($verifiedUiPath).Replace("`r`n", "`n")
+    if ($expectedUi -cne $verifiedUi) {
+        throw 'Archive verification failed: UI text changed after packing.'
+    }
+}
+
 $verificationJsonDirectory = Join-Path $generatedRoot 'verify-json'
 if (Test-Path -LiteralPath $verificationJsonDirectory) {
     Remove-Item -LiteralPath $verificationJsonDirectory -Recurse -Force
@@ -224,4 +302,5 @@ foreach ($scenario in $selected) {
     Assert-TranslationRoundTrip $translationPath $verificationJsonPath
 }
 
-Write-Host "Compiled $verifiedCount scenarios into $output"
+$uiSummary = if ($includeUiText) { ' and UI text' } else { '' }
+Write-Host "Compiled $verifiedCount scenarios$uiSummary into $output"

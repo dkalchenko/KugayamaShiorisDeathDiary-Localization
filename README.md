@@ -5,8 +5,9 @@ An unofficial Russian translation for the Steam version of the game.
 ## What is translated
 
 - Story dialogue is translated into Russian.
+- Menus, settings, and game messages are translated into Russian.
 - Character and speaker names stay the same as in the English version.
-- Menus and some other parts of the game remain in English.
+- Text that is part of a picture, including parts of the title screen, remains in English.
 
 ## Installation
 
@@ -57,7 +58,7 @@ Another game modification may already use that file. The installer will not repl
 
 ### The game starts, but it is still in English
 
-Check a story scene first. Menus are not translated and will remain in English.
+Check a story scene or the menu at the top of the game window. Some words that are part of pictures remain in English.
 
 If story dialogue is also in English:
 

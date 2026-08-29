@@ -9,6 +9,10 @@
   "archivePathHash": "94d4a97c61498621",
   "sourceLanguageIndex": 1,
   "targetLanguageIndex": 1,
+  "uiText": {
+    "hash": "c00091ae6d227473efb646a7bdd67f51f7ffc7044be4dd7b88cb28d0fd02f9c0",
+    "fileName": "syslangtext_en.ini"
+  },
   "scenarios": [
     {
       "hash": "0badf222c872b53efdfbead6e71c15e0768440ccbe518825ab47aee99ac382cf",

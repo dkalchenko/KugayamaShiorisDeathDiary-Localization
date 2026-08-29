@@ -22,7 +22,7 @@ The default input is:
 C:\Program Files (x86)\Steam\steamapps\common\久我山栞の死様手帖\patch.xp3
 ```
 
-The script writes extracted English JSON to `generated/`. Pass an explicit archive or output path when needed; generated English files are disposable and must not be committed.
+The script writes extracted English JSON and the original UI text to `generated/`. Pass an explicit archive or output path when needed; generated English files are disposable and must not be committed.
 
 ## Compile Russian localization
 
@@ -30,7 +30,7 @@ The script writes extracted English JSON to `generated/`. Pass an explicit archi
 ./scripts/localizationCompile.ps1 -OutputPath ../payload/localization.xp3
 ```
 
-The compiler reads the installed game archive as the authoritative English source, imports the checked-in Russian messages into language index `1`, and verifies that every `name` field remains unchanged. It checks the supported archive SHA-256 and reopens the generated XP3 to compare every message after packing.
+The compiler reads the installed game archive as the authoritative English source, imports the checked-in Russian messages into language index `1`, and adds the Russian UI text. It verifies that every story `name` field remains unchanged and that all UI keys and placeholders match the game. It checks the supported archive SHA-256 and reopens the generated XP3 to compare every message and the UI text after packing.
 
 ## Release build
 
