@@ -1,6 +1,8 @@
-name: Build release installer
+name: Build localization installer
 
 on:
+  push:
+    branches: [main]
   release:
     types: [published]
   workflow_dispatch:
@@ -135,6 +137,7 @@ jobs:
           }
 
       - name: Collect source and dependency licenses
+        if: github.event_name != 'push'
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
@@ -428,6 +431,7 @@ jobs:
           }
 
       - name: Create release checksums
+        if: github.event_name != 'push'
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
@@ -451,7 +455,16 @@ jobs:
             [Text.UTF8Encoding]::new($false)
           )
 
-      - name: Upload workflow artifact
+      - name: Upload main build artifact
+        if: github.event_name == 'push'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: LocalizationSetup-main-${{ github.run_number }}
+          path: Distribution/LocalizationSetup.exe
+          if-no-files-found: error
+
+      - name: Upload release workflow artifact
+        if: github.event_name != 'push'
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: release-assets
@@ -474,10 +487,62 @@ jobs:
           $assets = @(
             'Distribution/LocalizationSetup.exe',
             (Join-Path 'Distribution' $env:KRKRPATCH_SOURCE_ARCHIVE),
-            (Join-Path 'Distribution' $env:THIRD_PARTY_LICENSE_ARCHIVE),
-            'Distribution/SHA256SUMS.txt'
+            (Join-Path 'Distribution' $env:THIRD_PARTY_LICENSE_ARCHIVE)
           )
           & gh release upload '${{ github.event.release.tag_name }}' @assets --clobber
           if ($LASTEXITCODE -ne 0) {
             throw "Release upload failed with exit code $LASTEXITCODE."
+          }
+
+      - name: Write checksums to release description
+        if: github.event_name == 'release'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.event.release.tag_name }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Set-StrictMode -Version Latest
+
+          $releaseJson = (& gh api "repos/$env:GITHUB_REPOSITORY/releases/tags/$env:RELEASE_TAG" | Out-String)
+          if ($LASTEXITCODE -ne 0) {
+            throw "Release lookup failed with exit code $LASTEXITCODE."
+          }
+          $release = $releaseJson | ConvertFrom-Json
+          foreach ($asset in @($release.assets | Where-Object { $_.name -ceq 'SHA256SUMS.txt' })) {
+            & gh api --method DELETE "repos/$env:GITHUB_REPOSITORY/releases/assets/$($asset.id)"
+            if ($LASTEXITCODE -ne 0) {
+              throw "Removing the old checksum attachment failed with exit code $LASTEXITCODE."
+            }
+          }
+
+          $rows = foreach ($line in Get-Content -LiteralPath 'Distribution/SHA256SUMS.txt') {
+            $match = [regex]::Match($line, '^([0-9a-f]{64})  (.+)$')
+            if (-not $match.Success) {
+              throw "Invalid checksum line: $line"
+            }
+            '| `{0}` | `{1}` |' -f $match.Groups[2].Value, $match.Groups[1].Value
+          }
+          $startMarker = '<!-- localization-checksums:start -->'
+          $endMarker = '<!-- localization-checksums:end -->'
+          $blockLines = @(
+            $startMarker,
+            '## SHA-256',
+            '',
+            '| File | SHA-256 |',
+            '| --- | --- |'
+          ) + @($rows) + @($endMarker)
+          $block = $blockLines -join "`n"
+          $body = [string]$release.body
+          $oldBlockPattern = '(?s)(?:\r?\n)*' + [regex]::Escape($startMarker) +
+            '.*?' + [regex]::Escape($endMarker) + '(?:\r?\n)*'
+          $body = [regex]::Replace($body, $oldBlockPattern, '').TrimEnd()
+          if ($body.Length -gt 0) {
+            $body += "`n`n"
+          }
+          $notesPath = Join-Path $env:RUNNER_TEMP 'release-notes.md'
+          [IO.File]::WriteAllText($notesPath, $body + $block + "`n", [Text.UTF8Encoding]::new($false))
+          & gh release edit $env:RELEASE_TAG --notes-file $notesPath
+          if ($LASTEXITCODE -ne 0) {
+            throw "Release description update failed with exit code $LASTEXITCODE."
           }
