@@ -20,6 +20,21 @@ using TimeBeginPeriodProc = MMRESULT(WINAPI*)(UINT);
 using TimeEndPeriodProc = MMRESULT(WINAPI*)(UINT);
 using TimeGetDevCapsProc = MMRESULT(WINAPI*)(LPTIMECAPS, UINT);
 using TimeGetTimeProc = DWORD(WINAPI*)();
+using WaveOutOpenProc = decltype(&::waveOutOpen);
+using WaveOutCloseProc = decltype(&::waveOutClose);
+using WaveOutMessageProc = decltype(&::waveOutMessage);
+using WaveOutGetDevCapsWProc = decltype(&::waveOutGetDevCapsW);
+using WaveInOpenProc = decltype(&::waveInOpen);
+using WaveInCloseProc = decltype(&::waveInClose);
+using WaveInMessageProc = decltype(&::waveInMessage);
+using MixerGetDevCapsAProc = decltype(&::mixerGetDevCapsA);
+using MixerOpenProc = decltype(&::mixerOpen);
+using MixerCloseProc = decltype(&::mixerClose);
+using MixerGetLineInfoAProc = decltype(&::mixerGetLineInfoA);
+using MixerGetIDProc = decltype(&::mixerGetID);
+using MixerGetLineControlsAProc = decltype(&::mixerGetLineControlsA);
+using MixerGetControlDetailsAProc = decltype(&::mixerGetControlDetailsA);
+using MixerSetControlDetailsProc = decltype(&::mixerSetControlDetails);
 using InitializeKrkrPatchProc = BOOL(*)();
 
 INIT_ONCE g_winmmOnce = INIT_ONCE_STATIC_INIT;
@@ -29,6 +44,21 @@ TimeBeginPeriodProc g_timeBeginPeriod = nullptr;
 TimeEndPeriodProc g_timeEndPeriod = nullptr;
 TimeGetDevCapsProc g_timeGetDevCaps = nullptr;
 TimeGetTimeProc g_timeGetTime = nullptr;
+WaveOutOpenProc g_waveOutOpen = nullptr;
+WaveOutCloseProc g_waveOutClose = nullptr;
+WaveOutMessageProc g_waveOutMessage = nullptr;
+WaveOutGetDevCapsWProc g_waveOutGetDevCapsW = nullptr;
+WaveInOpenProc g_waveInOpen = nullptr;
+WaveInCloseProc g_waveInClose = nullptr;
+WaveInMessageProc g_waveInMessage = nullptr;
+MixerGetDevCapsAProc g_mixerGetDevCapsA = nullptr;
+MixerOpenProc g_mixerOpen = nullptr;
+MixerCloseProc g_mixerClose = nullptr;
+MixerGetLineInfoAProc g_mixerGetLineInfoA = nullptr;
+MixerGetIDProc g_mixerGetID = nullptr;
+MixerGetLineControlsAProc g_mixerGetLineControlsA = nullptr;
+MixerGetControlDetailsAProc g_mixerGetControlDetailsA = nullptr;
+MixerSetControlDetailsProc g_mixerSetControlDetails = nullptr;
 thread_local bool g_initializingLocalization = false;
 
 std::wstring GetDirectory(const std::wstring& path)
@@ -150,6 +180,21 @@ BOOL CALLBACK LoadRealWinmm(PINIT_ONCE, PVOID, PVOID*)
     g_timeEndPeriod = reinterpret_cast<TimeEndPeriodProc>(GetProcAddress(g_realWinmm, "timeEndPeriod"));
     g_timeGetDevCaps = reinterpret_cast<TimeGetDevCapsProc>(GetProcAddress(g_realWinmm, "timeGetDevCaps"));
     g_timeGetTime = reinterpret_cast<TimeGetTimeProc>(GetProcAddress(g_realWinmm, "timeGetTime"));
+    g_waveOutOpen = reinterpret_cast<WaveOutOpenProc>(GetProcAddress(g_realWinmm, "waveOutOpen"));
+    g_waveOutClose = reinterpret_cast<WaveOutCloseProc>(GetProcAddress(g_realWinmm, "waveOutClose"));
+    g_waveOutMessage = reinterpret_cast<WaveOutMessageProc>(GetProcAddress(g_realWinmm, "waveOutMessage"));
+    g_waveOutGetDevCapsW = reinterpret_cast<WaveOutGetDevCapsWProc>(GetProcAddress(g_realWinmm, "waveOutGetDevCapsW"));
+    g_waveInOpen = reinterpret_cast<WaveInOpenProc>(GetProcAddress(g_realWinmm, "waveInOpen"));
+    g_waveInClose = reinterpret_cast<WaveInCloseProc>(GetProcAddress(g_realWinmm, "waveInClose"));
+    g_waveInMessage = reinterpret_cast<WaveInMessageProc>(GetProcAddress(g_realWinmm, "waveInMessage"));
+    g_mixerGetDevCapsA = reinterpret_cast<MixerGetDevCapsAProc>(GetProcAddress(g_realWinmm, "mixerGetDevCapsA"));
+    g_mixerOpen = reinterpret_cast<MixerOpenProc>(GetProcAddress(g_realWinmm, "mixerOpen"));
+    g_mixerClose = reinterpret_cast<MixerCloseProc>(GetProcAddress(g_realWinmm, "mixerClose"));
+    g_mixerGetLineInfoA = reinterpret_cast<MixerGetLineInfoAProc>(GetProcAddress(g_realWinmm, "mixerGetLineInfoA"));
+    g_mixerGetID = reinterpret_cast<MixerGetIDProc>(GetProcAddress(g_realWinmm, "mixerGetID"));
+    g_mixerGetLineControlsA = reinterpret_cast<MixerGetLineControlsAProc>(GetProcAddress(g_realWinmm, "mixerGetLineControlsA"));
+    g_mixerGetControlDetailsA = reinterpret_cast<MixerGetControlDetailsAProc>(GetProcAddress(g_realWinmm, "mixerGetControlDetailsA"));
+    g_mixerSetControlDetails = reinterpret_cast<MixerSetControlDetailsProc>(GetProcAddress(g_realWinmm, "mixerSetControlDetails"));
     return TRUE;
 }
 
@@ -289,6 +334,98 @@ extern "C" DWORD WINAPI timeGetTime()
 {
     EnsureInitialized();
     return g_timeGetTime ? g_timeGetTime() : GetTickCount();
+}
+
+extern "C" MMRESULT WINAPI waveOutOpen(LPHWAVEOUT output, UINT_PTR deviceId, LPCWAVEFORMATEX format,
+    DWORD_PTR callback, DWORD_PTR instance, DWORD flags)
+{
+    EnsureInitialized();
+    return g_waveOutOpen ? g_waveOutOpen(output, deviceId, format, callback, instance, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveOutClose(HWAVEOUT output)
+{
+    EnsureInitialized();
+    return g_waveOutClose ? g_waveOutClose(output) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveOutMessage(HWAVEOUT output, UINT message, DWORD_PTR parameter1, DWORD_PTR parameter2)
+{
+    EnsureInitialized();
+    return g_waveOutMessage ? g_waveOutMessage(output, message, parameter1, parameter2) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveOutGetDevCapsW(UINT_PTR deviceId, LPWAVEOUTCAPSW capabilities, UINT size)
+{
+    EnsureInitialized();
+    return g_waveOutGetDevCapsW ? g_waveOutGetDevCapsW(deviceId, capabilities, size) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveInOpen(LPHWAVEIN input, UINT_PTR deviceId, LPCWAVEFORMATEX format,
+    DWORD_PTR callback, DWORD_PTR instance, DWORD flags)
+{
+    EnsureInitialized();
+    return g_waveInOpen ? g_waveInOpen(input, deviceId, format, callback, instance, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveInClose(HWAVEIN input)
+{
+    EnsureInitialized();
+    return g_waveInClose ? g_waveInClose(input) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI waveInMessage(HWAVEIN input, UINT message, DWORD_PTR parameter1, DWORD_PTR parameter2)
+{
+    EnsureInitialized();
+    return g_waveInMessage ? g_waveInMessage(input, message, parameter1, parameter2) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerGetDevCapsA(UINT_PTR mixerId, LPMIXERCAPSA capabilities, UINT size)
+{
+    EnsureInitialized();
+    return g_mixerGetDevCapsA ? g_mixerGetDevCapsA(mixerId, capabilities, size) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerOpen(LPHMIXER mixer, UINT mixerId, DWORD_PTR callback, DWORD_PTR instance, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerOpen ? g_mixerOpen(mixer, mixerId, callback, instance, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerClose(HMIXER mixer)
+{
+    EnsureInitialized();
+    return g_mixerClose ? g_mixerClose(mixer) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerGetLineInfoA(HMIXEROBJ mixer, LPMIXERLINEA line, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerGetLineInfoA ? g_mixerGetLineInfoA(mixer, line, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerGetID(HMIXEROBJ mixer, UINT* mixerId, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerGetID ? g_mixerGetID(mixer, mixerId, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerGetLineControlsA(HMIXEROBJ mixer, LPMIXERLINECONTROLSA controls, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerGetLineControlsA ? g_mixerGetLineControlsA(mixer, controls, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerGetControlDetailsA(HMIXEROBJ mixer, LPMIXERCONTROLDETAILS details, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerGetControlDetailsA ? g_mixerGetControlDetailsA(mixer, details, flags) : MMSYSERR_NODRIVER;
+}
+
+extern "C" MMRESULT WINAPI mixerSetControlDetails(HMIXEROBJ mixer, LPMIXERCONTROLDETAILS details, DWORD flags)
+{
+    EnsureInitialized();
+    return g_mixerSetControlDetails ? g_mixerSetControlDetails(mixer, details, flags) : MMSYSERR_NODRIVER;
 }
 
 BOOL APIENTRY DllMain(HMODULE module, DWORD reason, LPVOID)

@@ -4,3 +4,18 @@ EXPORTS
     timeEndPeriod
     timeGetDevCaps
     timeGetTime
+    waveOutOpen
+    waveOutClose
+    waveOutMessage
+    waveOutGetDevCapsW
+    waveInOpen
+    waveInClose
+    waveInMessage
+    mixerGetDevCapsA
+    mixerOpen
+    mixerClose
+    mixerGetLineInfoA
+    mixerGetID
+    mixerGetLineControlsA
+    mixerGetControlDetailsA
+    mixerSetControlDetails

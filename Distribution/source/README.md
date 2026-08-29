@@ -34,7 +34,7 @@ The compiler reads the installed game archive as the authoritative English sourc
 
 ## Release build
 
-Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, applies `patches/KrkrPatch-DetourRestoreAfterWith.patch`, and builds its x86 DLL. CI also builds the checked-in x86 `WINMM.dll` proxy and packages all runtime files in `LocalizationSetup.exe`. Steam still launches the original game executable; Windows loads the proxy, which forwards the game's four imported multimedia timer functions to the system `winmm.dll`.
+Release CI fetches KrkrPatch revision `587261001bf95feab4f0f1cbcbd22cfdadb97e31`, applies `patches/KrkrPatch-DetourRestoreAfterWith.patch`, and builds its x86 DLL. CI also builds the checked-in x86 `WINMM.dll` proxy and packages all runtime files in `LocalizationSetup.exe`. Steam still launches the original game executable; Windows loads the proxy, which forwards the multimedia timer and audio functions imported by the game and Steam to the system `winmm.dll`.
 
 Before initializing KrkrPatch, the proxy verifies the exact supported game EXE and `patch.xp3` SHA-256 hashes. Missing files, hash mismatches, DLL load failures, invalid KrkrPatch configuration, and hook-installation failures are logged and fall back to the unlocalized game. `patchNoProtocol` remains enabled because this game can request scenario files by bare storage name. Release configuration uses `logLevel` `1`.
 

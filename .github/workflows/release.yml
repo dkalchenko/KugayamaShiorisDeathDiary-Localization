@@ -355,7 +355,34 @@ jobs:
           }
 
           $proxySource = Get-Content -LiteralPath 'Distribution/source/proxy/WinmmProxy.cpp' -Raw
+          $proxyDefinition = Get-Content -LiteralPath 'Distribution/source/proxy/WinmmProxy.def' -Raw
           $installerSource = Get-Content -LiteralPath 'Distribution/source/installer/LocalizationSetup.iss' -Raw
+          $requiredProxyExports = @(
+            'timeBeginPeriod',
+            'timeEndPeriod',
+            'timeGetDevCaps',
+            'timeGetTime',
+            'waveOutOpen',
+            'waveOutClose',
+            'waveOutMessage',
+            'waveOutGetDevCapsW',
+            'waveInOpen',
+            'waveInClose',
+            'waveInMessage',
+            'mixerGetDevCapsA',
+            'mixerOpen',
+            'mixerClose',
+            'mixerGetLineInfoA',
+            'mixerGetID',
+            'mixerGetLineControlsA',
+            'mixerGetControlDetailsA',
+            'mixerSetControlDetails'
+          )
+          foreach ($export in $requiredProxyExports) {
+            if ($proxyDefinition -notmatch "(?m)^\s*$([regex]::Escape($export))\s*$") {
+              throw "WINMM proxy export is missing: $export"
+            }
+          }
           foreach ($expectedHash in @([string]$manifest.gameExecutableSha256, [string]$manifest.sourceArchiveSha256)) {
             if ($expectedHash.Length -ne 64 -or
                 $proxySource.IndexOf($expectedHash, [StringComparison]::OrdinalIgnoreCase) -lt 0 -or
