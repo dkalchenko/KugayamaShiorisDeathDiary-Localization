@@ -1,8 +1,8 @@
 KrkrPatch
-Runtime file: KrkrPatch.dll
+Runtime files: KrkrPatchLoader.exe and KrkrPatch.dll
 Upstream: https://github.com/crskycode/KrkrPatch
 Source revision: 587261001bf95feab4f0f1cbcbd22cfdadb97e31
-Local modification: startup restoration and fail-open initialization changes in KrkrPatch/dllmain.cpp for the WINMM.dll proxy
+Local modification: startup restoration and fail-open initialization changes in KrkrPatch/dllmain.cpp for automatic Steam startup
 Modification date: 2026-08-26
 Licence: GNU GPL version 3
 Licence text: KrkrPatch-GPL-3.0.txt

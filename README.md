@@ -11,70 +11,63 @@ An unofficial Russian translation for the Steam version of the game.
 
 ## Installation
 
-1. Install the game from Steam and let Steam finish all updates.
-2. Close the game.
-3. Download `LocalizationSetup.exe` from the [latest project release](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/releases/latest).
-4. Run `LocalizationSetup.exe`. If Windows asks for permission, select **Yes**.
-5. Check the game folder shown by the installer. It should normally find the Steam folder automatically.
-6. Select **Install**.
-7. Start the game normally with the **Play** button in Steam.
+1. Install or update the game in Steam, then close it.
+2. Download `LocalizationSetup.exe` from the [latest project release](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/releases/latest).
+3. Run the installer and approve the Windows permission request.
+4. Check the selected game folder. The usual folder is:
 
-You do not need to start a separate translation program. The translation loads automatically when the game starts.
+   ```text
+   C:\Program Files (x86)\Steam\steamapps\common\久我山栞の死様手帖
+   ```
+
+5. Choose how the game should start:
+
+   - Leave **Запускать перевод кнопкой «Играть» в Steam** selected to use the normal **Play** button in Steam. The installer replaces `steam_api.dll` after keeping a checked copy of the original file.
+   - Clear that option to keep Steam files unchanged. Start the translation from the installed Russian Localization shortcut instead.
+
+6. Select **Install**.
+
+The game-folder page is always shown, including when updating the translation.
 
 ## Removing the translation
 
-1. Open Windows **Settings**.
-2. Go to **Apps** → **Installed apps**.
-3. Find **Kugayama Shiori Russian Localization**.
-4. Select **Uninstall**.
+Open Windows **Settings** → **Apps** → **Installed apps**, find **Kugayama Shiori Russian Localization**, and select **Uninstall**.
 
-Steam's **Verify integrity of game files** option does not remove the translation. Use the steps above when you want to remove it.
+When Steam startup was selected, the uninstaller restores the saved original Steam file. If that file was changed by another program after installation, the uninstaller leaves it alone.
+
+## Steam file verification
+
+Steam does not tell the translation installer before verification starts. When Steam startup is selected, verification replaces the translation startup file with the original Steam file. The game then starts normally without the translation. Run `LocalizationSetup.exe` again to enable it.
 
 ## Troubleshooting
 
 ### The installer cannot find the game
 
-Select the game folder yourself. The usual folder is:
-
-```text
-C:\Program Files (x86)\Steam\steamapps\common\久我山栞の死様手帖
-```
-
-Do not select a new folder or a folder inside the game folder.
+Select the folder containing `KugayamaShiorisDeathDiary.exe`. Do not select a new folder or a folder inside the game folder.
 
 ### The installer says the game version is not supported
 
-1. Open your Steam Library.
-2. Right-click the game and select **Properties**.
-3. Open **Installed Files**.
-4. Select **Verify integrity of game files**.
-5. Wait for Steam to finish, then run the translation installer again.
+Verify the game files in Steam, wait for Steam to finish, and run the installer again. After a new game update, a new translation release may be required.
 
-If the message still appears after a new game update, wait for a translation release that supports that update.
+### The installer will not change a Steam file
 
-### The installer says `WINMM.dll` already exists
+Another program or game modification may already use that file. The installer will not overwrite an unknown file. Remove the other modification using its own instructions, or clear the Steam-startup option and use the separate localization launcher.
 
-Another game modification may already use that file. The installer will not replace it because doing so could break the other modification. Remove the other modification by following its own removal instructions, then run this installer again.
+### The installer reports `WINMM.dll`
 
-### The game starts, but it is still in English
+This game cannot start with that file in its folder. Remove the modification that installed it, then try again. The installer removes only an older copy that it knows belongs to this localization.
 
-Check a story scene or the menu at the top of the game window. Some words that are part of pictures remain in English.
+### The game starts in English
 
-If story dialogue is also in English:
+Some text in pictures remains in English. If story dialogue is also English, close the game and run the latest installer again.
 
-1. Close the game.
-2. Download and install the latest translation release again.
-3. Start the game from Steam.
-
-After an unsupported game update, the translation stays off so that the original game can still start.
+If the game was updated or a required translation file cannot load, the translation stays off and the original game starts. Report the problem on the project's [Issues page](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/issues) and attach `LocalizationBootstrap.log` and `KrkrPatch.log` from the game folder if they exist.
 
 ### The game does not start
 
 1. Remove the translation through Windows **Installed apps**.
 2. Verify the game files in Steam.
-3. Try starting the game again.
-
-If the original game works after removal, report the problem on the project's [Issues page](https://github.com/dkalchenko/KugayamaShiorisDeathDiary-Localization/issues). Attach `LocalizationBootstrap.log` and `KrkrPatch.log` from the game folder if those files exist.
+3. Start the game again.
 
 ### Windows shows an unknown publisher warning
 
@@ -82,7 +75,7 @@ Only run the installer downloaded from this project's official release page. Cur
 
 ## For developers
 
-Build and source information is available in [Distribution/source/README.md](Distribution/source/README.md). More detailed installation notes are available in [Distribution/README.txt](Distribution/README.txt).
+Build and source information is in [Distribution/source/README.md](Distribution/source/README.md).
 
 ## Licence
 

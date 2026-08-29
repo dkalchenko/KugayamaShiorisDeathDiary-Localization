@@ -2,6 +2,7 @@
   "game": "Kugayama Shiori no Shinizama Techou",
   "steamAppId": "4141950",
   "gameExecutableSha256": "2224d4b10114aaea3cd8c7c144dae9c6ab3aff224db1e137dd4afa0ba5491696",
+  "steamApiSha256": "df431862608823f54df423428296273e1ca65c9928fa93633b882fe1c3d7d153",
   "sourceArchive": "patch.xp3",
   "sourceVersion": "1.05",
   "sourceArchiveSha256": "fc489edde26256c5505b9e8d9777ddb070330bfabf16e47d3184cdf11c128035",

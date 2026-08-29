@@ -1,46 +1,33 @@
-Kugayama Shiori no Shinizama Techou — Russian localization
+Kugayama Shiori no Shinizama Techou — русский перевод
 
-Supported Steam app: 4141950
-Supported game archive: patch.xp3 version 1.05
-Supported game EXE SHA-256: 2224d4b10114aaea3cd8c7c144dae9c6ab3aff224db1e137dd4afa0ba5491696
-Supported patch.xp3 SHA-256: fc489edde26256c5505b9e8d9777ddb070330bfabf16e47d3184cdf11c128035
+Установка
+1. Установите или обновите игру в Steam, затем закройте её.
+2. Запустите LocalizationSetup.exe и разрешите установщику внести изменения.
+3. Проверьте выбранную папку игры. Установщик всегда показывает этот шаг.
+4. Выберите способ запуска:
+   - Оставьте пункт «Запускать перевод кнопкой „Играть“ в Steam», чтобы пользоваться обычной кнопкой Steam. Перед заменой steam_api.dll установщик сохранит оригинальный файл.
+   - Снимите этот флажок, чтобы не менять файлы Steam и запускать перевод отдельным ярлыком.
+5. Нажмите «Установить».
 
-Installation with LocalizationSetup.exe
-1. Install or update the Steam game, then close it.
-2. Download and run LocalizationSetup.exe. The installer can be run from any folder.
-3. Approve the Windows administrator prompt.
-4. Confirm the detected game folder. If detection fails, select the folder containing KugayamaShiorisDeathDiary.exe; do not select or create a subfolder.
-5. Optionally enable the desktop-shortcut task, then select Install.
-6. Launch the game normally from Steam. The original game executable now loads the localization automatically.
+Перед изменением файлов установщик проверяет версию игры. Он не заменяет файлы Steam или резервные копии, принадлежащие другой программе или модификации.
 
-The installed game folder receives exactly these four files:
-KrkrPatch.dll
-KrkrPatch.json
-localization.xp3
-WINMM.dll
+Безопасный запуск
+Если игра обновилась, файл перевода отсутствует или перевод не удалось загрузить, игра запустится без перевода. Причина будет записана в LocalizationBootstrap.log.
 
-The original game archives and executable are not modified. WINMM.dll forwards the multimedia timer and audio calls used by the game and Steam to the real Windows DLL, verifies the supported game EXE and patch.xp3 hashes, and initializes KrkrPatch. If validation or localization initialization fails, it logs the reason to LocalizationBootstrap.log and starts the original game without localization. The patch replaces the game's English scenario-text slot with Russian and translates menus, settings, and game messages. Character and speaker names remain exactly as in the English localization. Text that is part of a picture, including parts of the title screen, remains in English.
+Проверка файлов в Steam
+Steam не может предупредить установщик перед началом проверки. Проверка восстановит оригинальный файл запуска Steam и отключит автоматическую загрузку перевода. Игра продолжит работать без перевода. Снова запустите LocalizationSetup.exe, чтобы включить перевод.
 
-If another mod already installed WINMM.dll, Setup stops and does not overwrite it. A prior proxy installed and recorded by this localization can be upgraded. Steam file verification is not an uninstall mechanism and provides no supported pre-verification callback for this installer. If Steam changes the game EXE or patch.xp3, the runtime hash check skips localization and starts vanilla. Remove the localization through Windows Installed Apps when desired.
+Удаление перевода
+Откройте «Параметры» Windows, перейдите в «Приложения» — «Установленные приложения», найдите Kugayama Shiori Russian Localization и нажмите «Удалить». Если был выбран запуск через Steam, установщик восстановит сохранённый оригинальный файл. Файлы, позднее изменённые другой программой, останутся без изменений.
 
-Uninstall
-Open Windows Installed Apps, find Kugayama Shiori Russian Localization, and select Uninstall. Uninstallation removes the four installed localization files, generated logs, and installed shortcuts. If WINMM.dll was replaced after installation, the uninstaller preserves it instead of deleting an unknown mod file.
+Решение проблем
+- Если установщик не нашёл игру, выберите папку с файлом KugayamaShiorisDeathDiary.exe.
+- Если версия игры не поддерживается, проверьте файлы игры в Steam и повторите попытку.
+- Если установщик отказывается менять steam_api.dll или steam_api_original.dll, файл может использоваться другой программой. Снимите флажок запуска через Steam или удалите другую модификацию по её инструкции.
+- Если установщик сообщает о WINMM.dll, удалите установившую его модификацию. С этим файлом игра не запускается.
+- Если игра запускается на английском, снова запустите последнюю версию установщика. Текст внутри изображений всегда остаётся английским.
+- Если игра не запускается, удалите перевод, проверьте файлы игры в Steam и повторите попытку.
+- При сообщении об ошибке загрузки приложите файлы LocalizationBootstrap.log и KrkrPatch.log из папки игры, если они появились.
+- Запускайте только установщик, скачанный с официальной страницы проекта. Windows может предупреждать о неизвестном издателе, потому что текущие выпуски не имеют цифровой подписи.
 
-Troubleshooting
-- Verify that the supported KugayamaShiorisDeathDiary.exe and patch.xp3 versions are installed.
-- Launch normally from Steam.
-- Check story dialogue or the menu at the top of the game window. Some words that are part of pictures remain in English.
-- If localization is skipped, attach LocalizationBootstrap.log and KrkrPatch.log from the game folder to the issue report.
-- Antivirus software may inspect the runtime patch DLL because it hooks the game's file-loading functions.
-- Unsigned releases can show Windows Unknown publisher or SmartScreen warnings. Verify LocalizationSetup.exe using the matching SHA256SUMS.txt; removing the publisher warning requires a publicly trusted Authenticode signature.
-- Restore the original game state through the localization uninstaller.
-
-The Russian text was translated manually. English localization JSON is not distributed; development scripts extract it from the user's installed game into ignored generated output.
-
-KrkrPatch.dll is a GPL-3.0-covered KrkrPatch binary built from upstream revision 587261001bf95feab4f0f1cbcbd22cfdadb97e31 with the documented compatibility modification. The matching release provides KrkrPatch-source-587261001bf95feab4f0f1cbcbd22cfdadb97e31-localization-patched.zip beside LocalizationSetup.exe. The build recipe and licence notices are in the repository source archive for the same release tag.
-
-The matching release also provides ThirdPartyLicenses.zip and SHA256SUMS.txt. Verify LocalizationSetup.exe against SHA256SUMS.txt before running it.
-
-msg-tool is used only during development. Scripts download the pinned upstream release on demand and verify it using third-party.lock.json. It is not included in this repository, installer, installed game folder, or release assets.
-
-See Distribution/LICENSES in the repository source archive and ThirdPartyLicenses.zip in the matching release for third-party notices and dependency licence material.
+Русский текст переведён вручную. KrkrPatchLoader.exe и KrkrPatch.dll распространяются по GPL-3.0. Собственные файлы проекта распространяются по лицензии 0BSD. Подробности находятся в исходных файлах выпуска и уведомлениях о лицензиях.

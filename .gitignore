@@ -3,10 +3,11 @@
 /.deps/
 
 /Distribution/source/generated/
-/Distribution/LocalizationSetup.exe
+/Distribution/Localization*Setup.exe
 /Distribution/SHA256SUMS.txt
 /Distribution/payload/KrkrPatchLoader.exe
 /Distribution/payload/KrkrPatch.dll
+/Distribution/payload/steam_api.dll
 /Distribution/payload/WINMM.dll
 /Distribution/unins*.exe
 /Distribution/unins*.dat
